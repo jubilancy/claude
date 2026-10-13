@@ -25,12 +25,16 @@ from markdownify import markdownify
 
 # ─── EDIT THESE ────────────────────────────────────────────────
 BLOG = "garadinervi"        # blog short name (no .tumblr.com needed)
-TAG = "book"                # tag to filter by
+TAGS = ["book"]             # tags to fetch; one JSON file is written per tag
 API_KEY = "KEY"  # your OAuth Consumer Key
 # ────────────────────────────────────────────────────────────────
 
 LIMIT = 20  # API max per call, do not change
-OUTPUT_FILE = f"{BLOG}-{TAG}-posts.json"
+
+
+def output_file(tag: str) -> str:
+    safe_tag = re.sub(r"[^\w-]+", "_", tag).strip("_")
+    return f"{BLOG}-{safe_tag}-posts.json"
 
 
 def strip_html(raw: str | None) -> str:
@@ -118,7 +122,7 @@ def build_record(post: dict) -> dict:
     }
 
 
-def fetch_all_tagged_posts() -> list[dict]:
+def fetch_all_tagged_posts(tag: str) -> list[dict]:
     results = []
     offset = 0
     total = None
@@ -128,7 +132,7 @@ def fetch_all_tagged_posts() -> list[dict]:
 
     while True:
         params = {
-            "tag": TAG,
+            "tag": tag,
             "api_key": API_KEY,
             "limit": LIMIT,
             "offset": offset,
@@ -136,7 +140,7 @@ def fetch_all_tagged_posts() -> list[dict]:
             "npf": "false",          # legacy format (explicit)
         }
 
-        print(f"Fetching offset={offset} ...")
+        print(f"[{tag}] Fetching offset={offset} ...")
         res = session.get(url, params=params, timeout=30)
 
         if not res.ok:
@@ -167,10 +171,12 @@ def main():
         print("⚠️  Set your API_KEY at the top of this script before running.")
         raise SystemExit(1)
 
-    posts = fetch_all_tagged_posts()
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        json.dump(posts, f, indent=2, ensure_ascii=False)
-    print(f"\nSaved {len(posts)} posts to {OUTPUT_FILE}")
+    for tag in TAGS:
+        posts = fetch_all_tagged_posts(tag)
+        out = output_file(tag)
+        with open(out, "w", encoding="utf-8") as f:
+            json.dump(posts, f, indent=2, ensure_ascii=False)
+        print(f"\nSaved {len(posts)} posts to {out}\n")
 
 
 if __name__ == "__main__":
