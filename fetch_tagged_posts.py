@@ -1,7 +1,7 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["requests"]
+# dependencies = ["requests", "markdownify"]
 # ///
 
 """
@@ -21,6 +21,7 @@ import re
 import time
 
 import requests
+from markdownify import markdownify
 
 # ─── EDIT THESE ────────────────────────────────────────────────
 BLOG = "garadinervi"        # blog short name (no .tumblr.com needed)
@@ -43,6 +44,12 @@ def extract_description(post: dict) -> str:
     return strip_html(raw)
 
 
+def html_to_md(raw: str | None) -> str:
+    """HTML -> Markdown, keeping links, emphasis, lists and paragraph breaks."""
+    md = markdownify(raw or "", heading_style="ATX", bullets="-")
+    return re.sub(r"\n{3,}", "\n\n", md).strip()
+
+
 def extract_photos(post: dict) -> list[dict]:
     photos = []
     for p in post.get("photos") or []:
@@ -52,6 +59,7 @@ def extract_photos(post: dict) -> list[dict]:
             "width": original.get("width"),
             "height": original.get("height"),
             "caption": strip_html(p.get("caption")),
+            "caption_md": html_to_md(p.get("caption")),
             "alt_text": p.get("alt_text"),
         })
     return photos
@@ -83,6 +91,7 @@ def build_record(post: dict) -> dict:
         # text
         "title": post.get("title"),
         "description": extract_description(post),
+        "description_md": html_to_md(post.get("body") or post.get("caption") or post.get("description")),
         "body_html": post.get("body"),
         "caption_html": post.get("caption"),
         "format": post.get("format"),
