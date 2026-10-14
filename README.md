@@ -34,7 +34,7 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 - [Fusion](https://github.com/0x2E/fusion) - Lightweight self-hosted RSS reader and aggregator.
 - [Selfoss](https://github.com/fossar/selfoss) - Multipurpose RSS reader and feed aggregator.
 - [Nextcloud News](https://github.com/nextcloud/news) - RSS/Atom reader app for Nextcloud.
-- [Wallabag](https://github.com/wallabag/wallabag) - Read-it-later app that also ingests feeds.
+- [Wallabag](https://github.com/wallabag/wallabag) - Read-it-later app that publishes your saved articles as RSS feeds.
 
 ## Desktop and Mobile Readers
 
@@ -43,9 +43,8 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 - [Liferea](https://github.com/lwindolf/liferea) - Linux desktop news aggregator.
 - [Thunderbird](https://www.thunderbird.net/) - Email client with built-in feed support.
 - [Akregator](https://apps.kde.org/akregator/) - KDE feed reader.
-- [Read You](https://github.com/Ashinch/ReadYou) - Android reader with Material You design.
+- [Read You](https://github.com/ReadYouApp/ReadYou) - Android reader with Material You design.
 - [FeedFlow](https://github.com/prof18/feed-flow) - Cross-platform (Android, iOS, desktop) reader.
-- [Feeder](https://gitlab.com/spacecowboy/Feeder) - Android reader.
 - [Capy Reader](https://github.com/jocmp/capyreader) - Android reader.
 - [Reeder](https://reederapp.com/) - Polished reader for Apple platforms.
 - [Vienna RSS](https://github.com/ViennaRSS/vienna-rss) - Open source macOS reader.
@@ -59,7 +58,6 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 - [eilmeldung](https://github.com/christo-auer/eilmeldung) - TUI reader based on the news-flash library.
 - [Canto](https://github.com/themoken/canto-curses) - Curses-based feed reader.
 - [Sfeed](https://codemadness.org/sfeed.html) - Minimal RSS/Atom tooling following the UNIX philosophy.
-- [Podboat](https://newsboat.org/releases/2.35/docs/podboat.html) - Podcast downloader that ships with Newsboat.
 
 ## Hosted Services
 
@@ -74,7 +72,7 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 
 ## Browser Extensions
 
-- [Feedbro](https://github.com/nodeedge/feedbro) - Advanced reader and organizer inside the browser.
+- [Feedbro](https://nodetics.com/feedbro) - Advanced reader and organizer inside the browser.
 - [Get RSS Feed URL](https://github.com/shevabam/get-rss-feed-url-extension) - Detects feeds on the current page.
 
 ## Feed Generators (Sites Without Feeds)
@@ -85,7 +83,6 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 - [Feedity](https://feedity.com/) - Hosted service that turns web pages into feeds.
 - [FiveFilters Feed Creator](https://createfeed.fivefilters.org/) - Build feeds from pages with CSS selectors.
 - [changedetection.io](https://github.com/dgtlmoon/changedetection.io) - Website change detection with RSS output.
-- [Nitter](https://github.com/zedeus/nitter) - Alternative Twitter front end that exposes RSS (instance availability varies).
 - [Invidious](https://github.com/iv-org/invidious) - YouTube front end with RSS support. YouTube also exposes native channel feeds.
 
 ## Feed Processing and Filtering
@@ -97,7 +94,7 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 - [Blogtrottr](https://blogtrottr.com/) - Hosted feeds-to-email service.
 - [IFTTT](https://ifttt.com/) - Trigger actions from feed updates.
 - [Zapier](https://zapier.com/) - Connect feeds to thousands of apps.
-- [n8n](https://github.com/n8n-io/n8n) - Self-hostable workflow automation with RSS triggers.
+- [n8n](https://github.com/n8n-io/n8n) - Self-hostable workflow automation with an [RSS Feed Trigger](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.rssfeedreadtrigger/).
 
 ## Podcast and Newsletter Tools
 
@@ -112,7 +109,7 @@ RSS is alive and well. This list focuses on **tools** (readers, servers, generat
 
 - [Hugo](https://gohugo.io/templates/rss/) - Built-in RSS templates.
 - [Jekyll Feed](https://github.com/jekyll/jekyll-feed) - Atom feed generator plugin for Jekyll.
-- [Eleventy RSS Plugin](https://github.com/11ty/eleventy-plugin-rss) - Feed helpers for Eleventy.
+- [Eleventy RSS Plugin](https://github.com/11ty/plugin-rss) - Feed helpers for Eleventy.
 - [Feed (Node.js)](https://github.com/jpmonette/feed) - Generate RSS 2.0, Atom 1.0, and JSON Feed.
 - [Astro RSS](https://docs.astro.build/en/guides/rss/) - Official RSS support for Astro.
 - [Hexo Generator Feed](https://github.com/hexojs/hexo-generator-feed) - Feed generator for Hexo.
