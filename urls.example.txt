@@ -1,0 +1,16 @@
+# One Tumblr URL per line, from any blog. Blank lines and # comments are ignored.
+# Run: TUMBLR_API_KEY=... uv run fetch_tagged_posts.py --urls urls.txt
+
+# Post on a tumblr.com blog (slug optional)
+https://citriccomics.tumblr.com/post/3507845453
+
+# Post on a custom domain, with and without /post/ and a slug
+https://derekg.org/post/5578378101/otis-redding
+https://www.davidslog.com/5845345725/if-youre-okay-with-it-destroying-tumblr
+
+# www.tumblr.com forms (blog name is the first path segment)
+https://www.tumblr.com/staff/5845153911
+https://www.tumblr.com/@staff/5845153911
+
+# Every post with a tag
+https://matthewbuchanan.name/tagged/url
