@@ -1,0 +1,11 @@
+Title,Author,ISBN-10,ISBN-13,Edition matched,Notes
+Being There,Jerzy Kosinski,0553279300,9780553279306,"Bantam 1985, 118 pp",exact page match
+Tristessa,Jack Kerouac,0070342393,9780070342392,"McGraw-Hill 1989, 96 pp",exact page match; ISBN-13 computed from ISBN-10
+The Faces,Tove Ditlevsen,Not found,9780241391914,"Penguin 2021, 176 pp",NO edition with 129 pp; closest English edition (Picador 2022 is 144 pp: 9781250838209 / 9781250838193). Verify edition
+Ghost Wall,Sarah Moss,0374161925,9780374161927,"FSG 2019, 144 pp",page count differs from your 130; verify edition
+The Fire Next Time,James Baldwin,067974472X,9780679744726,"Vintage International 1993, 106 pp",exact page match; ISBN-13 computed from ISBN-10
+For Esmé – with Love and Squalor and Other Stories,J. D. Salinger,0141049251,9780141049250,"Penguin 2010, 149 pp",exact page match
+We Have Always Lived in the Castle,Shirley Jackson,0143039970,9780143039976,"Penguin 2006, 146 pp",exact page match
+The House on Mango Street,Sandra Cisneros,0329073729,9780329073725,"Vintage 1991, 110 pp","exact page match (Open Library record; unusual 0329 prefix, verify)"
+Notes from Underground,Fyodor Dostoevsky,Not found,Not found,,Not found: no reliable 136-pp edition in Open Library
+"God Bless You, Dr. Kevorkian",Kurt Vonnegut,1583220208,9781583220207,"Seven Stories 1999, 79 pp",1 page off; ISBN-13 computed from ISBN-10
