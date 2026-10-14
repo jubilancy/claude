@@ -1,0 +1,10 @@
+body, canvas {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	position: fixed;
+}
+canvas {
+	background-color: black;
+	touch-action: none; /* let pointer events through on phones instead of scrolling */
+}
