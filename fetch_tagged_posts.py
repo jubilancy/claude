@@ -34,8 +34,8 @@ info, metadata):
    Posts that can't be fetched are listed in the *-failed.txt file, which
    can be passed back in as a urls file to retry them.
 
-The API key is read from the TUMBLR_API_KEY environment variable if set,
-otherwise from API_KEY below.
+Put your API key in API_KEY below (keep this file private if you do).
+If API_KEY is left empty, the TUMBLR_API_KEY environment variable is used.
 """
 
 import argparse
@@ -52,8 +52,10 @@ from markdownify import markdownify
 # ─── EDIT THESE ────────────────────────────────────────────────
 BLOG = "garadinervi"        # blog short name (no .tumblr.com needed)
 TAGS = ["book"]             # tags to fetch; one JSON file is written per tag
-API_KEY = os.environ.get("TUMBLR_API_KEY", "KEY")  # your OAuth Consumer Key
+API_KEY = ""                # paste your OAuth Consumer Key between the quotes
 # ────────────────────────────────────────────────────────────────
+
+API_KEY = API_KEY.strip() or os.environ.get("TUMBLR_API_KEY", "").strip()
 
 LIMIT = 20  # API max per call, do not change
 HEADERS = {"User-Agent": "fetch_tagged_posts/1.0"}  # Tumblr asks for a consistent User-Agent
@@ -349,8 +351,8 @@ def main():
                     help="output JSON for --urls mode (default: %(default)s)")
     args = ap.parse_args()
 
-    if API_KEY in ("YOUR_API_KEY_HERE", "KEY"):
-        print("⚠️  Set TUMBLR_API_KEY (or API_KEY at the top of this script) before running.")
+    if not API_KEY or API_KEY in ("YOUR_API_KEY_HERE", "KEY"):
+        print('⚠️  Paste your key into API_KEY at the top of this script (API_KEY = "...") before running.')
         raise SystemExit(1)
 
     if args.urls:
