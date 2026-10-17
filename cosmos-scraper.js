@@ -17,6 +17,7 @@
     settleMs: 600,       // wait after each scroll for tiles/fetches to render
     idleRounds: 25,      // stop after this many consecutive steps with no new elements
     maxSteps: 4000,
+    maxElements: 2000,   // stop once this many are collected (search/explore feeds can be endless)
     maxFiberHops: 40,
   };
 
@@ -76,7 +77,7 @@
     const added = collect();
     idle = added ? 0 : idle + 1;
     if (step % 5 === 0) console.log(`[cosmos] ${seen.size} elements (step ${step}, idle ${idle})`);
-    if (idle >= CFG.idleRounds) break;
+    if (idle >= CFG.idleRounds || seen.size >= CFG.maxElements) break;
   }
 
   const rows = [...seen.values()];
