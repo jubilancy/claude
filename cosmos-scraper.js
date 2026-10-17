@@ -96,6 +96,10 @@
   }
 
   const rows = [...seen.values()];
+  if (!rows.length) {
+    console.warn('[cosmos] found 0 elements. If DevTools device emulation (phone/narrow width) is on, turn it off: ' +
+      'the mobile layout does not render the tile grid. Also check you are on a page with a grid of tiles.');
+  }
   window.__cosmos = rows;
   console.log(`[cosmos] done: ${rows.length} unique elements. Data in window.__cosmos`);
 
