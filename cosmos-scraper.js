@@ -66,13 +66,28 @@
 
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  window.scrollTo(0, 0);
+  // Element pages (/e/<id>) show related tiles inside a scrollable dialog, not the window,
+  // so scroll the nearest scrollable ancestor of the tiles, falling back to the window.
+  const scroller = () => {
+    const tile = document.querySelector('[data-testid="element-tile"]');
+    for (let n = tile && tile.parentElement; n && n !== document.body; n = n.parentElement) {
+      if (n.scrollHeight > n.clientHeight + 50 && /(auto|scroll)/.test(getComputedStyle(n).overflowY)) return n;
+    }
+    return null;
+  };
+  const scrollStep = () => {
+    const el = scroller();
+    if (el) el.scrollBy(0, Math.round(el.clientHeight * CFG.stepFraction));
+    else window.scrollBy(0, Math.round(window.innerHeight * CFG.stepFraction));
+  };
+
+  (scroller() || window).scrollTo(0, 0);
   await sleep(CFG.settleMs);
   collect();
 
   let idle = 0;
   for (let step = 0; step < CFG.maxSteps && !stop; step++) {
-    window.scrollBy(0, Math.round(window.innerHeight * CFG.stepFraction));
+    scrollStep();
     await sleep(CFG.settleMs);
     const added = collect();
     idle = added ? 0 : idle + 1;
