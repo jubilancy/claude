@@ -34,6 +34,7 @@ skipped, so an interrupted run can simply be re-run; use --force to refetch.
 
 import argparse
 import csv
+import json
 import random
 import re
 import sys
@@ -227,6 +228,43 @@ def fetch_list(f: Fetcher, info: dict, max_pages: int | None) -> tuple[dict, lis
 
 
 # --------------------------------------------------------------------------
+# ISBN enrichment (list pages don't carry ISBNs; each book page does)
+# --------------------------------------------------------------------------
+
+def parse_isbns(html: str) -> dict:
+    m13 = re.search(r'"isbn13":"(\d{13})"', html)
+    m10 = re.search(r'"isbn":"(\d{9}[\dX])"', html) or re.search(r'"asin":"(\d{9}[\dX])"', html)
+    return {"isbn13": m13.group(1) if m13 else "", "isbn10": m10.group(1) if m10 else ""}
+
+
+def add_isbns(f: Fetcher, books: list[dict], cache_path: Path):
+    """Fill isbn10/isbn13 on list books from their book pages, cached so a
+    re-run (or a second list with the same books) only fetches what is missing."""
+    try:
+        cache = json.loads(cache_path.read_text())
+    except (OSError, ValueError):
+        cache = {}
+    todo = [b for b in books if b["book_id"] and b["book_id"] not in cache]
+    print(f"  ISBNs: {len(books) - len(todo)} cached, {len(todo)} to fetch "
+          f"(~{len(todo) * f.delay * 1.25 / 60:.0f} min)", file=sys.stderr)
+    try:
+        for i, b in enumerate(todo, 1):
+            try:
+                cache[b["book_id"]] = parse_isbns(f.get(b["book_url"]).text)
+            except Exception as e:  # leave uncached so the next run retries it
+                print(f"    {b['book_id']}: {e}", file=sys.stderr)
+            if i % 25 == 0:
+                print(f"    {i}/{len(todo)}", file=sys.stderr)
+                cache_path.write_text(json.dumps(cache))
+    finally:
+        cache_path.write_text(json.dumps(cache))
+    for b in books:
+        c = cache.get(b["book_id"], {})
+        b["isbn13"] = c.get("isbn13") or "Not found"
+        b["isbn10"] = c.get("isbn10") or "Not found"
+
+
+# --------------------------------------------------------------------------
 # User shelves / tags (RSS)
 # --------------------------------------------------------------------------
 
@@ -320,13 +358,15 @@ def write_csv(path: Path, books: list[dict]):
 
 
 MD_COLS = {
-    "list": ["rank", "title", "author", "avg_rating", "ratings_count", "score", "votes"],
+    "list": ["rank", "title", "author", "avg_rating", "ratings_count", "score", "votes",
+             "isbn13", "isbn10"],
     "shelf": ["title", "author", "my_rating", "avg_rating", "year_published",
               "num_pages", "date_read", "isbn", "shelves"],
 }
 MD_HEAD = {
     "rank": "#", "avg_rating": "Avg", "ratings_count": "Ratings", "my_rating": "My rating",
     "year_published": "Year", "num_pages": "Pages", "date_read": "Read", "isbn": "ISBN",
+    "isbn13": "ISBN-13", "isbn10": "ISBN-10",
 }
 
 
@@ -335,7 +375,7 @@ def md_cell(v) -> str:
 
 
 def write_md(path: Path, kind: str, meta: dict, books: list[dict]):
-    cols = MD_COLS[kind]
+    cols = [c for c in MD_COLS[kind] if books and c in books[0]]
     lines = [f"# {meta['title']}", "", f"Source: <{meta['source']}>  ",
              f"Books fetched: {len(books)}"
              + (f" (Goodreads reports {meta['total']})" if kind == "list" and meta.get("total") else ""),
@@ -369,6 +409,9 @@ def main() -> int:
                     help="minimum seconds between requests, plus up to 50%% jitter (default 3)")
     ap.add_argument("--retries", type=int, default=4, help="retries per request (default 4)")
     ap.add_argument("--timeout", type=float, default=30.0)
+    ap.add_argument("--isbn", action="store_true",
+                    help="lists only: also fetch every book page for ISBN-13/ISBN-10 "
+                         "(one extra request per book; slow, cached in OUT/.isbn-cache.json)")
     ap.add_argument("--max-pages", type=int, help="stop after N pages per URL (for testing)")
     ap.add_argument("--force", action="store_true", help="refetch even if output files exist")
     args = ap.parse_args()
@@ -396,6 +439,8 @@ def main() -> int:
             meta, books = (fetch_list if kind == "list" else fetch_shelf)(f, info, args.max_pages)
             if not books:
                 raise RuntimeError("no books found")
+            if args.isbn and kind == "list":
+                add_isbns(f, books, args.out / ".isbn-cache.json")
             if "csv" in formats:
                 write_csv(targets["csv"], books)
             if "md" in formats:
