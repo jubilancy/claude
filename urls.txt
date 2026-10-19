@@ -1,0 +1,8 @@
+# One Goodreads URL per line. Blank lines and # comments are ignored.
+# Run: uv run goodreads_fetch.py
+
+# A user's tag/shelf
+https://www.goodreads.com/review/list/14046996-roy-lotz?tag=anglophilia&view=reviews
+
+# A Listopia list
+https://www.goodreads.com/list/show/925.Women_and_Mental_Illness_fiction_and_nonfiction_
