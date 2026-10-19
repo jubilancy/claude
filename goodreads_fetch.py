@@ -34,7 +34,6 @@ skipped, so an interrupted run can simply be re-run; use --force to refetch.
 
 import argparse
 import csv
-import json
 import random
 import re
 import sys
@@ -60,12 +59,12 @@ RSS_PER_PAGE = 200  # the feed honours this; 100 is the default
 # --------------------------------------------------------------------------
 
 class Fetcher:
-    def __init__(self, delay: float, retries: int, timeout: float, user_agent: str = USER_AGENT):
+    def __init__(self, delay: float, retries: int, timeout: float):
         self.delay = delay
         self.retries = retries
         self.timeout = timeout
         self.session = requests.Session()
-        self.session.headers.update({"User-Agent": user_agent, "Accept-Language": "en"})
+        self.session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "en"})
         self._last = 0.0
 
     def _wait(self):
@@ -228,73 +227,6 @@ def fetch_list(f: Fetcher, info: dict, max_pages: int | None) -> tuple[dict, lis
 
 
 # --------------------------------------------------------------------------
-# Open Library ISBN lookup / check
-# --------------------------------------------------------------------------
-
-OL_SEARCH = "https://openlibrary.org/search.json"
-
-
-def ol_lookup(f: Fetcher, book_id: str) -> dict:
-    """Open Library works indexed under this Goodreads book id: their ISBNs."""
-    q = urlencode({"q": f"id_goodreads:{book_id}", "fields": "key,isbn", "limit": 1})
-    data = f.get(f"{OL_SEARCH}?{q}").json()
-    docs = data.get("docs") or []
-    if not docs:
-        return {"found": False}
-    isbns = docs[0].get("isbn") or []
-    return {"found": True, "work": docs[0].get("key", ""), "isbns": isbns}
-
-
-def add_openlibrary(f: Fetcher, books: list[dict], cache_path: Path):
-    """Add ol_status / ol_isbn13 / ol_isbn10 / ol_url to every book.
-
-    Lookup is by Goodreads book id (Open Library records it as id_goodreads).
-    A book that already has an ISBN (shelf rows) is checked against Open
-    Library's ISBN list for that work: ol_status is 'verified' or
-    'isbn_not_in_openlibrary'. A book without one gets Open Library's first
-    ISBN-13/ISBN-10 for the work (ol_status 'found'); that is a work-level
-    ISBN, not necessarily the exact Goodreads edition. Results are cached so
-    an interrupted run resumes.
-    """
-    try:
-        cache = json.loads(cache_path.read_text())
-    except (OSError, ValueError):
-        cache = {}
-    todo = [b for b in books if b["book_id"] and b["book_id"] not in cache]
-    print(f"  Open Library: {len(books) - len(todo)} cached, {len(todo)} to look up "
-          f"(~{len(todo) * f.delay * 1.25 / 60:.0f} min)", file=sys.stderr)
-    try:
-        for i, b in enumerate(todo, 1):
-            try:
-                cache[b["book_id"]] = ol_lookup(f, b["book_id"])
-            except Exception as e:  # leave uncached so the next run retries it
-                print(f"    {b['book_id']}: {e}", file=sys.stderr)
-            if i % 25 == 0:
-                print(f"    {i}/{len(todo)}", file=sys.stderr)
-                cache_path.write_text(json.dumps(cache))
-    finally:
-        cache_path.write_text(json.dumps(cache))
-    for b in books:
-        c = cache.get(b["book_id"])
-        isbns = (c or {}).get("isbns", [])
-        i13 = [x for x in isbns if len(x) == 13]
-        i10 = [x for x in isbns if len(x) == 10]
-        have = (b.get("isbn") or "").replace("-", "")
-        if c is None:
-            status = "lookup_failed"
-        elif not c["found"]:
-            status = "book_not_in_openlibrary"
-        elif have:
-            status = "verified" if have in isbns else "isbn_not_in_openlibrary"
-        else:
-            status = "found" if isbns else "no_isbn_in_openlibrary"
-        b["ol_status"] = status
-        b["ol_isbn13"] = i13[0] if i13 else ""
-        b["ol_isbn10"] = i10[0] if i10 else ""
-        b["ol_url"] = f"https://openlibrary.org{c['work']}" if c and c.get("work") else ""
-
-
-# --------------------------------------------------------------------------
 # User shelves / tags (RSS)
 # --------------------------------------------------------------------------
 
@@ -388,15 +320,13 @@ def write_csv(path: Path, books: list[dict]):
 
 
 MD_COLS = {
-    "list": ["rank", "title", "author", "avg_rating", "ratings_count", "score", "votes",
-             "ol_isbn13", "ol_isbn10", "ol_status"],
+    "list": ["rank", "title", "author", "avg_rating", "ratings_count", "score", "votes"],
     "shelf": ["title", "author", "my_rating", "avg_rating", "year_published",
-              "num_pages", "date_read", "isbn", "ol_status", "shelves"],
+              "num_pages", "date_read", "isbn", "shelves"],
 }
 MD_HEAD = {
     "rank": "#", "avg_rating": "Avg", "ratings_count": "Ratings", "my_rating": "My rating",
     "year_published": "Year", "num_pages": "Pages", "date_read": "Read", "isbn": "ISBN",
-    "ol_isbn13": "ISBN-13 (OL)", "ol_isbn10": "ISBN-10 (OL)", "ol_status": "Open Library",
 }
 
 
@@ -439,12 +369,6 @@ def main() -> int:
                     help="minimum seconds between requests, plus up to 50%% jitter (default 3)")
     ap.add_argument("--retries", type=int, default=4, help="retries per request (default 4)")
     ap.add_argument("--timeout", type=float, default=30.0)
-    ap.add_argument("--openlibrary", action="store_true",
-                    help="look every book up on Open Library by Goodreads id: fill in ISBNs "
-                         "for list books, verify the ISBN on shelf books "
-                         "(cached in OUT/.openlibrary-cache.json)")
-    ap.add_argument("--ol-delay", type=float, default=1.0,
-                    help="minimum seconds between Open Library requests (default 1)")
     ap.add_argument("--max-pages", type=int, help="stop after N pages per URL (for testing)")
     ap.add_argument("--force", action="store_true", help="refetch even if output files exist")
     args = ap.parse_args()
@@ -458,7 +382,6 @@ def main() -> int:
     urls = read_urls(args.urls)
     args.out.mkdir(parents=True, exist_ok=True)
     f = Fetcher(args.delay, args.retries, args.timeout)
-    ol = Fetcher(args.ol_delay, args.retries, args.timeout, user_agent="goodreads-fetch/1.0 (personal script)")
     failures = 0
 
     for n, url in enumerate(urls, 1):
@@ -473,8 +396,6 @@ def main() -> int:
             meta, books = (fetch_list if kind == "list" else fetch_shelf)(f, info, args.max_pages)
             if not books:
                 raise RuntimeError("no books found")
-            if args.openlibrary:
-                add_openlibrary(ol, books, args.out / ".openlibrary-cache.json")
             if "csv" in formats:
                 write_csv(targets["csv"], books)
             if "md" in formats:
