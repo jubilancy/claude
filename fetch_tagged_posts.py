@@ -31,6 +31,15 @@ info, metadata):
      https://staff.tumblr.com/tagged/some+tag          every post with that tag
      https://www.tumblr.com/staff/tagged/some+tag      every post with that tag
 
+   By default everything goes into one combined JSON (--out). To get one
+   file per URL instead, add --split DIR:
+
+       uv run fetch_tagged_posts.py --urls urls.txt --split posts
+
+   A post URL gives <blog>-<id>.json holding that post's record; a tag URL
+   gives <blog>-tag-<tag>.json holding a list of its posts. Two URLs that
+   point to the same post share one file.
+
    Posts that can't be fetched are listed in the *-failed.txt file, which
    can be passed back in as a urls file to retry them.
 
@@ -283,7 +292,20 @@ def fetch_post(session: requests.Session, blog: str, post_id: str) -> dict | Non
     return posts[0] if posts else None
 
 
-def run_urls(path: str, out: str) -> int:
+def link_filename(info: dict) -> str:
+    """<blog>-<post id>.json for a post URL, <blog>-tag-<tag>.json for a tag URL."""
+    stem = f"{info['blog']}-{info['id']}" if info["kind"] == "post" else f"{info['blog']}-tag-{info['tag']}"
+    return re.sub(r"[^\w.-]+", "_", stem).strip("_") + ".json"
+
+
+def write_json(path: str, data) -> None:
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
+
+def run_urls(path: str, out: str, split_dir: str | None = None) -> int:
+    if split_dir:
+        os.makedirs(split_dir, exist_ok=True)
     session = requests.Session()
     session.headers.update(HEADERS)
     records, failed = [], []
@@ -318,6 +340,9 @@ def run_urls(path: str, out: str) -> int:
                 for rec in found:
                     rec["requested_url"] = url
                 records.extend(found)
+                if split_dir:  # one file per link: an object for a post URL, a list for a tag URL
+                    write_json(os.path.join(split_dir, link_filename(info)),
+                               found[0] if info["kind"] == "post" else found)
                 print(f"{label} ok ({len(found)} post{'s' if len(found) != 1 else ''}): {url}")
             except RateLimited:
                 failed.append((url, "rate limited"))
@@ -332,9 +357,12 @@ def run_urls(path: str, out: str) -> int:
         print("\nHit Tumblr's rate limit; saving what was fetched so far. "
               "Re-run with the failed file later.")
 
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(records, f, indent=2, ensure_ascii=False)
-    print(f"\nSaved {len(records)} posts to {out}")
+    if split_dir:
+        out = split_dir.rstrip("/\\") + ".json"  # only used to name the failed file below
+        print(f"\nSaved {len(records)} posts as one file per link in {split_dir}/")
+    else:
+        write_json(out, records)
+        print(f"\nSaved {len(records)} posts to {out}")
 
     if failed:
         failed_path = re.sub(r"\.json$", "", out) + "-failed.txt"
@@ -349,14 +377,18 @@ def main():
     ap.add_argument("--urls", metavar="FILE", help="text file with one Tumblr URL per line (any blog)")
     ap.add_argument("--out", metavar="FILE", default="urls-posts.json",
                     help="output JSON for --urls mode (default: %(default)s)")
+    ap.add_argument("--split", metavar="DIR",
+                    help="with --urls: write one JSON file per URL into DIR instead of one combined file")
     args = ap.parse_args()
+    if args.split and not args.urls:
+        ap.error("--split only works together with --urls")
 
     if not API_KEY or API_KEY in ("YOUR_API_KEY_HERE", "KEY"):
         print('⚠️  Paste your key into API_KEY at the top of this script (API_KEY = "...") before running.')
         raise SystemExit(1)
 
     if args.urls:
-        raise SystemExit(run_urls(args.urls, args.out))
+        raise SystemExit(run_urls(args.urls, args.out, args.split))
 
     for tag in TAGS:
         posts = fetch_all_tagged_posts(tag)
