@@ -1,0 +1,31 @@
+Left out of userpage.wikitext (all from your pasted list)
+
+Claims about identity or account status
+{{Altacc topicon}}
+{{Bot operator topicon}}
+{{Committed identity topicon}}
+{{Identified topicon}}
+{{Identified topicon1}}
+{{ValidAlt topicon}}
+
+Personal accounts and contact
+{{Apple Music topicon}}
+{{Email user topicon}}
+{{Gmail email user topicon}}
+{{GitHub topicon}}
+{{MusicBrainz editor topicon}}
+{{Spotify listener topicon}}
+{{YouTube Music listener topicon}}
+
+Status icons
+{{Busy topicon}}
+{{Stress user topicon}}
+
+Not topicons
+{{Cookiewelcome}}
+{{Die Fliege}}
+{{Email user notification}}
+{{Foolicon}}
+{{Top text}}
+{{Trout me}}
+{{User Wikipedia/topicon}}

@@ -1,0 +1,148 @@
+{{Extended confirmed topicon}}
+{{New page reviewer topicon}}
+{{RedWarn topicon}}
+{{Rollback topicon}}
+{{AfC topicon}}
+{{User mentor topicon}}
+{{Temporary account IP viewers topicon}}
+<!-- Tools -->
+{{AWB topicon}}
+{{AntiVandal topicon}}
+{{Discord topicon}}
+{{CopyPatrol topicon}}
+{{HotCat topicon}}
+{{Huggle topicon}}
+{{Igloo topicon}}
+{{IRC topicon}}
+{{Lupin antivandal topicon}}
+{{Navigation popups topicon}}
+{{RedWarn topicon 2}}
+{{Snuggle topicon}}
+{{STiki topicon}}
+{{SWViewer topicon}}
+{{Twinkle topicon}}
+{{Ultraviolet topicon}}
+{{wikEd topicon}}
+{{WPCleaner topicon}}
+<!-- WikiFauna -->
+{{WikiCat topicon}}
+{{WikiDodo topicon}}
+{{WikiDog topicon}}
+{{WikiDragon topicon}}
+{{WikiElf topicon}}
+{{WikiEngineer topicon}}
+{{WikiFairy topicon}}
+{{WikiGnome topicon}}
+{{WikiJanitor topicon}}
+{{WikiOgre topicon}}
+{{WikiOtter topicon}}
+{{WikiPlatypus topicon}}
+{{WikiPrairie dog topicon}}
+{{WikiPrincess topicon}}
+{{WikiPuma topicon}}
+{{WikiQuatch topicon}}
+{{WikiSloth topicon}}
+{{WikiSquirrel topicon}}
+{{WikiWitch topicon}}
+<!-- Other -->
+{{Archive topicon}}
+{{Guestbook topicon}}
+{{RC patroller topicon}}
+{{Script user topicon}}
+{{Signpost user topicon}}
+
+{{User page|rounded=yes|short=yes}}
+
+<!-- ===== Navigation bar ===== -->
+{| style="width:100%; margin:0 auto; text-align:center; background:#7FFFD4; border-radius:15px;"
+|-
+! colspan="12" style="background:#0000FF; color:white; border-radius:15px;" | ''Me''
+|-
+| style="width:5%;" | [[File:Crystal knetconfig.png|40x40px|link=User:Basedgirl|User:Basedgirl]]
+| style="width:11%;" | '''''[[User:Basedgirl|Home]]'''''
+| style="width:5%;" | [[File:Crystal kdmconfig.png|40x40px|link=User talk:Basedgirl|User talk:Basedgirl]]
+| style="width:11%;" | '''''[[User talk:Basedgirl|Talk]]'''''
+| style="width:5%;" | [[File:Crystal keditbookmarks.png|40x40px|link=User:Basedgirl/Awards|User:Basedgirl/Awards]]
+| style="width:11%;" | '''''[[User:Basedgirl/Awards|Awards]]'''''
+| style="width:5%;" | [[File:Crystal kbackgammon engine.svg|40x40px|link=User:Basedgirl/Sandbox|User:Basedgirl/Sandbox]]
+| style="width:11%;" | '''''[[User:Basedgirl/Sandbox|Sandbox]]'''''
+| style="width:5%;" | [[File:Crystal Clear app antivirus.png|40x40px|link=Wikipedia:Tools/Optimum tool set|Wikipedia:Tools/Optimum tool set]]
+| style="width:11%;" | '''''[[Wikipedia:Tools/Optimum tool set|Toolbox]]'''''
+| style="width:5%;" | [[File:Crystal kfm.png|40x40px|link=User:Basedgirl/Workshop|User:Basedgirl/Workshop]]
+| style="width:11%;" | '''''[[User:Basedgirl/Workshop|Subpages]]'''''
+|}
+
+<!-- ===== Userboxes ===== -->
+{{Userboxtop}}
+{{User Wikipedia/Extended confirmed|RFA=WP:USER}}
+{{User Wikipedia/AFC}}
+{{User Wikipedia/New page reviewer}}
+{{User new pages reviewer since}}
+{{User Wikipedia/Rollback}}
+{{User Wikipedia/RC Patrol}}
+{{User Wikipedia/Temporary account IP viewer}}
+{{User mentor}}
+{{User:UBX/RedWarn userbox}}
+{{User:UBX/RW and TW}}
+{{User Unreferenced Articles}}
+{{User WPBiography}}
+
+<!-- Interests and places (existing userboxes) -->
+{{User Virginia resident}}
+{{User website developer}}
+{{User history2}}
+{{User literature}}
+{{User book lover}}
+
+<!-- Interests (custom userboxes) -->
+{{userbox
+| border-c = #5b3a8c
+| id       = <span style="font-size:32px;">🐈</span>
+| id-c     = #efe6fa
+| info     = This user is a '''[[Cat|cat]]''' person.
+| info-c   = #f7f1fd
+}}
+{{userbox
+| border-c = #7a5c2e
+| id       = <span style="font-size:32px;">🏰</span>
+| id-c     = #f3e9d2
+| info     = This user is fascinated by the '''[[Middle Ages|medieval]]''' world.
+| info-c   = #faf4e6
+}}
+{{userbox
+| border-c = #1f6f5c
+| id       = <span style="font-size:32px;">🖼️</span>
+| id-c     = #dff3ee
+| info     = This user loves '''[[Public domain|public domain]] art''' and adding it to articles through [[Wikimedia Commons]].
+| info-c   = #eef9f6
+}}
+{{userbox
+| border-c = #6b1f2a
+| id       = <span style="font-size:32px;">📚</span>
+| id-c     = #f6e3e5
+| info     = This user enjoys '''[[Classic book|classic literature]]'''.
+| info-c   = #fbf1f2
+}}
+{{Userboxbottom}}
+
+== About me ==
+Hi, I'm Basedgirl, a Virginia girl who edits from the [[Virginia|Old Dominion]].
+
+I'm here to be useful. Most of my time goes to patrolling new pages, helping new editors through [[Wikipedia:Articles for creation|Articles for creation]], and reverting [[vandalism]]. I pay extra attention to [[Wikipedia:Biographies of living persons|biographies of living persons]], because they need to be sourced carefully.
+
+If you disagree with an edit of mine, please leave a message on my [[User talk:Basedgirl|talk page]]. I'm happy to talk it through.
+
+== Tools ==
+{{Columns list|colwidth=15em|
+* [[xtools:ec/en.wikipedia.org/Basedgirl|Total edit count]]
+* [[Special:NewPagesFeed|New pages feed]]
+* [[User:Usedtobecool/PSN|Article sources]]
+* [[WP:RFU|Request for undeletion]]
+* [[Special:GlobalRenameRequest|Global rename request]]
+* [[Wikipedia:Biographies of living persons|BLP policy]]
+* [[User:Basedgirl/XfD log|XfD log]]
+* [[User:Basedgirl/CSD log|CSD log]]
+* [[User:Basedgirl/Draftify log|Draftify log]]
+* [[User:Basedgirl/common.js|common.js]]
+* [[User:Basedgirl/common.css|common.css]]
+}}
