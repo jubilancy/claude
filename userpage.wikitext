@@ -1,80 +1,69 @@
 {{Extended confirmed topicon}}
-{{new page reviewer topicon}}
+{{New page reviewer topicon}}
 {{RedWarn topicon}}
 {{Rollback topicon}}
-{{AFC topicon}}
+{{AfC topicon}}
 {{User mentor topicon}}
 {{Temporary account IP viewers topicon}}
 
-
-{| width=100% align=center style="text-align:center;background:#7FFFD4;border-radius:15px;"
-|- colspan=10 style="text-align:center;background:#0000FF;color:white;border-radius:15px;"
-| colspan=12 |'''''Me'''''
+<!-- ===== Navigation bar ===== -->
+{| style="width:100%; margin:0 auto; text-align:center; background:#7FFFD4; border-radius:15px;"
 |-
-| width="5%" | [[File:Crystal knetconfig.png|40x40px|link=User:Basedgirl|User:Basedgirl]]
-| width="9%" | '''''[[User:Basedgirl|Home]]'''''
-| width="5%" | [[File:Crystal kdmconfig.png|40x40px|link=User talk:Basedgirl|User talk:Basedgirl]]
-| width="9%" | '''''[[User talk:Basedgirl|Talk]]'''''
-| width="5%" | [[File:Crystal keditbookmarks.png|40x40px|link=User:Basedgirl/Awards|User:Basedgirl/Awards]]
-| width="9%" | '''''[[User:Basedgirl/Awards|Awards]]'''''
-| width="5%" | [[File:Crystal kbackgammon engine.svg|40x40px|link=User:Basedgirl/Sandbox|User:Basedgirl/Sandbox]]
-| width="9%" | '''''[[User:Basedgirl/Sandbox|Sandbox]]'''''
-| width="5%" | [[File:Crystal_Clear_app_antivirus.png|40x40px|link=Wikipedia:Tools/Optimum tool set|Wikipedia:Tools/Optimum tool set]]
-| width="9%" | '''''[[Wikipedia:Tools/Optimum tool set|Toolbox]]'''''
-| width="5%" | [[File:Crystal kfm.png|40x40px|link=User:Basedgirl/Workshop|User:Basedgirl/Workshop]]
-| width="9%" | '''''[[User:Basedgirl/Workshop|Subpages]]'''''
+! colspan="12" style="background:#0000FF; color:white; border-radius:15px;" | ''Me''
 |-
-|
+| style="width:5%;" | [[File:Crystal knetconfig.png|40x40px|link=User:Basedgirl|User:Basedgirl]]
+| style="width:11%;" | '''''[[User:Basedgirl|Home]]'''''
+| style="width:5%;" | [[File:Crystal kdmconfig.png|40x40px|link=User talk:Basedgirl|User talk:Basedgirl]]
+| style="width:11%;" | '''''[[User talk:Basedgirl|Talk]]'''''
+| style="width:5%;" | [[File:Crystal keditbookmarks.png|40x40px|link=User:Basedgirl/Awards|User:Basedgirl/Awards]]
+| style="width:11%;" | '''''[[User:Basedgirl/Awards|Awards]]'''''
+| style="width:5%;" | [[File:Crystal kbackgammon engine.svg|40x40px|link=User:Basedgirl/Sandbox|User:Basedgirl/Sandbox]]
+| style="width:11%;" | '''''[[User:Basedgirl/Sandbox|Sandbox]]'''''
+| style="width:5%;" | [[File:Crystal Clear app antivirus.png|40x40px|link=Wikipedia:Tools/Optimum tool set|Wikipedia:Tools/Optimum tool set]]
+| style="width:11%;" | '''''[[Wikipedia:Tools/Optimum tool set|Toolbox]]'''''
+| style="width:5%;" | [[File:Crystal kfm.png|40x40px|link=User:Basedgirl/Workshop|User:Basedgirl/Workshop]]
+| style="width:11%;" | '''''[[User:Basedgirl/Workshop|Subpages]]'''''
 |}
 
-
+<!-- ===== Userboxes ===== -->
 {{Userboxtop}}
 {{userbox
 | border-c = #040
-| id       = [[Image:Salyan Karnali locator.png|55px]]
+| id       = [[File:Salyan Karnali locator.png|55px]]
 | id-c     = #E6E6FA
 | info     = This user is from '''[[Salyan District, Nepal|Salyan District, Nepal]]'''.
 | info-c   = lightgreen
-| info-fc  = {{{info-fc|#040}}}
-| info-s   = {{{info-s|11}}}
-| usercategory  =
-| nocat = {{{nocat|}}}
+| info-fc  = #040
+| info-s   = 11
 }}
 {{User NepalWikiProject-Member}}
-{{User wikipedia/Extended confirmed|RFA=WP:USER}}
-{{User wikipedia/AFC}}
-{{User mentor}}
-{{User wikipedia/rollback}}
-{{User mainspace edits|4500}}
-{{User Nepal}}
-{{User wikipedia/RC Patrol}}
-{{User AfC}}
-{{User Unreferenced Articles}}
-{{User:UBX/RedWarn userbox}}
-{{User WPBiography}}
-{{User:UBX/RW and TW}}
-{{Template:User in Nepal}}
-{{User Wikipedia/Temporary account IP viewer}}
-{{User wikipedia/New page reviewer}}
+{{User in Nepal}}
+{{User Wikipedia/Extended confirmed|RFA=WP:USER}}
+{{User Wikipedia/AFC}}
+{{User Wikipedia/New page reviewer}}
 {{User new pages reviewer since}}
-
-
+{{User Wikipedia/Rollback}}
+{{User Wikipedia/RC Patrol}}
+{{User Wikipedia/Temporary account IP viewer}}
+{{User mentor}}
+{{User:UBX/RedWarn userbox}}
+{{User:UBX/RW and TW}}
+{{User mainspace edits|4500}}
+{{User Unreferenced Articles}}
+{{User WPBiography}}
 {{Userboxbottom}}
 
-<br>
-
-==Tools==
-{{columns-list|colwidth=15em|
-# [[xtools:ec/en.wikipedia.org/Basedgirl|total Count]]
-# [[WP:RFU|Request for undeletion]]
-# [[User:Basedgirl/XfD log|Xfd logs]]
-# [[User:Usedtobecool/PSN|Article Sources]]
-# [[Special:GlobalRenameRequest|GlobalRenameRequest]]
-# [[User_talk:199.208.172.35|usertalk]]
-# [[Special:NewPagesFeed|new page feed]]
-# [[User:Basedgirl/Draftify log | Draft logs]]
-# [[User:Basedgirl/common.js | common js]]
-# [[User:Basedgirl/common.css | common css]]
-# [[User:Basedgirl/CSD_log | CSD logs]]
-# [[Wikipedia:Biographies of living persons]]
+== Tools ==
+{{Columns list|colwidth=15em|
+* [[xtools:ec/en.wikipedia.org/Basedgirl|Total edit count]]
+* [[Special:NewPagesFeed|New pages feed]]
+* [[User:Usedtobecool/PSN|Article sources]]
+* [[WP:RFU|Request for undeletion]]
+* [[Special:GlobalRenameRequest|Global rename request]]
+* [[Wikipedia:Biographies of living persons|BLP policy]]
+* [[User:Basedgirl/XfD log|XfD log]]
+* [[User:Basedgirl/CSD log|CSD log]]
+* [[User:Basedgirl/Draftify log|Draftify log]]
+* [[User:Basedgirl/common.js|common.js]]
+* [[User:Basedgirl/common.css|common.css]]
 }}
