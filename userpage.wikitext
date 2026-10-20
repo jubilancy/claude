@@ -39,6 +39,43 @@
 {{User:UBX/RW and TW}}
 {{User Unreferenced Articles}}
 {{User WPBiography}}
+
+<!-- Interests and places (existing userboxes) -->
+{{User Virginia resident}}
+{{User website developer}}
+{{User history2}}
+{{User literature}}
+{{User book lover}}
+
+<!-- Interests (custom userboxes) -->
+{{userbox
+| border-c = #5b3a8c
+| id       = <span style="font-size:32px;">🐈</span>
+| id-c     = #efe6fa
+| info     = This user is a '''[[Cat|cat]]''' person.
+| info-c   = #f7f1fd
+}}
+{{userbox
+| border-c = #7a5c2e
+| id       = <span style="font-size:32px;">🏰</span>
+| id-c     = #f3e9d2
+| info     = This user is fascinated by the '''[[Middle Ages|medieval]]''' world.
+| info-c   = #faf4e6
+}}
+{{userbox
+| border-c = #1f6f5c
+| id       = <span style="font-size:32px;">🖼️</span>
+| id-c     = #dff3ee
+| info     = This user loves '''[[Public domain|public domain]] art''' and adding it to articles through [[Wikimedia Commons]].
+| info-c   = #eef9f6
+}}
+{{userbox
+| border-c = #6b1f2a
+| id       = <span style="font-size:32px;">📚</span>
+| id-c     = #f6e3e5
+| info     = This user enjoys '''[[Classic book|classic literature]]'''.
+| info-c   = #fbf1f2
+}}
 {{Userboxbottom}}
 
 == About me ==
