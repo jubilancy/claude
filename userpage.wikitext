@@ -5,6 +5,53 @@
 {{AfC topicon}}
 {{User mentor topicon}}
 {{Temporary account IP viewers topicon}}
+<!-- Tools -->
+{{AWB topicon}}
+{{AntiVandal topicon}}
+{{Discord topicon}}
+{{CopyPatrol topicon}}
+{{HotCat topicon}}
+{{Huggle topicon}}
+{{Igloo topicon}}
+{{IRC topicon}}
+{{Lupin antivandal topicon}}
+{{Navigation popups topicon}}
+{{RedWarn topicon 2}}
+{{Snuggle topicon}}
+{{STiki topicon}}
+{{SWViewer topicon}}
+{{Twinkle topicon}}
+{{Ultraviolet topicon}}
+{{wikEd topicon}}
+{{WPCleaner topicon}}
+<!-- WikiFauna -->
+{{WikiCat topicon}}
+{{WikiDodo topicon}}
+{{WikiDog topicon}}
+{{WikiDragon topicon}}
+{{WikiElf topicon}}
+{{WikiEngineer topicon}}
+{{WikiFairy topicon}}
+{{WikiGnome topicon}}
+{{WikiJanitor topicon}}
+{{WikiOgre topicon}}
+{{WikiOtter topicon}}
+{{WikiPlatypus topicon}}
+{{WikiPrairie dog topicon}}
+{{WikiPrincess topicon}}
+{{WikiPuma topicon}}
+{{WikiQuatch topicon}}
+{{WikiSloth topicon}}
+{{WikiSquirrel topicon}}
+{{WikiWitch topicon}}
+<!-- Other -->
+{{Archive topicon}}
+{{Guestbook topicon}}
+{{RC patroller topicon}}
+{{Script user topicon}}
+{{Signpost user topicon}}
+
+{{User page|rounded=yes|short=yes}}
 
 <!-- ===== Navigation bar ===== -->
 {| style="width:100%; margin:0 auto; text-align:center; background:#7FFFD4; border-radius:15px;"
