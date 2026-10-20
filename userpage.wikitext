@@ -27,17 +27,6 @@
 
 <!-- ===== Userboxes ===== -->
 {{Userboxtop}}
-{{userbox
-| border-c = #040
-| id       = [[File:Salyan Karnali locator.png|55px]]
-| id-c     = #E6E6FA
-| info     = This user is from '''[[Salyan District, Nepal|Salyan District, Nepal]]'''.
-| info-c   = lightgreen
-| info-fc  = #040
-| info-s   = 11
-}}
-{{User NepalWikiProject-Member}}
-{{User in Nepal}}
 {{User Wikipedia/Extended confirmed|RFA=WP:USER}}
 {{User Wikipedia/AFC}}
 {{User Wikipedia/New page reviewer}}
@@ -48,10 +37,16 @@
 {{User mentor}}
 {{User:UBX/RedWarn userbox}}
 {{User:UBX/RW and TW}}
-{{User mainspace edits|4500}}
 {{User Unreferenced Articles}}
 {{User WPBiography}}
 {{Userboxbottom}}
+
+== About me ==
+Hi, I'm Basedgirl, a Virginia girl who edits from the [[Virginia|Old Dominion]].
+
+I'm here to be useful. Most of my time goes to patrolling new pages, helping new editors through [[Wikipedia:Articles for creation|Articles for creation]], and reverting [[vandalism]]. I pay extra attention to [[Wikipedia:Biographies of living persons|biographies of living persons]], because they need to be sourced carefully.
+
+If you disagree with an edit of mine, please leave a message on my [[User talk:Basedgirl|talk page]]. I'm happy to talk it through.
 
 == Tools ==
 {{Columns list|colwidth=15em|
