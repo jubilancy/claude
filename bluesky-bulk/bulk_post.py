@@ -4,7 +4,7 @@
 # ///
 """Bulk-post to Bluesky from a CSV.
 
-Columns: text (required), post_at (optional, ISO 8601 UTC), image_url
+Columns: text (required; [label](https://...) and bare URLs become links), post_at (optional, ISO 8601 UTC), image_url
 (optional), image_alt (optional), posted (filled in by this script).
 Rows with a future post_at are skipped; re-run later to send them.
 
@@ -16,14 +16,15 @@ from datetime import datetime, timezone
 import httpx
 from atproto import Client, client_utils
 
-URL_RE = re.compile(r"https?://[^\s]+")
+LINK_RE = re.compile(r"\[([^\]]+)\]\((https?://[^\s)]+)\)|(https?://[^\s]+)")
 FIELDS = ["text", "post_at", "image_url", "image_alt", "posted"]
 
 
 def build_text(text: str) -> client_utils.TextBuilder:
     tb, pos = client_utils.TextBuilder(), 0
-    for m in URL_RE.finditer(text):
-        tb.text(text[pos:m.start()]).link(m.group(), m.group())
+    for m in LINK_RE.finditer(text):
+        label, url = (m.group(1), m.group(2)) if m.group(1) else (m.group(3), m.group(3))
+        tb.text(text[pos:m.start()]).link(label, url)
         pos = m.end()
     return tb.text(text[pos:])
 
@@ -47,8 +48,9 @@ def main() -> None:
     now = datetime.now(timezone.utc)
     todo = [r for r in rows if due(r, now)]
     for r in todo:
-        if not r["text"].strip() or len(r["text"]) > 300:
-            sys.exit(f"Bad text (empty or >300 chars): {r['text'][:40]!r}")
+        shown = build_text(r["text"]).build_text()
+        if not shown.strip() or len(shown) > 300:
+            sys.exit(f"Bad text (empty or >300 chars): {shown[:40]!r}")
     print(f"{len(todo)} of {len(rows)} rows due")
     if args.dry_run:
         for r in todo:

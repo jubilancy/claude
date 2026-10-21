@@ -1,4 +1,4 @@
 text,post_at,image_url,image_alt,posted
 "Hello Bluesky! First post from my CSV.",,,,
-"Scheduled post with a link: https://bsky.app",2026-11-01T15:00:00Z,,,
+"Scheduled post with a [markdown link](https://bsky.app) and a bare one: https://bsky.app",2026-11-01T15:00:00Z,,,
 "Post with an image",,https://example.com/photo.jpg,"Describe the image here",
