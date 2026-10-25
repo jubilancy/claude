@@ -1,0 +1,7 @@
+# One cosmos.so URL per line. Blank lines and # comments are ignored.
+# Run: uv run cosmos_scrape.py
+# Add "| grid" or "| collections" after a URL to force a mode.
+
+https://www.cosmos.so/e/556978292
+https://www.cosmos.so/e/853905883
+https://www.cosmos.so/e/1970187374
