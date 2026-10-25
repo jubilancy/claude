@@ -17,13 +17,21 @@ already exists are skipped, so you can re-run the same file as you add lines.
 
 URL file format (blank lines and # comments ignored):
 
-    https://www.cosmos.so/e/556978292                   # element page -> every collection it is in
+    https://www.cosmos.so/e/556978292                   # element page -> related elements + every collection it is in
     https://www.cosmos.so/design/the-best-band-posters  # collection/brand/explore page -> its own elements
-    https://www.cosmos.so/e/853905883 | grid            # force a mode: "| grid" or "| collections"
+    https://www.cosmos.so/e/853905883 | related         # force a mode, see below
 
-The scraping itself is cosmos-scraper.js (grid mode) and cosmos-collections.js (collections
-mode), read from next to this file. They pull element data out of the React fibers behind
-each tile, because the grid is virtualized and the tiles have no <a href>.
+Modes (add "| <mode>" after a URL):
+    related      an /e/ page's "You may also like" elements (plus the opened element, under "main")
+    collections  every collection the /e/ element was saved to, each scraped in full
+    all          related + collections, merged and de-duplicated (default for /e/ URLs)
+    grid         the page's own tile grid (default for every other URL)
+
+Logged out, Cosmos stops "related" at about 37 elements ("Sign up to keep exploring").
+
+The scraping itself is cosmos-scraper.js (grid/related) and cosmos-collections.js (collections),
+read from next to this file. They pull element data out of the React fibers behind each tile,
+because the grid is virtualized and the tiles have no <a href>.
 
 Chromium: uses /opt/pw-browsers/chromium if present (Claude Code cloud sessions), otherwise
 Playwright's own browser: run `uv run --with playwright playwright install chromium` once.
@@ -43,6 +51,23 @@ from playwright.sync_api import sync_playwright
 
 HERE = Path(__file__).resolve().parent
 PRESET_CHROMIUM = Path("/opt/pw-browsers/chromium")
+MODES = ("grid", "related", "collections", "all")
+
+# The opened element itself is not in the tile grid; its data is in the page's JSON-LD.
+MAIN_ELEMENT_JS = """() => {
+  const ld = [...document.querySelectorAll('script[type="application/ld+json"]')]
+    .map(s => { try { return JSON.parse(s.textContent); } catch { return null; } })
+    .find(j => j && j['@type'] === 'ImageObject');
+  if (!ld) return null;
+  return {
+    url: ld.url, mediaUrl: ld.contentUrl, width: ld.width, height: ld.height,
+    publishedAt: ld.datePublished || null,
+    owner: (ld.author && ld.author.name) || null,
+    creator: (ld.creator && ld.creator.name) || null,
+    sourceUrl: ld.sameAs || null,
+    caption: (ld.caption || ld.description || '').replace(/<\\/?n>/g, '') || null,
+  };
+}"""
 
 
 def slug_of(url: str) -> str:
@@ -60,7 +85,7 @@ def read_urls(path: Path) -> list[tuple[str, str | None]]:
         if not url.startswith("http"):
             print(f"skip   not a URL: {line}")
             continue
-        out.append((url, hint if hint in ("grid", "collections") else None))
+        out.append((url, hint if hint in MODES else None))
     return out
 
 
@@ -103,7 +128,7 @@ def main() -> int:
                 print(f"skip   {url}  (already scraped)")
                 skipped += 1
                 continue
-            mode = hint or ("collections" if urlparse(url).path.startswith("/e/") else "grid")
+            mode = hint or ("all" if urlparse(url).path.startswith("/e/") else "grid")
             print(f"run    {url}  [{mode}]")
             started = time.time()
             # Desktop viewport matters: Cosmos' phone layout does not render the tile grid.
@@ -113,17 +138,34 @@ def main() -> int:
             try:
                 page.goto(url, wait_until="networkidle", timeout=60_000)
                 page.wait_for_timeout(2500)
-                result = run_in_page(page, scripts[mode])
-                rows = result["rows"]
+                main = page.evaluate(MAIN_ELEMENT_JS) if mode != "grid" and urlparse(url).path.startswith("/e/") else None
+                summary = None
+                if mode == "collections":
+                    result = run_in_page(page, scripts["collections"])
+                    rows, summary = result["rows"], result["summary"]
+                elif mode == "all":
+                    rows = [{**r, "collections": "related"} for r in run_in_page(page, scripts["grid"])["rows"]]
+                    result = run_in_page(page, scripts["collections"])
+                    summary = [{"collection": "related", "elements": len(rows)}] + (result["summary"] or [])
+                    by_id = {r["id"]: r for r in rows}
+                    for r in result["rows"]:
+                        if r["id"] in by_id:
+                            by_id[r["id"]]["collections"] += " | " + r["collections"]
+                        else:
+                            by_id[r["id"]] = r
+                    rows = list(by_id.values())
+                else:  # grid, related
+                    rows = run_in_page(page, scripts["grid"])["rows"]
                 if not rows:
                     raise RuntimeError("0 elements found")
-                json_path.write_text(json.dumps({
-                    "source": url, "mode": mode,
-                    "scrapedAt": datetime.now(timezone.utc).isoformat(),
-                    "summary": result["summary"], "elements": rows,
-                }, indent=2, ensure_ascii=False), encoding="utf-8")
+                payload = {"source": url, "mode": mode, "scrapedAt": datetime.now(timezone.utc).isoformat()}
+                if main:
+                    payload["main"] = main
+                payload.update({"summary": summary, "elements": rows})
+                json_path.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+                fields = list(dict.fromkeys(k for r in rows for k in r))
                 with open(json_path.with_suffix(".csv"), "w", newline="", encoding="utf-8") as f:
-                    w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+                    w = csv.DictWriter(f, fieldnames=fields)
                     w.writeheader()
                     w.writerows(rows)
                 print(f"done   {len(rows)} elements in {round(time.time() - started)}s -> {json_path}")
