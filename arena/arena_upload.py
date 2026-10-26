@@ -24,7 +24,12 @@ def post(token, payload):
     req = urllib.request.Request(
         API,
         data=json.dumps(payload).encode(),
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            # Python's default User-Agent is blocked by Are.na's Cloudflare (403, error code 1010)
+            "User-Agent": "arena-upload/1.0 (+https://github.com/jubilancy/claude)",
+        },
         method="POST",
     )
     while True:
