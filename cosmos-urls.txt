@@ -1,0 +1,8 @@
+# One cosmos.so URL per line. Blank lines and # comments are ignored.
+# Run: uv run cosmos_scrape.py
+# /e/ URLs default to "all" (related elements + every collection).
+# Force a mode by adding "| related", "| collections" or "| grid" after a URL.
+
+https://www.cosmos.so/e/556978292
+https://www.cosmos.so/e/853905883
+https://www.cosmos.so/e/1970187374
