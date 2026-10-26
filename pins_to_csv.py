@@ -85,8 +85,8 @@ def row(pin, url):
         "title": title(pin),
         "description": "\n\n".join(l for l in lines if l),
         "original_source_url": link,
-        "original_source_title": pin.get("domain") or "",
-        "alt_text": pin.get("auto_alt_text") or pin.get("seo_alt_text") or "",
+        "original_source_title": (pin.get("domain") or "") if link else "",  # skip 'Uploaded by user'
+        "alt_text": pin.get("alt_text") or pin.get("auto_alt_text") or pin.get("seo_alt_text") or "",
     }
 
 
@@ -97,8 +97,16 @@ def main():
     ap.add_argument("--channel", help="channel slug/id, adds a channel_ids column")
     a = ap.parse_args()
 
+    # gallery-dl -j -i urls.txt prints one JSON array per URL, back to back
     with open(a.src, encoding="utf-8") as f:
-        data = json.load(f)
+        text = f.read()
+    dec, pos, data = json.JSONDecoder(), 0, []
+    while pos < len(text):
+        if text[pos].isspace():
+            pos += 1
+            continue
+        chunk, pos = dec.raw_decode(text, pos)
+        data.extend(chunk)
 
     rows, seen = [], set()
     for e in data:
@@ -107,11 +115,11 @@ def main():
             continue
         url, pin = e[1], e[2]
         pin.pop("original_pin", None)  # full copy of the start pin, repeated on every related pin
-        if pin.get("id") in seen:
-            continue
-        seen.add(pin.get("id"))
         if "pinimg.com" not in url:
             url = ((pin.get("images") or {}).get("orig") or {}).get("url", url)
+        if (pin.get("id"), url) in seen:  # same pin repeated across input URLs; carousel slides differ by url
+            continue
+        seen.add((pin.get("id"), url))
         rows.append(row(pin, url))
 
     cols = ["value", "title", "description", "original_source_url", "original_source_title", "alt_text"]
