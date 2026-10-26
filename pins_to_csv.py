@@ -10,6 +10,7 @@ import csv
 import html
 import json
 import re
+import unicodedata
 
 PIN = "https://www.pinterest.com"
 DESC_KEYS = (
@@ -25,15 +26,26 @@ DESC_KEYS = (
 DATE_RE = re.compile(
     r"\b\d{1,2} [A-Z][a-z]{2,8} \d{4}\s*[—-]?\s*"  # 20 Apr 2026 —
     r"|\b[A-Z][a-z]{2,8} \d{1,2}, \d{4}\s*[—-]?\s*"  # Oct 1, 2026 —
+    r"|\b\d{1,2}[.\- ]+\s*[^\W\d_]{3,9}\.?[.\-, ]+\s*\d{4}\s*[—–]\s*"  # 08-Dec-2025 — / 1 feb. 2026 — / 29. aug. 2026 —
+)
+# Pinterest's generic "discover your own Pins" text (any language) and scraped-page filler
+BOILERPLATE_RE = re.compile(
+    r"Discover \(and save!\) your own Pins on Pinterest\.?"
+    r"|Ontdek \(en bewaar!\).*?Pinterest\."
+    r"|Encontre \(e salve!\).*?Pinterest\."
+    r"|Découvrez vos propres épingles.*?enregistrez-les !"
+    r"|Temukan \(dan simpan!\).*?Pinterest\."
+    r"|あなたも Pinterest で.*?ましょう！"
+    r"|Visit the post for more\.?"
 )
 TITLE_KEYS = ("title", "grid_title", "seo_title")
 
 
 def clean(text):
     text = html.unescape(re.sub(r"<[^>]+>", " ", text or ""))
-    text = DATE_RE.sub(" ", text)
-    text = re.sub(r"(\.\.\.|…)\s*$", "", re.sub(r"\s+", " ", text).strip())  # truncation marker
-    return text.strip()
+    text = re.sub(r"\s+", " ", unicodedata.normalize("NFC", text))
+    text = re.sub(r"\s+", " ", BOILERPLATE_RE.sub(" ", DATE_RE.sub(" ", text))).strip()
+    return re.sub(r"(\.\.\.|…)$", "", text).strip()  # truncation marker
 
 
 def variants(pin, keys, split_seo=False):
