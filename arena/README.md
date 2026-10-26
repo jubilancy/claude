@@ -30,7 +30,7 @@ Also: `original_pin` (the repeated copy of the starting pin) is ignored, and a p
 
 Posts each CSV row to `POST /v3/blocks` ([Are.na docs](https://www.are.na/developers/explore/block/post-block)). It sends the columns as they are, so the description arrives exactly as in the CSV.
 
-- Needs an Are.na token with **write** scope in `ARENA_TOKEN`.
+- Needs an Are.na token with **write** scope: paste it into `TOKEN` at the top of your local copy of the script, or set `ARENA_TOKEN`. Never commit a script with the token filled in.
 - `--dry-run` prints what would be sent and uploads nothing.
 - `--delay` sets seconds between posts (default 1).
 - On a 429 it waits for the rate-limit reset and continues.
