@@ -30,11 +30,18 @@ Also: `original_pin` (the repeated copy of the starting pin) is ignored, and a p
 
 Posts each CSV row to `POST /v3/blocks` ([Are.na docs](https://www.are.na/developers/explore/block/post-block)). It sends the columns as they are, so the description arrives exactly as in the CSV.
 
-- Needs an Are.na token with **write** scope in `ARENA_TOKEN`.
+- Needs an Are.na token with **write** scope: paste it into `TOKEN` at the top of your local copy of the script, or set `ARENA_TOKEN`. Never commit a script with the token filled in.
 - `--dry-run` prints what would be sent and uploads nothing.
 - `--delay` sets seconds between posts (default 1).
 - On a 429 it waits for the rate-limit reset and continues.
 - Finished rows are recorded in `<csv>.uploaded`, so re-running skips them. Delete that file to upload everything again.
 - Blocks are added one at a time, so their order in the channel will not match the CSV.
 
-Tested against a local fake server and on one 127-pin channel; try `--dry-run` and a throwaway channel first.
+Only tested against a local fake server, not the live Are.na API (the 127-pin channel was filled with Are.na's tools, not this script). Try `--dry-run` and a throwaway channel first.
+
+## Known gaps / to do
+
+- Dates in other languages are not stripped from descriptions (e.g. `29 окт. 2025 г. —`). Only the English forms and a few day-month-year forms are handled.
+- Pinterest's "discover your own Pins" filler text is only filtered for the languages seen so far (English, Dutch, Portuguese, French, Indonesian, Japanese). German ("Entdecke...") and others can slip through.
+- Titles and descriptions come straight from Pinterest, so some are odd (doubled or cut-off titles, scraped site text, ad copy). Planned: browse the Are.na channels, fix weird titles and enrich blocks with `updateBlock` rather than re-uploading.
+- `arena_upload.py` has only been tested against a fake local server.

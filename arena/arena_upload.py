@@ -3,7 +3,7 @@
 # ///
 """Upload a pins_to_csv.py CSV to an Are.na channel, one block per row.
 
-ARENA_TOKEN=... uv run arena/arena_upload.py pins.csv --channel your-channel-slug
+uv run arena/arena_upload.py pins.csv --channel your-channel-slug   # token: TOKEN below, or ARENA_TOKEN env var
 Add --dry-run to print what would be sent. Re-running skips rows already uploaded.
 The token needs write scope.
 """
@@ -17,6 +17,9 @@ import urllib.error
 import urllib.request
 
 API = "https://api.are.na/v3/blocks"
+# Paste your Are.na token between the quotes in your LOCAL copy only. Never commit it.
+# If left empty, the ARENA_TOKEN environment variable is used instead.
+TOKEN = ""
 FIELDS = ("value", "title", "description", "original_source_url", "original_source_title", "alt_text")
 
 
@@ -24,7 +27,12 @@ def post(token, payload):
     req = urllib.request.Request(
         API,
         data=json.dumps(payload).encode(),
-        headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": "application/json",
+            # Python's default User-Agent is blocked by Are.na's Cloudflare (403, error code 1010)
+            "User-Agent": "arena-upload/1.0 (+https://github.com/jubilancy/claude)",
+        },
         method="POST",
     )
     while True:
@@ -48,9 +56,9 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    token = os.environ.get("ARENA_TOKEN")
+    token = TOKEN or os.environ.get("ARENA_TOKEN")
     if not token and not a.dry_run:
-        sys.exit("set ARENA_TOKEN")
+        sys.exit("set TOKEN at the top of this file or the ARENA_TOKEN environment variable")
 
     with open(a.csv, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
