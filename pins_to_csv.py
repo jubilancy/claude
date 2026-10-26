@@ -22,43 +22,69 @@ DESC_KEYS = (
 )
 
 
+DATE_RE = re.compile(
+    r"\b\d{1,2} [A-Z][a-z]{2,8} \d{4}\s*[—-]?\s*"  # 20 Apr 2026 —
+    r"|\b[A-Z][a-z]{2,8} \d{1,2}, \d{4}\s*[—-]?\s*"  # Oct 1, 2026 —
+)
+TITLE_KEYS = ("title", "grid_title", "seo_title")
+
+
 def clean(text):
     text = html.unescape(re.sub(r"<[^>]+>", " ", text or ""))
-    text = re.sub(r"^[A-Z][a-z]{2} \d{1,2}, \d{4}\s+[—-]\s+", "", text.strip())  # seo_description date prefix
-    text = re.sub(r"(\.\.\.|…)$", "", text.strip())  # seo_description truncation
-    return re.sub(r"\s+", " ", text).strip()
+    text = DATE_RE.sub(" ", text)
+    text = re.sub(r"(\.\.\.|…)\s*$", "", re.sub(r"\s+", " ", text).strip())  # truncation marker
+    return text.strip()
+
+
+def variants(pin, keys, split_seo=False):
+    out = set()
+    for k in keys:
+        v = pin.get(k) or ""
+        if split_seo and k == "seo_title":
+            v = v.split(" | ")[0]  # seo_title appends ' | tag, tag'
+        out.add(clean(v))
+    return out - {""}
 
 
 def description(pin):
-    """One copy of the description: drop variants that are contained in a longer one."""
-    cands = {clean(pin.get(k)) for k in DESC_KEYS} - {""}
+    """Collapse the description variants; drop any contained in a longer one."""
+    cands = variants(pin, DESC_KEYS)
     keep = [c for c in cands if not any(c != o and c in o for o in cands)]
     return "\n\n".join(sorted(keep, key=len, reverse=True))
 
 
+def title(pin):
+    cands = variants(pin, TITLE_KEYS, split_seo=True)
+    pt = (((pin.get("story_pin_data") or {}).get("metadata") or {}).get("pin_title"))
+    if pt:
+        cands.add(clean(pt))
+    return max(cands, key=len) if cands else ""
+
+
 def tags(pin):
-    va = (pin.get("pin_join") or {}).get("visual_annotation") or []
-    return ", ".join(va)
+    """visual_annotation names, hyperlinked to their Pinterest ideas page when known."""
+    pj = pin.get("pin_join") or {}
+    links = {t.get("name"): t.get("url") for t in (pj.get("annotations_with_links") or {}).values() if isinstance(t, dict)}
+    names = list(pj.get("visual_annotation") or [])
+    names += [n for n in links if n not in names]
+    return ", ".join(f"[{n}]({PIN}{links[n]})" if links.get(n) else n for n in names)
 
 
 def row(pin, url):
-    user = pin.get("pinner") or {}
-    board = pin.get("board") or {}
     pin_url = PIN + pin["seo_url"] if pin.get("seo_url") else f"{PIN}/pin/{pin['id']}/"
-    lines = [description(pin), f"Pin URL: {pin_url}"]
-    if user:
-        lines.append(f"Creator: {user.get('full_name', '')} (@{user.get('username', '')})")
-    if board:
-        lines.append(f"Board: {board.get('name', '')} {PIN}{board.get('url', '')}")
+    link = pin.get("link") or pin.get("tracked_link") or ""
+    lines = [description(pin), f"pin [source]({pin_url})"]
+    if link:
+        lines.append(f"link [{pin.get('domain') or 'source'}]({link})")
     if tags(pin):
         lines.append(f"Tags: {tags(pin)}")
-    lines.append(f"Created: {pin.get('created_at', '')}")
-    lines.append(f"Dominant color: {pin.get('dominant_color', '')}")
+    if pin.get("dominant_color"):
+        lines.append(f"Dominant color: {pin['dominant_color']}")
     return {
         "value": url,
-        "title": pin.get("title") or "",
+        "title": title(pin),
         "description": "\n\n".join(l for l in lines if l),
-        "original_source_url": pin.get("link") or "",
+        "original_source_url": link,
         "original_source_title": pin.get("domain") or "",
         "alt_text": pin.get("auto_alt_text") or pin.get("seo_alt_text") or "",
     }
