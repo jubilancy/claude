@@ -3,7 +3,7 @@
 # ///
 """Flatten gallery-dl Pinterest JSON (-j output) into an Are.na-ready CSV.
 
-uv run pins_to_csv.py pin_pinn_newww_oct19.json pins.csv [--channel my-channel-slug]
+uv run arena/pins_to_csv.py pin_pinn_newww_oct19.json pins.csv [--channel my-channel-slug]
 """
 import argparse
 import csv

@@ -3,7 +3,7 @@
 # ///
 """Upload a pins_to_csv.py CSV to an Are.na channel, one block per row.
 
-ARENA_TOKEN=... uv run arena_upload.py pins.csv --channel your-channel-slug
+ARENA_TOKEN=... uv run arena/arena_upload.py pins.csv --channel your-channel-slug
 Add --dry-run to print what would be sent. Re-running skips rows already uploaded.
 The token needs write scope.
 """
