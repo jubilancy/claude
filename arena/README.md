@@ -37,7 +37,7 @@ Posts each CSV row to `POST /v3/blocks` ([Are.na docs](https://www.are.na/develo
 - Finished rows are recorded in `<csv>.uploaded`, so re-running skips them. Delete that file to upload everything again.
 - Blocks are added one at a time, so their order in the channel will not match the CSV.
 
-Tested against a local fake server and on one 127-pin channel; try `--dry-run` and a throwaway channel first.
+Only tested against a local fake server, not the live Are.na API (the 127-pin channel was filled with Are.na's tools, not this script). Try `--dry-run` and a throwaway channel first.
 
 ## Known gaps / to do
 
