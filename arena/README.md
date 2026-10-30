@@ -45,3 +45,24 @@ Only tested against a local fake server, not the live Are.na API (the 127-pin ch
 - Pinterest's "discover your own Pins" filler text is only filtered for the languages seen so far (English, Dutch, Portuguese, French, Indonesian, Japanese). German ("Entdecke...") and others can slip through.
 - Titles and descriptions come straight from Pinterest, so some are odd (doubled or cut-off titles, scraped site text, ad copy). Planned: browse the Are.na channels, fix weird titles and enrich blocks with `updateBlock` rather than re-uploading.
 - `arena_upload.py` has only been tested against a fake local server.
+
+## Flickr → Are.na
+
+`flickr_to_csv.py` does for Flickr what `pins_to_csv.py` does for Pinterest. It reads the dump from `gallery-dl -j` (the `flickr_*.json` file that `classify_flickr_urls.py` writes, or `gallery-dl -j -i urls.txt > flickr.json`) and writes the same CSV columns, so `arena_upload.py` takes it unchanged.
+
+```
+uv run arena/flickr_to_csv.py flickr_2026-10-11_09-30-00.json photos.csv --channel your-channel-slug
+ARENA_TOKEN=... uv run arena/arena_upload.py photos.csv --channel your-channel-slug --dry-run
+```
+
+| Column | Source |
+|---|---|
+| `value` | the photo's sized image URL (`url` in the gallery-dl metadata, not the `_d` download variant) |
+| `title`, `alt_text` | the photo title |
+| `description` | the photo description (HTML stripped), `photo [source](photo page)`, `by [owner](profile)`, `Tags:`, the gallery, album or group it was found in, and the upload date |
+| `original_source_url` | the Flickr photo page |
+| `original_source_title` | `Flickr · <owner>` |
+
+Photos that appear in several galleries or albums are written once. Videos are skipped (gallery-dl gives a player address, not a file). An "all albums" URL only queues the album URLs (gallery-dl entries of type 6): the script counts them but does not follow them, so run the album URLs themselves.
+
+Tested only on a synthetic dump shaped from gallery-dl's [Flickr extractor](https://github.com/mikf/gallery-dl/blob/master/gallery_dl/extractor/flickr.py), not on a real run.
