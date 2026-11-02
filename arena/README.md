@@ -66,3 +66,15 @@ ARENA_TOKEN=... uv run arena/arena_upload.py photos.csv --channel your-channel-s
 Photos that appear in several galleries or albums are written once. Videos are skipped (gallery-dl gives a player address, not a file). An "all albums" URL only queues the album URLs (gallery-dl entries of type 6): the script counts them but does not follow them, so run the album URLs themselves.
 
 Tested only on a synthetic dump shaped from gallery-dl's [Flickr extractor](https://github.com/mikf/gallery-dl/blob/master/gallery_dl/extractor/flickr.py), not on a real run.
+
+### From the Flickr metadata CSV
+
+`flickr_csv_to_arena.py` converts the CSV that lists `photo_id, title, description, creator, creator_profile, tags, image_url, flickr_url, license, attribution, albums, groups, galleries, source_url` into the upload CSV:
+
+```
+uv run arena/flickr_csv_to_arena.py flickr_metadata.csv arena.csv --channel your-channel-slug
+```
+
+- `value` is `image_url`; `original_source_url` is the Flickr page (`flickr_url`), not the image file; the source title is `Flickr · <creator>`.
+- The description merges the Flickr description (HTML turned into plain text, links kept as markdown), the attribution line, tags, license, and the albums, groups and galleries as markdown links.
+- A photo listed more than once (once per source URL) is written once; rows without an `image_url` are skipped.
