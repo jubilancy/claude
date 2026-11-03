@@ -87,9 +87,11 @@ class Api:
             for w in body.get("warnings", {}).values():
                 print(f"  API warning: {w}", file=sys.stderr)
             yield from body.get("query", {}).get("pages", [])
-            if "continue" not in body:
+            # Older versions of a file come back as extra pages (iistart / iicontinue). Only the
+            # current version is wanted, so follow nothing but the list of files itself.
+            cont = {k: v for k, v in body.get("continue", {}).items() if k not in ("iistart", "iicontinue")}
+            if not any(k != "continue" for k in cont):
                 return
-            cont = body["continue"]
 
 
 def parse_url(url):
@@ -245,6 +247,9 @@ def collect(api, host, title, width, subcats, limit):
                         queue.append((sub, depth + 1))
     elif ns.lower() in ("file", "image"):
         for p in api.pages(titles=title, iiurlwidth=width, **IMAGEINFO):
+            if p.get("pageid") in seen:
+                continue
+            seen.add(p.get("pageid"))
             if "imageinfo" in p:
                 yield p, None
             else:
@@ -260,7 +265,7 @@ def main():
     ap.add_argument("--channel", help="channel slug/id, adds a channel_ids column")
     ap.add_argument("--subcats", type=int, default=0, help="also read subcategories this many levels down (default 0)")
     ap.add_argument("--categories", action="store_true", help="add the file's own categories to the description")
-    ap.add_argument("--width", type=int, default=2000, help="pixel width of the resized copy used for SVG, TIFF and oversized files (default 2000)")
+    ap.add_argument("--width", type=int, default=1920, help="pixel width of the resized copy used for SVG, TIFF and oversized files (default 1920, one of Commons' standard sizes)")
     ap.add_argument("--max-mb", type=float, default=0, help="use the resized copy for originals bigger than this many MB (default: never)")
     ap.add_argument("--max-desc", type=int, default=2000, help="cut the file's own description at this many characters (default 2000, 0 = never)")
     ap.add_argument("--limit", type=int, default=0, help="stop after this many files per address (default: all)")
