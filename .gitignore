@@ -1,1 +1,2 @@
 *.csv.uploaded
+__pycache__/
