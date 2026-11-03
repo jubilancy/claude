@@ -48,33 +48,26 @@ Only tested against a local fake server, not the live Are.na API (the 127-pin ch
 
 ## Flickr → Are.na
 
-`flickr_to_csv.py` does for Flickr what `pins_to_csv.py` does for Pinterest. It reads the dump from `gallery-dl -j` (the `flickr_*.json` file that `classify_flickr_urls.py` writes, or `gallery-dl -j -i urls.txt > flickr.json`) and writes the same CSV columns, so `arena_upload.py` takes it unchanged.
+**Use these two scripts, in this order. Nothing else is needed.**
+
+| Step | Script | Where it lives |
+|---|---|---|
+| 1. Look up the photos | your `flickr_to_csv.py` (calls gallery-dl, writes `flickr_metadata.csv`) | your own copy, not in this repo |
+| 2. Make the upload CSV | `arena/flickr_csv_to_arena.py` | this repo |
+| 3. Upload | `arena/arena_upload.py` | this repo |
 
 ```
-uv run arena/flickr_to_csv.py flickr_2026-10-11_09-30-00.json photos.csv --channel your-channel-slug
-ARENA_TOKEN=... uv run arena/arena_upload.py photos.csv --channel your-channel-slug --dry-run
-```
-
-| Column | Source |
-|---|---|
-| `value` | the photo's sized image URL (`url` in the gallery-dl metadata, not the `_d` download variant) |
-| `title`, `alt_text` | the photo title |
-| `description` | the photo description (HTML stripped), `photo [source](photo page)`, `by [owner](profile)`, `Tags:`, the gallery, album or group it was found in, and the upload date |
-| `original_source_url` | the Flickr photo page |
-| `original_source_title` | `Flickr · <owner>` |
-
-Photos that appear in several galleries or albums are written once. Videos are skipped (gallery-dl gives a player address, not a file). An "all albums" URL only queues the album URLs (gallery-dl entries of type 6): the script counts them but does not follow them, so run the album URLs themselves.
-
-Tested only on a synthetic dump shaped from gallery-dl's [Flickr extractor](https://github.com/mikf/gallery-dl/blob/master/gallery_dl/extractor/flickr.py), not on a real run.
-
-### From the Flickr metadata CSV
-
-`flickr_csv_to_arena.py` converts the CSV that lists `photo_id, title, description, creator, creator_profile, tags, image_url, flickr_url, license, attribution, albums, groups, galleries, source_url` into the upload CSV:
-
-```
+uv run flickr_to_csv.py urls.txt flickr_metadata.csv
 uv run arena/flickr_csv_to_arena.py flickr_metadata.csv arena.csv --channel your-channel-slug
+ARENA_TOKEN=... uv run arena/arena_upload.py arena.csv --channel your-channel-slug --dry-run
 ```
+
+Step 1 is the only script that records the license and the ready-made attribution line, which is why it is the one to keep. (An earlier `arena/flickr_to_csv.py` that read a raw `gallery-dl -j` dump was removed: it had no license or attribution and shared a name with your script.)
+
+`flickr_csv_to_arena.py` reads the columns `photo_id, title, description, creator, creator_profile, tags, image_url, flickr_url, license, attribution, albums, groups, galleries, source_url` and writes the upload columns:
 
 - `value` is `image_url`; `original_source_url` is the Flickr page (`flickr_url`), not the image file; the source title is `Flickr · <creator>`.
-- The description merges the Flickr description (HTML turned into plain text, links kept as markdown), the attribution line, tags, license, and the albums, groups and galleries as markdown links.
+- The description merges, in order: the Flickr description (HTML turned into plain text, links kept as markdown), the attribution line, `Tags:`, `License:`, then `Albums:`, `Groups:` and `Galleries:` as markdown links, and `photo [source](…)`.
 - A photo listed more than once (once per source URL) is written once; rows without an `image_url` are skipped.
+
+Tested only on hand-made CSVs, not on a real export or against Are.na.
