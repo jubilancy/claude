@@ -1,0 +1,2 @@
+# One Instagram, Twitter/X or TikTok post URL per line. Blank lines and # comments are ignored.
+# Run: uv run social_archive.py
