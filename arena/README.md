@@ -76,3 +76,20 @@ uv run arena/flickr.py run urls.txt --channel your-channel-slug
 **Attribution.** A photo with no license gets `"Title" by Name (link)` and no license text, rather than a guess. "All Rights Reserved" gets `© Name, all rights reserved (link)`.
 
 Tested with simulated gallery-dl results, not against live Flickr or Are.na. Your `classify_flickr_urls.py` (URL sorting, a run log, raw dumps) is separate and not part of this script.
+
+## Wikimedia Commons → Are.na
+
+`wiki_to_csv.py` turns Commons category and file pages into the same upload CSV, using the MediaWiki API's image metadata (the data behind a file page's "Summary" and "Licensing").
+
+```
+uv run arena/wiki_to_csv.py https://commons.wikimedia.org/wiki/Category:Flowers_in_graphic_ornaments flowers.csv --channel your-channel-slug
+uv run arena/wiki_to_csv.py -i urls.txt flowers.csv --subcats 1
+ARENA_TOKEN=... uv run arena/arena_upload.py flowers.csv --channel your-channel-slug --dry-run
+```
+
+- **Addresses:** `Category:` pages (every file in them; `--subcats N` also goes N levels down) and `File:` pages. Other page types are skipped with a message.
+- **Columns:** same as `pins_to_csv.py`. `value` is the original image; `original_source_url` is the file's Commons page; the source title is `Wikimedia Commons`.
+- **Description:** the file's own description (HTML turned into text, links kept as markdown, cut at `--max-desc` characters, default 2000, since some are whole pages of OCR text), then a credit line `"Title" by Author, License` with the license linked, then Date, Source (credit), Restrictions, the category it was found in, and a link to the file page. `--categories` adds the file's own categories.
+- **Which file:** JPEG, PNG, GIF and WebP use the original. SVG, TIFF and similar use a resized copy (`--width`, default 1920, one of Commons' standard sizes). `--max-mb N` does the same for originals bigger than N MB. Audio, video and PDF are skipped and counted.
+- **Politeness:** requests go one at a time, with gzip and `maxlag`; on a 429 it waits as long as the server asks. Wikimedia asks for a User-Agent with contact information, so set yours with `--user-agent` or `WIKI_USER_AGENT`.
+- Tested against the live Commons API: a 37-file category (also paged 10 at a time), an SVG (resized copy), an audio file (skipped) and a missing file. Not uploaded to Are.na. Only Commons has been tried; other MediaWiki sites use the same API path but are untested.
