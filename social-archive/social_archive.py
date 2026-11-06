@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["gallery-dl", "yt-dlp"]
+# dependencies = ["gallery-dl", "yt-dlp", "imageio-ffmpeg"]
 # ///
 """Download Instagram, Twitter/X and TikTok posts listed in urls.txt with
 gallery-dl, then write a readable, timestamped manifest next to the media.
@@ -11,7 +11,13 @@ Each run creates archive/<timestamp>/ containing:
   index.html              visual gallery of the same rows (open in a browser)
   failed.txt              input URLs that produced no files (only if any)
 
-Usage: uv run social_archive.py [--urls urls.txt] [--cookies cookies.txt]
+archive/history.csv is a running log across all runs: one row per URL attempted.
+URLs already logged as "ok" are skipped; pass --force to download them again.
+
+Video and audio are merged into a single .mp4 with a bundled ffmpeg, so
+nothing needs installing besides uv.
+
+Usage: uv run social_archive.py [--urls urls.txt] [--cookies cookies.txt] [--force]
 """
 import argparse
 import csv
@@ -21,8 +27,13 @@ import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import urlsplit
+
+import imageio_ffmpeg
 
 HERE = Path(__file__).resolve().parent
+
+HISTORY_COLUMNS = ["logged_at", "status", "input_url", "platform", "author", "post_url", "files", "run_folder"]
 
 # Filenames carry the post's identity so a file can always be credited from its name.
 CONFIG = {
@@ -30,7 +41,9 @@ CONFIG = {
         "instagram": {"filename": "instagram.com-p-{post_shortcode}_{num:>02}.{extension}"},
         "twitter": {"filename": "x.com-{author[name]}-status-{tweet_id}_{num:>02}.{extension}"},
         "tiktok": {"filename": "tiktok.com-{user}-video-{id}{num:?_//>02}.{extension}"},
-    }
+    },
+    # yt-dlp downloads Instagram video and audio as separate streams; merge them into one mp4.
+    "downloader": {"ytdl": {"raw-options": {"merge_output_format": "mp4"}}},
 }
 
 COLUMNS = [
@@ -171,11 +184,38 @@ def sidecar_for(path: Path) -> Path | None:
     return None
 
 
+def normalize_url(url: str) -> str:
+    """Same post, same key: ignore scheme, www., query strings and trailing slashes."""
+    parts = urlsplit(url if "//" in url else "//" + url)
+    host = parts.netloc.lower().removeprefix("www.")
+    return f"{host}{parts.path.rstrip('/')}"
+
+
+def read_history(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    with path.open(newline="", encoding="utf-8-sig") as f:
+        return {normalize_url(r["input_url"]) for r in csv.DictReader(f) if r.get("status") == "ok"}
+
+
+def append_history(path: Path, entries: list[dict]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    new_file = not path.exists()
+    with path.open("a", newline="", encoding="utf-8-sig" if new_file else "utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=HISTORY_COLUMNS)
+        if new_file:
+            w.writeheader()
+        for e in entries:
+            w.writerow({k: safe_cell(e.get(k, "")) for k in HISTORY_COLUMNS})
+
+
 def download(urls: list[str], run_dir: Path, cookies: Path | None) -> dict[Path, str]:
     media_dir = run_dir / "media"
     media_dir.mkdir(parents=True)
     config = run_dir / "gallery-dl.conf"
-    config.write_text(json.dumps(CONFIG, indent=2), encoding="utf-8")
+    conf = json.loads(json.dumps(CONFIG))
+    conf["downloader"]["ytdl"]["raw-options"]["ffmpeg_location"] = imageio_ffmpeg.get_ffmpeg_exe()
+    config.write_text(json.dumps(conf, indent=2), encoding="utf-8")
     owner: dict[Path, str] = {}
     failed: list[str] = []
     for url in urls:
@@ -186,7 +226,10 @@ def download(urls: list[str], run_dir: Path, cookies: Path | None) -> dict[Path,
             cmd += ["-C", str(cookies)]
         print(f"→ {url}", flush=True)
         subprocess.run(cmd + [url], check=False)
-        new = [p for p in set(media_dir.iterdir()) - before if p.suffix.lower() in MEDIA_EXTS]
+        # Only files gallery-dl finished (it writes a .json beside each) count as media;
+        # this drops any leftover per-stream pieces from an unmerged video.
+        new = [p for p in set(media_dir.iterdir()) - before
+               if p.suffix.lower() in MEDIA_EXTS and sidecar_for(p)]
         owner.update({p: url for p in new})
         if not new:
             failed.append(url)
@@ -259,11 +302,21 @@ def main() -> None:
     ap.add_argument("--urls", type=Path, default=HERE / "urls.txt")
     ap.add_argument("--cookies", type=Path, default=HERE / "cookies.txt")
     ap.add_argument("--out", type=Path, default=HERE / "archive")
+    ap.add_argument("--force", action="store_true", help="download URLs already logged as ok in history.csv")
     args = ap.parse_args()
 
-    urls = read_urls(args.urls)
+    urls = list({normalize_url(u): u for u in reversed(read_urls(args.urls))}.values())[::-1]  # one per post
     if not urls:
         sys.exit(f"No URLs in {args.urls}")
+    history = args.out / "history.csv"
+    if not args.force:
+        done = read_history(history)
+        skipped = [u for u in urls if normalize_url(u) in done]
+        urls = [u for u in urls if normalize_url(u) not in done]
+        for u in skipped:
+            print(f"skip (already in history.csv): {u}")
+        if not urls:
+            sys.exit("Nothing new to download. Use --force to download again.")
     cookies = args.cookies if args.cookies.exists() else None
     if not cookies:
         print(f"Warning: {args.cookies} not found; Instagram will likely fail.", file=sys.stderr)
@@ -274,7 +327,23 @@ def main() -> None:
     rows = build_rows(owner, run_dir)
     write_csv(rows, run_dir / f"manifest-{stamp}.csv")
     write_gallery(rows, run_dir / "index.html", stamp)
-    print(f"\n{len(rows)} file(s) → {run_dir}")
+
+    logged_at = datetime.now().isoformat(timespec="seconds")
+    append_history(history, [
+        {
+            "logged_at": logged_at,
+            "status": "ok" if mine else "failed",
+            "input_url": url,
+            "platform": mine[0]["platform"] if mine else "",
+            "author": mine[0]["author"] if mine else "",
+            "post_url": mine[0]["post_url"] if mine else "",
+            "files": len(mine),
+            "run_folder": stamp,
+        }
+        for url in urls
+        for mine in [[r for r in rows if r["input_url"] == url]]
+    ])
+    print(f"\n{len(rows)} file(s) → {run_dir}\nhistory → {history}")
 
 
 if __name__ == "__main__":
