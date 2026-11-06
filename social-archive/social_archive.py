@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.11"
-# dependencies = ["gallery-dl"]
+# dependencies = ["gallery-dl", "yt-dlp"]
 # ///
 """Download Instagram, Twitter/X and TikTok posts listed in urls.txt with
 gallery-dl, then write a readable, timestamped manifest next to the media.
