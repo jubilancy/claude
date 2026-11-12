@@ -38,6 +38,14 @@ Requires the Raindrop MCP tools (`mcp__Raindrop_io__*`). Load them with ToolSear
    - Fix stragglers by classifying them by hand and moving them in one more call.
 8. **Report briefly.** Give a table of sub-collection name and count, say what was left in the parent and why, and note that the sorting was by domain and not by reading each page. Mention that junk buckets (thumbnails, favicons, search pages) can be reviewed and deleted in one go. Do not restate steps taken.
 
+## Root front pages
+
+When the user asks to move bare front pages (site root URLs) that have other links from the same site in the same collection, use `scripts/root_homepages.py`. The Raindrop tools cannot filter to root URLs, so dump the collection first (`find_bookmarks` pages saved as files) and run:
+
+`uv run python -I .claude/skills/raindrop-organize/scripts/root_homepages.py FILE [FILE ...] --target <collection id>`
+
+It prints `update_bookmarks` operations (150 IDs max per call). Without `--target` it prints the roots with the number of other links per site. Roots match by host, ignoring a leading `www.`, so a subdomain is a different site. Pages returned inline instead of as files must be saved to a file first, or the roots in them are missed.
+
 ## Rules
 
 - Never delete bookmarks or collections, and never merge collections, unless the user asks.
