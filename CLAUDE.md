@@ -16,3 +16,8 @@
 
 - Messy pasted text (search-result dumps, "People also search for" blocks, descriptions) still contains books. Normalize it first: extract every book title mentioned, including ones named only inside descriptions, and de-duplicate variants of the same title.
 - Look up every extracted title. Never skip a title because it sits in messy text. If no ISBN is found, keep the row and write "Not found".
+
+## Scripts
+
+- Standalone scripts live in `scripts/`. Give each a docstring that starts `name.py - one-line summary` and a `Usage:` block with indented commands (see `scripts/wiki_info.py`).
+- `scripts/README.md` is generated. After adding or editing a script, run `uv run scripts/build_readme.py` and commit the result. A GitHub Action also rebuilds it on pushes to `main`.
