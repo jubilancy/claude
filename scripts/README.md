@@ -106,6 +106,20 @@ uv run scripts/raindrop/wiki_count_by_collection.py everything.json
 uv run scripts/raindrop/wiki_count_by_collection.py everything.json --all-matches
 ```
 
+## tiktok
+
+| Script | What it does |
+|---|---|
+| [`tiktok/tiktok_meta.py`](tiktok/tiktok_meta.py) | fetch TikTok video metadata (caption, hashtags, category, stats) with gallery-dl into a CSV |
+
+`tiktok/tiktok_meta.py`
+
+```bash
+uv run scripts/tiktok/tiktok_meta.py videos.json                     # -> tiktok-meta.csv
+uv run scripts/tiktok/tiktok_meta.py urls.txt -o meta.csv --workers 3 --limit 20
+uv run scripts/tiktok/tiktok_meta.py videos.json --retry             # redo failed rows
+```
+
 ## tumblr
 
 | Script | What it does |
