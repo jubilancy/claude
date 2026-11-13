@@ -1,0 +1,9 @@
+{
+  "_comment": "Used on collection 76341445 (tags were old collection names) and a book-research dump. Order matters: first match wins.",
+  "rules": [
+    {"bucket": "Google junk", "host_regex": "(^|\\.)google\\.com$|myactivity", "_note": "keep books.google.com out with a rule above if wanted"},
+    {"bucket": "Forums & Q&A", "url_regex": "forum|stackexchange|quora|reddit|hubpages|facebook|steamcommunity|moneysavingexpert|ship-of-fools"},
+    {"bucket": "Shops & listings", "host_regex": "amazon|abebooks|thriftbooks|ebay|etsy|biblio|barnesandnoble|invaluable|worthpoint|bonhams|sothebys|alamy|powells|waterstones|wordery|blackwell|bookdepository|kobo|audible|bookshop"},
+    {"bucket": "Reference & academic", "host_regex": "wikipedia|wikisource|gutenberg|archive\\.org|academia\\.edu|jstor|goodreads|librarything|britannica|youtube|poetryfoundation|researchgate|libretexts|librivox"}
+  ]
+}
