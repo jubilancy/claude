@@ -51,4 +51,4 @@ It prints `update_bookmarks` operations (150 IDs max per call). Without `--targe
 - Never delete bookmarks or collections, and never merge collections, unless the user asks.
 - Do not rename or move the user's existing collections.
 - Do not fetch or verify page contents. Classification is from the URL and title already returned.
-- Use `uv run python -I` for any scripts, never `python3` or `pip`. Save any script you write to `scripts/raindrop/` in the repository (docstring convention in CLAUDE.md), then run `uv run scripts/build_readme.py`. `extract_bookmarks.py` there turns inline `find_bookmarks` results into a JSON file from the session transcript.
+- Use `uv run python -I` for any scripts, never `python3` or `pip`. Save any script you write to `scripts/raindrop/` in the repository (docstring convention in CLAUDE.md), then run `uv run scripts/build_readme.py`. Helpers there: `extract_bookmarks.py` (inline `find_bookmarks` results to JSON from the session transcript), `profile_bookmarks.py`, `classify_by_rules.py` (rules in `rules/`), `move_batches.py`.
