@@ -58,20 +58,52 @@ uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every 
 
 | Script | What it does |
 |---|---|
+| [`raindrop/classify_by_rules.py`](raindrop/classify_by_rules.py) | sort a Raindrop bookmark dump into buckets with a JSON rules file and print move batches |
 | [`raindrop/extract_bookmarks.py`](raindrop/extract_bookmarks.py) | save Raindrop find_bookmarks results from a Claude Code session transcript as JSON |
-| [`raindrop/tiktok_buckets.py`](raindrop/tiktok_buckets.py) | split a TikTok bookmark dump into sub-collection buckets by tag and link type |
+| [`raindrop/move_batches.py`](raindrop/move_batches.py) | turn {bucket: [bookmark ids]} into update_bookmarks calls of at most 150 IDs |
+| [`raindrop/profile_bookmarks.py`](raindrop/profile_bookmarks.py) | count a Raindrop bookmark dump by tag, domain and link shape |
+| [`raindrop/tiktok_by_upload_date.py`](raindrop/tiktok_by_upload_date.py) | bucket TikTok video bookmarks by the upload date hidden in the video ID |
+| [`raindrop/wiki_count_by_collection.py`](raindrop/wiki_count_by_collection.py) | rank Raindrop collections by how many Wikipedia bookmarks they hold |
+
+`raindrop/classify_by_rules.py`
+
+```bash
+uv run scripts/raindrop/classify_by_rules.py bookmarks.json rules/books_misc.json            # counts + leftovers
+uv run scripts/raindrop/classify_by_rules.py bookmarks.json rules/books_misc.json --ops      # move batches as JSON lines
+```
 
 `raindrop/extract_bookmarks.py`
 
 ```bash
 uv run scripts/raindrop/extract_bookmarks.py TRANSCRIPT.jsonl 75935771 -o bookmarks.json
+uv run scripts/raindrop/extract_bookmarks.py TRANSCRIPT.jsonl 0 -o everything.json
 ```
 
-`raindrop/tiktok_buckets.py`
+`raindrop/move_batches.py`
 
 ```bash
-uv run scripts/raindrop/tiktok_buckets.py bookmarks.json            # counts only
-uv run scripts/raindrop/tiktok_buckets.py bookmarks.json --ops      # batches of operations as JSON
+uv run scripts/raindrop/move_batches.py buckets.json --map collections.json
+```
+
+`raindrop/profile_bookmarks.py`
+
+```bash
+uv run scripts/raindrop/profile_bookmarks.py bookmarks.json
+uv run scripts/raindrop/profile_bookmarks.py bookmarks.json --top 40
+```
+
+`raindrop/tiktok_by_upload_date.py`
+
+```bash
+uv run scripts/raindrop/tiktok_by_upload_date.py videos.json                       # counts per period
+uv run scripts/raindrop/tiktok_by_upload_date.py videos.json --map ids.json --ops  # move batches
+```
+
+`raindrop/wiki_count_by_collection.py`
+
+```bash
+uv run scripts/raindrop/wiki_count_by_collection.py everything.json
+uv run scripts/raindrop/wiki_count_by_collection.py everything.json --all-matches
 ```
 
 ## tumblr
@@ -93,11 +125,19 @@ uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
 | Script | What it does |
 |---|---|
 | [`web/fetch_urls.py`](web/fetch_urls.py) | all-in-one polite scraper |
+| [`web/flickr_sort.py`](web/flickr_sort.py) | sort a list of Flickr URLs by type into a markdown file |
 
 `web/fetch_urls.py`
 
 ```bash
 uv run scripts/web/fetch_urls.py [urls.txt] [output_dir] [options]
+```
+
+`web/flickr_sort.py`
+
+```bash
+uv run scripts/web/flickr_sort.py urls.txt
+uv run scripts/web/flickr_sort.py urls.txt -o flickr_sorted.md
 ```
 
 ## wikimedia
