@@ -54,6 +54,26 @@ uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
 uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 ```
 
+## raindrop
+
+| Script | What it does |
+|---|---|
+| [`raindrop/extract_bookmarks.py`](raindrop/extract_bookmarks.py) | save Raindrop find_bookmarks results from a Claude Code session transcript as JSON |
+| [`raindrop/tiktok_buckets.py`](raindrop/tiktok_buckets.py) | split a TikTok bookmark dump into sub-collection buckets by tag and link type |
+
+`raindrop/extract_bookmarks.py`
+
+```bash
+uv run scripts/raindrop/extract_bookmarks.py TRANSCRIPT.jsonl 75935771 -o bookmarks.json
+```
+
+`raindrop/tiktok_buckets.py`
+
+```bash
+uv run scripts/raindrop/tiktok_buckets.py bookmarks.json            # counts only
+uv run scripts/raindrop/tiktok_buckets.py bookmarks.json --ops      # batches of operations as JSON
+```
+
 ## tumblr
 
 | Script | What it does |
@@ -84,8 +104,20 @@ uv run scripts/web/fetch_urls.py [urls.txt] [output_dir] [options]
 
 | Script | What it does |
 |---|---|
+| [`wikimedia/sort_markdown.py`](wikimedia/sort_markdown.py) | sort wiki_to_markdown.py's .md files into folder/subfolder by their front-matter categories |
 | [`wikimedia/wiki_info.py`](wikimedia/wiki_info.py) | Wikipedia URLs -&gt; title, url, Wikidata Q-number, AutoDesc description. |
+| [`wikimedia/wiki_to_markdown.py`](wikimedia/wiki_to_markdown.py) | pull full Wikimedia articles into clean, frontmatter-rich Obsidian-safe markdown files. |
 | [`wikimedia/wp_tags.py`](wikimedia/wp_tags.py) | List every tag on a WordPress site (via its REST API), no posts fetched. |
+
+`wikimedia/sort_markdown.py`
+
+```bash
+uv run scripts/wikimedia/sort_markdown.py corpus                 # dry run: show the plan
+uv run scripts/wikimedia/sort_markdown.py corpus --apply         # move the files
+uv run scripts/wikimedia/sort_markdown.py corpus --by first --depth 1 --apply
+uv run scripts/wikimedia/sort_markdown.py corpus --min 3 --skip "^Plays? " --apply
+uv run scripts/wikimedia/sort_markdown.py --undo sort-moves-2026-11-13_120000.csv
+```
 
 `wikimedia/wiki_info.py`
 
@@ -96,6 +128,14 @@ uv run scripts/wikimedia/wiki_info.py --mode short          # short AutoDesc des
 uv run scripts/wikimedia/wiki_info.py --md notes.md         # also append a Markdown file
 uv run scripts/wikimedia/wiki_info.py --no-desc             # title/url/Q only, no AutoDesc calls
 uv run scripts/wikimedia/wiki_info.py --force               # redo URLs already in the output
+```
+
+`wikimedia/wiki_to_markdown.py`
+
+```bash
+uv run scripts/wikimedia/wiki_to_markdown.py                  # reads ./urls.txt, writes ./corpus/
+uv run scripts/wikimedia/wiki_to_markdown.py --input other.txt --output out_dir
+uv run scripts/wikimedia/wiki_to_markdown.py --force          # re-download even if file exists
 ```
 
 `wikimedia/wp_tags.py`
