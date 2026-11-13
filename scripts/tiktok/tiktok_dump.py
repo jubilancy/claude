@@ -9,17 +9,20 @@ tiktok_dump.py - get ALL the metadata for TikTok links with gallery-dl, without 
 For every TikTok video link it runs `gallery-dl --dump-json` (metadata only, nothing is
 downloaded) and writes:
   <out>.json   the full, untouched metadata for every link: [{"url": ..., "status": ..., "metadata": {...}}]
-  <out>.csv    one row per link, TikTok URL in the first column, then every metadata field flattened
-               to its own column (nested keys joined with dots, lists joined with "; ").
-               Convenience columns come right after the URL: bookmark_id, status, author, hashtags,
-               categories (TikTok's diversificationLabels), caption, created_utc.
+  <out>.csv    one row per link, TikTok URL in the first column, then a short set of useful columns:
+               bookmark_id, status, video_id, author, nickname, caption, hashtags, categories (TikTok's
+               own diversificationLabels), language, location, created_utc, duration_s, plays, likes,
+               comments, shares, saves, music, author_followers, author_verified, author_bio.
+               Add --all-columns to flatten every metadata field into the CSV as well (200+ columns).
   batches/     with --by THEME: one <theme>.txt per theme, one URL per line, plus batches/_index.csv.
                Download a theme later with:  gallery-dl -i batches/<theme>.txt -d downloads/<theme>
 
 Input is a text file of URLs (one per line) or a JSON dump of Raindrop bookmarks (see
 scripts/raindrop/extract_bookmarks.py). Profile links are skipped (gallery-dl would fetch a whole account).
 Reruns resume: links already in <out>.json are not fetched again; failed ones are retried with --retry.
-Every run writes dump-log-{timestamp}.txt.
+A rerun with nothing new to fetch just rebuilds the CSV and batches from the JSON.
+Every run writes results-log-{timestamp}.txt in the current folder, with a summary, separate lists
+for fetched, skipped and errors, and warnings (videos with no caption, hashtags or category).
 
 --by category   first TikTok category label of each video   --by hashtag   first hashtag
 --by author     creator                                      --by location  country code
@@ -30,6 +33,7 @@ Usage:
     uv run scripts/tiktok/tiktok_dump.py videos.json                         # -> tiktok-dump.json + .csv
     uv run scripts/tiktok/tiktok_dump.py urls.txt -o cats --by category --min 5
     uv run scripts/tiktok/tiktok_dump.py videos.json --retry --workers 4
+    uv run scripts/tiktok/tiktok_dump.py videos.json --all-columns           # CSV with every field too
     uv run --with gallery-dl gallery-dl -i batches/Pets.txt -d downloads/Pets   # download one theme later
 """
 
@@ -45,7 +49,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 VIDEO_RE = re.compile(r"/(?:share/)?video/(\d+)")
-FRONT = ["url", "bookmark_id", "status", "author", "hashtags", "categories", "caption", "created_utc"]
+FRONT = ["url", "bookmark_id", "status", "video_id", "author", "nickname", "caption", "hashtags", "categories",
+         "language", "location", "created_utc", "duration_s", "plays", "likes", "comments", "shares", "saves",
+         "music", "author_followers", "author_verified", "author_bio"]
 
 
 def load_inputs(path: Path):
@@ -90,16 +96,26 @@ def flatten(o, prefix="", out=None):
 
 
 def convenience(rec: dict) -> dict:
+    """The short, useful set of columns for one record."""
     m = rec.get("metadata") or {}
     a = m.get("author") if isinstance(m.get("author"), dict) else {}
+    st, ast = m.get("stats") or {}, m.get("authorStats") or {}
     ts = m.get("createTime")
     return {
         "url": rec["url"], "bookmark_id": rec.get("bookmark_id", ""), "status": rec["status"],
-        "author": a.get("uniqueId", ""),
+        "video_id": m.get("id", ""),
+        "author": a.get("uniqueId", ""), "nickname": a.get("nickname", ""),
+        "caption": (m.get("desc") or "").replace("\n", " "),
         "hashtags": " ".join(t["hashtagName"] for t in m.get("textExtra") or [] if t.get("hashtagName")),
         "categories": "; ".join(m.get("diversificationLabels") or []),
-        "caption": (m.get("desc") or "").replace("\n", " "),
+        "language": m.get("textLanguage", ""), "location": m.get("locationCreated", ""),
         "created_utc": datetime.fromtimestamp(int(ts), timezone.utc).strftime("%Y-%m-%d %H:%M:%S") if str(ts).isdigit() else "",
+        "duration_s": (m.get("video") or {}).get("duration", ""),
+        "plays": st.get("playCount", ""), "likes": st.get("diggCount", ""), "comments": st.get("commentCount", ""),
+        "shares": st.get("shareCount", ""), "saves": st.get("collectCount", ""),
+        "music": (m.get("music") or {}).get("title", ""),
+        "author_followers": ast.get("followerCount", ""), "author_verified": a.get("verified", ""),
+        "author_bio": (a.get("signature") or "").replace("\n", " "),
     }
 
 
@@ -116,13 +132,14 @@ def safe(name: str) -> str:
     return re.sub(r'[\\/:*?"<>|#\s]+', " ", name).strip()[:80] or "_unknown"
 
 
-def write_outputs(recs: list, out: Path):
+def write_outputs(recs: list, out: Path, all_columns: bool = False):
     out.with_suffix(".json").write_text(json.dumps(recs, ensure_ascii=False, indent=1), encoding="utf-8")
     rows = []
     for r in recs:
         row = convenience(r)
-        flat = flatten(r.get("metadata") or {})
-        row.update({k: v for k, v in flat.items() if k not in row})
+        if all_columns:
+            flat = flatten(r.get("metadata") or {})
+            row.update({k: v for k, v in flat.items() if k not in row})
         rows.append(row)
     cols = FRONT + sorted({k for row in rows for k in row} - set(FRONT))
     with out.with_suffix(".csv").open("w", newline="", encoding="utf-8") as f:
@@ -159,6 +176,7 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--limit", type=int, help="fetch only this many new links (test run)")
     ap.add_argument("--retry", action="store_true", help="refetch links whose status is not ok")
+    ap.add_argument("--all-columns", action="store_true", help="put every flattened metadata field in the CSV too")
     ap.add_argument("--by", choices=["category", "hashtag", "author", "location", "language"],
                     help="also write batches/<theme>.txt URL lists")
     ap.add_argument("--min", type=int, default=1, help="themes smaller than this go to _other")
@@ -188,19 +206,45 @@ def main() -> int:
                 errors.append((url, str(e)))
                 recs[url] = {"url": url, "bookmark_id": bid, "status": f"error: {e}"[:150], "metadata": {}}
             if n % 50 == 0 or n == len(futs):
-                write_outputs(list(recs.values()), a.output)  # checkpoint, so an interrupted run keeps its work
+                write_outputs(list(recs.values()), a.output, a.all_columns)  # checkpoint, so an interrupted run keeps its work
                 print(f"  {n}/{len(futs)} ({len(errors)} errors)")
 
-    ncols = write_outputs(list(recs.values()), a.output)
+    ncols = write_outputs(list(recs.values()), a.output, a.all_columns)
     nthemes = write_batches(list(recs.values()), a.by, a.min, a.batches) if a.by else 0
+    finished = datetime.now()
     ok = sum(1 for r in recs.values() if r["status"] == "ok")
-    log = Path(f"dump-log-{started:%Y-%m-%d_%H%M%S}.txt")
-    lines = ["tiktok_dump results log", f"Run started : {started:%Y-%m-%d %H:%M:%S}", f"Input       : {a.input}",
-             f"Output      : {jpath}, {a.output.with_suffix('.csv')} ({ncols} columns)",
-             f"Batches     : {a.batches if a.by else '(none)'}" + (f" by {a.by}, {nthemes} themes" if a.by else ""), "",
-             "SUMMARY", f"  Links in output : {len(recs)}", f"  Metadata ok     : {ok}",
-             f"  Errors this run : {len(errors)}", f"  Not videos      : {skipped}", "", f"ERRORS ({len(errors)})"]
-    lines += [f"  {u}\n    {e}" for u, e in errors] or ["  (none)"]
+    new_ok = [url for _, url in todo if recs[url]["status"] == "ok"]
+    warnings = []
+    for url in new_ok:
+        c = convenience(recs[url])
+        for field, msg in (("caption", "no caption"), ("hashtags", "no hashtags"), ("categories", "no TikTok category")):
+            if not c[field]:
+                warnings.append(f"  {url}\n    {msg}")
+    log = Path(f"results-log-{started:%Y-%m-%d_%H%M%S}.txt")
+    lines = [
+        "tiktok_dump results log",
+        f"Run started : {started:%Y-%m-%d %H:%M:%S}",
+        f"Run finished: {finished:%Y-%m-%d %H:%M:%S} ({(finished - started).seconds}s)",
+        f"Input       : {a.input}",
+        f"Output      : {jpath}, {a.output.with_suffix('.csv')} ({ncols} CSV columns{', all fields' if a.all_columns else ''})",
+        f"Batches     : {a.batches} by {a.by}, {nthemes} themes (min {a.min})" if a.by else "Batches     : (none)",
+        "",
+        "SUMMARY",
+        f"  Links in output              : {len(recs)}",
+        f"  Metadata fetched this run    : {len(new_ok)}",
+        f"  Already in output (skipped)  : {len(recs) - len(todo)}",
+        f"  Not video links (skipped)    : {skipped}",
+        f"  Errors this run              : {len(errors)}",
+        f"  Metadata ok in total         : {ok}",
+        "",
+        f"FETCHED ({len(new_ok)})",
+    ]
+    for url in new_ok:
+        c = convenience(recs[url])
+        lines.append(f"  {url}\n    @{c['author']} | {c['categories'] or 'no category'} | {c['hashtags'][:60]}")
+    lines += ["  (none)"] if not new_ok else []
+    lines += ["", f"ERRORS ({len(errors)})"] + ([f"  {u}\n    {e}" for u, e in errors] or ["  (none)"])
+    lines += ["", f"WARNINGS ({len(warnings)})"] + (warnings or ["  (none)"])
     log.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"Wrote {jpath} and {a.output.with_suffix('.csv')} ({ncols} columns); {ok}/{len(recs)} ok; log: {log}")
     return 0

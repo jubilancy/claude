@@ -118,6 +118,7 @@ uv run scripts/raindrop/wiki_count_by_collection.py everything.json --all-matche
 uv run scripts/tiktok/tiktok_dump.py videos.json                         # -> tiktok-dump.json + .csv
 uv run scripts/tiktok/tiktok_dump.py urls.txt -o cats --by category --min 5
 uv run scripts/tiktok/tiktok_dump.py videos.json --retry --workers 4
+uv run scripts/tiktok/tiktok_dump.py videos.json --all-columns           # CSV with every field too
 uv run --with gallery-dl gallery-dl -i batches/Pets.txt -d downloads/Pets   # download one theme later
 ```
 
