@@ -110,14 +110,15 @@ uv run scripts/raindrop/wiki_count_by_collection.py everything.json --all-matche
 
 | Script | What it does |
 |---|---|
-| [`tiktok/tiktok_meta.py`](tiktok/tiktok_meta.py) | fetch TikTok video metadata (caption, hashtags, category, stats) with gallery-dl into a CSV |
+| [`tiktok/tiktok_dump.py`](tiktok/tiktok_dump.py) | get ALL the metadata for TikTok links with gallery-dl, without downloading, into JSON + CSV + theme batches |
 
-`tiktok/tiktok_meta.py`
+`tiktok/tiktok_dump.py`
 
 ```bash
-uv run scripts/tiktok/tiktok_meta.py videos.json                     # -> tiktok-meta.csv
-uv run scripts/tiktok/tiktok_meta.py urls.txt -o meta.csv --workers 3 --limit 20
-uv run scripts/tiktok/tiktok_meta.py videos.json --retry             # redo failed rows
+uv run scripts/tiktok/tiktok_dump.py videos.json                         # -> tiktok-dump.json + .csv
+uv run scripts/tiktok/tiktok_dump.py urls.txt -o cats --by category --min 5
+uv run scripts/tiktok/tiktok_dump.py videos.json --retry --workers 4
+uv run --with gallery-dl gallery-dl -i batches/Pets.txt -d downloads/Pets   # download one theme later
 ```
 
 ## tumblr
