@@ -22,8 +22,8 @@ One-time setup (Discord Developer Portal, https://discord.com/developers/applica
      channel or server -> Copy ID.
 
 Usage:
-    uv run discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
-    uv run discord_export.py --guild GUILD_ID [options]     # every readable text channel
+    uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
+    uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 
 Options:
     --output-dir DIR        default ./discord_export

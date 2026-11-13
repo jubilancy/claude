@@ -10,8 +10,8 @@ One CSV row per tag: tag, tag_url, title, count.
 `title` is the tag page's SEO title (e.g. "Zoë Bernard Archives - Longreads")
 when the site runs Yoast SEO, otherwise the tag name.
 
-    uv run wp_tags.py https://longreads.com
-    uv run wp_tags.py https://longreads.com --max-pages 2   # quick test
+    uv run scripts/wikimedia/wp_tags.py https://longreads.com
+    uv run scripts/wikimedia/wp_tags.py https://longreads.com --max-pages 2   # quick test
 
 Requests are retried with backoff. A page that still fails is skipped and listed
 at the end, and rows are written as it goes, so a stop never loses what it has.

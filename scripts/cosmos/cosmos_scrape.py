@@ -11,9 +11,9 @@ Reads a text file of cosmos.so URLs (one per line), runs the matching in-page sc
 in headless Chromium, and writes JSON + CSV per URL to cosmos-output/. URLs whose output
 already exists are skipped, so you can re-run the same file as you add lines.
 
-    uv run cosmos_scrape.py                 # reads cosmos-urls.txt
-    uv run cosmos_scrape.py my-links.txt    # or any file
-    uv run cosmos_scrape.py --force         # re-scrape everything
+    uv run scripts/cosmos/cosmos_scrape.py                 # reads cosmos-urls.txt
+    uv run scripts/cosmos/cosmos_scrape.py my-links.txt    # or any file
+    uv run scripts/cosmos/cosmos_scrape.py --force         # re-scrape everything
 
 URL file format (blank lines and # comments ignored):
 
@@ -100,7 +100,7 @@ def run_in_page(page, js_source: str):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("urls_file", nargs="?", default="cosmos-urls.txt")
+    ap.add_argument("urls_file", nargs="?", default=str(HERE / "cosmos-urls.txt"))
     ap.add_argument("--force", action="store_true", help="re-scrape URLs that already have output")
     ap.add_argument("--out", default="cosmos-output", help="output directory (default: cosmos-output)")
     args = ap.parse_args()

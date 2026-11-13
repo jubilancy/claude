@@ -11,9 +11,9 @@ Reads a text file with one Goodreads URL per line (blank lines and lines
 starting with # are ignored; anything after the URL on a line is ignored)
 and writes one CSV (and optionally one Markdown) file per URL.
 
-    uv run goodreads_fetch.py                       # urls.txt -> goodreads-out/
-    uv run goodreads_fetch.py --format csv          # CSV only
-    uv run goodreads_fetch.py --urls my.txt --out books --delay 5
+    uv run scripts/books/goodreads_fetch.py                       # urls.txt -> goodreads-out/
+    uv run scripts/books/goodreads_fetch.py --format csv          # CSV only
+    uv run scripts/books/goodreads_fetch.py --urls my.txt --out books --delay 5
 
 Supported URLs:
   https://www.goodreads.com/list/show/925.Some_List
@@ -361,7 +361,7 @@ def write_md(path: Path, kind: str, meta: dict, books: list[dict]):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Fetch Goodreads lists and shelves to CSV/Markdown.")
-    ap.add_argument("--urls", default="urls.txt", type=Path, help="file with one URL per line (default urls.txt)")
+    ap.add_argument("--urls", default=Path(__file__).resolve().parent / "urls.txt", type=Path, help="file with one URL per line (default: urls.txt next to this script)")
     ap.add_argument("--out", default="goodreads-out", type=Path, help="output directory")
     ap.add_argument("--format", default="csv,md",
                     help="comma-separated output formats: csv, md (default csv,md)")

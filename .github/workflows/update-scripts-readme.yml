@@ -1,0 +1,34 @@
+name: Update scripts README
+
+# Rebuilds scripts/README.md from the scripts' own headers whenever something
+# under scripts/ changes on main, and commits the result if it differs.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "!scripts/README.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: astral-sh/setup-uv@v10.3.3
+      - name: Rebuild README
+        run: uv run scripts/build_readme.py
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- scripts/README.md; then
+            echo "README already up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add scripts/README.md
+          git commit -m "scripts: update README"
+          git push
