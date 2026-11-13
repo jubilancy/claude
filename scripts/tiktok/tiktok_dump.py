@@ -243,7 +243,8 @@ def main() -> int:
         c = convenience(recs[url])
         lines.append(f"  {url}\n    @{c['author']} | {c['categories'] or 'no category'} | {c['hashtags'][:60]}")
     lines += ["  (none)"] if not new_ok else []
-    lines += ["", f"ERRORS ({len(errors)})"] + ([f"  {u}\n    {e}" for u, e in errors] or ["  (none)"])
+    failed = [(u, r["status"].removeprefix("error: ")) for u, r in recs.items() if r["status"] != "ok"]
+    lines += ["", f"ERRORS: NO METADATA, INCLUDING EARLIER RUNS ({len(failed)})"] + ([f"  {u}\n    {e}" for u, e in failed] or ["  (none)"])
     lines += ["", f"WARNINGS ({len(warnings)})"] + (warnings or ["  (none)"])
     log.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"Wrote {jpath} and {a.output.with_suffix('.csv')} ({ncols} columns); {ok}/{len(recs)} ok; log: {log}")
