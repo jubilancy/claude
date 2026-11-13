@@ -84,8 +84,19 @@ uv run scripts/web/fetch_urls.py [urls.txt] [output_dir] [options]
 
 | Script | What it does |
 |---|---|
+| [`wikimedia/sort_markdown.py`](wikimedia/sort_markdown.py) | sort wiki_to_markdown.py's .md files into folder/subfolder by their front-matter categories |
 | [`wikimedia/wiki_info.py`](wikimedia/wiki_info.py) | Wikipedia URLs -&gt; title, url, Wikidata Q-number, AutoDesc description. |
 | [`wikimedia/wp_tags.py`](wikimedia/wp_tags.py) | List every tag on a WordPress site (via its REST API), no posts fetched. |
+
+`wikimedia/sort_markdown.py`
+
+```bash
+uv run scripts/wikimedia/sort_markdown.py corpus                 # dry run: show the plan
+uv run scripts/wikimedia/sort_markdown.py corpus --apply         # move the files
+uv run scripts/wikimedia/sort_markdown.py corpus --by first --depth 1 --apply
+uv run scripts/wikimedia/sort_markdown.py corpus --min 3 --skip "^Plays? " --apply
+uv run scripts/wikimedia/sort_markdown.py --undo sort-moves-2026-11-13_120000.csv
+```
 
 `wikimedia/wiki_info.py`
 
