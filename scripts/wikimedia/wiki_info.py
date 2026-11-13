@@ -22,12 +22,12 @@ What it does:
   separate lists for written, skipped, and errors, plus warnings.
 
 Usage:
-    uv run scripts/wiki_info.py                       # reads ./urls.txt, writes ./wiki-info.csv
-    uv run scripts/wiki_info.py --input links.csv --column link --output out.csv
-    uv run scripts/wiki_info.py --mode short          # short AutoDesc descriptions
-    uv run scripts/wiki_info.py --md notes.md         # also append a Markdown file
-    uv run scripts/wiki_info.py --no-desc             # title/url/Q only, no AutoDesc calls
-    uv run scripts/wiki_info.py --force               # redo URLs already in the output
+    uv run scripts/wikimedia/wiki_info.py                       # reads ./urls.txt, writes ./wiki-info.csv
+    uv run scripts/wikimedia/wiki_info.py --input links.csv --column link --output out.csv
+    uv run scripts/wikimedia/wiki_info.py --mode short          # short AutoDesc descriptions
+    uv run scripts/wikimedia/wiki_info.py --md notes.md         # also append a Markdown file
+    uv run scripts/wikimedia/wiki_info.py --no-desc             # title/url/Q only, no AutoDesc calls
+    uv run scripts/wikimedia/wiki_info.py --force               # redo URLs already in the output
 """
 
 import argparse

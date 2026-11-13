@@ -39,7 +39,7 @@ on 404/error past page 1, or at --max-pages.
 Not supported: POST/GraphQL APIs, logins, CAPTCHAs.
 
 Usage:
-    uv run fetch_urls.py [urls.txt] [output_dir] [options]
+    uv run scripts/web/fetch_urls.py [urls.txt] [output_dir] [options]
 
 Options:
     --max-pages N     pages followed per starting URL (default 25)
@@ -916,7 +916,7 @@ class BrowserSession:
             from playwright.sync_api import sync_playwright
         except ImportError:
             sys.exit("Playwright is required for --js (it is in this script's dependencies; "
-                     "run via `uv run fetch_urls.py ...`).")
+                     "run via `uv run scripts/web/fetch_urls.py ...`).")
         self._pw = sync_playwright().start()
         launch = {"headless": True}
         path = chromium_path or os.environ.get("CHROMIUM_PATH")

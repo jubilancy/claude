@@ -1,5 +1,5 @@
 # One Tumblr URL per line, from any blog. Blank lines and # comments are ignored.
-# Run: TUMBLR_API_KEY=... uv run fetch_tagged_posts.py --urls urls.txt
+# Run: TUMBLR_API_KEY=... uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt
 
 # Post on a tumblr.com blog (slug optional)
 https://citriccomics.tumblr.com/post/3507845453

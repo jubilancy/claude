@@ -4,7 +4,7 @@
  * right scraper in headless Chromium for every unchecked link, writes the results to
  * cosmos-output/, and ticks the box. Links already ticked (or whose output file exists) are skipped.
  *
- *   node cosmos-run.mjs [checklist.md] [--force] [--only <substring>]
+ *   node scripts/cosmos/cosmos-run.mjs [checklist.md] [--force] [--only <substring>]
  *
  * Checklist format (one link per line; anything else is left untouched):
  *   - [ ] https://www.cosmos.so/e/556978292                  -> collections mode (every collection the element is in)

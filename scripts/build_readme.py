@@ -5,11 +5,12 @@
 """
 build_readme.py - regenerate scripts/README.md from the scripts in this folder.
 
-Scans scripts/ (including subfolders) for .py and .sh files and builds an index
-from each file's own header: the first docstring line (Python) or leading
-comment block (shell) becomes the summary, and the indented lines under a
-"Usage:" heading become the usage block. Nothing is written by hand in the
-README, so it can never drift from the scripts.
+Scans scripts/<topic>/ for .py, .sh, .js and .mjs files and builds an index from
+each file's own header: the first docstring line (Python) or leading comment
+block (shell, JavaScript) becomes the summary, and the indented lines under a
+"Usage:" heading become the usage block. If there is no "Usage:" heading, the
+indented "uv run ..." / "node ..." lines are used instead. Nothing in the README
+is written by hand, so it cannot drift from the scripts.
 
 A GitHub Action (.github/workflows/update-scripts-readme.yml) runs this on every
 push to main that touches scripts/. Run it yourself after adding or editing a
@@ -23,11 +24,13 @@ Usage:
 import ast
 import re
 import sys
+from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 README = ROOT / "README.md"
-SUFFIXES = {".py", ".sh"}
+SUFFIXES = {".py", ".sh", ".js", ".mjs"}
+COMMAND_RE = re.compile(r"^\s+((?:[A-Z_]+=\S+\s+)*(?:uv run|node)\s.*)$")
 
 
 def split_summary(first_line: str, name: str) -> str:
@@ -36,8 +39,25 @@ def split_summary(first_line: str, name: str) -> str:
     return (m.group(1) if m else first_line).strip()
 
 
+def summarize(doc: str, name: str) -> str:
+    """First paragraph joined onto one line, cut at the first sentence end if long."""
+    para = []
+    for line in doc.strip().splitlines():
+        if not line.strip() or re.fullmatch(r"[-=~]{3,}", line.strip()):
+            break
+        para.append(line.strip())
+    if not para:
+        return "(no description; add a docstring or header comment)"
+    text = split_summary(" ".join(para), name)
+    if len(text) > 110:
+        m = re.search(r"(?<!e\.g)(?<!i\.e)[.!?](\s|$)", text)
+        if m:
+            text = text[: m.end()].strip()
+    return text.replace("|", "\\|").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def usage_block(doc: str) -> str:
-    """Indented lines following a 'Usage:' line, dedented."""
+    """Indented lines after a 'Usage:' line, dedented; else the indented command lines."""
     lines = doc.splitlines()
     for i, line in enumerate(lines):
         if line.strip().lower() in ("usage:", "usage"):
@@ -47,27 +67,35 @@ def usage_block(doc: str) -> str:
                     break
                 if nxt.strip() and not nxt.startswith((" ", "\t")):
                     break
-                block.append(nxt.strip("\n"))
+                block.append(nxt.rstrip())
             while block and block[-1].strip() == "":
                 block.pop()
             indent = min((len(l) - len(l.lstrip()) for l in block if l.strip()), default=0)
             return "\n".join(l[indent:] for l in block)
-    return ""
+    cmds = []
+    for line in lines:
+        m = COMMAND_RE.match(line)
+        if m:
+            cmds.append(m.group(1).rstrip())
+    return "\n".join(cmds[:8])
 
 
-def describe_py(path: Path):
-    tree = ast.parse(path.read_text(encoding="utf-8"))
-    doc = ast.get_docstring(tree) or ""
-    return doc
-
-
-def describe_sh(path: Path):
-    out = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+def read_header(path: Path) -> str:
+    text = path.read_text(encoding="utf-8")
+    if path.suffix == ".py":
+        return ast.get_docstring(ast.parse(text)) or ""
+    if path.suffix in (".js", ".mjs"):
+        m = re.search(r"/\*+\s*(.*?)\*/", text, re.S)
+        if not m:
+            return ""
+        body = [re.sub(r"^\s*\*\s?", "", l) for l in m.group(1).splitlines()]
+        return "\n".join(body).strip()
+    out = []  # shell
+    for line in text.splitlines():
         if line.startswith("#!"):
             continue
         if line.startswith("#"):
-            out.append(line.lstrip("#").lstrip(" ") if line != "#" else "")
+            out.append(line[1:].lstrip(" "))
         elif out:
             break
     return "\n".join(out)
@@ -80,31 +108,32 @@ def scripts():
 
 
 def build() -> str:
-    entries = []
+    topics = defaultdict(list)
     for p in scripts():
-        rel = p.relative_to(ROOT).as_posix()
-        doc = describe_py(p) if p.suffix == ".py" else describe_sh(p)
-        first = doc.strip().splitlines()[0] if doc.strip() else ""
-        summary = split_summary(first, p.name) if first else "(no description; add a docstring or header comment)"
-        entries.append((rel, summary, usage_block(doc)))
+        rel = p.relative_to(ROOT)
+        doc = read_header(p)
+        summary = summarize(doc, p.name)
+        topic = rel.parts[0] if len(rel.parts) > 1 else "(top level)"
+        topics[topic].append((rel.as_posix(), summary, usage_block(doc)))
 
     out = [
         "# Scripts",
         "",
         "<!-- Generated by build_readme.py from each script's header. Do not edit by hand. -->",
         "",
-        "Small command-line scripts. Python scripts run with [uv](https://docs.astral.sh/uv/) "
-        "and declare their own dependencies inline, so there is nothing to install first.",
+        "Command-line tools, one folder per topic. Python scripts run with [uv](https://docs.astral.sh/uv/) "
+        "and declare their own dependencies inline, so there is nothing to install first. "
+        "Run everything from the repository root.",
         "",
-        "| Script | What it does |",
-        "|---|---|",
     ]
-    out += [f"| [`{rel}`]({rel}) | {summary} |" for rel, summary, _ in entries]
-    for rel, summary, usage in entries:
-        out += ["", f"## `{rel}`", "", summary]
-        if usage:
-            out += ["", "```bash", usage, "```"]
-    out.append("")
+    for topic in sorted(topics, key=lambda t: (t == "(top level)", t)):
+        entries = topics[topic]
+        out += [f"## {topic}", "", "| Script | What it does |", "|---|---|"]
+        out += [f"| [`{rel}`]({rel}) | {summary} |" for rel, summary, _ in entries]
+        for rel, summary, usage in entries:
+            if usage:
+                out += ["", f"`{rel}`", "", "```bash", usage, "```"]
+        out.append("")
     return "\n".join(out)
 
 

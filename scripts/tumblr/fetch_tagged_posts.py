@@ -13,13 +13,13 @@ info, metadata):
 1. Tag mode (default): pulls ALL posts from BLOG with each tag in TAGS,
    paginating through the Tumblr API (max 20 posts per call).
 
-       uv run fetch_tagged_posts.py
+       uv run scripts/tumblr/fetch_tagged_posts.py
 
 2. URL mode: reads a text file with one Tumblr URL per line, from any
    blog, and fetches the info for each. Blank lines and lines starting
    with # are ignored; anything after the URL on a line is ignored.
 
-       uv run fetch_tagged_posts.py --urls urls.txt
+       uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt
 
    Supported URL types (see parse_tumblr_url):
      https://staff.tumblr.com/post/123456789[/slug]    post, tumblr.com blog
@@ -34,7 +34,7 @@ info, metadata):
    By default everything goes into one combined JSON (--out). To get one
    file per URL instead, add --split DIR:
 
-       uv run fetch_tagged_posts.py --urls urls.txt --split posts
+       uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
 
    A post URL gives <blog>-<id>.json holding that post's record; a tag URL
    gives <blog>-tag-<tag>.json holding a list of its posts. Two URLs that
