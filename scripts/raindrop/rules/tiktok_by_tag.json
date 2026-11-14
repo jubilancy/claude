@@ -1,0 +1,12 @@
+{
+  "_comment": "Used on collection 75935771. Tags first, then link shape for untagged links.",
+  "rules": [
+    {"bucket": "Cats", "collection_id": 77178782, "tags": ["cats"]},
+    {"bucket": "Other animals", "collection_id": 77178783, "tags": ["animals"]},
+    {"bucket": "Politics, religion & esoterica", "collection_id": 77178784, "tags": ["politics", "religion", "esoteric"]},
+    {"bucket": "Memes, media & art", "collection_id": 77178785, "tags": ["memes", "music", "art", "Film & Cinema", "fashion"]},
+    {"bucket": "History & tools", "collection_id": 77178786, "tags": ["history", "tools"]},
+    {"bucket": "Untagged profiles", "collection_id": 77178787, "url_regex": "/share/user/"},
+    {"bucket": "Untagged videos", "collection_id": 77178788, "url_regex": "."}
+  ]
+}
