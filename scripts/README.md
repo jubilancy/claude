@@ -104,10 +104,24 @@ uv run scripts/web/fetch_urls.py [urls.txt] [output_dir] [options]
 
 | Script | What it does |
 |---|---|
+| [`wikimedia/commons_to_csv.py`](wikimedia/commons_to_csv.py) | Wikimedia Commons File:/Category: URLs -&gt; timestamped CSV (sizes, title, description, categories, taxonomy, tags) + matching log, --info counts, --md gallery. |
 | [`wikimedia/sort_markdown.py`](wikimedia/sort_markdown.py) | sort wiki_to_markdown.py's .md files into folder/subfolder by their front-matter categories |
 | [`wikimedia/wiki_info.py`](wikimedia/wiki_info.py) | Wikipedia URLs -&gt; title, url, Wikidata Q-number, AutoDesc description. |
 | [`wikimedia/wiki_to_markdown.py`](wikimedia/wiki_to_markdown.py) | pull full Wikimedia articles into clean, frontmatter-rich Obsidian-safe markdown files. |
 | [`wikimedia/wp_tags.py`](wikimedia/wp_tags.py) | List every tag on a WordPress site (via its REST API), no posts fetched. |
+
+`wikimedia/commons_to_csv.py`
+
+```bash
+uv run scripts/wikimedia/commons_to_csv.py                          # reads ./urls.txt, writes commons-out/commons_<timestamp>.csv + log
+uv run scripts/wikimedia/commons_to_csv.py --info                   # writes commons-out/info.txt, fetches no rows
+uv run scripts/wikimedia/commons_to_csv.py --info --subcats 2       # ...counting sub-categories two levels down
+uv run scripts/wikimedia/commons_to_csv.py --input other.txt --output out_dir --subcats 1
+uv run scripts/wikimedia/commons_to_csv.py --sizes 250,500,1920 --limit 100 --no-taxonomy
+uv run scripts/wikimedia/commons_to_csv.py --md                     # newest CSV in commons-out -> gallery_<timestamp>.md
+uv run scripts/wikimedia/commons_to_csv.py --md commons-out/commons_2026-11-14_120000.csv --rows 1-20,35
+uv run scripts/wikimedia/commons_to_csv.py --md --category "Bellis" --tag daisy --size 500
+```
 
 `wikimedia/sort_markdown.py`
 
