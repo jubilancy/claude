@@ -77,6 +77,7 @@ uv run scripts/raindrop/classify_by_rules.py bookmarks.json rules/books_misc.jso
 ```bash
 uv run scripts/raindrop/extract_bookmarks.py TRANSCRIPT.jsonl 75935771 -o bookmarks.json
 uv run scripts/raindrop/extract_bookmarks.py TRANSCRIPT.jsonl 0 -o everything.json
+uv run scripts/raindrop/extract_bookmarks.py TRANSCRIPT.jsonl 77012342 --last 3 -o bookmarks.json
 ```
 
 `raindrop/move_batches.py`
