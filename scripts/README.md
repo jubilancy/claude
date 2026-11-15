@@ -8,7 +8,15 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 
 | Script | What it does |
 |---|---|
+| [`books/forgottenbooks_titles.py`](books/forgottenbooks_titles.py) | turn Forgotten Books links into a list of readable book titles |
 | [`books/goodreads_fetch.py`](books/goodreads_fetch.py) | Goodreads list / shelf fetcher |
+
+`books/forgottenbooks_titles.py`
+
+```bash
+uv run scripts/books/forgottenbooks_titles.py library.json                 # -> forgottenbooks-titles.csv + .txt
+uv run scripts/books/forgottenbooks_titles.py urls.txt -o my-books
+```
 
 `books/goodreads_fetch.py`
 
