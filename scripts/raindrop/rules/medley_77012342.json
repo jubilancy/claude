@@ -1,0 +1,151 @@
+{
+  "_comment": "Collection 77012342 (medley). Topic batches by tag first, then site, then keyword buckets. First match wins. collection_id is filled in after the sub-collections are created.",
+  "rules": [
+    {
+      "bucket": "Medieval manuscripts & digital archives",
+      "tags": [
+        "medieval-project",
+        "art-collection",
+        "11/3/2026"
+      ],
+      "domains": [
+        "nypl.org",
+        "bodleian.ox.ac.uk",
+        "themorgan.org"
+      ],
+      "collection_id": 77242244
+    },
+    {
+      "bucket": "Research & word lookups",
+      "tags": [
+        "research-index",
+        "11/2/2026",
+        "11/8/2026"
+      ],
+      "url_regex": "socialscience|ethnic-groups-in-mexico|the-united-states-mestizo",
+      "collection_id": 77242245
+    },
+    {
+      "bucket": "Omoro",
+      "url_regex": "omoro",
+      "collection_id": 77242246
+    },
+    {
+      "bucket": "Google pages",
+      "host_regex": "(^|\\.)google\\.com$",
+      "collection_id": 77242247
+    },
+    {
+      "bucket": "Instagram",
+      "domains": [
+        "instagram.com"
+      ],
+      "collection_id": 77242248
+    },
+    {
+      "bucket": "Facebook groups & posts",
+      "domains": [
+        "facebook.com"
+      ],
+      "collection_id": 77242249
+    },
+    {
+      "bucket": "TikTok & Pinterest",
+      "domains": [
+        "tiktok.com",
+        "pinterest.com"
+      ],
+      "collection_id": 77242250
+    },
+    {
+      "bucket": "Shops & antiques",
+      "domains": [
+        "etsy.com",
+        "ebay.com",
+        "amazon.com",
+        "antikeo.com",
+        "antiquesboutique.com",
+        "nowarc.com",
+        "proantic.com",
+        "paintingz.com",
+        "ulta.com",
+        "johnmoran.com",
+        "deburcararebooks.com",
+        "walterfilm.com",
+        "reliks.com",
+        "212dimensions.com",
+        "umachaco.com",
+        "appelboom.com",
+        "ziatile.com",
+        "johnnyseeds.com",
+        "kensphilodendrons.com",
+        "destinationyarn.com",
+        "apexlight.in",
+        "rahaal.shop",
+        "matildemontanari.com",
+        "joico.com"
+      ],
+      "collection_id": 77242251
+    },
+    {
+      "bucket": "Culture articles & magazines",
+      "domains": [
+        "newyorker.com",
+        "mensjournal.com",
+        "mentalfloss.com",
+        "express.co.uk",
+        "parade.com",
+        "vogue.com",
+        "vogue.co.uk",
+        "vogue.sg",
+        "harpersbazaar.com",
+        "elle.com",
+        "hellomagazine.com",
+        "interviewmagazine.com",
+        "architecturaldigest.com",
+        "frockflicks.com",
+        "parisdiarybylaure.com",
+        "nybooks.com",
+        "principlemagazine.com",
+        "hiddencityphila.org",
+        "lemilemagazine.com",
+        "coveteur.com",
+        "airmail.news",
+        "forbes.com",
+        "janonline.com",
+        "goodhousekeeping.com",
+        "medium.com",
+        "gofugyourself.com",
+        "schiaparelli.com",
+        "billboard.com",
+        "worldofinteriors.com",
+        "countryandtownhouse.com",
+        "middleburglife.com",
+        "btwberkshires.com",
+        "nancylawrenceregency.com",
+        "magpiesmagazine.com",
+        "chosun.com",
+        "shakespearesglobe.com",
+        "folger.edu",
+        "janeaustens.house",
+        "anhistorianabouttown.com",
+        "thegeographicalcure.com",
+        "mymodernmet.com",
+        "dressingdykes.com",
+        "livingetc.com",
+        "lovetoknow.com"
+      ],
+      "collection_id": 77242252
+    },
+    {
+      "bucket": "Home, DIY & crafts",
+      "url_regex": "organiz|storage|shelving|crochet|quilt|diy|craft|knit|cardigan|bandana|garden|plant|wallpaper|decor|interior|closet|mudroom|laundry|pumpkin|yarn|embroidery|weav|pantry",
+      "collection_id": 77242253
+    },
+    {
+      "bucket": "Recipes & food",
+      "url_regex": "recipe|(?<!stock)cake|cookie|soup|salad|chicken|dessert|donut|frosting|lasagna|falafel|oxtail|salmon|casserole|dinner|pudding|buttercream|lahmajoun|collard|bunuelo|macaroni|snapper|lemon|crockpot|dumpling|breakfast|marrakech|sushi|cuisine|pantry-baskets|sweets|baking|pecan|kitchen|cook|yum|food",
+      "collection_id": 77242254
+    }
+  ]
+}
