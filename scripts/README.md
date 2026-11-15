@@ -9,6 +9,7 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 | Script | What it does |
 |---|---|
 | [`books/goodreads_fetch.py`](books/goodreads_fetch.py) | Goodreads list / shelf fetcher |
+| [`books/interleaves_lists.py`](books/interleaves_lists.py) | turn Robert Teeter's Great Books lists on interleaves.org into one big CSV |
 
 `books/goodreads_fetch.py`
 
@@ -16,6 +17,14 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 uv run scripts/books/goodreads_fetch.py                       # urls.txt -> goodreads-out/
 uv run scripts/books/goodreads_fetch.py --format csv          # CSV only
 uv run scripts/books/goodreads_fetch.py --urls my.txt --out books --delay 5
+```
+
+`books/interleaves_lists.py`
+
+```bash
+uv run scripts/books/interleaves_lists.py library.json                       # -> interleaves-lists.csv
+uv run scripts/books/interleaves_lists.py urls.txt -o great-books --delay 2
+uv run scripts/books/interleaves_lists.py urls.txt --all                     # try every page
 ```
 
 ## cosmos
