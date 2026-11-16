@@ -288,6 +288,7 @@ function mockApi(overrides = {}) {
     [`/api/organizations/${ORG}/conversations/${cid(3)}/wiggle/list-files`]: (u) => (u.searchParams.get('prefix') === '/mnt/user-data/outputs'
       ? { success: true, files: ['x'], files_metadata: [{ path: '/mnt/user-data/outputs/out.csv', content_type: 'text/csv' }, { path: '/mnt/user-data/outputs/lost.txt' }] }
       : { success: true, files: [], files_metadata: [] }),
+    [`/api/organizations/${ORG}/projects/${PROJ}/syncs`]: () => [],
     ...overrides,
   };
   const fetchImpl = async (href) => {
@@ -415,6 +416,8 @@ test('end to end: a clean project is COMPLETE WITH WARNINGS (extracted text), an
     if (u.pathname === `/api/organizations/${ORG}/projects/${PROJ}`) return json({ uuid: PROJ, name: 'Démo Project', prompt_template: 'Always answer in haiku.', docs_count: 1, files_count: 0 });
     if (u.pathname.endsWith('/files')) return json([]);
     if (u.pathname.endsWith('/docs')) return json([{ uuid: 'd1', file_name: 'notes.md', content: '# notes' }]);
+    if (u.pathname.endsWith('/conversations_v2')) return json({ data: [1, 2, 4, 5].map(n => { const c = api.convs.get(cid(n)); return { uuid: c.uuid, name: c.name }; }), pagination: { total: 4, limit: 30, offset: 0, has_more: false } });
+    if (u.pathname === `/api/organizations/${ORG}/memory`) return json({ memory: 'Likes tea.', project_memory_mode: 'default' });
     if (u.pathname.endsWith('/conversations') ) return json([1, 2, 4, 5].map(n => { const c = api.convs.get(cid(n)); return { uuid: c.uuid, name: c.name, created_at: c.created_at, updated_at: c.updated_at }; }));
     if (u.pathname.endsWith('/chat_conversations')) { const off = Number(u.searchParams.get('offset')); return json(off ? [] : [1, 2, 4, 5].map(n => ({ uuid: cid(n), project_uuid: PROJ }))); }
     return origFetch(href);
@@ -432,7 +435,7 @@ test('end to end: a clean project is COMPLETE WITH WARNINGS (extracted text), an
 test('end to end: missing memory alone blocks "complete"', async () => {
   const out = await run(mockApi());
   assert.match(out.check.reasons.join('\n'), /project memory was not exported/);
-  assert.ok(unzipTo(out.parts).text('_errors.md').includes('no verified endpoint for project memory'));
+  assert.ok(unzipTo(out.parts).text('_errors.md').includes('the memory endpoint failed'));
 });
 
 test('end to end: cancel still yields a ZIP that says INCOMPLETE', async () => {
@@ -473,4 +476,69 @@ test('end to end: project docs_count larger than the docs list blocks "complete"
 test('client: refuses any URL that is not on the page origin', async () => {
   const client = X.createClient({ fetchImpl: async () => { throw new Error('must not be called'); }, origin: ORIGIN, minIntervalMs: 0 });
   await assert.rejects(client.getBytes('https://evil.example/x'), /different origin/);
+});
+
+// ---- 0.3.0: endpoints seen in the 2026-11-16 capture ------------------------
+
+const memoryRoute = (body) => ({ [`/api/organizations/${ORG}/memory`]: () => body });
+const asText = (list) => JSON.stringify(list);
+
+test('0.3.0: project memory is read from the memory endpoint, no pasting needed', async () => {
+  const out = await run(mockApi(memoryRoute({ memory: 'Likes tea.', project_memory_mode: 'default' })));
+  const z = unzipTo(out.parts);
+  assert.equal(z.text('project/memory.md'), 'Likes tea.');
+  assert.equal(z.json('project/memory.json').project_memory_mode, 'default');
+  assert.doesNotMatch(out.check.reasons.join('\n'), /memory/);
+  assert.doesNotMatch(asText(out.errors), /memory/);
+});
+
+test('0.3.0: empty memory from the endpoint is a warning, not a missing file', async () => {
+  const out = await run(mockApi(memoryRoute({ memory: '', project_memory_mode: 'default' })));
+  assert.doesNotMatch(out.check.reasons.join('\n'), /memory/);
+  assert.match(asText(out.warnings), /empty text/);
+});
+
+test('0.3.0: pasted memory that differs from the endpoint is kept next to it, with a warning', async () => {
+  const out = await run(mockApi(memoryRoute({ memory: 'Likes tea.' })), { memoryText: 'Likes coffee.' });
+  const z = unzipTo(out.parts);
+  assert.equal(z.text('project/memory.md'), 'Likes tea.');
+  assert.equal(z.text('project/memory.pasted.md'), 'Likes coffee.');
+  assert.match(asText(out.warnings), /differs/);
+});
+
+test('0.3.0: a project chat list that pages (conversations_v2) is walked to the end and checked against pagination.total', async () => {
+  const pages = [];
+  const v2 = (u) => {
+    const offset = Number(u.searchParams.get('offset'));
+    pages.push(offset);
+    const mk = (n) => ({ uuid: cid(n), name: `c${n}` });
+    return offset === 0
+      ? { data: [mk(1), mk(2)], pagination: { total: 4, limit: 2, offset: 0, has_more: true } }
+      : { data: [mk(3), mk(4)], pagination: { total: 4, limit: 2, offset: 2, has_more: false } };
+  };
+  const out = await run(mockApi({ [`/api/organizations/${ORG}/projects/${PROJ}/conversations_v2`]: v2, ...memoryRoute({ memory: 'x' }) }));
+  assert.deepEqual(pages, [0, 2]);
+  assert.doesNotMatch(asText(out.warnings), /conversations_v2/);
+  assert.ok(out.counts.chats.found >= 4);
+});
+
+test('0.3.0: conversations_v2 total that disagrees with what came back falls back with a warning', async () => {
+  const v2 = () => ({ data: [{ uuid: cid(1), name: 'c1' }], pagination: { total: 9, limit: 30, offset: 0, has_more: false } });
+  const out = await run(mockApi({ [`/api/organizations/${ORG}/projects/${PROJ}/conversations_v2`]: v2, ...memoryRoute({ memory: 'x' }) }));
+  assert.match(asText(out.warnings), /total 9 but 1 distinct/);
+});
+
+test('0.3.0: synced sources are not exported, so they block "complete"', async () => {
+  const out = await run(mockApi({ [`/api/organizations/${ORG}/projects/${PROJ}/syncs`]: () => [{ uuid: 's1', type: 'github' }], ...memoryRoute({ memory: 'x' }) }));
+  assert.equal(out.check.complete, false);
+  assert.match(asText(out.errors), /synced source/);
+  assert.equal(unzipTo(out.parts).json('raw/_project_syncs.json')[0].uuid, 's1');
+});
+
+test('0.3.0: capture mode keeps project-related API paths and drops billing, usage and account noise', () => {
+  for (const p of ['/api/organizations', `/api/organizations/${ORG}/projects/${PROJ}`, `/api/organizations/${ORG}/projects/${PROJ}/conversations_v2`,
+    `/api/organizations/${ORG}/memory`, `/api/organizations/${ORG}/melange/list`, `/api/organizations/${ORG}/chat_conversations/${cid(1)}`,
+    `/api/organizations/${ORG}/conversations/${cid(1)}/wiggle/download-file`, `/api/organizations/${ORG}/projects/${PROJ}/syncs`]) assert.equal(X.isRelevantApi(p), true, p);
+  for (const p of ['/api/account', `/api/organizations/${ORG}/usage`, `/api/organizations/${ORG}/subscription_details`, `/api/organizations/${ORG}/skills/list-skills`,
+    `/api/organizations/${ORG}/notification/channels`, '/api/frame/frames']) assert.equal(X.isRelevantApi(p), false, p);
 });
