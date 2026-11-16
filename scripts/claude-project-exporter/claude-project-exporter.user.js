@@ -31,7 +31,7 @@
 (function () {
   'use strict';
 
-  const VERSION = '0.2.0';
+  const VERSION = '0.3.0';
   const UUID_RE = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i;
   const UUID_RE_G = new RegExp(UUID_RE.source, 'gi');
   const enc = new TextEncoder();
@@ -49,6 +49,10 @@
     projectDocs: (o, p) => `/api/organizations/${o}/projects/${p}/docs`,
     projectFiles: (o, p) => `/api/organizations/${o}/projects/${p}/files`,
     projectChats: (o, p) => `/api/organizations/${o}/projects/${p}/conversations`,
+    // Seen live (capture 2026-11-16, the project page's own calls): paged list with pagination.total, memory text, synced sources.
+    projectChatsV2: (o, p, limit, offset) => `/api/organizations/${o}/projects/${p}/conversations_v2?limit=${limit}&offset=${offset}`,
+    projectMemory: (o, p) => `/api/organizations/${o}/memory?project_uuid=${p}&include_project_import=true`,
+    projectSyncs: (o, p) => `/api/organizations/${o}/projects/${p}/syncs?calculate_size=false`,
     allChats: (o, limit, offset) => `/api/organizations/${o}/chat_conversations?limit=${limit}&offset=${offset}`,
     chat: (o, c) => `/api/organizations/${o}/chat_conversations/${c}?tree=True&rendering_mode=messages&render_all_tools=true`,
     fileContents: (o, f) => `/api/organizations/${o}/files/${f}/contents`,
@@ -446,7 +450,7 @@
     if (flags.fatal) reasons.push(`export stopped early: ${flags.fatal}`);
     if (!flags.project) reasons.push('project details were not read');
     if (!flags.instructions) reasons.push('custom instructions were not exported');
-    if (!flags.memory || flags.memory === 'missing') reasons.push('project memory was not exported (no verified endpoint; paste it into the panel or tick "no memory")');
+    if (!flags.memory || flags.memory === 'missing') reasons.push('project memory was not exported (the memory endpoint failed; paste it into the panel or tick "no memory")');
     if (!flags.chatListing) reasons.push('the chat list could not be read completely');
     if (!flags.knowledgeListing) reasons.push('the knowledge file list could not be read completely');
     const filesFound = counts.knowledge.found + counts.uploads.found + counts.artifacts.found + counts.container_files.found;
@@ -556,7 +560,7 @@
     L.push('', `## Warnings (${r.warnings.length})`, '', 'Saved, but not as the original, or something could not be cross-checked.', '');
     if (!r.warnings.length) L.push('(none)', '');
     for (const e of r.warnings) L.push(`- **${e.scope}** — ${e.item}`, `  - ${e.reason}`);
-    L.push('', '## Not covered by this exporter', '', '- Project memory has no verified endpoint. It is only in the ZIP if you pasted it into the panel (project/memory.md).', '- Files in a code-execution container are only retrievable while claude.ai still keeps that container.', '- Chats shared with you, or project members\' chats you cannot open, are only listed if the list endpoints return them.', '');
+    L.push('', '## Not covered by this exporter', '', '- Project memory is read from the memory endpoint; compare project/memory.md with the project page once. Synced sources (GitHub, Drive) are listed but not downloaded.', '- Files in a code-execution container are only retrievable while claude.ai still keeps that container.', '- Chats shared with you, or project members\' chats you cannot open, are only listed if the list endpoints return them.', '');
     return L.join('\n');
   }
 
@@ -729,18 +733,37 @@
         err('project', 'custom instructions', `the project response has no text field "prompt_template" (fields: ${Object.keys(project).join(', ')}); instructions were NOT exported. Use capture mode and send the log.`);
       }
 
+      // Project memory: GET memory?project_uuid=<id> returned { memory: string, project_memory_mode, ... } live.
       const memFields = findMemoryFields(project);
-      if (typeof o.memoryText === 'string' && o.memoryText.trim()) {
+      let memErr = null;
+      try {
+        const m = await client.getJSON(EP.projectMemory(orgId, projectId));
+        if (!m || typeof m !== 'object' || typeof m.memory !== 'string') throw new Error(`unexpected shape for project memory: ${describe(m)}`);
+        await zip.add('project/memory.json', jsonText(m));
+        if (m.memory.trim()) {
+          flags.memory = 'fetched';
+          await zip.add('project/memory.md', m.memory);
+        } else {
+          flags.memory = 'fetched_empty';
+          warn('project', 'memory', `the memory endpoint answered with empty text (project_memory_mode: ${m.project_memory_mode}); confirm on the project page that it really has no memory`);
+        }
+        if (typeof o.memoryText === 'string' && o.memoryText.trim() && o.memoryText.trim() !== m.memory.trim()) {
+          await zip.add('project/memory.pasted.md', o.memoryText);
+          warn('project', 'memory', 'the memory you pasted differs from the memory the endpoint returned; both are in the ZIP (memory.md = endpoint, memory.pasted.md = pasted)');
+        }
+      } catch (e) { reCancel(e); memErr = e.message; }
+      if (flags.memory === 'missing' && typeof o.memoryText === 'string' && o.memoryText.trim()) {
         flags.memory = 'pasted';
         await zip.add('project/memory.md', o.memoryText);
+        warn('project', 'memory', `the memory endpoint failed (${memErr}); used the memory you pasted`);
       }
-      if (Object.keys(memFields).length) {
+      if (flags.memory === 'missing' && Object.keys(memFields).length) {
         await zip.add('project/memory.unverified-fields.json', jsonText(memFields));
         if (flags.memory === 'missing') flags.memory = 'unverified_field';
         warn('project', 'memory', `saved the project fields whose name mentions memory (${Object.keys(memFields).join(', ')}) to project/memory.unverified-fields.json; whether this is the full project memory is unverified — compare with the project page`);
       }
       if (flags.memory === 'missing' && o.memoryNone) flags.memory = 'declared_none';
-      if (flags.memory === 'missing') err('project', 'memory', 'no verified endpoint for project memory. Copy it from the project page into the panel box and export again, or tick "this project has no memory".');
+      if (flags.memory === 'missing') err('project', 'memory', `the memory endpoint failed (${memErr}). Copy the memory from the project page into the panel box and export again, or tick "this project has no memory".`);
 
       // ---- 2. knowledge files -------------------------------------------------
       progress(0, 1, 'Listing knowledge files…');
@@ -757,6 +780,14 @@
         if (typeof project[key] !== 'number') { warn('knowledge', `${label} list`, `the project has no numeric ${key}, so the length of the ${label} list (${list.length}) could not be cross-checked`); continue; }
         if (listOk && list.length !== project[key]) { listOk = false; err('knowledge', `${label} list`, `the project says it has ${project[key]} ${label} but the list returned ${list.length}; some were NOT exported`); }
       }
+      // Synced knowledge (GitHub, Drive...) is listed at projects/<id>/syncs. This exporter does not download it,
+      // so a non-empty list must block "complete" instead of being silently left out.
+      try {
+        const raw = await client.getJSON(EP.projectSyncs(orgId, projectId));
+        const syncs = asArray(raw, 'project syncs');
+        await zip.add('raw/_project_syncs.json', jsonText(raw));
+        if (syncs.length) { listOk = false; err('knowledge', 'synced sources', `the project has ${syncs.length} synced source(s) (e.g. GitHub or Drive); their files are NOT exported by this script. The list is in raw/_project_syncs.json.`); }
+      } catch (e) { reCancel(e); listOk = false; err('knowledge', 'synced sources list', `could not check for synced sources: ${e.message}`); }
       flags.knowledgeListing = listOk;
       counts.knowledge.found = docs.length + files.length;
       const docByName = new Map();
@@ -815,12 +846,32 @@
       let aOk = false;
       let bOk = false;
       let aCount = 0;
+      let aPaged = false;
+      const addA = (list) => { for (const c of list) { if (c && c.uuid) { if (note(c, 'project_conversations')) aCount++; } else err('chat list', 'project conversations', `an entry has no uuid: ${describe(c)}`); } };
+      // Preferred: conversations_v2, the project page's own call. It pages and reports pagination.total.
       try {
-        const raw = await client.getJSON(EP.projectChats(orgId, projectId));
-        const list = asArray(raw, 'project conversations');
-        for (const c of list) { if (c && c.uuid) { note(c, 'project_conversations'); aCount++; } else err('chat list', 'project conversations', `an entry has no uuid: ${describe(c)}`); }
-        aOk = true;
-      } catch (e) { reCancel(e); warn('chat list', 'project conversations endpoint', e.message); }
+        const limit = o.v2PageSize || 30;
+        let total = null;
+        for (let offset = 0, page = 0; ; page++) {
+          if (page > 2000) throw new Error('gave up after 2000 pages');
+          const raw = await client.getJSON(EP.projectChatsV2(orgId, projectId, limit, offset));
+          const list = asArray(raw, 'project conversations (v2)');
+          if (raw && raw.pagination && typeof raw.pagination.total === 'number') total = raw.pagination.total;
+          addA(list);
+          offset += list.length;
+          const more = raw && raw.pagination ? raw.pagination.has_more === true : false;
+          if (!list.length || !more) break;
+        }
+        if (total !== null && aCount !== total) throw new Error(`conversations_v2 says total ${total} but ${aCount} distinct chats came back`);
+        aOk = true; aPaged = true;
+      } catch (e) {
+        reCancel(e);
+        warn('chat list', 'project conversations_v2 endpoint', `${e.message}; falling back to the older unpaged endpoint`);
+        try {
+          addA(asArray(await client.getJSON(EP.projectChats(orgId, projectId)), 'project conversations'));
+          aOk = true;
+        } catch (e2) { reCancel(e2); warn('chat list', 'project conversations endpoint', e2.message); }
+      }
 
       const pageSize = o.pageSize || 100;
       const seenAll = new Set();
@@ -849,7 +900,7 @@
       if (bOk && !bUsable) warn('chat list', 'cross-check', `none of the ${seenAll.size} entries in the full conversation list carries a project id, so it could not confirm the project list`);
       flags.chatListing = aOk || bUsable;
       if (!flags.chatListing) err('chat list', projectUrl, 'neither the project conversation list nor the full conversation list could be used; no chats were exported');
-      if (aOk && !bUsable) warn('chat list', 'pagination', `the project conversations endpoint returned ${aCount} chats in one response; whether it pages is unverified and the cross-check was not available. Compare this number with the project page.`);
+      if (aOk && !aPaged && !bUsable) warn('chat list', 'pagination', `the project conversations endpoint returned ${aCount} chats in one response; whether it pages is unverified and the cross-check was not available. Compare this number with the project page.`);
       if (aOk && bUsable) {
         const onlyA = [...found.values()].filter(x => !x.sources.has('conversation_list')).length;
         const onlyB = [...found.values()].filter(x => !x.sources.has('project_conversations')).length;
@@ -1008,7 +1059,7 @@
 
   const api = {
     VERSION, EP, slugify, safeName, safePath, uniqueName, dateOf, chatBaseName, fence, yamlFrontmatter, asArray, shapeOf, redactUrl,
-    findMemoryFields, activeBranch, planChatFiles, fileCandidates, renderBlock, renderChat, checkCounts, crc32, createZip,
+    findMemoryFields, isRelevantApi, activeBranch, planChatFiles, fileCandidates, renderBlock, renderChat, checkCounts, crc32, createZip,
     buildErrorsMd, buildResultsLog, createClient, runExport, CancelError, HttpError,
   };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
@@ -1020,6 +1071,12 @@
   // response (keys and types, no values), so unverified endpoints can be found.
   // ===========================================================================
   const CAPTURE_KEY = 'cpe.capture';
+  const CAPTURE_ALL_KEY = 'cpe.capture.all';
+  /** Capture only what an export could use: the org list, projects, chats, files, memory, containers. Billing, usage, account and ads are noise. */
+  function isRelevantApi(pathname) {
+    return /^\/api\/organizations$/.test(pathname)
+      || /\/(projects|projects_v2|chat_conversations|chat_conversations_v2|conversations|memory|melange|files|docs|syncs|kb|wiggle|artifacts|user_artifacts)(\/|$)/.test(pathname);
+  }
   const capture = { on: false, entries: new Map(), rawUrls: new Map(), listeners: new Set() };
   const lsGet = (k) => { try { return window.localStorage.getItem(k); } catch (e) { return null; } };
   const lsSet = (k, v) => { try { v == null ? window.localStorage.removeItem(k) : window.localStorage.setItem(k, v); } catch (e) { /* storage blocked */ } };
@@ -1028,6 +1085,7 @@
     let abs;
     try { abs = new URL(url, location.origin); } catch (e) { return; }
     if (abs.origin !== location.origin || !abs.pathname.startsWith('/api/') || /^\/api\/(v2\/rum|event_logging)\b/.test(abs.pathname)) return; // telemetry is noise
+    if (!isRelevantApi(abs.pathname) && lsGet(CAPTURE_ALL_KEY) !== '1') return;
     const key = `${method} ${redactUrl(abs.href)}`;
     const prev = capture.entries.get(key);
     if (prev && (prev.shape !== undefined || shape === undefined)) { prev.count++; return; }
@@ -1125,11 +1183,12 @@
     ` }));
     const status = el('div', { class: 'muted', text: 'Ready.' });
     const bar = el('progress', { max: '1', value: '0' });
-    const memory = el('textarea', { rows: '4', placeholder: 'Project memory: no verified endpoint exists, so paste the memory text from the project page here (optional).' });
+    const memory = el('textarea', { rows: '4', placeholder: 'Project memory is read automatically. Paste the memory text from the project page here only as a fallback if that fails (optional).' });
     const noMemory = el('input', { type: 'checkbox' });
     const result = el('div');
     const startBtn = el('button', { class: 'primary', text: 'Start export' });
     const cancelBtn = el('button', { text: 'Cancel', disabled: '' });
+    const capAll = el('input', { type: 'checkbox' });
     const capToggle = el('input', { type: 'checkbox' });
     capToggle.checked = lsGet(CAPTURE_KEY) === '1';
     const capOut = el('textarea', { rows: '6', readonly: '', style: 'display:none' });
@@ -1144,8 +1203,11 @@
       bar, status, result,
       el('hr'),
       el('label', { class: 'muted' }, [capToggle, el('span', { text: 'Capture mode: log the /api/ requests this page makes and the shape of each response (keys and types only, ids removed). Reload the page after switching it on.' })]),
+      el('label', { class: 'muted' }, [capAll, el('span', { text: 'Also log unrelated requests (billing, usage, account). Off by default; reload after changing.' })]),
       capBtns, capOut,
     ]);
+    capAll.checked = lsGet(CAPTURE_ALL_KEY) === '1';
+    capAll.addEventListener('change', () => lsSet(CAPTURE_ALL_KEY, capAll.checked ? '1' : null));
     const refreshCapture = () => {
       capOut.value = JSON.stringify({ exporter: VERSION, page: redactUrl(location.href), captured: [...capture.entries.values()] }, null, 2);
       capStatus.textContent = `${capture.entries.size} request(s) captured`;

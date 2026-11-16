@@ -6,7 +6,7 @@ A userscript that exports one claude.ai Project as a single ZIP: custom instruct
 - Same-origin `GET` requests only, with the session the page already has. No tokens or cookies are read or copied. Any URL that is not on `https://claude.ai` is refused, not fetched.
 - The ZIP is built in the page by a small built-in ZIP writer, so there is no third-party library to pin or trust.
 
-**Status: one live run, on a small project (3 chats, no knowledge files), confirmed the main endpoints through a capture log on 2026-11-16.** Knowledge-file download, chat uploads, artifacts and project memory have not been seen live. Read "What is verified and what is not" before you delete a project.
+**Status: 0.3.0. One live run (3 chats, no knowledge files) and its capture log, 2026-11-16, confirmed the main endpoints and the shapes of the memory, paged chat-list and synced-sources endpoints.** Knowledge-file download, chat uploads, artifacts and the contents of synced sources have not been seen live. Read "What is verified and what is not" before you delete a project.
 
 ## Install (browser only)
 
@@ -21,7 +21,7 @@ You need a userscript manager extension: [Violentmonkey](https://violentmonkey.g
 ## Use
 
 1. Open the project: `https://claude.ai/project/<id>`. An **Export project ZIP** button appears bottom right.
-2. Click it. In the panel, either paste the project's memory text into the box (copy it from the project page) or tick **This project has no memory**. Memory has no verified endpoint, so the script cannot read it for you.
+2. Click it. Project memory is read automatically. Paste the memory text into the box (or tick **This project has no memory**) only as a fallback if the memory request fails; the panel and `_errors.md` say so.
 3. Click **Start export**. Keep the tab open. **Cancel** stops the run and still downloads what was collected, marked incomplete.
 4. Read the result table: chats found vs in ZIP, files found vs in ZIP.
    - **COMPLETE**: everything found is in the ZIP.
@@ -33,7 +33,7 @@ You need a userscript manager extension: [Violentmonkey](https://violentmonkey.g
 | Path | Contents |
 | --- | --- |
 | `project/instructions.md` | Custom instructions (`prompt_template`) |
-| `project/memory.md` | Memory text you pasted into the panel |
+| `project/memory.md`, `project/memory.json` | Project memory text and the raw memory response. `memory.pasted.md` appears if you pasted text that differs |
 | `project/project.json` | Raw project details |
 | `knowledge/` | Knowledge files. `knowledge/_index.json` flags each one: `original`, `text_content`, `extracted_text` or `preview` |
 | `chats/<date>-<slug>-<id8>.md` | Transcript with YAML frontmatter. Active branch first, then every edited or regenerated message under "Other branches" |
@@ -59,14 +59,16 @@ You need a userscript manager extension: [Violentmonkey](https://violentmonkey.g
 - `/api/organizations`, `projects/<id>` (with `prompt_template`, `docs_count`, `files_count`), `projects/<id>/docs`, `projects/<id>/files` and `projects/<id>/conversations` all answered 200 with the expected shapes. The docs and files lists were empty in that project.
 - `chat_conversations?limit=100&offset=N` pages: 650 chats came back across 7 pages, then an empty page. Entries carry `project_uuid`, so the cross-check of the project's chat list works.
 - The conversation detail URL returns `chat_messages` with `uuid`, `sender`, `content`, `attachments`, `files` and `parent_message_uuid`, and `current_leaf_message_uuid` on the conversation.
+- `projects/<id>/conversations_v2?limit=30&offset=N` (what the project page itself calls) returns `{ data, pagination: { total, limit, offset, has_more } }`. Since 0.3.0 the script walks it to the end, checks the count against `pagination.total`, and falls back to the older unpaged `/conversations` with a warning if it fails.
+- `memory?project_uuid=<id>&include_project_import=true` answered 200 with `{ memory: string, project_memory_mode, … }`; `projects/<id>/syncs` answered 200 with an empty list. Both are read since 0.3.0.
 - `wiggle/download-file` returned five container files. `wiggle/list-files?prefix=` returned an empty list for the same chats, so since 0.2.0 the script also lists `/mnt/user-data/outputs` and `/mnt/user-data/uploads` (prefixes taken from [Claude — Whole Chat Exporter](https://greasyfork.org/scripts/598791-claude-whole-chat-exporter), MIT) and still tries every file the transcript names.
 
 **Not verified**
 
 - Field names inside a docs entry, a files entry, a chat upload and an artifact block: the test project had none, so these still rest on other exporters' source (table below).
-- Whether the docs and files lists page. Since 0.2.0 the script compares each list's length with the project's own `docs_count` and `files_count` and reports INCOMPLETE on a mismatch.
-- Whether `projects/<id>/conversations` pages. It is cross-checked against the full paged list, as above.
-- Project memory. The capture shows the page calling `memory/settings`, `melange/list`, `melange/read` and `reflections/time_spent` under `/api/organizations/<org>/`, but only as URLs: no method, no response shape, and nothing that ties any of them to this project's memory. Until one is confirmed, paste memory manually.
+- Whether the docs and files lists page. (The chat list does: see `conversations_v2` below.) Since 0.2.0 the script compares each list's length with the project's own `docs_count` and `files_count` and reports INCOMPLETE on a mismatch.
+- That the memory text equals what the project page shows. The endpoint's shape is confirmed live; compare `project/memory.md` with the page once on your own project.
+- The contents of synced sources (GitHub, Drive). They are not downloaded: a non-empty `syncs` list makes the verdict INCOMPLETE.
 - Whether uploaded images and PDFs come back as original bytes. Anything saved from a preview URL is flagged as `preview`.
 - Behavior inside Violentmonkey and Tampermonkey themselves. The UI test injected the script directly.
 - Very large projects. The ZIP is built in memory, and ZIP64 is not supported (limits: 4 GB, 65,534 entries; hitting one is reported as an error).
@@ -83,7 +85,7 @@ You need a userscript manager extension: [Violentmonkey](https://violentmonkey.g
 
 ## Capture mode
 
-If an endpoint has changed, tick **Capture mode** in the panel and reload the page. Click around the project (open the files list, the memory panel, a chat). The box fills with each `/api/` request the page made and the shape of its JSON response: keys and types only, with ids replaced by `{uuid}`. Click **Copy capture log** and paste it to me.
+If an endpoint has changed, tick **Capture mode** in the panel and reload the page. Click around the project (open the files list, the memory panel, a chat). Since 0.3.0 only project-related requests are logged (projects, chats, files, memory, containers); a second checkbox turns billing, usage and account requests back on. The box fills with each `/api/` request the page made and the shape of its JSON response: keys and types only, with ids replaced by `{uuid}`. Click **Copy capture log** and paste it to me.
 
 If entries show `"via": "performance"` with no `shape`, the manager ran the script outside the page context ([Violentmonkey `@inject-into`](https://violentmonkey.github.io/api/metadata-block/) falls back to this when the site's CSP blocks page injection). Click **Probe URLs without a body**: the script then GETs those same URLs once itself to read their shapes.
 
@@ -96,6 +98,7 @@ If entries show `"via": "performance"` with no `shape`, the manager ran the scri
 | `projects/<id>/docs` | Claude Project Files Extractor, Claude Project Documents Exporter Library |
 | `projects/<id>/files`, `/api/<org>/files/<id>/document_pdf`, `document_asset.url`, `preview_url` | Claude Project Files Extractor |
 | `projects/<id>/conversations` | Claude Mass Exporter Library |
+| `projects/<id>/conversations_v2`, `memory?project_uuid=`, `projects/<id>/syncs` | Observed in a live capture log of the project page (2026-11-16), not taken from another script |
 | `chat_conversations?limit=&offset=` | Claude Chat Exporter (all chats, all organizations) |
 | `chat_conversations/<id>?tree=True&rendering_mode=messages&render_all_tools=true` | Claude Conversation Exporter (socketteer) |
 | `project_uuid` on conversations | claude-exporter (agoramachina), Claude API Exporter |
