@@ -36,6 +36,8 @@ function answer(url) {
   if (p === `/api/organizations/${ORG}/projects/${PROJ}`) return { uuid: PROJ, name: 'Smoke Project', prompt_template: 'Be brief.', docs_count: 1, files_count: 0 };
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/docs`) return [{ uuid: 'd1', file_name: 'notes.md', content: '# notes' }];
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/files`) return [];
+  if (p === `/api/organizations/${ORG}/projects/${PROJ}/syncs`) return [];
+  if (p === `/api/organizations/${ORG}/projects/${PROJ}/conversations_v2`) return { data: CHATS.map(brief), pagination: { total: CHATS.length, limit: 30, offset: 0, has_more: false } };
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/conversations`) return CHATS.map(brief);
   if (p === `/api/organizations/${ORG}/chat_conversations`) return Number(url.searchParams.get('offset')) ? [] : CHATS.map(brief);
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/made_up_for_capture`) return { secret_text: 'do not leak', items: [{ type: 'note', body: 'private' }] };
