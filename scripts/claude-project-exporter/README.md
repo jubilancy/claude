@@ -6,7 +6,7 @@ A userscript that exports one claude.ai Project as a single ZIP: custom instruct
 - Same-origin `GET` requests only, with the session the page already has. No tokens or cookies are read or copied. Any URL that is not on `https://claude.ai` is refused, not fetched.
 - The ZIP is built in the page by a small built-in ZIP writer, so there is no third-party library to pin or trust.
 
-**Status: not yet run against live claude.ai.** The build environment gets HTTP 403 from claude.ai, so every endpoint below is taken from the published source of other exporters, not observed. Read "What is verified and what is not" before you delete a project.
+**Status: one live run, on a small project (3 chats, no knowledge files), confirmed the main endpoints through a capture log on 2026-11-16.** Knowledge-file download, chat uploads, artifacts and project memory have not been seen live. Read "What is verified and what is not" before you delete a project.
 
 ## Install (browser only)
 
@@ -51,15 +51,22 @@ You need a userscript manager extension: [Violentmonkey](https://violentmonkey.g
 
 **Verified here**
 
-- 23 Node tests pass: slugs, safe file names, duplicate titles, Markdown conversion (code blocks byte-for-byte, tool calls, file references, unknown block types kept), branch handling, artifact version replay, the count check, the ZIP writer (checked with `unzip -t`), and the whole export run against an in-memory fake API covering pagination with a capped page size, a 429 retry, a chat that always returns 500, an unretrievable file, cancel, and an unreadable project.
+- 24 Node tests pass: slugs, safe file names, duplicate titles, Markdown conversion (code blocks byte-for-byte, tool calls, file references, unknown block types kept), branch handling, artifact version replay, the count check, the ZIP writer (checked with `unzip -t`), and the whole export run against an in-memory fake API covering pagination with a capped page size, a 429 retry, a chat that always returns 500, an unretrievable file, cancel, and an unreadable project.
 - A headless Chromium run on a faked `claude.ai` page: the button appears after in-app navigation, the download is a valid ZIP, the panel shows the counts, capture mode logs shapes with ids and values removed, and no request goes to any other origin.
 
-**Not verified: nothing has been run against the real site**
+**Confirmed live by a capture log (2026-11-16, version 0.1.0, one project)**
 
-- Every endpoint and field name. They are copied from other exporters' source (table below), which is evidence that they worked for those authors, not that they work today.
-- Whether `projects/<id>/conversations` pages. The script cross-checks it against the full, paged conversation list filtered by project id, and warns if that cross-check is not available.
-- Whether the docs and files lists page. A project with a very large knowledge base could be cut short without the script knowing. Compare the knowledge count with the project page.
-- Project memory: no endpoint was found in any source. Paste it manually.
+- `/api/organizations`, `projects/<id>` (with `prompt_template`, `docs_count`, `files_count`), `projects/<id>/docs`, `projects/<id>/files` and `projects/<id>/conversations` all answered 200 with the expected shapes. The docs and files lists were empty in that project.
+- `chat_conversations?limit=100&offset=N` pages: 650 chats came back across 7 pages, then an empty page. Entries carry `project_uuid`, so the cross-check of the project's chat list works.
+- The conversation detail URL returns `chat_messages` with `uuid`, `sender`, `content`, `attachments`, `files` and `parent_message_uuid`, and `current_leaf_message_uuid` on the conversation.
+- `wiggle/download-file` returned five container files. `wiggle/list-files?prefix=` returned an empty list for the same chats, so since 0.2.0 the script also lists `/mnt/user-data/outputs` and `/mnt/user-data/uploads` (prefixes taken from [Claude — Whole Chat Exporter](https://greasyfork.org/scripts/598791-claude-whole-chat-exporter), MIT) and still tries every file the transcript names.
+
+**Not verified**
+
+- Field names inside a docs entry, a files entry, a chat upload and an artifact block: the test project had none, so these still rest on other exporters' source (table below).
+- Whether the docs and files lists page. Since 0.2.0 the script compares each list's length with the project's own `docs_count` and `files_count` and reports INCOMPLETE on a mismatch.
+- Whether `projects/<id>/conversations` pages. It is cross-checked against the full paged list, as above.
+- Project memory. The capture shows the page calling `memory/settings`, `melange/list`, `melange/read` and `reflections/time_spent` under `/api/organizations/<org>/`, but only as URLs: no method, no response shape, and nothing that ties any of them to this project's memory. Until one is confirmed, paste memory manually.
 - Whether uploaded images and PDFs come back as original bytes. Anything saved from a preview URL is flagged as `preview`.
 - Behavior inside Violentmonkey and Tampermonkey themselves. The UI test injected the script directly.
 - Very large projects. The ZIP is built in memory, and ZIP64 is not supported (limits: 4 GB, 65,534 entries; hitting one is reported as an error).
