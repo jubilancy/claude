@@ -18,6 +18,32 @@ uv run scripts/books/goodreads_fetch.py --format csv          # CSV only
 uv run scripts/books/goodreads_fetch.py --urls my.txt --out books --delay 5
 ```
 
+## claude-project-exporter
+
+| Script | What it does |
+|---|---|
+| [`claude-project-exporter/claude-project-exporter.test.js`](claude-project-exporter/claude-project-exporter.test.js) | Node tests for the userscript's pure functions and a mock end-to-end export. |
+| [`claude-project-exporter/claude-project-exporter.user.js`](claude-project-exporter/claude-project-exporter.user.js) | userscript that exports one claude.ai Project as a single ZIP. |
+| [`claude-project-exporter/ui-smoke.js`](claude-project-exporter/ui-smoke.js) | headless-browser smoke test of the userscript's button, panel, download and capture mode. |
+
+`claude-project-exporter/claude-project-exporter.test.js`
+
+```bash
+node --test scripts/claude-project-exporter/claude-project-exporter.test.js
+```
+
+`claude-project-exporter/claude-project-exporter.user.js`
+
+```bash
+node --test scripts/claude-project-exporter/claude-project-exporter.test.js
+```
+
+`claude-project-exporter/ui-smoke.js`
+
+```bash
+node scripts/claude-project-exporter/ui-smoke.js [screenshot.png]
+```
+
 ## cosmos
 
 | Script | What it does |
