@@ -33,7 +33,7 @@ const brief = (c) => ({ uuid: c.uuid, name: c.name, created_at: c.created_at, up
 function answer(url) {
   const p = url.pathname;
   if (p === '/api/organizations') return [{ uuid: ORG }];
-  if (p === `/api/organizations/${ORG}/projects/${PROJ}`) return { uuid: PROJ, name: 'Smoke Project', prompt_template: 'Be brief.' };
+  if (p === `/api/organizations/${ORG}/projects/${PROJ}`) return { uuid: PROJ, name: 'Smoke Project', prompt_template: 'Be brief.', docs_count: 1, files_count: 0 };
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/docs`) return [{ uuid: 'd1', file_name: 'notes.md', content: '# notes' }];
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/files`) return [];
   if (p === `/api/organizations/${ORG}/projects/${PROJ}/conversations`) return CHATS.map(brief);

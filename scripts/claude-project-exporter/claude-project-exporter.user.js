@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Claude Project ZIP Exporter
 // @namespace    claude-project-exporter
-// @version      0.1.0
+// @version      0.2.0
 // @description  Export a whole claude.ai Project (instructions, knowledge files, every chat, attachments, artifacts) as one ZIP, with a count check that refuses to say "complete" when anything is missing.
 // @match        https://claude.ai/*
 // @grant        none
@@ -31,7 +31,7 @@
 (function () {
   'use strict';
 
-  const VERSION = '0.1.0';
+  const VERSION = '0.2.0';
   const UUID_RE = /[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/i;
   const UUID_RE_G = new RegExp(UUID_RE.source, 'gi');
   const enc = new TextEncoder();
@@ -53,7 +53,7 @@
     chat: (o, c) => `/api/organizations/${o}/chat_conversations/${c}?tree=True&rendering_mode=messages&render_all_tools=true`,
     fileContents: (o, f) => `/api/organizations/${o}/files/${f}/contents`,
     filePdf: (o, f) => `/api/${o}/files/${f}/document_pdf`,
-    containerList: (o, c) => `/api/organizations/${o}/conversations/${c}/wiggle/list-files?prefix=`,
+    containerList: (o, c, prefix) => `/api/organizations/${o}/conversations/${c}/wiggle/list-files?prefix=${encodeURIComponent(prefix || '')}`,
     containerFile: (o, c, path) => `/api/organizations/${o}/conversations/${c}/wiggle/download-file?path=${encodeURIComponent(path)}`,
   };
 
@@ -751,6 +751,12 @@
       catch (e) { reCancel(e); listOk = false; err('knowledge', 'docs list', e.message); }
       try { const raw = await client.getJSON(EP.projectFiles(orgId, projectId)); await zip.add('raw/_project_files.json', jsonText(raw)); files = asArray(raw, 'project files'); }
       catch (e) { reCancel(e); listOk = false; err('knowledge', 'files list', e.message); }
+      // The project itself reports how many docs and files it has: an independent
+      // check that neither list was cut short (seen live: docs_count, files_count).
+      for (const [label, list, key] of [['docs', docs, 'docs_count'], ['files', files, 'files_count']]) {
+        if (typeof project[key] !== 'number') { warn('knowledge', `${label} list`, `the project has no numeric ${key}, so the length of the ${label} list (${list.length}) could not be cross-checked`); continue; }
+        if (listOk && list.length !== project[key]) { listOk = false; err('knowledge', `${label} list`, `the project says it has ${project[key]} ${label} but the list returned ${list.length}; some were NOT exported`); }
+      }
       flags.knowledgeListing = listOk;
       counts.knowledge.found = docs.length + files.length;
       const docByName = new Map();
@@ -904,18 +910,21 @@
 
           // Files in the chat's code-execution container (where the site still exposes them).
           const container = [];
-          const wantContainer = (conv.settings && conv.settings.enabled_monkeys_in_a_barrel) || plan.presented.length > 0;
+          const wantContainer = (conv.settings && conv.settings.enabled_monkeys_in_a_barrel) || conv.is_wiggle_enabled === true || plan.presented.length > 0;
           if (wantContainer) {
             const paths = new Map(plan.presented.map(p => [p.path, p.mime_type]));
-            try {
-              const listed = await client.getJSON(EP.containerList(orgId, uuid));
-              const meta = listed && Array.isArray(listed.files_metadata) ? listed.files_metadata : null;
-              if (!meta) throw new Error(`unexpected list-files response: ${describe(listed)}`);
-              for (const f of meta) if (f && typeof f.path === 'string' && !paths.has(f.path)) paths.set(f.path, f.content_type || null);
-            } catch (e) {
-              reCancel(e);
-              warn('container', url, `could not list the code-execution container (${e.message}); only the ${plan.presented.length} file(s) named in the transcript were attempted`);
+            // An empty prefix was seen live to return nothing while files existed,
+            // so the two user-data folders are listed as well.
+            const listFailures = [];
+            for (const prefix of ['', '/mnt/user-data/outputs', '/mnt/user-data/uploads']) {
+              try {
+                const listed = await client.getJSON(EP.containerList(orgId, uuid, prefix));
+                const meta = listed && Array.isArray(listed.files_metadata) ? listed.files_metadata : null;
+                if (!meta) throw new Error(`unexpected list-files response: ${describe(listed)}`);
+                for (const f of meta) if (f && typeof f.path === 'string' && !paths.has(f.path)) paths.set(f.path, f.content_type || null);
+              } catch (e) { reCancel(e); listFailures.push(`prefix "${prefix}": ${e.message}`); }
             }
+            if (listFailures.length) warn('container', url, `could not fully list the code-execution container (${listFailures.join(' | ')}); files named in the transcript were still attempted`);
             for (const [p, mime] of paths) {
               const c = { kind: 'container_file', source_path: p, mime_type: mime, saved: false, path: uniqueName(`${plan.dir}/container/${safePath(p)}`, plan.used) };
               container.push(c);
@@ -1018,7 +1027,7 @@
   function captureRecord(method, url, status, contentType, shape, via) {
     let abs;
     try { abs = new URL(url, location.origin); } catch (e) { return; }
-    if (abs.origin !== location.origin || !abs.pathname.startsWith('/api/')) return;
+    if (abs.origin !== location.origin || !abs.pathname.startsWith('/api/') || /^\/api\/(v2\/rum|event_logging)\b/.test(abs.pathname)) return; // telemetry is noise
     const key = `${method} ${redactUrl(abs.href)}`;
     const prev = capture.entries.get(key);
     if (prev && (prev.shape !== undefined || shape === undefined)) { prev.count++; return; }

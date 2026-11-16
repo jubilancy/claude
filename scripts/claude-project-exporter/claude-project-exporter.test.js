@@ -268,7 +268,7 @@ function mockApi(overrides = {}) {
   const routes = {
     '/api/organizations': () => [{ uuid: 'ffffffff-ffff-4fff-8fff-ffffffffffff' }, { uuid: ORG }],
     [`/api/organizations/ffffffff-ffff-4fff-8fff-ffffffffffff/projects/${PROJ}`]: () => 404,
-    [`/api/organizations/${ORG}/projects/${PROJ}`]: () => ({ uuid: PROJ, name: 'Démo Project', prompt_template: 'Always answer in haiku.', created_at: '2026-01-01T00:00:00Z' }),
+    [`/api/organizations/${ORG}/projects/${PROJ}`]: () => ({ uuid: PROJ, name: 'Démo Project', prompt_template: 'Always answer in haiku.', created_at: '2026-01-01T00:00:00Z', docs_count: 3, files_count: 3, memory_general_enabled: true }),
     [`/api/organizations/${ORG}/projects/${PROJ}/docs`]: () => [
       { uuid: 'd1', file_name: 'notes.md', content: '# notes', created_at: '2026-01-05T00:00:00Z' },
       { uuid: 'd2', file_name: 'notes.md', content: '# second notes' },
@@ -284,7 +284,10 @@ function mockApi(overrides = {}) {
     [`/api/organizations/${ORG}/files/k3/contents`]: () => 404,
     [`/api/${ORG}/files/f-img/preview`]: () => new Uint8Array([9, 8, 7]),
     [`/api/organizations/${ORG}/projects/${PROJ}/conversations`]: () => [1, 2, 3, 4].map(n => summary(convs.get(cid(n)))),
-    [`/api/organizations/${ORG}/conversations/${cid(3)}/wiggle/list-files`]: () => ({ success: true, files: ['x'], files_metadata: [{ path: '/mnt/user-data/outputs/out.csv', content_type: 'text/csv' }, { path: '/mnt/user-data/outputs/lost.txt' }] }),
+    // as seen live: an empty prefix lists nothing even though files exist
+    [`/api/organizations/${ORG}/conversations/${cid(3)}/wiggle/list-files`]: (u) => (u.searchParams.get('prefix') === '/mnt/user-data/outputs'
+      ? { success: true, files: ['x'], files_metadata: [{ path: '/mnt/user-data/outputs/out.csv', content_type: 'text/csv' }, { path: '/mnt/user-data/outputs/lost.txt' }] }
+      : { success: true, files: [], files_metadata: [] }),
     ...overrides,
   };
   const fetchImpl = async (href) => {
@@ -409,6 +412,7 @@ test('end to end: a clean project is COMPLETE WITH WARNINGS (extracted text), an
     const u = new URL(href);
     const json = (b) => new Response(JSON.stringify(b), { status: 200, headers: { 'content-type': 'application/json' } });
     if (u.pathname.endsWith(`/chat_conversations/${cid(4)}`)) return json(api.convs.get(cid(4)));
+    if (u.pathname === `/api/organizations/${ORG}/projects/${PROJ}`) return json({ uuid: PROJ, name: 'Démo Project', prompt_template: 'Always answer in haiku.', docs_count: 1, files_count: 0 });
     if (u.pathname.endsWith('/files')) return json([]);
     if (u.pathname.endsWith('/docs')) return json([{ uuid: 'd1', file_name: 'notes.md', content: '# notes' }]);
     if (u.pathname.endsWith('/conversations') ) return json([1, 2, 4, 5].map(n => { const c = api.convs.get(cid(n)); return { uuid: c.uuid, name: c.name, created_at: c.created_at, updated_at: c.updated_at }; }));
@@ -457,6 +461,13 @@ test('end to end: an error object where a list is expected is an error, not "0 f
   const out = await run(api, { memoryNone: true });
   assert.equal(out.flags.knowledgeListing, false);
   assert.match(out.check.reasons.join('\n'), /knowledge file list could not be read completely/);
+});
+
+test('end to end: project docs_count larger than the docs list blocks "complete"', async () => {
+  const api = mockApi({ [`/api/organizations/${ORG}/projects/${PROJ}`]: () => ({ uuid: PROJ, name: 'P', prompt_template: 'x', docs_count: 40, files_count: 3 }) });
+  const out = await run(api, { memoryNone: true });
+  assert.equal(out.flags.knowledgeListing, false);
+  assert.match(unzipTo(out.parts).text('_errors.md'), /the project says it has 40 docs but the list returned 3/);
 });
 
 test('client: refuses any URL that is not on the page origin', async () => {
