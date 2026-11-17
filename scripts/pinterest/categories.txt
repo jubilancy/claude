@@ -1,0 +1,4 @@
+# Category: keyword, keyword, ...   (matched against the title and tags, case-insensitive)
+# Seed only: replace with ~24 categories once the real tags are scanned (--scan).
+Arthurian Legend: arthur, arthurian, camelot, round table, green knight, gawaine, lancelot
+Illustration: howard pyle, illustration, illustrator

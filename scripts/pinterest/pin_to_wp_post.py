@@ -12,17 +12,27 @@ What it does:
 - For each note, reads the pin heading ("## 1. Title | tag, tag, tag"), the
   Source URL and the image, and writes <slug>.md where the slug comes from the
   title (gawaine-arthurian-knight.md).
-- Output layout:
+- Category and tags go in YAML front matter (WordPress metadata), not in the
+  post body. Output layout:
+      ---
+      title: "Gawaine Arthurian Knight"
+      slug: gawaine-arthurian-knight
+      categories: ["Arthurian Legend"]
+      tags: ["Howard pyle", "Arthurian legend", "Green knight"]
+      ---
+
       # Gawaine Arthurian Knight
 
       Source URL: [view-source](https://www.pinterest.com/pin/...)
 
-      Category: Howard pyle
-      Tags: #Howard pyle #Arthurian legend #Green knight
-
       ![alt](image url)
 - Title = text before the first " | ", Title Cased. Tags = the comma list after
-  it. Category = the first tag (WordPress needs one; edit if you prefer another).
+  it. Category = chosen from keywords: categories.txt (next to this script, or
+  --categories FILE) has one "Category: keyword, keyword" line per category.
+  The category with the most keyword hits in the title + tags wins (ties go to
+  the earlier line). No hit -> "Uncategorized" and a warning in the log.
+- --scan prints every tag with its count (most common first) so you can build
+  categories.txt from the real data. It writes no posts.
 - Skips notes whose output file already exists (use --force to redo them).
   Two notes with the same title get -2, -3 ... on the slug.
 - Never stops on one bad file; every outcome goes in the log.
@@ -76,12 +86,34 @@ def parse_note(text: str, fallback: str):
             "img": img_url, "tags": tags}
 
 
+def load_categories(path: Path):
+    cats = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and ":" in line:
+            name, _, kws = line.partition(":")
+            cats.append((name.strip(), [k.strip().lower() for k in kws.split(",") if k.strip()]))
+    return cats
+
+
+def pick_category(p: dict, cats):
+    hay = " ".join([p["title"]] + p["tags"]).lower()
+    best, score = "", 0
+    for name, kws in cats:
+        n = sum(1 for k in kws if k in hay)
+        if n > score:
+            best, score = name, n
+    return best
+
+
 def render(p: dict) -> str:
-    lines = [f"# {p['title']}", ""]
+    q = lambda v: '"' + v.replace("\\", "\\\\").replace('"', '\\"') + '"'
+    lines = ["---", f"title: {q(p['title'])}", f"slug: {p['slug']}",
+             f"categories: [{q(p['category'])}]",
+             "tags: [" + ", ".join(q(t) for t in p["tags"]) + "]", "---", "",
+             f"# {p['title']}", ""]
     if p["url"]:
         lines += [f"Source URL: [view-source]({p['url']})", ""]
-    if p["tags"]:
-        lines += [f"Category: {p['tags'][0]}", "Tags: " + " ".join("#" + t for t in p["tags"]), ""]
     if p["img"]:
         lines += [f"![{p['alt']}]({p['img']})", ""]
     return "\n".join(lines)
@@ -123,6 +155,8 @@ def main():
     ap = argparse.ArgumentParser(description="Pin notes -> WordPress post files")
     ap.add_argument("input", help=".zip, folder or .md file")
     ap.add_argument("--output", default="wp-posts", help="output folder (default wp-posts)")
+    ap.add_argument("--categories", default=str(Path(__file__).with_name("categories.txt")))
+    ap.add_argument("--scan", action="store_true", help="list tag counts and exit")
     ap.add_argument("--force", action="store_true", help="overwrite existing output files")
     a = ap.parse_args()
 
@@ -137,10 +171,22 @@ def main():
     except Exception as e:
         errors.append((str(inp), f"{type(e).__name__}: {e}"))
 
+    if a.scan:
+        from collections import Counter
+        c = Counter()
+        for f in files:
+            c.update(t.lower() for t in parse_note(f.read_text(encoding="utf-8-sig"), f.stem)["tags"])
+        for t, n in c.most_common():
+            print(f"{n}\t{t}")
+        return
+    cats = load_categories(Path(a.categories))
     used = set()
     for f in files:
         try:
             p = parse_note(f.read_text(encoding="utf-8-sig"), f.stem)
+            p["category"] = pick_category(p, cats) or "Uncategorized"
+            if p["category"] == "Uncategorized":
+                warnings.append((f.name, "no category keyword matched"))
             slug = slugify(p["title"]) or slugify(f.stem)
             if not slug:
                 raise ValueError("could not make a slug")
@@ -148,6 +194,7 @@ def main():
             while slug in used:
                 slug, n = f"{base}-{n}", n + 1
             used.add(slug)
+            p["slug"] = slug
             for field in ("url", "img", "tags"):
                 if not p[field]:
                     warnings.append((f.name, f"no {field} found"))
