@@ -88,6 +88,20 @@ uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
 uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 ```
 
+## pinterest
+
+| Script | What it does |
+|---|---|
+| [`pinterest/pin_to_wp_post.py`](pinterest/pin_to_wp_post.py) | Pinterest pin markdown notes -&gt; WordPress-ready post files. |
+
+`pinterest/pin_to_wp_post.py`
+
+```bash
+uv run scripts/pinterest/pin_to_wp_post.py notes.zip
+uv run scripts/pinterest/pin_to_wp_post.py notes/ --output posts
+uv run scripts/pinterest/pin_to_wp_post.py pin.md --force
+```
+
 ## raindrop
 
 | Script | What it does |
