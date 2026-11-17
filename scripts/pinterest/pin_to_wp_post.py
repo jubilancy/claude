@@ -23,9 +23,9 @@ What it does:
 
       # Gawaine Arthurian Knight
 
-      Source URL: [view-source](https://www.pinterest.com/pin/...)
-
       ![alt](image url)
+
+      [view-source](https://www.pinterest.com/pin/...)
 - Title = text before the first " | ", Title Cased. Tags = the comma list after
   it. Category = chosen from keywords: categories.txt (next to this script, or
   --categories FILE) has one "Category: keyword, keyword" line per category.
@@ -112,10 +112,10 @@ def render(p: dict) -> str:
              f"categories: [{q(p['category'])}]",
              "tags: [" + ", ".join(q(t) for t in p["tags"]) + "]", "---", "",
              f"# {p['title']}", ""]
-    if p["url"]:
-        lines += [f"Source URL: [view-source]({p['url']})", ""]
     if p["img"]:
         lines += [f"![{p['alt']}]({p['img']})", ""]
+    if p["url"]:
+        lines += [f"[view-source]({p['url']})", ""]
     return "\n".join(lines)
 
 
