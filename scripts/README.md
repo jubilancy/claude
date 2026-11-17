@@ -4,6 +4,20 @@
 
 Command-line tools, one folder per topic. Python scripts run with [uv](https://docs.astral.sh/uv/) and declare their own dependencies inline, so there is nothing to install first. Run everything from the repository root.
 
+## archive_org
+
+| Script | What it does |
+|---|---|
+| [`archive_org/ia_mediatype.py`](archive_org/ia_mediatype.py) | archive.org /details/ URLs -&gt; identifier + mediatype (item vs collection). |
+
+`archive_org/ia_mediatype.py`
+
+```bash
+uv run scripts/archive_org/ia_mediatype.py                      # ./urls.txt -> ./ia-mediatype.csv
+uv run scripts/archive_org/ia_mediatype.py --input links.txt --output out.csv
+uv run scripts/archive_org/ia_mediatype.py --force              # redo identifiers already in output
+```
+
 ## books
 
 | Script | What it does |
