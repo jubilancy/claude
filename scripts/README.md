@@ -92,7 +92,16 @@ uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every 
 
 | Script | What it does |
 |---|---|
+| [`instagram/categorize_saved.py`](instagram/categorize_saved.py) | sort the Instagram saved-posts table into categories by hashtag. |
 | [`instagram/saved_to_table.py`](instagram/saved_to_table.py) | Instagram data export -&gt; one CSV table of every saved post. |
+
+`instagram/categorize_saved.py`
+
+```bash
+uv run scripts/instagram/categorize_saved.py saved-posts-part1.csv saved-posts-part2.csv
+uv run scripts/instagram/categorize_saved.py saved-posts*.csv --outdir by-category --prefix ig-saved
+uv run scripts/instagram/categorize_saved.py saved-posts*.csv --max-rows 6000
+```
 
 `instagram/saved_to_table.py`
 
