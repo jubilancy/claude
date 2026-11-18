@@ -92,8 +92,16 @@ uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every 
 
 | Script | What it does |
 |---|---|
+| [`instagram/books_from_sheet.py`](instagram/books_from_sheet.py) | join a hand-checked list of book mentions to the saved-posts table. |
 | [`instagram/categorize_saved.py`](instagram/categorize_saved.py) | sort the Instagram saved-posts table into categories by hashtag. |
 | [`instagram/saved_to_table.py`](instagram/saved_to_table.py) | Instagram data export -&gt; one CSV table of every saved post. |
+
+`instagram/books_from_sheet.py`
+
+```bash
+uv run scripts/instagram/books_from_sheet.py POSTS.csv BOOKS.csv
+uv run scripts/instagram/books_from_sheet.py POSTS.csv BOOKS.csv --outdir out
+```
 
 `instagram/categorize_saved.py`
 
