@@ -13,8 +13,14 @@ What it does:
   in CATEGORIES (specific topics before Memes, Memes before Cats, Cats before
   Animals). Generic tags (#fyp, #cute, #viral ...) vote for nothing.
 - Posts with no hashtag, or none that match, go to "Unsorted".
-- Keeps every original column and adds two: category, matched_tags (the
-  hashtags that decided it).
+- With --caption-fallback, those leftover posts get a second try on their
+  caption words: the same keyword lists, but each caption word must START WITH
+  a keyword (so "cat" does not match "category"), and keywords with a space or
+  non-Latin letters (e.g. 猫, 고양이) are looked for anywhere in the caption.
+  Same voting and tie-break. Posts that still match nothing stay "Unsorted".
+- Keeps every original column and adds three: category, matched_tags (the
+  hashtags or caption words that decided it) and sorted_by (hashtags, caption,
+  or empty for Unsorted).
 - Writes one CSV per category (rows newest saved first), named
   {prefix}-NN-{category}.csv, split into -partN files when a category would be
   too big to upload in one go (see --max-rows).
@@ -25,6 +31,7 @@ Usage:
     uv run scripts/instagram/categorize_saved.py saved-posts-part1.csv saved-posts-part2.csv
     uv run scripts/instagram/categorize_saved.py saved-posts*.csv --outdir by-category --prefix ig-saved
     uv run scripts/instagram/categorize_saved.py saved-posts*.csv --max-rows 6000
+    uv run scripts/instagram/categorize_saved.py saved-posts*.csv --caption-fallback   # also sort leftovers by caption words
 """
 
 import argparse
@@ -146,6 +153,52 @@ def categorize(tags):
     return UNSORTED, []
 
 
+WORD_RE = re.compile(r"[^\W_]+")
+
+
+def caption_votes(word, text):
+    """Categories a caption word votes for. Latin keywords must start the word;
+    keywords with a space or non-Latin letters are searched in the whole caption."""
+    out = set()
+    for name, words in CATEGORIES:
+        for w in words:
+            if w.endswith("="):
+                if word == w[:-1]:
+                    out.add(name)
+                    break
+            elif w.isascii() and " " not in w and "_" not in w:
+                if word.startswith(w):
+                    out.add(name)
+                    break
+            elif not w.isascii() or " " in w:
+                if w in text:
+                    out.add(name)
+                    break
+    return out
+
+
+def categorize_caption(caption):
+    """Pick one category from caption words. Returns (category, deciding words)."""
+    text = caption.lower()
+    votes = Counter()
+    by_cat = defaultdict(list)
+    seen_words = set()
+    for word in WORD_RE.findall(text):
+        if word in seen_words:
+            continue
+        seen_words.add(word)
+        for cat in caption_votes(word, text):
+            votes[cat] += 1
+            by_cat[cat].append(word)
+    if not votes:
+        return UNSORTED, []
+    best = max(votes.values())
+    for name, _ in CATEGORIES:
+        if votes.get(name) == best:
+            return name, by_cat[name]
+    return UNSORTED, []
+
+
 def main():
     ap = argparse.ArgumentParser(description="Sort Instagram saved posts into categories by hashtag")
     ap.add_argument("inputs", nargs="+", help="saved-posts CSV file(s) from saved_to_table.py")
@@ -153,6 +206,8 @@ def main():
     ap.add_argument("--prefix", default="instagram-saved", help="file name prefix")
     ap.add_argument("--max-rows", type=int, default=6000,
                     help="split a category into parts above this many rows (default 6000)")
+    ap.add_argument("--caption-fallback", action="store_true",
+                    help="sort posts the hashtags could not place by their caption words")
     args = ap.parse_args()
 
     started = datetime.now()
@@ -181,13 +236,18 @@ def main():
         try:
             tags = r.get("hashtags", "").split()
             cat, why = categorize(tags)
+            by = "hashtags" if cat != UNSORTED else ""
+            if cat == UNSORTED and args.caption_fallback:
+                cat, why = categorize_caption(r.get("caption", ""))
+                by = "caption" if cat != UNSORTED else ""
             r["category"] = cat
             r["matched_tags"] = " ".join(why)
+            r["sorted_by"] = by
             per_cat[cat].append(r)
         except Exception as e:
             errors.append((r.get("post_url", "?"), f"could not categorize: {e}"))
 
-    out_cols = (fieldnames or []) + ["category", "matched_tags"]
+    out_cols = (fieldnames or []) + ["category", "matched_tags", "sorted_by"]
     order = [n for n, _ in CATEGORIES] + [UNSORTED]
     total_written = 0
     try:

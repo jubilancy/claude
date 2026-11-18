@@ -101,6 +101,7 @@ uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every 
 uv run scripts/instagram/categorize_saved.py saved-posts-part1.csv saved-posts-part2.csv
 uv run scripts/instagram/categorize_saved.py saved-posts*.csv --outdir by-category --prefix ig-saved
 uv run scripts/instagram/categorize_saved.py saved-posts*.csv --max-rows 6000
+uv run scripts/instagram/categorize_saved.py saved-posts*.csv --caption-fallback   # also sort leftovers by caption words
 ```
 
 `instagram/saved_to_table.py`
