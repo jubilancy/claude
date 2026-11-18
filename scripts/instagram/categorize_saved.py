@@ -32,6 +32,7 @@ Usage:
     uv run scripts/instagram/categorize_saved.py saved-posts*.csv --outdir by-category --prefix ig-saved
     uv run scripts/instagram/categorize_saved.py saved-posts*.csv --max-rows 6000
     uv run scripts/instagram/categorize_saved.py saved-posts*.csv --caption-fallback   # also sort leftovers by caption words
+    uv run scripts/instagram/categorize_saved.py new-saved.csv --single-file --prefix new-saved   # one CSV, rows in input order
 """
 
 import argparse
@@ -208,6 +209,8 @@ def main():
                     help="split a category into parts above this many rows (default 6000)")
     ap.add_argument("--caption-fallback", action="store_true",
                     help="sort posts the hashtags could not place by their caption words")
+    ap.add_argument("--single-file", action="store_true",
+                    help="write ONE CSV ({prefix}.csv) with a category column instead of one CSV per category")
     args = ap.parse_args()
 
     started = datetime.now()
@@ -254,7 +257,18 @@ def main():
         outdir.mkdir(parents=True, exist_ok=True)
     except Exception as e:
         errors.append((str(outdir), f"could not create folder: {e}"))
-    for i, cat in enumerate(order, 1):
+    if args.single_file:  # one CSV, all categories, rows in input order
+        path = outdir / f"{args.prefix}.csv"
+        try:
+            with path.open("w", encoding="utf-8-sig", newline="") as f:
+                w = csv.DictWriter(f, fieldnames=out_cols, extrasaction="ignore")
+                w.writeheader()
+                w.writerows(rows)
+            written_files.append((str(path), f"all categories: {len(rows)} posts"))
+            total_written += len(rows)
+        except Exception as e:
+            errors.append((str(path), f"could not write: {e}"))
+    for i, cat in enumerate([] if args.single_file else order, 1):
         rs = sorted(per_cat.get(cat, []), key=lambda r: r.get("saved_at", ""), reverse=True)
         if not rs:
             warnings.append((cat, "no posts matched this category; no file written"))
