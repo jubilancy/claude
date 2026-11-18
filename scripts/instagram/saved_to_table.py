@@ -19,12 +19,15 @@ What it does:
 - Posts that are in a collection but not in saved_posts.json are NOT added to
   the table; they are listed under WARNINGS in the log.
 - Writes a UTF-8 CSV (with BOM, so Google Sheets and Excel read it right).
+- With --parts N, splits the rows (newest saved first) into N CSVs of near-equal
+  size, each with the header row, e.g. saved-posts-part1.csv. Nothing is dropped.
 - Writes results-log-{timestamp}.txt in the current folder every run, with
   separate lists for written, skipped, and errors, plus warnings.
 
 Usage:
     uv run scripts/instagram/saved_to_table.py --input /path/to/saved
     uv run scripts/instagram/saved_to_table.py --input /path/to/saved --output saved-posts.csv
+    uv run scripts/instagram/saved_to_table.py --input /path/to/saved --parts 2   # saved-posts-part1.csv, -part2.csv
 """
 
 import argparse
@@ -109,6 +112,7 @@ def main():
     ap = argparse.ArgumentParser(description="Instagram saved posts -> CSV table")
     ap.add_argument("--input", required=True, help="folder with saved_posts.json and saved_collections.json")
     ap.add_argument("--output", default="saved-posts.csv", help="CSV to write (default ./saved-posts.csv)")
+    ap.add_argument("--parts", type=int, default=1, help="split output into N CSVs, newest saved first")
     args = ap.parse_args()
 
     started = datetime.now()
@@ -164,13 +168,19 @@ def main():
         if sc not in seen:
             warnings.append((sc, "in collection(s) " + " | ".join(names) + " but not in saved_posts.json"))
 
-    try:
-        with out_path.open("w", encoding="utf-8-sig", newline="") as f:
-            w = csv.writer(f)
-            w.writerow(COLUMNS)
-            w.writerows(rows)
-    except Exception as e:
-        errors.append((str(out_path), f"could not write CSV: {e}"))
+    rows.sort(key=lambda r: r[8], reverse=True)  # newest saved first
+    n = max(1, args.parts)
+    size = -(-len(rows) // n) if rows else 0
+    outputs = [out_path] if n == 1 else [
+        out_path.with_name(f"{out_path.stem}-part{i + 1}{out_path.suffix}") for i in range(n)]
+    for i, path in enumerate(outputs):
+        try:
+            with path.open("w", encoding="utf-8-sig", newline="") as f:
+                w = csv.writer(f)
+                w.writerow(COLUMNS)
+                w.writerows(rows[i * size:(i + 1) * size] if n > 1 else rows)
+        except Exception as e:
+            errors.append((str(path), f"could not write CSV: {e}"))
 
     finished = datetime.now()
     skipped_total = len(skipped_dupes) + len(skipped_nourl)
@@ -178,7 +188,7 @@ def main():
         f"Run started : {started:%Y-%m-%d %H:%M:%S}",
         f"Run finished: {finished:%Y-%m-%d %H:%M:%S} (duration {(finished - started).total_seconds():.1f}s)",
         f"Input       : {in_dir}",
-        f"Output      : {out_path}",
+        f"Output      : {', '.join(str(p) for p in outputs)}",
         "",
         "SUMMARY",
         f"  Total posts in saved_posts.json : {total}",
@@ -209,7 +219,7 @@ def main():
     section("ERRORS", errors)
     section("WARNINGS", warnings)
     log_path.write_text("\n".join(lines), encoding="utf-8")
-    print(f"Wrote {len(written)} rows to {out_path}")
+    print(f"Wrote {len(written)} rows to {', '.join(str(p) for p in outputs)}")
     print(f"Results log: {log_path.resolve()}")
     return 0
 

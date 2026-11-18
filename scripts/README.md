@@ -99,6 +99,7 @@ uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every 
 ```bash
 uv run scripts/instagram/saved_to_table.py --input /path/to/saved
 uv run scripts/instagram/saved_to_table.py --input /path/to/saved --output saved-posts.csv
+uv run scripts/instagram/saved_to_table.py --input /path/to/saved --parts 2   # saved-posts-part1.csv, -part2.csv
 ```
 
 ## raindrop
