@@ -88,6 +88,19 @@ uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
 uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 ```
 
+## instagram
+
+| Script | What it does |
+|---|---|
+| [`instagram/saved_to_table.py`](instagram/saved_to_table.py) | Instagram data export -&gt; one CSV table of every saved post. |
+
+`instagram/saved_to_table.py`
+
+```bash
+uv run scripts/instagram/saved_to_table.py --input /path/to/saved
+uv run scripts/instagram/saved_to_table.py --input /path/to/saved --output saved-posts.csv
+```
+
 ## raindrop
 
 | Script | What it does |
