@@ -88,6 +88,39 @@ uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
 uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 ```
 
+## instagram
+
+| Script | What it does |
+|---|---|
+| [`instagram/books_from_sheet.py`](instagram/books_from_sheet.py) | join a hand-checked list of book mentions to the saved-posts table. |
+| [`instagram/categorize_saved.py`](instagram/categorize_saved.py) | sort the Instagram saved-posts table into categories by hashtag. |
+| [`instagram/saved_to_table.py`](instagram/saved_to_table.py) | Instagram data export -&gt; one CSV table of every saved post. |
+
+`instagram/books_from_sheet.py`
+
+```bash
+uv run scripts/instagram/books_from_sheet.py POSTS.csv BOOKS.csv
+uv run scripts/instagram/books_from_sheet.py POSTS.csv BOOKS.csv --outdir out
+```
+
+`instagram/categorize_saved.py`
+
+```bash
+uv run scripts/instagram/categorize_saved.py saved-posts-part1.csv saved-posts-part2.csv
+uv run scripts/instagram/categorize_saved.py saved-posts*.csv --outdir by-category --prefix ig-saved
+uv run scripts/instagram/categorize_saved.py saved-posts*.csv --max-rows 6000
+uv run scripts/instagram/categorize_saved.py saved-posts*.csv --caption-fallback   # also sort leftovers by caption words
+uv run scripts/instagram/categorize_saved.py new-saved.csv --single-file --prefix new-saved   # one CSV, rows in input order
+```
+
+`instagram/saved_to_table.py`
+
+```bash
+uv run scripts/instagram/saved_to_table.py --input /path/to/saved
+uv run scripts/instagram/saved_to_table.py --input /path/to/saved --output saved-posts.csv
+uv run scripts/instagram/saved_to_table.py --input /path/to/saved --parts 2   # saved-posts-part1.csv, -part2.csv
+```
+
 ## raindrop
 
 | Script | What it does |
