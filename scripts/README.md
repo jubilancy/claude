@@ -9,6 +9,7 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 | Script | What it does |
 |---|---|
 | [`books/bookmark_titles.py`](books/bookmark_titles.py) | Raindrop bookmark dump (JSON) -&gt; clean list of book titles. |
+| [`books/forgottenbooks_titles.py`](books/forgottenbooks_titles.py) | turn Forgotten Books links into a list of readable book titles |
 | [`books/goodreads_fetch.py`](books/goodreads_fetch.py) | Goodreads list / shelf fetcher |
 
 `books/bookmark_titles.py`
@@ -16,6 +17,13 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 ```bash
 uv run scripts/books/bookmark_titles.py books.json
 uv run scripts/books/bookmark_titles.py books.json --csv titles.csv --txt titles.txt
+```
+
+`books/forgottenbooks_titles.py`
+
+```bash
+uv run scripts/books/forgottenbooks_titles.py library.json                 # -> forgottenbooks-titles.csv + .txt
+uv run scripts/books/forgottenbooks_titles.py urls.txt -o my-books
 ```
 
 `books/goodreads_fetch.py`
