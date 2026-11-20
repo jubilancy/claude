@@ -85,7 +85,9 @@ def read_header(path: Path) -> str:
     if path.suffix == ".py":
         return ast.get_docstring(ast.parse(text)) or ""
     if path.suffix in (".js", ".mjs"):
-        m = re.search(r"/\*+\s*(.*?)\*/", text, re.S)
+        # A block comment that starts its own line, so a "https://site/*" in a
+        # userscript header is not mistaken for the start of the doc comment.
+        m = re.search(r"^[ \t]*/\*+\s*(.*?)\*/", text, re.S | re.M)
         if not m:
             return ""
         body = [re.sub(r"^\s*\*\s?", "", l) for l in m.group(1).splitlines()]

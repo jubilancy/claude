@@ -12,6 +12,12 @@
 - If something can't be verified, leave it out and say so. Don't hand unverified work back for me to check.
 - For link lists, check that each link resolves, the project isn't archived, and the description matches the page.
 
+## Raindrop: always add provenance tags
+
+- Whenever bookmarks are moved out of a collection into another one (merge, regroup, sort), first add a tag to each bookmark naming where it came from: `<parent>/<collection title>`, or just the title for a top-level collection.
+- This applies to `merge_collections` too. A merge deletes the sources, so tag the bookmarks (via `update_bookmarks`, moving them into the target) *before* merging, never after.
+- Do not ask each time. This is a standing rule.
+
 ## Book and ISBN lookups
 
 - Messy pasted text (search-result dumps, "People also search for" blocks, descriptions) still contains books. Normalize it first: extract every book title mentioned, including ones named only inside descriptions, and de-duplicate variants of the same title.
