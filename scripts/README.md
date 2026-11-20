@@ -88,6 +88,20 @@ uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
 uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 ```
 
+## glam
+
+| Script | What it does |
+|---|---|
+| [`glam/awesome_verify.py`](glam/awesome_verify.py) | Verify GitHub repos from a seed list and write an awesome-list Markdown file. |
+
+`glam/awesome_verify.py`
+
+```bash
+uv run scripts/glam/awesome_verify.py                                   # seeds: scripts/glam/glam-seeds.txt
+uv run scripts/glam/awesome_verify.py --seeds my-seeds.txt --output awesome/glam-tools.md
+uv run scripts/glam/awesome_verify.py --max-age-days 365 --title "Awesome GLAM Tools"
+```
+
 ## raindrop
 
 | Script | What it does |

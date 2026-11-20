@@ -1,0 +1,319 @@
+Run started : 2026-11-20 23:12:48
+Run finished: 2026-11-20 23:14:22 (duration 0:01:34.741213)
+Input       : /home/user/claude/scripts/glam/glam-seeds.txt
+Output      : ../../awesome/glam-tools.md
+
+SUMMARY
+  total seeds                 : 148
+  done this run (written)     : 126
+  already done (skipped)      : 0
+  skipped on purpose          : 13
+  errors                      : 9
+
+SUCCESSFUL: WRITTEN (126)
+  ProjectMirador/mirador
+    625 stars, pushed 2026-11-20
+  UniversalViewer/universalviewer
+    576 stars, pushed 2026-11-18
+  DDMAL/diva.js
+    262 stars, pushed 2026-11-18
+  tamerlaneviewer/tamerlane
+    14 stars, pushed 2026-11-11
+  annotorious/annotorious
+    875 stars, pushed 2026-11-18
+  cantaloupe-project/cantaloupe
+    308 stars, pushed 2026-11-13
+  ruven/iipsrv
+    326 stars, pushed 2026-11-17
+  glenrobson/iiif-tiler-action
+    1 stars, pushed 2026-04-14
+  allmaps/allmaps
+    151 stars, pushed 2026-11-20
+  dezoomify/dezoomify
+    851 stars, pushed 2026-11-19
+  iiif-prezi/iiif-prezi3
+    42 stars, pushed 2026-11-19
+  quarto-dev/quarto-cli
+    6196 stars, pushed 2026-11-17
+  withastro/astro
+    64096 stars, pushed 2026-11-20
+  mkdocs/mkdocs
+    22563 stars, pushed 2025-10-20
+  observablehq/framework
+    3684 stars, pushed 2026-05-15
+  Pagefind/pagefind
+    5570 stars, pushed 2026-11-18
+  simonw/datasette
+    11618 stars, pushed 2026-11-20
+  simonw/sqlite-utils
+    2208 stars, pushed 2026-11-12
+  simonw/shot-scraper
+    2609 stars, pushed 2026-10-14
+  sveltia/sveltia-cms
+    3104 stars, pushed 2026-11-20
+  decaporg/decap-cms
+    19495 stars, pushed 2026-11-19
+  emmcarbe/torchio
+    4 stars, pushed 2026-10-27
+  programminghistorian/jekyll
+    559 stars, pushed 2026-11-19
+  NUKnightLab/TimelineJS3
+    3236 stars, pushed 2026-11-16
+  NUKnightLab/StoryMapJS
+    253 stars, pushed 2026-09-13
+  anvc/scalar
+    244 stars, pushed 2026-11-16
+  archivesspace/archivesspace
+    449 stars, pushed 2026-11-20
+  artefactual/atom
+    308 stars, pushed 2026-11-13
+  artefactual/archivematica
+    527 stars, pushed 2026-11-19
+  collectiveaccess/providence
+    389 stars, pushed 2026-11-19
+  collectiveaccess/pawtucket2
+    108 stars, pushed 2026-11-19
+  DSpace/DSpace
+    1115 stars, pushed 2026-11-20
+  samvera/hyrax
+    201 stars, pushed 2026-11-20
+  projectblacklight/blacklight
+    798 stars, pushed 2026-11-20
+  vufind-org/vufind
+    308 stars, pushed 2026-11-20
+  Koha-Community/Koha
+    601 stars, pushed 2026-11-20
+  evergreen-library-system/Evergreen
+    157 stars, pushed 2026-11-19
+  tainacan/tainacan
+    176 stars, pushed 2026-11-19
+  inveniosoftware/invenio
+    663 stars, pushed 2026-06-29
+  zenodo/zenodo
+    1046 stars, pushed 2026-03-13
+  fabiodalez-dev/Pinakes
+    95 stars, pushed 2026-11-20
+  specify/specify6
+    16 stars, pushed 2025-10-27
+  ArctosDB/arctos
+    71 stars, pushed 2025-11-20
+  dedalia-org/dedalo
+    51 stars, pushed 2026-11-16
+  ewg118/numishare
+    48 stars, pushed 2026-06-22
+  CPHDH/Curatescape
+    49 stars, pushed 2026-09-28
+  collectionspace/services
+    22 stars, pushed 2026-11-05
+  kitodo/kitodo-production
+    78 stars, pushed 2026-11-20
+  intranda/goobi-workflow
+    65 stars, pushed 2026-11-20
+  keeps/roda
+    108 stars, pushed 2026-11-20
+  webrecorder/pywb
+    1718 stars, pushed 2026-11-19
+  webrecorder/browsertrix-crawler
+    1199 stars, pushed 2026-11-19
+  webrecorder/browsertrix
+    501 stars, pushed 2026-11-20
+  webrecorder/warcio
+    486 stars, pushed 2026-10-28
+  internetarchive/heritrix3
+    3354 stars, pushed 2026-11-20
+  ArchiveTeam/grab-site
+    1617 stars, pushed 2025-05-23
+  gildas-lormeau/SingleFile
+    22970 stars, pushed 2026-11-20
+  gildas-lormeau/single-file-cli
+    1699 stars, pushed 2026-11-18
+  Rhizome-Conifer/conifer
+    1549 stars, pushed 2026-07-22
+  oduwsdl/ipwb
+    659 stars, pushed 2026-07-24
+  WikiTeam/wikiteam
+    876 stars, pushed 2026-01-10
+  bellingcat/auto-archiver
+    1158 stars, pushed 2026-11-18
+  machawk1/wail
+    403 stars, pushed 2026-06-19
+  karakeep-app/karakeep
+    30725 stars, pushed 2026-11-20
+  linkwarden/linkwarden
+    20490 stars, pushed 2026-11-18
+  wallabag/wallabag
+    13070 stars, pushed 2026-11-20
+  mikf/gallery-dl
+    20579 stars, pushed 2026-11-14
+  yt-dlp/yt-dlp
+    209410 stars, pushed 2026-11-19
+  bibanon/tubeup
+    523 stars, pushed 2026-10-27
+  gdamdam/iagitup
+    103 stars, pushed 2026-10-20
+  richardlehane/siegfried
+    274 stars, pushed 2026-11-20
+  openpreserve/jhove
+    204 stars, pushed 2026-09-16
+  tw4l/brunnhilde
+    96 stars, pushed 2025-11-28
+  LibraryOfCongress/bagit-python
+    275 stars, pushed 2026-06-18
+  BitCurator/bitcurator-distro
+    67 stars, pushed 2026-05-07
+  exiftool/exiftool
+    5283 stars, pushed 2026-11-16
+  tesseract-ocr/tesseract
+    77603 stars, pushed 2026-11-20
+  ocrmypdf/OCRmyPDF
+    35363 stars, pushed 2026-11-16
+  mittagessen/kraken
+    1110 stars, pushed 2026-11-20
+  OCR-D/core
+    137 stars, pushed 2026-11-09
+  naptha/tesseract.js
+    38846 stars, pushed 2026-05-17
+  TEIC/CETEIcean
+    185 stars, pushed 2026-10-20
+  eeditiones/tei-publisher-app
+    84 stars, pushed 2026-11-18
+  NatLibFi/Annif
+    279 stars, pushed 2026-11-12
+  paperless-ngx/paperless-ngx
+    48405 stars, pushed 2026-11-20
+  OpenRefine/OpenRefine
+    12113 stars, pushed 2026-11-20
+  codeforkjeff/conciliator
+    127 stars, pushed 2025-06-18
+  Post45-Data-Collective/BookReconciler
+    43 stars, pushed 2026-03-02
+  LibreCat/Catmandu
+    199 stars, pushed 2025-07-07
+  hectorcorrea/marcli
+    128 stars, pushed 2026-02-16
+  LibrariesHacked/openlibrary-search
+    249 stars, pushed 2026-01-30
+  internetarchive/openlibrary
+    6975 stars, pushed 2026-11-20
+  zotero/zotero
+    16003 stars, pushed 2026-11-20
+  retorquere/zotero-better-bibtex
+    7318 stars, pushed 2026-11-20
+  kovidgoyal/calibre
+    26480 stars, pushed 2026-11-20
+  janeczku/calibre-web
+    18586 stars, pushed 2026-11-15
+  advplyr/audiobookshelf
+    15081 stars, pushed 2026-11-19
+  gotson/komga
+    6865 stars, pushed 2026-11-18
+  Kareadita/Kavita
+    12157 stars, pushed 2026-11-20
+  bookwyrm-social/bookwyrm
+    2818 stars, pushed 2026-11-19
+  mateusz-bak/openreads
+    1696 stars, pushed 2026-11-17
+  dubyte/dir2opds
+    129 stars, pushed 2026-11-20
+  ilri/csv-metadata-quality
+    15 stars, pushed 2026-11-20
+  frictionlessdata/frictionless-py
+    859 stars, pushed 2026-10-15
+  wireservice/csvkit
+    6419 stars, pushed 2026-11-09
+  dathere/qsv
+    3834 stars, pushed 2026-11-20
+  saulpw/visidata
+    9478 stars, pushed 2026-11-11
+  wikimedia/pywikibot
+    781 stars, pushed 2026-11-19
+  yarl/pattypan
+    69 stars, pushed 2026-02-27
+  yarl/vicuna
+    44 stars, pushed 2026-11-19
+  commons-app/apps-android-commons
+    1215 stars, pushed 2026-11-20
+  WDscholia/scholia
+    257 stars, pushed 2026-11-19
+  Wikidata-Toolkit/Wikidata-Toolkit
+    416 stars, pushed 2026-11-16
+  opentapioca/opentapioca
+    263 stars, pushed 2026-08-26
+  kermitt2/entity-fishing
+    270 stars, pushed 2026-08-05
+  AtomGraph/LinkedDataHub
+    640 stars, pushed 2026-11-20
+  thegetty/linkedart.js
+    35 stars, pushed 2026-10-26
+  nishad/omeka-s-wikidata
+    23 stars, pushed 2026-09-03
+  Commonists/fastcci
+    24 stars, pushed 2025-09-06
+  photoprism/photoprism
+    40467 stars, pushed 2026-11-20
+  immich-app/immich
+    119734 stars, pushed 2026-11-20
+  mguidetti/are.na-multiplexer
+    91 stars, pushed 2026-11-03
+  omeka-s-modules/Datascribe
+    17 stars, pushed 2026-05-01
+  biblibre/omeka-cli
+    11 stars, pushed 2026-05-28
+  stark1tty/awesome-historical-maps
+    123 stars, pushed 2026-04-30
+  maehr/awesome-digital-history
+    369 stars, pushed 2026-11-13
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE: archived, stale or undescribed (13)
+  pelagios/recogito2
+    last push 2024-01-30, older than 730 days
+  Metalab/library-opac
+    last push 2021-07-10, older than 730 days
+  caltechlibrary/waystation
+    last push 2024-01-30, older than 730 days
+  oduwsdl/archivenow
+    last push 2024-01-23, older than 730 days
+  akamhy/waybackpy
+    last push 2024-02-26, older than 730 days
+  Florents-Tselai/WarcDB
+    last push 2024-07-13, older than 730 days
+  MediaArea/MediaConch
+    last push 2021-09-29, older than 730 days
+  edsu/pymarc
+    archived
+  xlcnd/isbnlib
+    last push 2024-08-01, older than 730 days
+  xlcnd/isbntools
+    last push 2023-06-05, older than 730 days
+  siznax/wptools
+    last push 2023-08-05, older than 730 days
+  UCSCLibrary/BulkMetadataEditor
+    last push 2023-11-29, older than 730 days
+  performant-software/Neatline
+    last push 2023-03-16, older than 730 days
+
+ERRORS (9)
+  tify-iiif/tify
+    not found by search (renamed, private or no access)
+  samvera-labs/clover-iiif
+    not found by search (renamed, private or no access)
+  edsilv/biiif
+    not found by search (renamed, private or no access)
+  11ty/eleventy
+    not found by search (renamed, private or no access)
+  Mukurtu/mukurtu-cms
+    not found by search (renamed, private or no access)
+  Islandora/islandora
+    not found by search (renamed, private or no access)
+  internetarchive/internetarchive
+    not found by search (renamed, private or no access)
+  escript/eScriptorium
+    not found by search (renamed, private or no access)
+  kermitt2/grobid
+    not found by search (renamed, private or no access)
+
+WARNINGS (0)
+  (none)

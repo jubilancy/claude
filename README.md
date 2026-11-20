@@ -8,7 +8,7 @@ Scripts, notes and small projects, kept in one repo and slowly turning into dotf
 |---|---|
 | [`scripts/`](scripts/README.md) | Command-line tools, one folder per topic (`books`, `cosmos`, `discord`, `tumblr`, `web`, `wikimedia`). Its README is generated. |
 | [`arena/`](arena/README.md) | Pinterest and Flickr to Are.na scripts, plus `wiki_to_csv.py`. |
-| [`awesome/`](awesome) | Curated lists in Markdown: Claude Code CLI tools, RSS tools. |
+| [`awesome/`](awesome) | Curated lists in Markdown: Claude Code CLI tools, RSS tools, GLAM tools. |
 | [`bluesky-bulk/`](bluesky-bulk) | Bulk-post to Bluesky from a CSV. |
 | [`social-archive/`](social-archive) | Download Instagram, Twitter/X and TikTok posts with gallery-dl. |
 | [`social-scrapers/`](social-scrapers/README.md) | Scraping notes and scripts for TikTok comments and Twitter replies. |
