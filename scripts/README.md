@@ -8,8 +8,16 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 
 | Script | What it does |
 |---|---|
+| [`books/bookmark_titles.py`](books/bookmark_titles.py) | Raindrop bookmark dump (JSON) -&gt; clean list of book titles. |
 | [`books/forgottenbooks_titles.py`](books/forgottenbooks_titles.py) | turn Forgotten Books links into a list of readable book titles |
 | [`books/goodreads_fetch.py`](books/goodreads_fetch.py) | Goodreads list / shelf fetcher |
+
+`books/bookmark_titles.py`
+
+```bash
+uv run scripts/books/bookmark_titles.py books.json
+uv run scripts/books/bookmark_titles.py books.json --csv titles.csv --txt titles.txt
+```
 
 `books/forgottenbooks_titles.py`
 
@@ -24,6 +32,32 @@ uv run scripts/books/forgottenbooks_titles.py urls.txt -o my-books
 uv run scripts/books/goodreads_fetch.py                       # urls.txt -> goodreads-out/
 uv run scripts/books/goodreads_fetch.py --format csv          # CSV only
 uv run scripts/books/goodreads_fetch.py --urls my.txt --out books --delay 5
+```
+
+## claude-project-exporter
+
+| Script | What it does |
+|---|---|
+| [`claude-project-exporter/claude-project-exporter.test.js`](claude-project-exporter/claude-project-exporter.test.js) | Node tests for the userscript's pure functions and a mock end-to-end export. |
+| [`claude-project-exporter/claude-project-exporter.user.js`](claude-project-exporter/claude-project-exporter.user.js) | userscript that exports one claude.ai Project as a single ZIP. |
+| [`claude-project-exporter/ui-smoke.js`](claude-project-exporter/ui-smoke.js) | headless-browser smoke test of the userscript's button, panel, download and capture mode. |
+
+`claude-project-exporter/claude-project-exporter.test.js`
+
+```bash
+node --test scripts/claude-project-exporter/claude-project-exporter.test.js
+```
+
+`claude-project-exporter/claude-project-exporter.user.js`
+
+```bash
+node --test scripts/claude-project-exporter/claude-project-exporter.test.js
+```
+
+`claude-project-exporter/ui-smoke.js`
+
+```bash
+node scripts/claude-project-exporter/ui-smoke.js [screenshot.png]
 ```
 
 ## cosmos
