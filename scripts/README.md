@@ -195,11 +195,21 @@ uv run scripts/web/flickr_sort.py urls.txt -o flickr_sorted.md
 
 | Script | What it does |
 |---|---|
+| [`wikimedia/commons_category_to_json.py`](wikimedia/commons_category_to_json.py) | Wikimedia Commons category (and its sub-categories) -&gt; one nested JSON file + results log. |
 | [`wikimedia/commons_to_csv.py`](wikimedia/commons_to_csv.py) | Wikimedia Commons File:/Category: URLs -&gt; timestamped CSV (sizes, title, description, categories, taxonomy, tags) + matching log, --info counts, --md gallery. |
 | [`wikimedia/sort_markdown.py`](wikimedia/sort_markdown.py) | sort wiki_to_markdown.py's .md files into folder/subfolder by their front-matter categories |
 | [`wikimedia/wiki_info.py`](wikimedia/wiki_info.py) | Wikipedia URLs -&gt; title, url, Wikidata Q-number, AutoDesc description. |
 | [`wikimedia/wiki_to_markdown.py`](wikimedia/wiki_to_markdown.py) | pull full Wikimedia articles into clean, frontmatter-rich Obsidian-safe markdown files. |
 | [`wikimedia/wp_tags.py`](wikimedia/wp_tags.py) | List every tag on a WordPress site (via its REST API), no posts fetched. |
+
+`wikimedia/commons_category_to_json.py`
+
+```bash
+uv run scripts/wikimedia/commons_category_to_json.py "https://commons.wikimedia.org/wiki/Category:Endpieces_(book_illustration)"
+uv run scripts/wikimedia/commons_category_to_json.py "Category:Endpieces (book illustration)" --output out/
+uv run scripts/wikimedia/commons_category_to_json.py URL --depth 0      # this category only, no sub-categories
+uv run scripts/wikimedia/commons_category_to_json.py URL --no-meta      # titles/urls only, skip descriptions/licences
+```
 
 `wikimedia/commons_to_csv.py`
 
