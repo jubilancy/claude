@@ -4,6 +4,19 @@
 
 Command-line tools, one folder per topic. Python scripts run with [uv](https://docs.astral.sh/uv/) and declare their own dependencies inline, so there is nothing to install first. Run everything from the repository root.
 
+## archive
+
+| Script | What it does |
+|---|---|
+| [`archive/sort_notes.py`](archive/sort_notes.py) | redistribute messy source notes into themed markdown files, losslessly. |
+
+`archive/sort_notes.py`
+
+```bash
+uv run scripts/archive/sort_notes.py build  --input to-sort/ --output sorted-notes/
+uv run scripts/archive/sort_notes.py verify --input to-sort/ --output sorted-notes/
+```
+
 ## books
 
 | Script | What it does |

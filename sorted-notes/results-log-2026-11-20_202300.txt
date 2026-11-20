@@ -1,0 +1,84 @@
+sort_notes.py verify - results log
+Run started : 2026-11-20 20:23:00
+Run finished: 2026-11-20 20:23:00 (duration 0.9s)
+Input       : /tmp/claude-0/-home-user-claude/ea4a6cdc-2679-5a3b-9c05-7f0dbe004bcb/scratchpad/src/to-sort
+Output      : .
+
+SUMMARY
+  Source files                      27
+  Safe (incl. image-only notes)     27
+  Not safe                          0
+  MISSING 4-grams                   0
+  Missing URLs                      0
+  Unsourced 4-grams                 0
+  Structure failures                0
+  Render failures                   0
+
+SUCCESSFUL: VERIFIED SAFE (27)
+  3 TweetDetail 11 items received.md
+      Safe to delete
+  completed searches.md
+      Safe to delete
+  Dec.6.25.md
+      Safe to delete
+  doc holliday llm prompt.md
+      Safe to delete
+  Fool's Cap World Map.md
+      Safe, but 1 image-only items not captured
+  Fringechan Archive.md
+      Safe, but 2 image-only items not captured
+  Georgia O'Keeffe and Oppenheimer.md
+      Safe to delete
+  Global Language Resources.md
+      Safe to delete
+  index → to-sort.md
+      Safe to delete
+  info.md
+      Safe to delete
+  lens by google.md
+      Safe to delete
+  Libre Cloud Services - OpenDesktop.org.md
+      Safe to delete
+  links.md
+      Safe to delete
+  Metadata.md
+      Safe to delete
+  new!!.md
+      Safe to delete
+  notes.md
+      Safe to delete
+  old-st-pauls.md
+      Safe to delete
+  Page Token.md
+      Safe to delete
+  Queen Bouddica.md
+      Safe to delete
+  r-Fantasy books.md
+      Safe, but 4 image-only items not captured
+  research base.base
+      Safe to delete
+  Returns images from given page of booruproject.md
+      Safe to delete
+  Series Harvard Classics.md
+      Safe, but 29 image-only items not captured
+  Squirrel Emojis.md
+      Safe to delete
+  summarizer.md
+      Safe to delete
+  the origin of going to church.md
+      Safe to delete
+  Third-party Licenses.md
+      Safe to delete
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE (0)
+  (none)
+
+ERRORS (0)
+  (none)
+
+WARNINGS (0)
+  (none)
+
