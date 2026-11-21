@@ -13,6 +13,12 @@ What it does:
   featured image and (with --all-images) every image.
 - Skips collections already present in the output CSV BEFORE making any request
   (use --force to redo them). Writes after each collection, so an interrupted run keeps its work.
+- Finds the artwork image: the flat reproduction of the painting, not a product mockup.
+  Shopify has no alt text or flag for it, so this uses the store's own convention:
+  the artwork is image position 2 on canvas products, unless that file is named like a
+  mockup (ArtPrint*, Detail*, *-v5c, Smartist*, ...), in which case the first non-mockup
+  image is used. `art_confidence` says which rule fired (high / medium / none; phone cases
+  have no flat artwork image, so they are left blank).
 - Backs off on HTTP 429/503 (honors Retry-After) and sends a descriptive User-Agent.
 - Writes results-log-{timestamp}.txt in the current folder every run.
 
@@ -25,6 +31,7 @@ Usage:
 import argparse
 import csv
 import json
+import re
 import sys
 import time
 import urllib.error
@@ -36,7 +43,25 @@ from urllib.parse import urlsplit
 UA = "Claude-Code-agent (read-only catalog matching)"
 DELAY = 1.0
 COLS = ["collection_url", "collection_title", "position", "product_title", "product_url", "handle",
-        "product_type", "min_price", "image_count", "image_url"]
+        "product_type", "min_price", "image_count", "image_url", "art_image_url", "art_image_position", "art_confidence"]
+
+MOCKUP = re.compile(
+    r"^(art[-_ ]?print|detail|decorated|front|smartist|mockup|layer|comfy|feature_wall|stylish|"
+    r"art_gallery|clean-and-simple|detalles?_|copy)|-v5c|^\d+_[0-9a-f-]{20,}\.", re.I)
+
+
+def find_art(product):
+    """Return (url, position, confidence) of the artwork image, or ('', '', reason)."""
+    if product.get("product_type") != "Canvas":
+        return "", "", "n/a (no flat artwork image)"
+    imgs = product.get("images", [])
+    name = lambda i: i["src"].rsplit("/", 1)[1]
+    if len(imgs) > 1 and not MOCKUP.search(name(imgs[1])):
+        return imgs[1]["src"], 2, "high"
+    for i in imgs:
+        if not MOCKUP.search(name(i)):
+            return i["src"], i["position"], "medium"
+    return "", "", "none"
 
 
 def get_json(url, retries=5):
@@ -106,7 +131,7 @@ def main():
                 page += 1
             if not products:
                 warnings.append((url, "collection has no products"))
-                w.writerow([url, titles.get(url, ""), "", "", "", "", "", "", "", ""])
+                w.writerow([url, titles.get(url, ""), "", "", "", "", "", "", "", "", "", "", ""])
                 fh.flush()
                 continue
             for pos, p in enumerate(products, 1):
@@ -114,10 +139,13 @@ def main():
                 prices = [float(v["price"]) for v in p.get("variants", []) if v.get("price")]
                 common = [url, titles.get(url, ""), pos, p["title"], f"{parts.scheme}://{parts.netloc}/products/{p['handle']}",
                           p["handle"], p.get("product_type", ""), min(prices) if prices else "", len(imgs)]
+                art = find_art(p)
+                if art[2] == "none":
+                    warnings.append((p["title"], f"no artwork image found ({url})"))
                 if not imgs:
                     warnings.append((p["title"], f"no image ({url})"))
                 for src in (imgs if a.all_images else imgs[:1]) or [""]:
-                    w.writerow(common + [src])
+                    w.writerow(common + [src, *art])
             fh.flush()
             ok.append((url, f"{len(products)} products"))
         except Exception as e:  # one failed collection never stops the run
