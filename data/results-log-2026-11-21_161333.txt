@@ -1,0 +1,138 @@
+Run started : 2026-11-21 16:13:33
+Run finished: 2026-11-21 16:13:34 (duration 0:00:00.605556)
+Input       : https://www.inspiraggio.com/sitemap_collections_1.xml?from=608917193035&to=647521698123 + /tmp/claude-0/-home-user-claude/40f7cad9-854d-568b-9320-23820472ac95/scratchpad/insp/pasted.txt
+Output      : inspiraggio-collection-images.csv
+
+SUMMARY
+  total in your list : 57
+  done this run      : 55
+  already done       : 0
+  skipped on purpose : 2
+  errors             : 0
+
+SUCCESSFUL: WRITTEN (55)
+  https://www.inspiraggio.com/collections/latest-releases
+    New In -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/The_Penitent_Magdalen_MET_DT7252.jpg?v=1731348093
+  https://www.inspiraggio.com/collections/shop-all
+    Shop All -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/HOME.jpg?v=1731348025
+  https://www.inspiraggio.com/collections/best-sellers
+    Best Sellers -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Leonardo_da_Vinci_-_Mona_Lisa__Louvre__Paris_copy.jpg?v=1718827673
+  https://www.inspiraggio.com/collections/art-nouveau
+    Art Nouveau -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute_copy.jpg?v=1708441169
+  https://www.inspiraggio.com/collections/baroque
+    Baroque -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Johannes_Vermeer_-_Lady_at_the_Virginal_with_a_Gentleman___The_Music_Lesson__-_Google_Art_Project.jpg?v=1708441266
+  https://www.inspiraggio.com/collections/expressionism
+    Expressionism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Edvard_Munch__1893__The_Scream__oil__tempera_and_pastel_on_cardboard__91_x_73_cm__National_Gallery_of_Norway.jpg?v=1708442417
+  https://www.inspiraggio.com/collections/impressionism
+    Impressionism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Claude_Monet_-_Monet_s_garden_at_Vetheuil__1880.jpg?v=1708442479
+  https://www.inspiraggio.com/collections/japanese-art
+    Japanese Art -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/The_Great_Wave_off_Kanagawa.jpg?v=1708442521
+  https://www.inspiraggio.com/collections/romanticism-1
+    Romanticism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/cqp6cwjerrwa1_2e032bdf-77d0-45e0-bf68-e8fe70032c64.webp?v=1708442645
+  https://www.inspiraggio.com/collections/neoclassicism
+    Neoclassicism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/the_emperor_napoleon_in_his_study_at_the_tuileries_1961.9.15.jpg?v=1708442797
+  https://www.inspiraggio.com/collections/post-impressionism
+    Post Impressionism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Van_Gogh_-_Starry_Night_-_Google_Art_Project_copy.jpg?v=1708443211
+  https://www.inspiraggio.com/collections/renaissance-1
+    Renaissance -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Leonardo_da_Vinci__Salvator_Mundi__c.1500__oil_on_walnut__45.4_x_65.6_cm_6d4a83a0-8270-4cad-a77e-2736d7c03b7b.jpg?v=1708443057
+  https://www.inspiraggio.com/collections/fauvism
+    Fauvism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Open_Window.jpg?v=1708630118
+  https://www.inspiraggio.com/collections/samsung-cases
+    Samsung Cases -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Collection-Cover_1.jpg?v=1733605176
+  https://www.inspiraggio.com/collections/iphone-cases
+    iPhone Cases -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/i15-tough-p96_1.jpg?v=1731353173
+  https://www.inspiraggio.com/collections/leonardo-da-vinci-1
+    Leonardo da Vinci -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/01-leonardo-da-vinci-book-talk.jpg?v=1717180709
+  https://www.inspiraggio.com/collections/caravaggio
+    Caravaggio -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/portrait-of-michelangelo-merisi-da-caravaggio-17th-century-found-in-the-collection-of-national-museum-of-western-art-tokyo-photo-by-fine-art-imagesheritage-imagesgetty-images.jpg?v=1731347594
+  https://www.inspiraggio.com/collections/claude-monet
+    Claude Monet -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/4.png?v=1731765372
+  https://www.inspiraggio.com/collections/vincent-van-gogh
+    Vincent van Gogh -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/2.png?v=1731346650
+  https://www.inspiraggio.com/collections/johannes-vermeer
+    Johannes Vermeer -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/5.png?v=1717181145
+  https://www.inspiraggio.com/collections/sandro-botticelli
+    Sandro Botticelli -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/6.png?v=1717181190
+  https://www.inspiraggio.com/collections/pablo-picasso
+    Pablo Picasso -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/8.png?v=1731347424
+  https://www.inspiraggio.com/collections/raphael
+    Raphael -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/7.png?v=1717181268
+  https://www.inspiraggio.com/collections/gustave-dore
+    Gustave Doré -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/9.png?v=1731347543
+  https://www.inspiraggio.com/collections/john-martin
+    John Martin -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/10.png?v=1731346248
+  https://www.inspiraggio.com/collections/hilma-af-klint
+    Hilma af Klint -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/12.png?v=1731347659
+  https://www.inspiraggio.com/collections/edvard-munch
+    Edvard Munch -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/11.png?v=1731346551
+  https://www.inspiraggio.com/collections/mark-rothko
+    Mark Rothko -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/14.png?v=1731347895
+  https://www.inspiraggio.com/collections/giorgio-de-chirico
+    Giorgio de Chirico -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/13.png?v=1731347826
+  https://www.inspiraggio.com/collections/edward-hopper
+    Edward Hopper -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo.png?v=1731347740
+  https://www.inspiraggio.com/collections/briton-riviere
+    Briton Rivière -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_28.png?v=1718828686
+  https://www.inspiraggio.com/collections/franz-von-stuck
+    Franz von Stuck -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/4_5a2d1ee4-5df0-4e95-bea4-42e6790508ea.png?v=1731346025
+  https://www.inspiraggio.com/collections/frederic-edwin-church
+    Frederic Edwin Church -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/5_0ec495a9-5497-4782-86cc-59bb0adf5f40.png?v=1731346845
+  https://www.inspiraggio.com/collections/arnold-bocklin
+    Arnold Böcklin -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_e513f2d7-caf9-4d84-a0d3-9486203b38cb.png?v=1733260290
+  https://www.inspiraggio.com/collections/francisco-goya
+    Francisco Goya -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_74ba64ea-c265-44c9-9740-38fb466fd9eb.png?v=1731346387
+  https://www.inspiraggio.com/collections/paul-gaugin-1
+    Paul Gaugin -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/2_82117986-c608-4dac-b674-2c1ba03947d8.png?v=1731347258
+  https://www.inspiraggio.com/collections/henri-matisse
+    Henri Matisse -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/4_8c1bb1ba-1c50-4bd2-bae0-aae814351fe9.png?v=1731346926
+  https://www.inspiraggio.com/collections/egon-schiele
+    Egon Schiele -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/3.png?v=1731347351
+  https://www.inspiraggio.com/collections/alfred-kubin
+    Alfred Kubin -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_d84dba62-ddd5-4270-8927-c6f6c795af5c.png?v=1731347064
+  https://www.inspiraggio.com/collections/franz-sedlaceck
+    Franz Sedlaceck -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_1f63455d-1db5-48f3-9f1a-87bef23bc1b3.png?v=1731346754
+  https://www.inspiraggio.com/collections/leon-spilliaert
+    Léon Spilliaert -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_961a1ba3-a209-4c1d-979f-d36f2cf9b819.png?v=1731347173
+  https://www.inspiraggio.com/collections/modern-art
+    Modern Art -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_18.png?v=1728147498
+  https://www.inspiraggio.com/collections/felix-nussbaum
+    Felix Nussbaum -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_b5930e86-2551-4abd-af1f-3d4ecd59c1b4.png?v=1728247889
+  https://www.inspiraggio.com/collections/ivan-aivazovsky
+    Ivan Aivazovsky -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Diseno_sin_titulo_75a370f8-7905-45c5-b163-5293b4c126e6.png?v=1731346110
+  https://www.inspiraggio.com/collections/richard-tennant-cooper
+    Richard Tennant Cooper -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection.jpg?v=1732567319
+  https://www.inspiraggio.com/collections/william-blake
+    William Blake -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_1.jpg?v=1732821953
+  https://www.inspiraggio.com/collections/salvador-dali
+    Salvador Dalí -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_2.jpg?v=1733011749
+  https://www.inspiraggio.com/collections/otto-dix
+    Otto Dix -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_4.jpg?v=1734049961
+  https://www.inspiraggio.com/collections/louis-wain
+    Louis Wain -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_5.jpg?v=1734217770
+  https://www.inspiraggio.com/collections/caspar-david-friedrich
+    Caspar David Friedrich -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_6.jpg?v=1734554861
+  https://www.inspiraggio.com/collections/hieronymus-bosch
+    Hieronymus Bosch -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_7.jpg?v=1735514662
+  https://www.inspiraggio.com/collections/frida-kahlo
+    Frida Kahlo -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_8.jpg?v=1735855608
+  https://www.inspiraggio.com/collections/symbolism
+    Symbolism -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/MINIATURAS_5.png?v=1736726491
+  https://www.inspiraggio.com/collections/odilon-redon
+    Odilon Redon -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_2c39df46-cebc-451d-8661-541f93538dc0.jpg?v=1740351802
+  https://www.inspiraggio.com/collections/william-adolphe-bouguereau
+    William-Adolphe Bouguereau -> https://cdn.shopify.com/s/files/1/0769/2025/8891/collections/Cover-Collection_10.jpg?v=1741299467
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE: XML namespaces (2)
+  http://www.sitemaps.org/schemas/sitemap/0.9
+    XML namespace, not a page
+  http://www.google.com/schemas/sitemap-image/1.1
+    XML namespace, not a page
+
+ERRORS (0)
+  (none)
+
+WARNINGS (0)
+  (none)
