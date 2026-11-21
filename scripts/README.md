@@ -290,6 +290,21 @@ uv run scripts/wikimedia/wp_tags.py https://longreads.com
 uv run scripts/wikimedia/wp_tags.py https://longreads.com --max-pages 2   # quick test
 ```
 
+## wordpress
+
+| Script | What it does |
+|---|---|
+| [`wordpress/csv_to_wp_posts.py`](wordpress/csv_to_wp_posts.py) | book_titles_cleaned.csv -&gt; one WordPress.com post per row. |
+
+`wordpress/csv_to_wp_posts.py`
+
+```bash
+uv run scripts/wordpress/csv_to_wp_posts.py --input book_titles_cleaned.csv                 # dry run, 182 posts previewed
+uv run scripts/wordpress/csv_to_wp_posts.py --input book_titles_cleaned.csv --limit 3 --live # try 3 real drafts first
+uv run scripts/wordpress/csv_to_wp_posts.py --input book_titles_cleaned.csv --live          # post everything
+uv run scripts/wordpress/csv_to_wp_posts.py --input book_titles_cleaned.csv --site fromdaysoff.wordpress.com --status draft --live
+```
+
 ## (top level)
 
 | Script | What it does |
