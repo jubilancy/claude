@@ -10,6 +10,7 @@ Command-line tools, one folder per topic. Python scripts run with [uv](https://d
 |---|---|
 | [`books/bookmark_titles.py`](books/bookmark_titles.py) | Raindrop bookmark dump (JSON) -&gt; clean list of book titles. |
 | [`books/goodreads_fetch.py`](books/goodreads_fetch.py) | Goodreads list / shelf fetcher |
+| [`books/interleaves_lists.py`](books/interleaves_lists.py) | turn Robert Teeter's Great Books lists on interleaves.org into one big CSV |
 
 `books/bookmark_titles.py`
 
@@ -24,6 +25,14 @@ uv run scripts/books/bookmark_titles.py books.json --csv titles.csv --txt titles
 uv run scripts/books/goodreads_fetch.py                       # urls.txt -> goodreads-out/
 uv run scripts/books/goodreads_fetch.py --format csv          # CSV only
 uv run scripts/books/goodreads_fetch.py --urls my.txt --out books --delay 5
+```
+
+`books/interleaves_lists.py`
+
+```bash
+uv run scripts/books/interleaves_lists.py library.json                       # -> interleaves-lists.csv
+uv run scripts/books/interleaves_lists.py urls.txt -o great-books --delay 2
+uv run scripts/books/interleaves_lists.py urls.txt --all                     # try every page
 ```
 
 ## claude-project-exporter
