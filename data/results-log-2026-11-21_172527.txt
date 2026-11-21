@@ -1,0 +1,135 @@
+Run started : 2026-11-21 17:25:27
+Run finished: 2026-11-21 17:27:25 (duration 0:01:58.671087)
+Input       : inspiraggio-collection-images.csv
+Output      : inspiraggio-collection-products.csv
+
+SUMMARY
+  total collections  : 55
+  done this run      : 55
+  already done       : 0
+  skipped on purpose : 0
+  errors             : 0
+
+SUCCESSFUL: WRITTEN (55)
+  https://www.inspiraggio.com/collections/latest-releases
+    1037 products
+  https://www.inspiraggio.com/collections/shop-all
+    1037 products
+  https://www.inspiraggio.com/collections/best-sellers
+    1037 products
+  https://www.inspiraggio.com/collections/art-nouveau
+    37 products
+  https://www.inspiraggio.com/collections/baroque
+    83 products
+  https://www.inspiraggio.com/collections/expressionism
+    28 products
+  https://www.inspiraggio.com/collections/impressionism
+    39 products
+  https://www.inspiraggio.com/collections/japanese-art
+    25 products
+  https://www.inspiraggio.com/collections/romanticism-1
+    292 products
+  https://www.inspiraggio.com/collections/neoclassicism
+    9 products
+  https://www.inspiraggio.com/collections/post-impressionism
+    52 products
+  https://www.inspiraggio.com/collections/renaissance-1
+    90 products
+  https://www.inspiraggio.com/collections/fauvism
+    15 products
+  https://www.inspiraggio.com/collections/samsung-cases
+    91 products
+  https://www.inspiraggio.com/collections/iphone-cases
+    91 products
+  https://www.inspiraggio.com/collections/leonardo-da-vinci-1
+    19 products
+  https://www.inspiraggio.com/collections/caravaggio
+    20 products
+  https://www.inspiraggio.com/collections/claude-monet
+    20 products
+  https://www.inspiraggio.com/collections/vincent-van-gogh
+    33 products
+  https://www.inspiraggio.com/collections/johannes-vermeer
+    17 products
+  https://www.inspiraggio.com/collections/sandro-botticelli
+    4 products
+  https://www.inspiraggio.com/collections/pablo-picasso
+    14 products
+  https://www.inspiraggio.com/collections/raphael
+    6 products
+  https://www.inspiraggio.com/collections/gustave-dore
+    22 products
+  https://www.inspiraggio.com/collections/john-martin
+    23 products
+  https://www.inspiraggio.com/collections/hilma-af-klint
+    19 products
+  https://www.inspiraggio.com/collections/edvard-munch
+    18 products
+  https://www.inspiraggio.com/collections/mark-rothko
+    18 products
+  https://www.inspiraggio.com/collections/giorgio-de-chirico
+    9 products
+  https://www.inspiraggio.com/collections/edward-hopper
+    11 products
+  https://www.inspiraggio.com/collections/briton-riviere
+    16 products
+  https://www.inspiraggio.com/collections/franz-von-stuck
+    22 products
+  https://www.inspiraggio.com/collections/frederic-edwin-church
+    12 products
+  https://www.inspiraggio.com/collections/arnold-bocklin
+    9 products
+  https://www.inspiraggio.com/collections/francisco-goya
+    20 products
+  https://www.inspiraggio.com/collections/paul-gaugin-1
+    16 products
+  https://www.inspiraggio.com/collections/henri-matisse
+    15 products
+  https://www.inspiraggio.com/collections/egon-schiele
+    20 products
+  https://www.inspiraggio.com/collections/alfred-kubin
+    14 products
+  https://www.inspiraggio.com/collections/franz-sedlaceck
+    11 products
+  https://www.inspiraggio.com/collections/leon-spilliaert
+    11 products
+  https://www.inspiraggio.com/collections/modern-art
+    215 products
+  https://www.inspiraggio.com/collections/felix-nussbaum
+    6 products
+  https://www.inspiraggio.com/collections/ivan-aivazovsky
+    22 products
+  https://www.inspiraggio.com/collections/richard-tennant-cooper
+    4 products
+  https://www.inspiraggio.com/collections/william-blake
+    26 products
+  https://www.inspiraggio.com/collections/salvador-dali
+    16 products
+  https://www.inspiraggio.com/collections/otto-dix
+    3 products
+  https://www.inspiraggio.com/collections/louis-wain
+    20 products
+  https://www.inspiraggio.com/collections/caspar-david-friedrich
+    15 products
+  https://www.inspiraggio.com/collections/hieronymus-bosch
+    14 products
+  https://www.inspiraggio.com/collections/frida-kahlo
+    8 products
+  https://www.inspiraggio.com/collections/symbolism
+    170 products
+  https://www.inspiraggio.com/collections/odilon-redon
+    14 products
+  https://www.inspiraggio.com/collections/william-adolphe-bouguereau
+    14 products
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE: not a collection URL (0)
+  (none)
+
+ERRORS (0)
+  (none)
+
+WARNINGS (0)
+  (none)
