@@ -1,0 +1,118 @@
+Run started : 2026-11-21 20:35:54
+Run finished: 2026-11-21 20:36:19 (duration 0:00:24.953478)
+Input       : urls.txt
+Output      : ../../data/unsplash-metadata.csv
+
+SUMMARY
+  total in input     : 33
+  done this run      : 33
+  already done       : 0
+  skipped on purpose : 0
+  errors             : 0
+  not done (limit)   : 0
+
+SUCCESSFUL: WRITTEN (33)
+  YYuU8W3DGLM
+    Image taken from page 228 of 'The Tame Fox, and other sketches'
+  8Wgzj_2dNrE
+    Forget-Me-Nots
+  5yL0Fka9C-4
+    two angels hugging each other wallpaper
+  jcD3GPTXYNQ
+    Valentine's Day - A selection of love inspired images from British Library's dig
+  gwBQX-RqKRo
+    "Good morning, shining sun". Image taken from page 183 of 'Songs for the Little 
+  KfRUve5NtO8
+    Love leading the Pilgrim - Study of Birds: Finches, 1897 By Sir Edward Burne-Jon
+  tHsU3R9P_90
+    Snakeshead, 1876-77.
+Designer: William Morris.
+Manufacturer: William Morris & Co
+  aDDV33MI_ow
+    Wild Tulip, 1884 by William Morris.
+Design for wallpaper
+  _sn71oyTN4o
+    Honeysuckle, 1874, By William Morris
+  BqaF65lS6E4
+    A Foot Bridge, North Wales, 1830-1840 by Richard Sebastian Bond
+  YIfFVwDcgu8
+    Flower Still Life with a Timepiece.
+Creator: Willem van Aelst.
+Date: 1663.
+In
+  Gw_UOoFk4Wk
+    Image taken from page 315 of 'The United States of America. A study of the Ameri
+  SlRpKa60FJI
+    Butterfly and Caterpillar.
+
+Image taken from Metamorphosis insectorum surinamens
+  u7DJ73b2rOs
+    Valentine's Day - A selection of love inspired images from British Library's dig
+  SQJ4ugbL-_Q
+    Image taken from page 574 of 'British Mineralogy: or coloured figures intended t
+  6fv0MEf3FUE
+    Skelwith Force, Westmorland, 1800-1820 by Robert Hills
+	 
+  -KfLa4I4eTo
+    Kennet.
+William Morris, Morris & Co
+  phfGO-7XdGQ
+    Anemone, 1876. Watercolour, woven fabric design.
+Artist: William Morris
+  z2Dtse_kjOA
+    Garden Tulip, 1885 by William Morris.
+Design for wallpaper
+  v15kmerLWcA
+    Acanthus, 1879-1881. Wallpaper design by William Morris
+  C1zCMM85KP4
+    Still Life with Flowers.
+Creator: Nemecký.
+Date: 1710-1750.
+
+Identifier: O 8
+  SMWPYQhVRuY
+    A Bouquet.
+The taste for overcrowded flower and fruit still lifes became outmod
+  1lVXEBiY44Q
+    Image taken from page 517 of 'Paris à travers les siècles. Histoire nationale 
+  sUKsSmr6TsA
+    Image taken from page 8 of 'The Sirens Three. A poem: written and illustrated by
+  ArX1IfzsVyQ
+    Fox hunting illustration, 1899
+  R7_EMvRWcZE
+    Valentine's Day - A selection of love inspired images from British Library's dig
+  mNb93svlMzA
+    Image taken from page 627 of 'Notes sur l'Ile de la Réunion (Bourbon)'
+  O3ofL9XSFzA
+    Printed Linen - Honeysuckle, 1876.
+Designer: William Morris.
+Manufacturer: Morri
+  Bin0C2RtQpI
+    Printed Fabric - a curtain with 'Strawberry Thief' pattern
+Design by William Mor
+  zWE5pOLWkio
+    A Herefordshire Lane By David Cox
+  LpCq6mjbMPo
+    Flowers in a Glass Vase.
+Creator: Abraham Mignon.
+Date: 1670.
+Institution: Ma
+  L62U8oeBVgE
+    Lilium martagon. Provided by Forum Hungaricum Non-profit Ltd. PD for Public Doma
+  MvR30qxn-MM
+    Five Prints of Flowers in Glass Vases, created in the late 1600's. Provided by R
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE: duplicate IDs (0)
+  (none)
+
+NOT DONE: no key or rate limit (0)
+  (none)
+
+ERRORS (0)
+  (none)
+
+WARNINGS (0)
+  (none)
