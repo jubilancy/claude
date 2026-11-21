@@ -1,0 +1,694 @@
+Run started : 2026-11-21 17:30:56
+Run finished: 2026-11-21 17:32:43 (duration 0:01:47.669458)
+Input       : inspiraggio-collection-images.csv
+Output      : inspiraggio-collection-products.csv
+
+SUMMARY
+  total collections  : 55
+  done this run      : 55
+  already done       : 0
+  skipped on purpose : 0
+  errors             : 0
+
+SUCCESSFUL: WRITTEN (55)
+  https://www.inspiraggio.com/collections/latest-releases
+    1037 products
+  https://www.inspiraggio.com/collections/shop-all
+    1037 products
+  https://www.inspiraggio.com/collections/best-sellers
+    1037 products
+  https://www.inspiraggio.com/collections/art-nouveau
+    37 products
+  https://www.inspiraggio.com/collections/baroque
+    83 products
+  https://www.inspiraggio.com/collections/expressionism
+    28 products
+  https://www.inspiraggio.com/collections/impressionism
+    39 products
+  https://www.inspiraggio.com/collections/japanese-art
+    25 products
+  https://www.inspiraggio.com/collections/romanticism-1
+    292 products
+  https://www.inspiraggio.com/collections/neoclassicism
+    9 products
+  https://www.inspiraggio.com/collections/post-impressionism
+    52 products
+  https://www.inspiraggio.com/collections/renaissance-1
+    90 products
+  https://www.inspiraggio.com/collections/fauvism
+    15 products
+  https://www.inspiraggio.com/collections/samsung-cases
+    91 products
+  https://www.inspiraggio.com/collections/iphone-cases
+    91 products
+  https://www.inspiraggio.com/collections/leonardo-da-vinci-1
+    19 products
+  https://www.inspiraggio.com/collections/caravaggio
+    20 products
+  https://www.inspiraggio.com/collections/claude-monet
+    20 products
+  https://www.inspiraggio.com/collections/vincent-van-gogh
+    33 products
+  https://www.inspiraggio.com/collections/johannes-vermeer
+    17 products
+  https://www.inspiraggio.com/collections/sandro-botticelli
+    4 products
+  https://www.inspiraggio.com/collections/pablo-picasso
+    14 products
+  https://www.inspiraggio.com/collections/raphael
+    6 products
+  https://www.inspiraggio.com/collections/gustave-dore
+    22 products
+  https://www.inspiraggio.com/collections/john-martin
+    23 products
+  https://www.inspiraggio.com/collections/hilma-af-klint
+    19 products
+  https://www.inspiraggio.com/collections/edvard-munch
+    18 products
+  https://www.inspiraggio.com/collections/mark-rothko
+    18 products
+  https://www.inspiraggio.com/collections/giorgio-de-chirico
+    9 products
+  https://www.inspiraggio.com/collections/edward-hopper
+    11 products
+  https://www.inspiraggio.com/collections/briton-riviere
+    16 products
+  https://www.inspiraggio.com/collections/franz-von-stuck
+    22 products
+  https://www.inspiraggio.com/collections/frederic-edwin-church
+    12 products
+  https://www.inspiraggio.com/collections/arnold-bocklin
+    9 products
+  https://www.inspiraggio.com/collections/francisco-goya
+    20 products
+  https://www.inspiraggio.com/collections/paul-gaugin-1
+    16 products
+  https://www.inspiraggio.com/collections/henri-matisse
+    15 products
+  https://www.inspiraggio.com/collections/egon-schiele
+    20 products
+  https://www.inspiraggio.com/collections/alfred-kubin
+    14 products
+  https://www.inspiraggio.com/collections/franz-sedlaceck
+    11 products
+  https://www.inspiraggio.com/collections/leon-spilliaert
+    11 products
+  https://www.inspiraggio.com/collections/modern-art
+    215 products
+  https://www.inspiraggio.com/collections/felix-nussbaum
+    6 products
+  https://www.inspiraggio.com/collections/ivan-aivazovsky
+    22 products
+  https://www.inspiraggio.com/collections/richard-tennant-cooper
+    4 products
+  https://www.inspiraggio.com/collections/william-blake
+    26 products
+  https://www.inspiraggio.com/collections/salvador-dali
+    16 products
+  https://www.inspiraggio.com/collections/otto-dix
+    3 products
+  https://www.inspiraggio.com/collections/louis-wain
+    20 products
+  https://www.inspiraggio.com/collections/caspar-david-friedrich
+    15 products
+  https://www.inspiraggio.com/collections/hieronymus-bosch
+    14 products
+  https://www.inspiraggio.com/collections/frida-kahlo
+    8 products
+  https://www.inspiraggio.com/collections/symbolism
+    170 products
+  https://www.inspiraggio.com/collections/odilon-redon
+    14 products
+  https://www.inspiraggio.com/collections/william-adolphe-bouguereau
+    14 products
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE: not a collection URL (0)
+  (none)
+
+ERRORS (0)
+  (none)
+
+WARNINGS (280)
+  Sunshine in the Living Room | Carl Vilhelm Holsøe | 20th Century
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Returning With Captives | Aleksandr Svedomsky | 1884
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Behind the Scenes | Ludwig Knaus | 1880
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Philosophy | Gustav Klimt | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Beethoven Listening To A Muse | Ludovic Alleaume | 1928
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Laocoön | William Blake | 1825-27
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Hellas | Vasily Polenov | 1880-90
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Christ Displaying His Wounds | Giovanni Antonio Galli | c. 1630
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Procession in the Fog | Ernst Ferdinand Oehme | 1828
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Portrait of the Journalist Sylvia von Harden | Otto Dix | 1926
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Frosty Days | Alexej von Jawlensky | 1915
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Large Plane Trees | Vincent van Gogh | 1889
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Bedroom | Vincent van Gogh | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Stairways at Auvers | Vincent van Gogh | 1890
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Hail Mary | Paul Gauguin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Call | Paul Gaugin | 1902
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Mata Mua (In olden times) | Paul Gauguin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Faaturuma | Paul Gaugin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Landscape Near Arles | Paul Gauguin | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Sacred Spring, Sweet Dream | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Spirit Of The Dead Keeps Watch | Paul Gaugin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Two Women | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Christmas Night | Paul Gaugin | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Peonies | Henri Matisse | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Large Reclining Nude | Henri Matisse | 1935
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  La Conversation | Henri Matisse | 1908
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Interior With a Young Girl | Henri Matisse | 1905-1906
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Anemones et Grenades | Henri Matisse | 1947
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Port of Trieste | Egon Schiele | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Lyricist | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Mourning Woman | Egon Schiele | 1912
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  My Living Room | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Dead Mother | Egon Schiele | 1910
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  House With Lundry (Suburb II) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  House Wall (Window) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Crescent of Houses II | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Two Women on The Shore | Edvard Munch | 1898
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Wave | Edvard Munch | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Mother and Daughter | Edvard Munch | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Self Portrait with Cigarette | Edvard Munch | 1895
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Rowing Boat on the Sea | Edvard Munch | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Moonlight | Edvard Munch | 1893
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Water Lilies | Claude Monet | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Artist’s Garden In Giverny | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Le Parlement | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Red Kerchief | Claude Monet | 1873
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Madame Monet Embroidering | Claude Monet | 1875
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Arnolfini Portrait | Jan van Eyck | 1434
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Les Demoiselles d'Avignon | Pablo Picasso | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  The Garden of Earthly Delights | Hieronymus Bosch | 1490
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  Red & Orange | Mark Rothko | 1955
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  School of Athens | Raphael | 1510
+    no artwork image found (https://www.inspiraggio.com/collections/latest-releases)
+  School of Athens | Raphael | 1510
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Garden of Earthly Delights | Hieronymus Bosch | 1490
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Water Lilies | Claude Monet | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Port of Trieste | Egon Schiele | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Hellas | Vasily Polenov | 1880-90
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Artist’s Garden In Giverny | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Arnolfini Portrait | Jan van Eyck | 1434
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Philosophy | Gustav Klimt | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Beethoven Listening To A Muse | Ludovic Alleaume | 1928
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Le Parlement | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Laocoön | William Blake | 1825-27
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Large Plane Trees | Vincent van Gogh | 1889
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Landscape Near Arles | Paul Gauguin | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Peonies | Henri Matisse | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Interior With a Young Girl | Henri Matisse | 1905-1906
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Lyricist | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Mourning Woman | Egon Schiele | 1912
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Moonlight | Edvard Munch | 1893
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Red & Orange | Mark Rothko | 1955
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Sunshine in the Living Room | Carl Vilhelm Holsøe | 20th Century
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Returning With Captives | Aleksandr Svedomsky | 1884
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Behind the Scenes | Ludwig Knaus | 1880
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Christ Displaying His Wounds | Giovanni Antonio Galli | c. 1630
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Procession in the Fog | Ernst Ferdinand Oehme | 1828
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Portrait of the Journalist Sylvia von Harden | Otto Dix | 1926
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Frosty Days | Alexej von Jawlensky | 1915
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Bedroom | Vincent van Gogh | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Stairways at Auvers | Vincent van Gogh | 1890
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Hail Mary | Paul Gauguin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Call | Paul Gaugin | 1902
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Mata Mua (In olden times) | Paul Gauguin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Faaturuma | Paul Gaugin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Sacred Spring, Sweet Dream | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Spirit Of The Dead Keeps Watch | Paul Gaugin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Two Women | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Christmas Night | Paul Gaugin | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Large Reclining Nude | Henri Matisse | 1935
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  La Conversation | Henri Matisse | 1908
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Anemones et Grenades | Henri Matisse | 1947
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  My Living Room | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Dead Mother | Egon Schiele | 1910
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  House With Lundry (Suburb II) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  House Wall (Window) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Crescent of Houses II | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Two Women on The Shore | Edvard Munch | 1898
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Wave | Edvard Munch | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Mother and Daughter | Edvard Munch | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Self Portrait with Cigarette | Edvard Munch | 1895
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Rowing Boat on the Sea | Edvard Munch | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  The Red Kerchief | Claude Monet | 1873
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Madame Monet Embroidering | Claude Monet | 1875
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  Les Demoiselles d'Avignon | Pablo Picasso | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/shop-all)
+  School of Athens | Raphael | 1510
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Red & Orange | Mark Rothko | 1955
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Garden of Earthly Delights | Hieronymus Bosch | 1490
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Les Demoiselles d'Avignon | Pablo Picasso | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Arnolfini Portrait | Jan van Eyck | 1434
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Madame Monet Embroidering | Claude Monet | 1875
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Red Kerchief | Claude Monet | 1873
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Le Parlement | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Artist’s Garden In Giverny | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Water Lilies | Claude Monet | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Moonlight | Edvard Munch | 1893
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Rowing Boat on the Sea | Edvard Munch | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Self Portrait with Cigarette | Edvard Munch | 1895
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Mother and Daughter | Edvard Munch | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Wave | Edvard Munch | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Two Women on The Shore | Edvard Munch | 1898
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Crescent of Houses II | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  House Wall (Window) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  House With Lundry (Suburb II) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Dead Mother | Egon Schiele | 1910
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  My Living Room | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Mourning Woman | Egon Schiele | 1912
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Lyricist | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Port of Trieste | Egon Schiele | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Anemones et Grenades | Henri Matisse | 1947
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Interior With a Young Girl | Henri Matisse | 1905-1906
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  La Conversation | Henri Matisse | 1908
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Large Reclining Nude | Henri Matisse | 1935
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Peonies | Henri Matisse | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Christmas Night | Paul Gaugin | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Two Women | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Spirit Of The Dead Keeps Watch | Paul Gaugin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Sacred Spring, Sweet Dream | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Landscape Near Arles | Paul Gauguin | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Faaturuma | Paul Gaugin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Mata Mua (In olden times) | Paul Gauguin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Call | Paul Gaugin | 1902
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Hail Mary | Paul Gauguin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Stairways at Auvers | Vincent van Gogh | 1890
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Bedroom | Vincent van Gogh | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Large Plane Trees | Vincent van Gogh | 1889
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Frosty Days | Alexej von Jawlensky | 1915
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Portrait of the Journalist Sylvia von Harden | Otto Dix | 1926
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Procession in the Fog | Ernst Ferdinand Oehme | 1828
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Christ Displaying His Wounds | Giovanni Antonio Galli | c. 1630
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Hellas | Vasily Polenov | 1880-90
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Laocoön | William Blake | 1825-27
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Beethoven Listening To A Muse | Ludovic Alleaume | 1928
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Philosophy | Gustav Klimt | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Behind the Scenes | Ludwig Knaus | 1880
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Returning With Captives | Aleksandr Svedomsky | 1884
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  Sunshine in the Living Room | Carl Vilhelm Holsøe | 20th Century
+    no artwork image found (https://www.inspiraggio.com/collections/best-sellers)
+  The Port of Trieste | Egon Schiele | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  Philosophy | Gustav Klimt | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  Mourning Woman | Egon Schiele | 1912
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  The Lyricist | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  My Living Room | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  Dead Mother | Egon Schiele | 1910
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  House Wall (Window) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  Crescent of Houses II | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  House With Lundry (Suburb II) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/art-nouveau)
+  Christ Displaying His Wounds | Giovanni Antonio Galli | c. 1630
+    no artwork image found (https://www.inspiraggio.com/collections/baroque)
+  Two Women on The Shore | Edvard Munch | 1898
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  The Wave | Edvard Munch | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  Rowing Boat on the Sea | Edvard Munch | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  Moonlight | Edvard Munch | 1893
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  Frosty Days | Alexej von Jawlensky | 1915
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  Mother and Daughter | Edvard Munch | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  Self Portrait with Cigarette | Edvard Munch | 1895
+    no artwork image found (https://www.inspiraggio.com/collections/expressionism)
+  Water Lilies | Claude Monet | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/impressionism)
+  The Artist’s Garden In Giverny | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/impressionism)
+  Le Parlement | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/impressionism)
+  The Red Kerchief | Claude Monet | 1873
+    no artwork image found (https://www.inspiraggio.com/collections/impressionism)
+  Madame Monet Embroidering | Claude Monet | 1875
+    no artwork image found (https://www.inspiraggio.com/collections/impressionism)
+  Hellas | Vasily Polenov | 1880-90
+    no artwork image found (https://www.inspiraggio.com/collections/romanticism-1)
+  Beethoven Listening To A Muse | Ludovic Alleaume | 1928
+    no artwork image found (https://www.inspiraggio.com/collections/romanticism-1)
+  Procession in the Fog | Ernst Ferdinand Oehme | 1828
+    no artwork image found (https://www.inspiraggio.com/collections/romanticism-1)
+  Returning With Captives | Aleksandr Svedomsky | 1884
+    no artwork image found (https://www.inspiraggio.com/collections/romanticism-1)
+  Sunshine in the Living Room | Carl Vilhelm Holsøe | 20th Century
+    no artwork image found (https://www.inspiraggio.com/collections/romanticism-1)
+  The Large Plane Trees | Vincent van Gogh | 1889
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  The Bedroom | Vincent van Gogh | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Stairways at Auvers | Vincent van Gogh | 1890
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  The Call | Paul Gaugin | 1902
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Mata Mua (In olden times) | Paul Gauguin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Landscape Near Arles | Paul Gauguin | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Christmas Night | Paul Gaugin | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Hail Mary | Paul Gauguin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Faaturuma | Paul Gaugin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Sacred Spring, Sweet Dream | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  The Spirit Of The Dead Keeps Watch | Paul Gaugin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  Two Women | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/post-impressionism)
+  The Garden of Earthly Delights | Hieronymus Bosch | 1490
+    no artwork image found (https://www.inspiraggio.com/collections/renaissance-1)
+  School of Athens | Raphael | 1510
+    no artwork image found (https://www.inspiraggio.com/collections/renaissance-1)
+  The Arnolfini Portrait | Jan van Eyck | 1434
+    no artwork image found (https://www.inspiraggio.com/collections/renaissance-1)
+  Interior With a Young Girl | Henri Matisse | 1905-1906
+    no artwork image found (https://www.inspiraggio.com/collections/fauvism)
+  The Peonies | Henri Matisse | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/fauvism)
+  La Conversation | Henri Matisse | 1908
+    no artwork image found (https://www.inspiraggio.com/collections/fauvism)
+  Large Reclining Nude | Henri Matisse | 1935
+    no artwork image found (https://www.inspiraggio.com/collections/fauvism)
+  Anemones et Grenades | Henri Matisse | 1947
+    no artwork image found (https://www.inspiraggio.com/collections/fauvism)
+  Water Lilies | Claude Monet | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/claude-monet)
+  The Artist’s Garden In Giverny | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/claude-monet)
+  Le Parlement | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/claude-monet)
+  The Red Kerchief | Claude Monet | 1873
+    no artwork image found (https://www.inspiraggio.com/collections/claude-monet)
+  Madame Monet Embroidering | Claude Monet | 1875
+    no artwork image found (https://www.inspiraggio.com/collections/claude-monet)
+  The Large Plane Trees | Vincent van Gogh | 1889
+    no artwork image found (https://www.inspiraggio.com/collections/vincent-van-gogh)
+  The Bedroom | Vincent van Gogh | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/vincent-van-gogh)
+  Stairways at Auvers | Vincent van Gogh | 1890
+    no artwork image found (https://www.inspiraggio.com/collections/vincent-van-gogh)
+  Les Demoiselles d'Avignon | Pablo Picasso | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/pablo-picasso)
+  School of Athens | Raphael | 1510
+    no artwork image found (https://www.inspiraggio.com/collections/raphael)
+  Two Women on The Shore | Edvard Munch | 1898
+    no artwork image found (https://www.inspiraggio.com/collections/edvard-munch)
+  The Wave | Edvard Munch | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/edvard-munch)
+  Rowing Boat on the Sea | Edvard Munch | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/edvard-munch)
+  Moonlight | Edvard Munch | 1893
+    no artwork image found (https://www.inspiraggio.com/collections/edvard-munch)
+  Mother and Daughter | Edvard Munch | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/edvard-munch)
+  Self Portrait with Cigarette | Edvard Munch | 1895
+    no artwork image found (https://www.inspiraggio.com/collections/edvard-munch)
+  Red & Orange | Mark Rothko | 1955
+    no artwork image found (https://www.inspiraggio.com/collections/mark-rothko)
+  Christmas Night | Paul Gaugin | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Faaturuma | Paul Gaugin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Hail Mary | Paul Gauguin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Landscape Near Arles | Paul Gauguin | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Mata Mua (In olden times) | Paul Gauguin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Sacred Spring, Sweet Dream | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  The Call | Paul Gaugin | 1902
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  The Spirit Of The Dead Keeps Watch | Paul Gaugin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Two Women | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/paul-gaugin-1)
+  Anemones et Grenades | Henri Matisse | 1947
+    no artwork image found (https://www.inspiraggio.com/collections/henri-matisse)
+  Interior With a Young Girl | Henri Matisse | 1905-1906
+    no artwork image found (https://www.inspiraggio.com/collections/henri-matisse)
+  La Conversation | Henri Matisse | 1908
+    no artwork image found (https://www.inspiraggio.com/collections/henri-matisse)
+  Large Reclining Nude | Henri Matisse | 1935
+    no artwork image found (https://www.inspiraggio.com/collections/henri-matisse)
+  The Peonies | Henri Matisse | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/henri-matisse)
+  Crescent of Houses II | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  Dead Mother | Egon Schiele | 1910
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  House Wall (Window) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  House With Lundry (Suburb II) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  Mourning Woman | Egon Schiele | 1912
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  My Living Room | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  The Lyricist | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  The Port of Trieste | Egon Schiele | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/egon-schiele)
+  Mourning Woman | Egon Schiele | 1912
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Frosty Days | Alexej von Jawlensky | 1915
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Mata Mua (In olden times) | Paul Gauguin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Les Demoiselles d'Avignon | Pablo Picasso | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Hail Mary | Paul Gauguin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Bedroom | Vincent van Gogh | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Large Plane Trees | Vincent van Gogh | 1889
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Stairways at Auvers | Vincent van Gogh | 1890
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Call | Paul Gaugin | 1902
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Faaturuma | Paul Gaugin | 1891
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Peonies | Henri Matisse | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Landscape Near Arles | Paul Gauguin | 1888
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Interior With a Young Girl | Henri Matisse | 1905-1906
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Sacred Spring, Sweet Dream | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  La Conversation | Henri Matisse | 1908
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Spirit Of The Dead Keeps Watch | Paul Gaugin | 1892
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Two Women | Paul Gaugin | 1899
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Large Reclining Nude | Henri Matisse | 1935
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Water Lilies | Claude Monet | 1897
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Christmas Night | Paul Gaugin | 1896
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Anemones et Grenades | Henri Matisse | 1947
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Port of Trieste | Egon Schiele | 1907
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Lyricist | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  My Living Room | Egon Schiele | 1911
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Madame Monet Embroidering | Claude Monet | 1875
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Dead Mother | Egon Schiele | 1910
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  House With Lundry (Suburb II) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Le Parlement | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  House Wall (Window) | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Red Kerchief | Claude Monet | 1873
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Crescent of Houses II | Egon Schiele | 1914
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  The Artist’s Garden In Giverny | Claude Monet | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Red & Orange | Mark Rothko | 1955
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Philosophy | Gustav Klimt | 1900
+    no artwork image found (https://www.inspiraggio.com/collections/modern-art)
+  Laocoön | William Blake | 1825-27
+    no artwork image found (https://www.inspiraggio.com/collections/william-blake)
+  Portrait of the Journalist Sylvia von Harden | Otto Dix | 1926
+    no artwork image found (https://www.inspiraggio.com/collections/otto-dix)
+  The Garden of Earthly Delights | Hieronymus Bosch | 1490
+    no artwork image found (https://www.inspiraggio.com/collections/hieronymus-bosch)
+  Laocoön | William Blake | 1825-27
+    no artwork image found (https://www.inspiraggio.com/collections/symbolism)

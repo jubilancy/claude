@@ -88,6 +88,20 @@ uv run scripts/discord/discord_export.py CHANNEL_ID [CHANNEL_ID ...] [options]
 uv run scripts/discord/discord_export.py --guild GUILD_ID [options]     # every readable text channel
 ```
 
+## glam
+
+| Script | What it does |
+|---|---|
+| [`glam/awesome_verify.py`](glam/awesome_verify.py) | Verify GitHub repos from a seed list and write an awesome-list Markdown file. |
+
+`glam/awesome_verify.py`
+
+```bash
+uv run scripts/glam/awesome_verify.py                                   # seeds: scripts/glam/glam-seeds.txt
+uv run scripts/glam/awesome_verify.py --seeds my-seeds.txt --output awesome/glam-tools.md
+uv run scripts/glam/awesome_verify.py --max-age-days 365 --title "Awesome GLAM Tools"
+```
+
 ## raindrop
 
 | Script | What it does |
@@ -177,6 +191,9 @@ uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
 |---|---|
 | [`web/fetch_urls.py`](web/fetch_urls.py) | all-in-one polite scraper |
 | [`web/flickr_sort.py`](web/flickr_sort.py) | sort a list of Flickr URLs by type into a markdown file |
+| [`web/shopify_collection_products.py`](web/shopify_collection_products.py) | For each Shopify collection URL, list its products with title and image URLs. |
+| [`web/shopify_new_products.py`](web/shopify_new_products.py) | List a Shopify store's products and pick out the ones not seen before. |
+| [`web/sitemap_images.py`](web/sitemap_images.py) | Match page URLs to their &lt;image:image&gt; URLs from a sitemap (Shopify style). |
 
 `web/fetch_urls.py`
 
@@ -189,6 +206,29 @@ uv run scripts/web/fetch_urls.py [urls.txt] [output_dir] [options]
 ```bash
 uv run scripts/web/flickr_sort.py urls.txt
 uv run scripts/web/flickr_sort.py urls.txt -o flickr_sorted.md
+```
+
+`web/shopify_collection_products.py`
+
+```bash
+uv run scripts/web/shopify_collection_products.py --input data/inspiraggio-collection-images.csv --output data/inspiraggio-products.csv
+uv run scripts/web/shopify_collection_products.py --input urls.txt --all-images
+uv run scripts/web/shopify_collection_products.py --input urls.txt --force
+```
+
+`web/shopify_new_products.py`
+
+```bash
+uv run scripts/web/shopify_new_products.py --store https://www.inspiraggio.com --status seed --output seed.csv
+uv run scripts/web/shopify_new_products.py --store https://www.inspiraggio.com --seen seen.txt --output new.csv
+uv run scripts/web/shopify_new_products.py --store https://www.inspiraggio.com --seen alerts.csv --seen-column handle
+```
+
+`web/sitemap_images.py`
+
+```bash
+uv run scripts/web/sitemap_images.py --sitemap "https://www.inspiraggio.com/sitemap_collections_1.xml?from=608917193035&to=647521698123" --urls urls.txt
+uv run scripts/web/sitemap_images.py --sitemap collections.xml --urls urls.txt --output matched.csv
 ```
 
 ## wikimedia
