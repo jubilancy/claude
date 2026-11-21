@@ -1,0 +1,225 @@
+Run started : 2026-11-21 19:34:31
+Run finished: 2026-11-21 19:35:46 (duration 0:01:15.024914)
+Input       : curated-seeds-maps-tiles-covers-cards.txt
+Output      : ../../data/superstock-curated-maps-tiles-covers-cards.csv
+
+SUMMARY
+  total seeds        : 100
+  done this run      : 100
+  already done       : 0
+  skipped on purpose : 0
+  errors             : 0
+
+SUCCESSFUL: WRITTEN (100)
+  866-3183
+    Maps / Ortelius and atlases: Map of America from Theatrum Orbis Terrarum, the world's first regular
+  1060-771
+    Maps / Ortelius and atlases: Map of Italy, Theatrum Orbis Terrarum, Abraham Ortelius, 1595
+  1060-753
+    Maps / Ortelius and atlases: Map of Islandia (Iceland), Theatrum Orbis Terrarum, Abraham Ortelius
+  1060-752
+    Maps / Ortelius and atlases: Map of the Pacific, Theatrum Orbis Terrarum, Abraham Ortelius, 1595
+  1060-773
+    Maps / Ortelius and atlases: Map of the Roman Empire, Theatrum Orbis Terrarum, Abraham Ortelius, 15
+  1060-774
+    Maps / Ortelius and atlases: Map of India, Theatrum Orbis Terrarum, Abraham Ortelius, 1595
+  4435-3041
+    Maps / Ortelius and atlases: Ortelius, Theatrum Orbis Terrarum: map of the Caribbean Sea with Cuba,
+  1899-30497
+    Maps / Ortelius and atlases: Theatrum Orbis Terrarum, title page, Blaeu, 1645, watercolour engravin
+  900-135923
+    Maps / Ortelius and atlases: The New World, ca. 1600
+  4443-73194198
+    Maps / Ortelius and atlases: Corner ornament with a round map of America, from Ortelius's Aevi Vete
+  4443-73194190
+    Maps / Ortelius and atlases: Cartouche from Ortelius's Geographica Sacra, a fragment of a map of th
+  4443-73194204
+    Maps / Ortelius and atlases: Argonautica cartouche from Ortelius's map of the Argonauts, 1598-1601
+  1848-87422640
+    Maps / Portolan charts and old maps: Old portolan map of the central Mediterranean, Italy, Sicily and Dalma
+  1095-272
+    Maps / Portolan charts and old maps: Map of Western Africa from the Portolan Atlas of Four Charts, 1612, Ne
+  1788-36570
+    Maps / Portolan charts and old maps: Mediterranean coast from the portolan charts by Francesco Oliva, 1611
+  1788-38496
+    Maps / Portolan charts and old maps: Alexandria, Egypt, from a portolan atlas of six charts by Placido Calo
+  1788-35969
+    Maps / Portolan charts and old maps: Cartography, 16th century: sun symbol with inlaid compass rose, from t
+  6145-29857353
+    Maps / Portolan charts and old maps: German 15th-century Map of the World, c1480
+  1848-85697150
+    Maps / Portolan charts and old maps: Antique map of the Balearic and Pityusic Islands, 17th century, digita
+  1848-85693780
+    Maps / Portolan charts and old maps: Antique map of Brittany, western France, 17th century, digitally remas
+  6145-58835188
+    Maps / Portolan charts and old maps: Oval cartouche with two birds, fragment of a 1584 map of Romania, Antw
+  4443-85424653
+    Maps / Star charts and city plans: Planisphaerii coelestis Hemisphaerium Septentrionale, hand-coloured st
+  6145-29094963
+    Maps / Star charts and city plans: 1856 Burritt-Huntington Map of the Stars, constellations of the Northe
+  1035-20589242
+    Maps / Star charts and city plans: Map of the northern heavens, engraved c1850 by R. Schmidt et Mandel af
+  4220-21896743
+    Maps / Star charts and city plans: Constellations including Cassiopeia and Ursa Minor, 1822
+  4220-21874332
+    Maps / Star charts and city plans: Cetus (sea monster) constellation map, 19th century
+  4443-85452022
+    Maps / Star charts and city plans: Map of Franeker, bird's-eye plan with the arms of Friesland
+  1848-85531060
+    Maps / Star charts and city plans: Vienna historic city plan and old fortifications, vintage engraving, 1
+  6145-29061270
+    Tiles / Delft, Dutch and Spanish tiles: Tile with a ship, Holland, 18th century, glazed ceramic
+  4443-21940589
+    Tiles / Delft, Dutch and Spanish tiles: Scene tile with a landscape, waving man and sailing ships, blue on whi
+  4443-21903123
+    Tiles / Delft, Dutch and Spanish tiles: Wall tile with a flower pot in blue on white, corner motif lily
+  4443-21942266
+    Tiles / Delft, Dutch and Spanish tiles: White tile with a blue warrior, corner pattern lily
+  4443-21921436
+    Tiles / Delft, Dutch and Spanish tiles: Tile field of six tiles in orange, green and blue, floral decor, corne
+  4443-21933419
+    Tiles / Delft, Dutch and Spanish tiles: Ornament tile, checkerplate motif, blue on white with a brushed diamon
+  4443-21919038
+    Tiles / Delft, Dutch and Spanish tiles: Blue border tile with circles and flowers
+  6145-58849725
+    Tiles / Delft, Dutch and Spanish tiles: Randtegel (border tile), c1750-1799, leaf motif with three fruits, tin
+  6145-29720941
+    Tiles / Delft, Dutch and Spanish tiles: Tile with geometric design, 16th-century Spanish
+  6145-58871116
+    Tiles / Iznik and Islamic tiles: Iznik tile with floral scrolls, c1550-1599
+  6145-29151376
+    Tiles / Iznik and Islamic tiles: Border tile with split-palmette design, Iznik, ca. 1578
+  1746-21127519
+    Tiles / Iznik and Islamic tiles: Floral border Iznik tiles, 16th century
+  7012-69863820
+    Tiles / Iznik and Islamic tiles: Detail of Iznik tiles in Topkapi Palace, Istanbul
+  1848-53966962
+    Tiles / Iznik and Islamic tiles: Tile mosaics (zellige) on a fountain, Meknes, Morocco
+  1848-55085596
+    Tiles / Iznik and Islamic tiles: Wall of the Medersa Bou Inania with tile mosaics and stucco ornaments,
+  1848-53966961
+    Tiles / Iznik and Islamic tiles: Stucco ornaments and tile mosaics on the gate to the Moulay Ismail mau
+  4186-58627397
+    Tiles / Azulejos and other tiles: Detail of blue and white painted azulejos, Madeira, Portugal
+  1848-51715495
+    Tiles / Azulejos and other tiles: Blue and white azulejo tiles with an oriental landscape, University of
+  1848-51715496
+    Tiles / Azulejos and other tiles: Blue and white azulejo tiles with an oriental scene, University of Evo
+  6019-86286396
+    Tiles / Azulejos and other tiles: Traditional blue and white Portuguese azulejo tile detail
+  6145-29820279
+    Tiles / Azulejos and other tiles: Encaustic tile, 1870-75, American Encaustic Tile Company
+  1525-25707919
+    Tiles / Azulejos and other tiles: Pattern of antique ceramic tiles
+  4408-12720
+    Book covers / Classic novels and poetry: Kidnapped, book cover
+  4408-13444
+    Book covers / Classic novels and poetry: Sister Carrie, book cover
+  4408-5800
+    Book covers / Classic novels and poetry: Adventures of Sherlock Holmes #2, book cover
+  4408-12674
+    Book covers / Classic novels and poetry: Frankenstein, book cover
+  4408-12392
+    Book covers / Classic novels and poetry: Little Women, book cover
+  4408-13584
+    Book covers / Classic novels and poetry: Pride and Prejudice, book cover (listed as Pride & Perjudice)
+  4408-12389
+    Book covers / Classic novels and poetry: Moby Dick, book cover
+  4408-12689
+    Book covers / Classic novels and poetry: Don Quixote, book cover
+  4408-12787
+    Book covers / Classic novels and poetry: Tennyson, book cover
+  4408-12755
+    Book covers / Classic novels and poetry: The Prince and the Pauper, book cover
+  4408-15649
+    Book covers / Classic novels and poetry: Robin Hood, book cover
+  4408-12698
+    Book covers / Classic novels and poetry: Flute Enchanter, book cover
+  4408-12696
+    Book covers / Classic novels and poetry: Facing Death, book cover
+  1095-224
+    Book covers / Classic novels and poetry: The Awakening by Kate Chopin, book cover, Newberry Library
+  4220-21880811
+    Book covers / Children's, odd and instructional covers: Struwwelpeter, the cover of the book, first published 1847
+  4408-12750
+    Book covers / Children's, odd and instructional covers: Pinocchio, book cover
+  4408-12726
+    Book covers / Children's, odd and instructional covers: Little Gem Story Book, book cover
+  4408-18619
+    Book covers / Children's, odd and instructional covers: Ideal Book for Girls, book cover
+  4408-12739
+    Book covers / Children's, odd and instructional covers: Nyal Cook Book, book cover
+  4220-21936632
+    Book covers / Children's, odd and instructional covers: Water Divining, illustration adapted from the cover of A Book of Pract
+  4220-21934525
+    Book covers / Pulp magazine covers: Fantastic Adventures, February 1942, Doorway to Hell by Frank Patton
+  4220-21934522
+    Book covers / Pulp magazine covers: Fantastic Adventures, February 1946, Toka and the Man Bats
+  4220-21934544
+    Book covers / Pulp magazine covers: Fantastic Adventures, July 1946, Cult of the Eagle
+  4220-21934538
+    Book covers / Pulp magazine covers: Fantastic Adventures, January 1947, Princess of the Sea
+  4220-21933880
+    Book covers / Pulp magazine covers: Fantastic Adventures, July 1947, Goddess of the Golden Flame
+  4220-21934580
+    Book covers / Pulp magazine covers: Fantastic Adventures, September 1948, The Lavender Vine of Death
+  6145-29177220
+    Cigarette cards / American tobacco cards: Actresses series (N57), Our Little Beauties Cigarettes, Allen & Ginter
+  6145-29743417
+    Cigarette cards / American tobacco cards: Girls and Children series (N64), Virginia Brights Cigarettes, Allen & 
+  6145-29795981
+    Cigarette cards / American tobacco cards: Girls and Children series (N58), Our Little Beauties Cigarettes, Allen
+  6145-29176092
+    Cigarette cards / American tobacco cards: Young Bibby (George Mehling), wrestler, World's Champions Series 1 (N2
+  6145-29176357
+    Cigarette cards / American tobacco cards: Yachting, World's Dudes series (N31), Allen & Ginter, 1888
+  6145-29169525
+    Cigarette cards / American tobacco cards: Duke of Westminster, Racing Colors of the World (N22a), Allen & Ginter
+  6145-29169026
+    Cigarette cards / American tobacco cards: Cormorant, Game Birds series (N13), Allen & Ginter, 1889
+  6145-29168960
+    Cigarette cards / American tobacco cards: New Jersey, Flags of the States and Territories (N11), Allen & Ginter,
+  6145-29168920
+    Cigarette cards / American tobacco cards: Rhode Island, Flags of the States and Territories (N11), Allen & Ginte
+  6145-29243693
+    Cigarette cards / American tobacco cards: Accordion, Musical Instruments series (N82), Duke cigarettes, 1888
+  6145-29714274
+    Cigarette cards / American tobacco cards: Mitchell, pugilist, Goodwin Champions series (N162), Old Judge and Gyp
+  6145-29760430
+    Cigarette cards / American tobacco cards: Physician, Occupations for Women series (N166), Old Judge and Dogs Hea
+  6145-29795277
+    Cigarette cards / American tobacco cards: H.M.S. Colossus, Naval Vessels of the World series (N226), Kinney Bros
+  6145-48555304
+    Cigarette cards / American tobacco cards: Smoke Gail and Ax's Little Joker tobacco, 19th-century American trade 
+  1746-28997065
+    Cigarette cards / British cigarette cards and Liebig cards: London Cigarette Card Company card, 1924: William Dampier, explorer
+  1746-28996535
+    Cigarette cards / British cigarette cards and Liebig cards: Lambert & Butler, Pirates & Highwaymen: Captain James MacLaine, the Ge
+  1848-79180300
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig picture, Cultural history series: a tournament in the time of M
+  1848-49523410
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig picture, Biblical Stories I, 1883: the reconciliation of Esau w
+  1848-79179372
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig picture, The sparrow with the slit tongue, Japanese fairy tale
+  1848-64748115
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig picture, From the world of birds: oriole
+  1848-50195184
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig picture, operas: Die Walkuere, Siglinde refreshes Sigmund
+  1848-61263528
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig picture, States of Austria, 1883: Transylvania
+  1899-76247286
+    Cigarette cards / British cigarette cards and Liebig cards: Musical instruments: woman playing a Jew's harp, reproduction of a 19t
+  1899-53513807
+    Cigarette cards / British cigarette cards and Liebig cards: Liebig collectible picture, Sport series: rowing, c1900
+
+SUCCESSFUL: SKIPPED, ALREADY IN OUTPUT (0)
+  (none)
+
+SKIPPED ON PURPOSE: duplicate SKUs (0)
+  (none)
+
+ERRORS (0)
+  (none)
+
+WARNINGS (image links that did not resolve) (0)
+  (none)

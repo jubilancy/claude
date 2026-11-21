@@ -1,0 +1,115 @@
+# Curated SuperStock picks, set 2. Pipe-separated: theme | group | sku | title | supplier | collection | license | width | height
+# Titles are shortened from the catalogue captions returned by the SuperStock connector, not invented.
+# A blank supplier or collection means the connector's keyword search (query_assets) did not return it for that picture.
+# Removed after a visual check: 1788-35696 (caption says Ortelius-derived map of the Duchy of Milan, but SuperStock's own thumbnail shows a church interior).
+# Maps | Ortelius and atlases
+Maps | Ortelius and atlases | 866-3183 | Map of America from Theatrum Orbis Terrarum, the world's first regularly produced atlas, Abraham Ortelius, 1572, illumination on vellum | | | rights_managed | 6407 | 4637
+Maps | Ortelius and atlases | 1060-771 | Map of Italy, Theatrum Orbis Terrarum, Abraham Ortelius, 1595 | | | rights_managed | 6294 | 4519
+Maps | Ortelius and atlases | 1060-753 | Map of Islandia (Iceland), Theatrum Orbis Terrarum, Abraham Ortelius | | | rights_managed | 6252 | 4614
+Maps | Ortelius and atlases | 1060-752 | Map of the Pacific, Theatrum Orbis Terrarum, Abraham Ortelius, 1595 | | | rights_managed | 6464 | 4473
+Maps | Ortelius and atlases | 1060-773 | Map of the Roman Empire, Theatrum Orbis Terrarum, Abraham Ortelius, 1595 | | | rights_managed | 6335 | 4434
+Maps | Ortelius and atlases | 1060-774 | Map of India, Theatrum Orbis Terrarum, Abraham Ortelius, 1595 | | | rights_managed | 6417 | 4655
+Maps | Ortelius and atlases | 4435-3041 | Ortelius, Theatrum Orbis Terrarum: map of the Caribbean Sea with Cuba, Jamaica and Florida, Antwerp, 1588 | | | rights_managed | 4768 | 3780
+Maps | Ortelius and atlases | 1899-30497 | Theatrum Orbis Terrarum, title page, Blaeu, 1645, watercolour engraving, Marciana Library | | | rights_managed | 2441 | 3840
+Maps | Ortelius and atlases | 900-135923 | The New World, ca. 1600 | | | rights_managed | 6088 | 4694
+Maps | Ortelius and atlases | 4443-73194198 | Corner ornament with a round map of America, from Ortelius's Aevi Veteris Typus Geographicus, engraving, 1590 | | | rights_managed | 1965 | 3873
+Maps | Ortelius and atlases | 4443-73194190 | Cartouche from Ortelius's Geographica Sacra, a fragment of a map of the Old World, 1598-1601 | | | rights_managed | 3178 | 2194
+Maps | Ortelius and atlases | 4443-73194204 | Argonautica cartouche from Ortelius's map of the Argonauts, 1598-1601 | | | rights_managed | 2685 | 2560
+# Maps | Portolan charts and old maps
+Maps | Portolan charts and old maps | 1848-87422640 | Old portolan map of the central Mediterranean, Italy, Sicily and Dalmatia, 1587, digitally remastered | imageBROKER | Vintage | royalty_free | 12000 | 8314
+Maps | Portolan charts and old maps | 1095-272 | Map of Western Africa from the Portolan Atlas of Four Charts, 1612, Newberry Library | Newberry Library | Fine Art | rights_managed | 6592 | 4763
+Maps | Portolan charts and old maps | 1788-36570 | Mediterranean coast from the portolan charts by Francesco Oliva, 1611 | DeAgostini | Fine Art | rights_managed | 4034 | 5036
+Maps | Portolan charts and old maps | 1788-38496 | Alexandria, Egypt, from a portolan atlas of six charts by Placido Caloiro and Francesco Oliva, 1646, parchment | DeAgostini | Fine Art | rights_managed | 2821 | 3603
+Maps | Portolan charts and old maps | 1788-35969 | Cartography, 16th century: sun symbol with inlaid compass rose, from the Nautical Maps Atlas | DeAgostini | Fine Art | rights_managed | 2869 | 3472
+Maps | Portolan charts and old maps | 6145-29857353 | German 15th-century Map of the World, c1480 | PL Photography Limited | Fine Art | royalty_free | 2241 | 3119
+Maps | Portolan charts and old maps | 1848-85697150 | Antique map of the Balearic and Pityusic Islands, 17th century, digitally remastered | imageBROKER | Vintage | royalty_free | 10000 | 8108
+Maps | Portolan charts and old maps | 1848-85693780 | Antique map of Brittany, western France, 17th century, digitally remastered | imageBROKER | Vintage | royalty_free | 10000 | 8022
+Maps | Portolan charts and old maps | 6145-58835188 | Oval cartouche with two birds, fragment of a 1584 map of Romania, Antwerp engraving | PL Photography Limited | Vintage | royalty_free | 2692 | 2760
+# Maps | Star charts and city plans
+Maps | Star charts and city plans | 4443-85424653 | Planisphaerii coelestis Hemisphaerium Septentrionale, hand-coloured star chart of the northern sky, Carel Allard, Amsterdam | Artokoloro | Fine Art | rights_managed | 5215 | 4439
+Maps | Star charts and city plans | 6145-29094963 | 1856 Burritt-Huntington Map of the Stars, constellations of the Northern Hemisphere | PL Photography Limited | Fine Art | royalty_free | 2500 | 2707
+Maps | Star charts and city plans | 1035-20589242 | Map of the northern heavens, engraved c1850 by R. Schmidt et Mandel after Johann Georg Heck, Leipzig | Underwood Photo Archives | Vintage | rights_managed | 5100 | 4150
+Maps | Star charts and city plans | 4220-21896743 | Constellations including Cassiopeia and Ursa Minor, 1822 | Mary Evans Picture Library | Vintage | rights_managed | 4004 | 3326
+Maps | Star charts and city plans | 4220-21874332 | Cetus (sea monster) constellation map, 19th century | Mary Evans Picture Library | Fine Art | rights_managed | 4037 | 2822
+Maps | Star charts and city plans | 4443-85452022 | Map of Franeker, bird's-eye plan with the arms of Friesland | Artokoloro | Fine Art | rights_managed | 4799 | 4041
+Maps | Star charts and city plans | 1848-85531060 | Vienna historic city plan and old fortifications, vintage engraving, 1852 | imageBROKER | Vintage | royalty_free | 11000 | 8900
+# Tiles | Delft, Dutch and Spanish tiles
+Tiles | Delft, Dutch and Spanish tiles | 6145-29061270 | Tile with a ship, Holland, 18th century, glazed ceramic | PL Photography Limited | Fine Art | royalty_free | 3400 | 3379
+Tiles | Delft, Dutch and Spanish tiles | 4443-21940589 | Scene tile with a landscape, waving man and sailing ships, blue on white | Artokoloro | Fine Art | rights_managed | 3845 | 3845
+Tiles | Delft, Dutch and Spanish tiles | 4443-21903123 | Wall tile with a flower pot in blue on white, corner motif lily | Artokoloro | Fine Art | rights_managed | 3845 | 3845
+Tiles | Delft, Dutch and Spanish tiles | 4443-21942266 | White tile with a blue warrior, corner pattern lily | Artokoloro | Fine Art | rights_managed | 3845 | 3845
+Tiles | Delft, Dutch and Spanish tiles | 4443-21921436 | Tile field of six tiles in orange, green and blue, floral decor, corner pattern ox head | Artokoloro | Fine Art | rights_managed | 3476 | 5262
+Tiles | Delft, Dutch and Spanish tiles | 4443-21933419 | Ornament tile, checkerplate motif, blue on white with a brushed diamond pattern | Artokoloro | Fine Art | rights_managed | 3845 | 3845
+Tiles | Delft, Dutch and Spanish tiles | 4443-21919038 | Blue border tile with circles and flowers | Artokoloro | Fine Art | rights_managed | 5262 | 2765
+Tiles | Delft, Dutch and Spanish tiles | 6145-58849725 | Randtegel (border tile), c1750-1799, leaf motif with three fruits, tin glaze | PL Photography Limited | Fine Art | royalty_free | 3120 | 3120
+Tiles | Delft, Dutch and Spanish tiles | 6145-29720941 | Tile with geometric design, 16th-century Spanish | PL Photography Limited | Fine Art | royalty_free | 1771 | 1752
+# Tiles | Iznik and Islamic tiles
+Tiles | Iznik and Islamic tiles | 6145-58871116 | Iznik tile with floral scrolls, c1550-1599 | PL Photography Limited | Fine Art | royalty_free | 5939 | 2987
+Tiles | Iznik and Islamic tiles | 6145-29151376 | Border tile with split-palmette design, Iznik, ca. 1578 | PL Photography Limited | Fine Art | royalty_free | 2995 | 4000
+Tiles | Iznik and Islamic tiles | 1746-21127519 | Floral border Iznik tiles, 16th century | Image Asset Management | Fine Art | rights_managed | 3381 | 6202
+Tiles | Iznik and Islamic tiles | 7012-69863820 | Detail of Iznik tiles in Topkapi Palace, Istanbul | Cindy Miller Hopkins | Fine Art | rights_managed | 4912 | 7360
+Tiles | Iznik and Islamic tiles | 1848-53966962 | Tile mosaics (zellige) on a fountain, Meknes, Morocco | imageBROKER | Fine Art | rights_managed | 4256 | 2832
+Tiles | Iznik and Islamic tiles | 1848-55085596 | Wall of the Medersa Bou Inania with tile mosaics and stucco ornaments, Meknes | imageBROKER | Fine Art | rights_managed | 4256 | 2832
+Tiles | Iznik and Islamic tiles | 1848-53966961 | Stucco ornaments and tile mosaics on the gate to the Moulay Ismail mausoleum, Meknes | imageBROKER | Fine Art | rights_managed | 4256 | 2832
+# Tiles | Azulejos and other tiles
+Tiles | Azulejos and other tiles | 4186-58627397 | Detail of blue and white painted azulejos, Madeira, Portugal | ClassicStock | Vintage | rights_managed | 4776 | 3803
+Tiles | Azulejos and other tiles | 1848-51715495 | Blue and white azulejo tiles with an oriental landscape, University of Evora | imageBROKER | Fine Art | rights_managed | 3800 | 2600
+Tiles | Azulejos and other tiles | 1848-51715496 | Blue and white azulejo tiles with an oriental scene, University of Evora | imageBROKER | Fine Art | rights_managed | 4000 | 2417
+Tiles | Azulejos and other tiles | 6019-86286396 | Traditional blue and white Portuguese azulejo tile detail | Cavan Images Micro | Fine Art | royalty_free | 4350 | 6524
+Tiles | Azulejos and other tiles | 6145-29820279 | Encaustic tile, 1870-75, American Encaustic Tile Company | PL Photography Limited | Fine Art | royalty_free | 1046 | 1200
+Tiles | Azulejos and other tiles | 1525-25707919 | Pattern of antique ceramic tiles | Ingram Publishing | Fine Art | royalty_free | 5184 | 3456
+# Book covers | Classic novels and poetry
+Book covers | Classic novels and poetry | 4408-12720 | Kidnapped, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 4408-13444 | Sister Carrie, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 4408-5800 | Adventures of Sherlock Holmes #2, book cover | Buyenlarge | | rights_managed | 3468 | 5044
+Book covers | Classic novels and poetry | 4408-12674 | Frankenstein, book cover | Buyenlarge | | rights_managed | 3466 | 5041
+Book covers | Classic novels and poetry | 4408-12392 | Little Women, book cover | Buyenlarge | | rights_managed | 3466 | 5041
+Book covers | Classic novels and poetry | 4408-13584 | Pride and Prejudice, book cover (listed as Pride & Perjudice) | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 4408-12389 | Moby Dick, book cover | Buyenlarge | | rights_managed | 3466 | 5041
+Book covers | Classic novels and poetry | 4408-12689 | Don Quixote, book cover | Buyenlarge | | rights_managed | 5041 | 3466
+Book covers | Classic novels and poetry | 4408-12787 | Tennyson, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 4408-12755 | The Prince and the Pauper, book cover | Buyenlarge | | rights_managed | 3586 | 4873
+Book covers | Classic novels and poetry | 4408-15649 | Robin Hood, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 4408-12698 | Flute Enchanter, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 4408-12696 | Facing Death, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Classic novels and poetry | 1095-224 | The Awakening by Kate Chopin, book cover, Newberry Library | Newberry Library | | rights_managed | 4195 | 6737
+# Book covers | Children's, odd and instructional covers
+Book covers | Children's, odd and instructional covers | 4220-21880811 | Struwwelpeter, the cover of the book, first published 1847 | Mary Evans Picture Library | | rights_managed | 3528 | 4267
+Book covers | Children's, odd and instructional covers | 4408-12750 | Pinocchio, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Children's, odd and instructional covers | 4408-12726 | Little Gem Story Book, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Children's, odd and instructional covers | 4408-18619 | Ideal Book for Girls, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Children's, odd and instructional covers | 4408-12739 | Nyal Cook Book, book cover | Buyenlarge | | rights_managed | 3413 | 5119
+Book covers | Children's, odd and instructional covers | 4220-21936632 | Water Divining, illustration adapted from the cover of A Book of Practical Instruction by S. N. Pike, 1945 | Mary Evans Picture Library | | rights_managed | 3841 | 4652
+# Book covers | Pulp magazine covers
+Book covers | Pulp magazine covers | 4220-21934525 | Fantastic Adventures, February 1942, Doorway to Hell by Frank Patton | Mary Evans Picture Library | Vintage | rights_managed | 3500 | 5090
+Book covers | Pulp magazine covers | 4220-21934522 | Fantastic Adventures, February 1946, Toka and the Man Bats | Mary Evans Picture Library | Vintage | rights_managed | 3500 | 5191
+Book covers | Pulp magazine covers | 4220-21934544 | Fantastic Adventures, July 1946, Cult of the Eagle | Mary Evans Picture Library | Vintage | rights_managed | 3497 | 5103
+Book covers | Pulp magazine covers | 4220-21934538 | Fantastic Adventures, January 1947, Princess of the Sea | Mary Evans Picture Library | Vintage | rights_managed | 3500 | 5190
+Book covers | Pulp magazine covers | 4220-21933880 | Fantastic Adventures, July 1947, Goddess of the Golden Flame | Mary Evans Picture Library | Vintage | rights_managed | 3672 | 5301
+Book covers | Pulp magazine covers | 4220-21934580 | Fantastic Adventures, September 1948, The Lavender Vine of Death | Mary Evans Picture Library | Vintage | rights_managed | 3555 | 5158
+# Cigarette cards | American tobacco cards
+Cigarette cards | American tobacco cards | 6145-29177220 | Actresses series (N57), Our Little Beauties Cigarettes, Allen & Ginter, 1890 | PL Photography Limited | Vintage | royalty_free | 1588 | 3024
+Cigarette cards | American tobacco cards | 6145-29743417 | Girls and Children series (N64), Virginia Brights Cigarettes, Allen & Ginter, 1886 | PL Photography Limited | Vintage | royalty_free | 1625 | 2837
+Cigarette cards | American tobacco cards | 6145-29795981 | Girls and Children series (N58), Our Little Beauties Cigarettes, Allen & Ginter, 1887 | PL Photography Limited | Vintage | royalty_free | 1612 | 2869
+Cigarette cards | American tobacco cards | 6145-29176092 | Young Bibby (George Mehling), wrestler, World's Champions Series 1 (N28), Allen & Ginter, 1887 | PL Photography Limited | Vintage | royalty_free | 2146 | 3791
+Cigarette cards | American tobacco cards | 6145-29176357 | Yachting, World's Dudes series (N31), Allen & Ginter, 1888 | PL Photography Limited | Vintage | royalty_free | 1656 | 2995
+Cigarette cards | American tobacco cards | 6145-29169525 | Duke of Westminster, Racing Colors of the World (N22a), Allen & Ginter, 1888 | PL Photography Limited | Vintage | royalty_free | 1555 | 2776
+Cigarette cards | American tobacco cards | 6145-29169026 | Cormorant, Game Birds series (N13), Allen & Ginter, 1889 | PL Photography Limited | Vintage | royalty_free | 2897 | 1592
+Cigarette cards | American tobacco cards | 6145-29168960 | New Jersey, Flags of the States and Territories (N11), Allen & Ginter, 1888 | PL Photography Limited | Vintage | royalty_free | 1585 | 2874
+Cigarette cards | American tobacco cards | 6145-29168920 | Rhode Island, Flags of the States and Territories (N11), Allen & Ginter, 1888 | PL Photography Limited | Vintage | royalty_free | 1673 | 2965
+Cigarette cards | American tobacco cards | 6145-29243693 | Accordion, Musical Instruments series (N82), Duke cigarettes, 1888 | PL Photography Limited | Vintage | royalty_free | 1538 | 2811
+Cigarette cards | American tobacco cards | 6145-29714274 | Mitchell, pugilist, Goodwin Champions series (N162), Old Judge and Gypsy Queen Cigarettes, 1888 | PL Photography Limited | Vintage | royalty_free | 1740 | 3036
+Cigarette cards | American tobacco cards | 6145-29760430 | Physician, Occupations for Women series (N166), Old Judge and Dogs Head Cigarettes, 1887 | PL Photography Limited | Vintage | royalty_free | 1528 | 2874
+Cigarette cards | American tobacco cards | 6145-29795277 | H.M.S. Colossus, Naval Vessels of the World series (N226), Kinney Bros., 1889 | PL Photography Limited | Vintage | royalty_free | 868 | 490
+Cigarette cards | American tobacco cards | 6145-48555304 | Smoke Gail and Ax's Little Joker tobacco, 19th-century American trade card with men, angels and bears | PL Photography Limited | Vintage | royalty_free | 1965 | 3516
+# Cigarette cards | British cigarette cards and Liebig cards
+Cigarette cards | British cigarette cards and Liebig cards | 1746-28997065 | London Cigarette Card Company card, 1924: William Dampier, explorer | Image Asset Management | Vintage | rights_managed | 3333 | 6291
+Cigarette cards | British cigarette cards and Liebig cards | 1746-28996535 | Lambert & Butler, Pirates & Highwaymen: Captain James MacLaine, the Gentleman Highwayman | Image Asset Management | Vintage | rights_managed | 6247 | 3357
+Cigarette cards | British cigarette cards and Liebig cards | 1848-79180300 | Liebig picture, Cultural history series: a tournament in the time of Maximilian I | imageBROKER | Vintage | rights_managed | 6000 | 3834
+Cigarette cards | British cigarette cards and Liebig cards | 1848-49523410 | Liebig picture, Biblical Stories I, 1883: the reconciliation of Esau with Jacob | imageBROKER | Vintage | royalty_free | 4500 | 3072
+Cigarette cards | British cigarette cards and Liebig cards | 1848-79179372 | Liebig picture, The sparrow with the slit tongue, Japanese fairy tale | imageBROKER | Vintage | rights_managed | 6000 | 3848
+Cigarette cards | British cigarette cards and Liebig cards | 1848-64748115 | Liebig picture, From the world of birds: oriole | imageBROKER | Vintage | rights_managed | 4000 | 2665
+Cigarette cards | British cigarette cards and Liebig cards | 1848-50195184 | Liebig picture, operas: Die Walkuere, Siglinde refreshes Sigmund | imageBROKER | Vintage | royalty_free | 3600 | 2424
+Cigarette cards | British cigarette cards and Liebig cards | 1848-61263528 | Liebig picture, States of Austria, 1883: Transylvania | imageBROKER | Vintage | royalty_free | 4500 | 2982
+Cigarette cards | British cigarette cards and Liebig cards | 1899-76247286 | Musical instruments: woman playing a Jew's harp, reproduction of a 19th-century Duke collector's card | Universal Images | Vintage | rights_managed | 2715 | 4500
+Cigarette cards | British cigarette cards and Liebig cards | 1899-53513807 | Liebig collectible picture, Sport series: rowing, c1900 | Universal Images | Vintage | rights_managed | 5000 | 3333
