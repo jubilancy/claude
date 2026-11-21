@@ -192,6 +192,7 @@ uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
 | [`web/fetch_urls.py`](web/fetch_urls.py) | all-in-one polite scraper |
 | [`web/flickr_sort.py`](web/flickr_sort.py) | sort a list of Flickr URLs by type into a markdown file |
 | [`web/shopify_collection_products.py`](web/shopify_collection_products.py) | For each Shopify collection URL, list its products with title and image URLs. |
+| [`web/shopify_new_products.py`](web/shopify_new_products.py) | List a Shopify store's products and pick out the ones not seen before. |
 | [`web/sitemap_images.py`](web/sitemap_images.py) | Match page URLs to their &lt;image:image&gt; URLs from a sitemap (Shopify style). |
 
 `web/fetch_urls.py`
@@ -213,6 +214,14 @@ uv run scripts/web/flickr_sort.py urls.txt -o flickr_sorted.md
 uv run scripts/web/shopify_collection_products.py --input data/inspiraggio-collection-images.csv --output data/inspiraggio-products.csv
 uv run scripts/web/shopify_collection_products.py --input urls.txt --all-images
 uv run scripts/web/shopify_collection_products.py --input urls.txt --force
+```
+
+`web/shopify_new_products.py`
+
+```bash
+uv run scripts/web/shopify_new_products.py --store https://www.inspiraggio.com --status seed --output seed.csv
+uv run scripts/web/shopify_new_products.py --store https://www.inspiraggio.com --seen seen.txt --output new.csv
+uv run scripts/web/shopify_new_products.py --store https://www.inspiraggio.com --seen alerts.csv --seen-column handle
 ```
 
 `web/sitemap_images.py`
