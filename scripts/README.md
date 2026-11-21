@@ -155,6 +155,19 @@ uv run scripts/raindrop/wiki_count_by_collection.py everything.json
 uv run scripts/raindrop/wiki_count_by_collection.py everything.json --all-matches
 ```
 
+## superstock
+
+| Script | What it does |
+|---|---|
+| [`superstock/superstock_curated_csv.py`](superstock/superstock_curated_csv.py) | Turn a curated SuperStock SKU list into a CSV with checked preview images. |
+
+`superstock/superstock_curated_csv.py`
+
+```bash
+uv run scripts/superstock/superstock_curated_csv.py --input scripts/superstock/curated-seeds.txt --output data/superstock-curated.csv
+uv run scripts/superstock/superstock_curated_csv.py --input seeds.txt --force
+```
+
 ## tiktok
 
 | Script | What it does |
@@ -183,6 +196,20 @@ uv run --with gallery-dl gallery-dl -i batches/Pets.txt -d downloads/Pets   # do
 uv run scripts/tumblr/fetch_tagged_posts.py
 uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt
 uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
+```
+
+## unsplash
+
+| Script | What it does |
+|---|---|
+| [`unsplash/unsplash_metadata.py`](unsplash/unsplash_metadata.py) | Unsplash photo URLs or IDs -&gt; CSV of metadata (title, description, photographer, tags, image URLs ...). |
+
+`unsplash/unsplash_metadata.py`
+
+```bash
+UNSPLASH_ACCESS_KEY is read from the environment (add it in the cloud environment settings).
+uv run scripts/unsplash/unsplash_metadata.py --input scripts/unsplash/urls.txt --output data/unsplash-metadata.csv
+uv run scripts/unsplash/unsplash_metadata.py --input urls.txt --force
 ```
 
 ## web
