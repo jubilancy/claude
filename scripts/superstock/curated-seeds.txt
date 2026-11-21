@@ -1,0 +1,112 @@
+# Curated SuperStock picks. Pipe-separated: theme | group | sku | title | supplier | collection | license | width | height
+# Titles are shortened from the catalogue captions returned by the SuperStock connector (search_assets), not invented.
+# The preview image URLs are not stored here; superstock_curated_csv.py builds them from the SKU and checks each one.
+# Occult | Alchemy
+Occult | Alchemy | 6145-29248119 | An alchemist with his assistants in his laboratory, engraving by J.P. Le Bas, 1747, after Teniers | PL Photography Limited | Fine Art | royalty_free | 3045 | 2300
+Occult | Alchemy | 4435-4154 | The Alchemist, David Teniers II (painting, Mauritshuis) | Iberfoto Archivo | Fine Art | rights_managed | 4244 | 3226
+Occult | Alchemy | 1899-61454937 | Laboratory of an alchemist, engraving after Pieter Brueghel the Elder | Universal Images | Fine Art | rights_managed | 4252 | 3013
+Occult | Alchemy | 6145-29263652 | A monkey-alchemist pumps a bellows in a laboratory, engraving by J.P. Le Bas after Teniers | PL Photography Limited | Fine Art | royalty_free | 2304 | 3198
+Occult | Alchemy | 6145-29283679 | Two alchemists seeming to produce gold from a furnace, engraving by C. Weigel, 1698 | PL Photography Limited | Fine Art | royalty_free | 1300 | 1999
+Occult | Alchemy | 4220-21900148 | An alchemist studies an old instruction manual while his assistant keeps the furnace going, circa 1660 | Mary Evans Picture Library | Fine Art | rights_managed | 4264 | 3258
+Occult | Alchemy | 4266-22027 | The Alchemist after David Teniers, copper engraving by Jacques Louis Peree | Fine Art Images/A. Burkatovski | Fine Art | rights_managed | 4724 | 3678
+Occult | Alchemy | 1746-30001832 | Woodcut engraving of the fourth key of Basil Valentine | Image Asset Management | Fine Art | rights_managed | 3357 | 6247
+Occult | Alchemy | 1746-30001831 | Woodcut engraving of the third key of Basil Valentine | Image Asset Management | Fine Art | rights_managed | 3330 | 6297
+Occult | Alchemy | 1746-19629224 | Edward Kelly and his assistant raising a spirit in a churchyard, copperplate engraving c1790 | Image Asset Management | Fine Art | rights_managed | 3591 | 4500
+Occult | Alchemy | 7192-70581796 | Paracelsus, Swiss physician, alchemist, astrologer and occultist, engraving | Prisma Archivo | Fine Art | rights_managed | 4476 | 5433
+Occult | Alchemy | 1746-111357502 | Engraving depicting Paracelsus, physician, alchemist and astrologer, 19th century | Image Asset Management | Fine Art | rights_managed | 5607 | 3740
+Occult | Alchemy | 1746-19627036 | Jacob de Boehme, German theosophist, mystic and alchemist, 18th-century copperplate engraving | Image Asset Management | Fine Art | rights_managed | 3468 | 4500
+Occult | Alchemy | 1899-61454931 | Ramon Llull, the alchemist Raymond Lulle, portrait after an engraving by Jean de Vries | Universal Images | Fine Art | rights_managed | 3172 | 4789
+Occult | Alchemy | 1525-28068737 | Alchemist laboratory, vintage engraving from The Universe and Humanity, 1910 | Ingram Publishing | Fine Art | royalty_free | 5526 | 3452
+Occult | Alchemy | 4220-21854251 | The Alchemist, Italian fortune-telling card from the Grand Jeu de Mlle Lenormand, 19th century | Mary Evans Picture Library | Vintage | rights_managed | 3263 | 4566
+Occult | Alchemy | 4443-19607752 | Garrick in the character of Abel Drugger, mezzotint 1825 (alchemist, skull and hourglass) | Artokoloro | Vintage | rights_managed | 3432 | 4992
+Occult | Alchemy | 1848-61073414 | Johann Georg Faust, travelling healer, alchemist, magician and astrologer, reproduction of a 19th-century original | imageBROKER | Fine Art | royalty_free | 3791 | 5000
+# Occult | Witchcraft, demons and magic
+Occult | Witchcraft, demons and magic | 6145-29246157 | A white-faced witch meeting a black-faced witch with a great beast, woodcut, 1720 | PL Photography Limited | Fine Art | royalty_free | 1345 | 1181
+Occult | Witchcraft, demons and magic | 4220-21841945 | Dining with Demons: witches at a sabbat sit down to supper with the Devil, circa 1600 | Mary Evans Picture Library | Fine Art | rights_managed | 3656 | 3348
+Occult | Witchcraft, demons and magic | 4220-21900276 | A sorcerer draws a magic circle, witches fly to the sabbat and dance with demons, 1715 | Mary Evans Picture Library | Fine Art | rights_managed | 3999 | 4751
+Occult | Witchcraft, demons and magic | 6145-29258257 | Demons and witches arrive at the sabbath, engraving by J. Aliamet after Teniers | PL Photography Limited | Fine Art | royalty_free | 2242 | 3158
+Occult | Witchcraft, demons and magic | 1848-49465996 | Witches, the flight of Bute from Dover, 1768 satire with a witch on a broom and the devil as satyr | imageBROKER | Vintage | royalty_free | 2359 | 4000
+Occult | Witchcraft, demons and magic | 1525-27905961 | Djinn called Malek Mimoun, from a manuscript, engraving, Magasin Pittoresque 1847 | Ingram Publishing | Fine Art | royalty_free | 4261 | 5178
+Occult | Witchcraft, demons and magic | 1899-61455104 | Torture of the wheel executed by demons, engraving after Le grant Kalendrier et compost des Bergiers, 1529 | Universal Images | Fine Art | rights_managed | 3203 | 3898
+Occult | Witchcraft, demons and magic | 6145-59486345 | Franciscan and Dominican monk with a devil in the middle, Franz Isaac Brun, engraving | PL Photography Limited | Fine Art | royalty_free | 1551 | 1344
+Occult | Witchcraft, demons and magic | 4069-2495 | The devil taking a child, 14th century | Picture Desk, Art Archive | Fine Art | rights_managed | 2617 | 3340
+Occult | Witchcraft, demons and magic | 4220-21837551 | The Devil leaves his mark on the church and agriculture | Mary Evans Picture Library | Fine Art | rights_managed | 3500 | 4561
+Occult | Witchcraft, demons and magic | 7192-70582207 | Two saints who make shoes tempted by the devil, coloured woodcut | Prisma Archivo | Fine Art | rights_managed | 4048 | 5433
+Occult | Witchcraft, demons and magic | 1047-562 | Hell, 19th-century engraving | Stock Montage | Fine Art | rights_managed | 6425 | 4736
+# Occult | Astrology, tarot and memento mori
+Occult | Astrology, tarot and memento mori | 6145-59598160 | Heavens of the Aratus system with the zodiac, 1708 print | PL Photography Limited | Fine Art | royalty_free | 5840 | 4976
+Occult | Astrology, tarot and memento mori | 1788-33916 | The sky with the Sun, the Moon and the signs of the Zodiac, miniature from De universo by Rabanus Maurus, 11th-century manuscript | DeAgostini | Fine Art | rights_managed | 2832 | 3543
+Occult | Astrology, tarot and memento mori | 4443-19535836 | Minchiate (tarot) playing card, stencil-coloured woodblock print, Florence, 17th century | Artokoloro | Fine Art | rights_managed | 2561 | 3948
+Occult | Astrology, tarot and memento mori | 6145-59218502 | Skeleton at a tomb, Jan Wandelaar, 1747 print | PL Photography Limited | Fine Art | royalty_free | 5328 | 7290
+Occult | Astrology, tarot and memento mori | 6145-29272409 | A winged figure of Death on worldly goods holding an hourglass and a scythe, mezzotint | PL Photography Limited | Fine Art | royalty_free | 2361 | 3013
+Occult | Astrology, tarot and memento mori | 7192-86423254 | Facsimile of Ars Moriendi (The Art of Dying), 1415, the temptation to avarice | Prisma Archivo | Fine Art | rights_managed | 3201 | 4488
+Occult | Astrology, tarot and memento mori | 4220-21936385 | Book cover, El Brujo Verde (The Green Magician), a sick man troubled by demons, c1890s | Mary Evans Picture Library | Vintage | rights_managed | 4259 | 6342
+# Rare books | Manuscripts and scriptoria
+Rare books | Manuscripts and scriptoria | 6145-29071564 | Historiated initial P, Colossians, illuminated Latin manuscript, Toulouse, c1275-1300 | PL Photography Limited | Vintage | royalty_free | 2153 | 3400
+Rare books | Manuscripts and scriptoria | 6145-29722695 | Manuscript illumination with Salvator Mundi in an initial P, choir book, early 16th-century Italian | PL Photography Limited | Fine Art | royalty_free | 2076 | 1776
+Rare books | Manuscripts and scriptoria | 6145-29116920 | Latin manuscript with ornate initial letter from an English Book of Hours, late 14th century | PL Photography Limited | Vintage | royalty_free | 2798 | 4612
+Rare books | Manuscripts and scriptoria | 1788-33163 | Illuminated page from a medieval Laudario (laud book), Italy, 15th century | DeAgostini | Vintage | rights_managed | 3392 | 4196
+Rare books | Manuscripts and scriptoria | 1788-33347 | Illuminated pages from the Book of Hours of King Ferdinand I the Great, 11th-century manuscript | DeAgostini | Vintage | rights_managed | 4631 | 3471
+Rare books | Manuscripts and scriptoria | 1899-50439176 | Scribe or copyist surrounded by open books, working at his desk, 15th-century engraving | Universal Images | Fine Art | rights_managed | 3780 | 3419
+Rare books | Manuscripts and scriptoria | 1746-29014946 | Engraving depicting a monk illuminating a manuscript, 14th century | Image Asset Management | Fine Art | rights_managed | 4428 | 4736
+Rare books | Manuscripts and scriptoria | 4220-20425308 | A medieval monk at a desk surrounded by books works on an illuminated manuscript, 1911 | Mary Evans Picture Library | Vintage | rights_managed | 3400 | 4392
+Rare books | Manuscripts and scriptoria | 1746-19629393 | Monks at work on manuscripts in a scriptorium, Liebig trade card c1900 | Image Asset Management | Vintage | rights_managed | 6000 | 3851
+Rare books | Manuscripts and scriptoria | 4443-21808741 | The monk Melis Stoke writing his Rhyme Chronicle of Holland, steel engraving, 1865-70 | Artokoloro | Fine Art | rights_managed | 4740 | 3834
+# Rare books | Printed books, bindings and libraries
+Rare books | Printed books, bindings and libraries | 6145-29814953 | Bible, printed 1477 and bound 1478, German | PL Photography Limited | Vintage | royalty_free | 1920 | 2560
+Rare books | Printed books, bindings and libraries | 4443-73213585 | The Feeding of the Five Thousand, woodcut book illustration, Netherlands, c1480-1500 | Artokoloro | Fine Art | rights_managed | 5492 | 3827
+Rare books | Printed books, bindings and libraries | 4443-73244821 | Christ and the Pharisees' trick question, woodcut book illustration, Master of Antwerp, 1485-91 | Artokoloro | Fine Art | rights_managed | 5109 | 3748
+Rare books | Printed books, bindings and libraries | 1746-29954144 | Woodblock engraving of a nose-less tribe the ancients believed inhabited the earth, 15th century | Image Asset Management | Fine Art | rights_managed | 4896 | 4284
+Rare books | Printed books, bindings and libraries | 7119-70410214 | The Great Library of a family of Antwerp printers and publishers, Plantin-Moretus Museum | Susan Pease | Vintage | rights_managed | 5100 | 3391
+Rare books | Printed books, bindings and libraries | 6188-58524308 | Spines of leather-bound and parchment-bound Latin manuscripts in an old library | Imago | Vintage | royalty_free | 4752 | 3168
+Rare books | Printed books, bindings and libraries | 4443-75463036 | Title page, 1773, Paris, book bound in red crushed levant morocco by Trautz-Bauzonnet | Artokoloro | Vintage | rights_managed | 2950 | 4601
+Rare books | Printed books, bindings and libraries | 6145-29151041 | Orlando furioso (Ariosto), 1584, bound in red morocco with the arms of Mme de Pompadour | PL Photography Limited | Vintage | royalty_free | 3002 | 4000
+Rare books | Printed books, bindings and libraries | 4443-85425528 | Title page of 't Vermakelijk lottooneel van Holland, 1705, with printer's vignette | Artokoloro | Vintage | rights_managed | 3596 | 5962
+Rare books | Printed books, bindings and libraries | 1746-28979428 | Title page of the very first book on swimming, 16th century | Image Asset Management | Vintage | rights_managed | 3958 | 5298
+Rare books | Printed books, bindings and libraries | 4220-21826321 | Ornate title page and frontispiece, Merrie Games in Rhyme from Ye Olden Time, 1886 | Mary Evans Picture Library | Vintage | rights_managed | 4987 | 3036
+# Historical literature people | Poets and playwrights
+Historical literature people | Poets and playwrights | 1746-19628580 | Dante Alighieri (1265-1321), portrait engraving | Image Asset Management | Fine Art | rights_managed | 3571 | 4500
+Historical literature people | Poets and playwrights | 4443-88177695 | Dante Alighieri, wood engraving after Gustave Dore, 1860 | Artokoloro | Fine Art | rights_managed | 3160 | 4021
+Historical literature people | Poets and playwrights | 4220-21829402 | Dante Alighieri, 1640s engraving with laurels and an inscription | Mary Evans Picture Library | Fine Art | rights_managed | 3720 | 4775
+Historical literature people | Poets and playwrights | 4443-85379101 | Portrait of Dante Alighieri, etching by Leopold Flameng after Giotto | Artokoloro | Fine Art | rights_managed | 2885 | 3868
+Historical literature people | Poets and playwrights | 4220-4611 | Geoffrey Chaucer (1340-1400), writer of The Canterbury Tales | Mary Evans Picture Library | Fine Art | rights_managed | 2868 | 3509
+Historical literature people | Poets and playwrights | 1746-21120403 | Portrait of Giovanni Boccaccio (1313-1375), 14th century | Image Asset Management | Fine Art | rights_managed | 3971 | 5282
+Historical literature people | Poets and playwrights | 4220-21856317 | John Milton at the age of 21, with the motto Poets are born, not made | Mary Evans Picture Library | Fine Art | rights_managed | 3204 | 4648
+Historical literature people | Poets and playwrights | 4435-10787 | Johann Wolfgang von Goethe (1749-1832), etching | Iberfoto Archivo | Fine Art | rights_managed | 2840 | 3564
+Historical literature people | Poets and playwrights | 4435-12001 | Lord Byron (1788-1824), engraving by Robert Grave after Thomas Phillips | Iberfoto Archivo | Fine Art | rights_managed | 2820 | 3391
+Historical literature people | Poets and playwrights | 6145-29279365 | Six poets: Montgomery, Keats, Byron, Scott, Southey and Coleridge, engraving | PL Photography Limited | Fine Art | royalty_free | 2221 | 3246
+Historical literature people | Poets and playwrights | 4266-21642343 | Group Portrait of Six Tuscan Poets (Dante, Petrarca, Boccaccio and others), Giorgio Vasari | Fine Art Images/A. Burkatovski | Fine Art | rights_managed | 9000 | 9086
+Historical literature people | Poets and playwrights | 4443-19599014 | Shakespeare in His Study, mezzotint after John Faed, 1859 | Artokoloro | Vintage | rights_managed | 3627 | 4992
+Historical literature people | Poets and playwrights | 4443-88182650 | William Shakespeare in his study, wood engraving, 1864 | Artokoloro | Fine Art | rights_managed | 2850 | 4251
+Historical literature people | Poets and playwrights | 4443-19615231 | Shakespeare, etching after John Thurston, 1816 | Artokoloro | Fine Art | rights_managed | 2668 | 4992
+# Historical literature people | Novelists and philosophes
+Historical literature people | Novelists and philosophes | 4220-4119 | Jane Austen, English novelist | Mary Evans Picture Library | Fine Art | rights_managed | 3470 | 5041
+Historical literature people | Novelists and philosophes | 1899-39534 | Jane Austen (1775-1817), engraved portrait | Universal Images | Fine Art | rights_managed | 3836 | 5479
+Historical literature people | Novelists and philosophes | 4220-21935596 | Jane Austen (1775-1817), circa 1811 | Mary Evans Picture Library | Fine Art | rights_managed | 3060 | 4172
+Historical literature people | Novelists and philosophes | 1746-19631010 | Jane Austen c1810, from Jane Austen: Her Homes and Her Friends, 1902 | Image Asset Management | Fine Art | rights_managed | 6000 | 7557
+Historical literature people | Novelists and philosophes | 4220-21865054 | Victor Hugo (1802-1885), French novelist | Mary Evans Picture Library | Vintage | rights_managed | 3606 | 4434
+Historical literature people | Novelists and philosophes | 4220-21847256 | Victor Hugo with scenes from two of his books | Mary Evans Picture Library | Fine Art | rights_managed | 4453 | 2997
+Historical literature people | Novelists and philosophes | 4443-88179587 | Victor Hugo and his two grandchildren, wood engraving, L'Illustration 1881 | Artokoloro | Vintage | rights_managed | 3267 | 4742
+Historical literature people | Novelists and philosophes | 6145-30299539 | Voltaire, Jean-Jacques Rousseau and Benjamin Franklin, portrait | PL Photography Limited | Fine Art | royalty_free | 3500 | 3433
+# Literary motifs | Dante, Faust and Milton
+Literary motifs | Dante, Faust and Milton | 6145-52791063 | Dante and Virgil in Hell, copper engraving by Aegidius Sadeler the Younger, 1590-1629 | PL Photography Limited | Fine Art | royalty_free | 1937 | 2580
+Literary motifs | Dante, Faust and Milton | 1746-19628664 | Dante and Virgil beset by demons in the eighth circle, Dore, Inferno Canto XXI, 1861 | Image Asset Management | Fine Art | rights_managed | 4500 | 3554
+Literary motifs | Dante, Faust and Milton | 1746-19630625 | Dante and Virgil at the edge of the abyss, Dore, Inferno Canto XI, 1863 | Image Asset Management | Fine Art | rights_managed | 3480 | 4500
+Literary motifs | Dante, Faust and Milton | 1746-19627960 | Dante looks on sinners burning in open tombs, Dore, Inferno Canto X, 1863 | Image Asset Management | Fine Art | rights_managed | 3571 | 4500
+Literary motifs | Dante, Faust and Milton | 4220-21837922 | Dante and Virgil contemplate sinners placed up to their necks in ice, Divine Comedy | Mary Evans Picture Library | Fine Art | rights_managed | 3860 | 3115
+Literary motifs | Dante, Faust and Milton | 6145-29073700 | Dante and Virgil with the Vision of Beatrice, attributed to Baccio Baldini, c1481-1485 | PL Photography Limited | Fine Art | royalty_free | 2195 | 3400
+Literary motifs | Dante, Faust and Milton | 4443-17205 | Dante and Virgil in the Happy Valley, Dore, engraving for Purgatorio | Artokoloro | Fine Art | rights_managed | 4610 | 5846
+Literary motifs | Dante, Faust and Milton | 1788-11360 | Inferno, circles of Hell in the Divine Comedy, engraving | DeAgostini | Fine Art | rights_managed | 2541 | 3509
+Literary motifs | Dante, Faust and Milton | 4443-21205275 | Mephistopheles Appearing to Faust, Eugene Delacroix, lithograph, 1828 | Artokoloro | Fine Art | rights_managed | 4261 | 5489
+Literary motifs | Dante, Faust and Milton | 1848-63516222 | Mephistopheles and Faust in his old study, Faust II, second act, Goethe | imageBROKER | Fine Art | rights_managed | 4404 | 6096
+Literary motifs | Dante, Faust and Milton | 1848-63515781 | Faust with Mephistopheles, Faust II, first act, Goethe | imageBROKER | Fine Art | rights_managed | 6356 | 3556
+Literary motifs | Dante, Faust and Milton | 1899-39060 | Gustave Dore illustration for Milton's Paradise Lost, Book I | Universal Images | Fine Art | rights_managed | 4014 | 5079
+Literary motifs | Dante, Faust and Milton | 4443-17296 | Satan smitten by Michael, Dore, engraving for Paradise Lost | Artokoloro | Fine Art | rights_managed | 4646 | 5851
+# Literary motifs | Don Quixote, Hamlet and the Arabian Nights
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 6145-52871378 | Don Quixote attended by the ladies of the Duchess, etching by Louis Surugue, 1724 | PL Photography Limited | Fine Art | royalty_free | 1972 | 2534
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 1899-18899 | Don Quixote and Sancho Panza by William Hogarth | Universal Images | Fine Art | rights_managed | 3847 | 4988
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 1899-53515687 | Ophelia, character from Shakespeare's Hamlet, reproduction of a 19th-century original | Universal Images | Fine Art | rights_managed | 5000 | 3307
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 4266-8223 | Scene from Hamlet with dead Ophelia, John Everett Millais, oil on canvas, 1851-52 | Fine Art Images/A. Burkatovski | Fine Art | rights_managed | 5315 | 3615
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 4220-20406518 | Queen Scheherazade telling a story to King Shahrayar, Arabian Nights, 1927 | Mary Evans Picture Library | Fine Art | rights_managed | 3728 | 5141
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 4220-21894443 | Amina is transformed into a horse by her husband Sidi-Nouman, Arabian Nights | Mary Evans Picture Library | Fine Art | rights_managed | 4064 | 5514
+Literary motifs | Don Quixote, Hamlet and the Arabian Nights | 4186-17891 | Maxfield Parrish, The Fisherman and the Genie, Arabian Nights, 1909 | ClassicStock | Vintage | rights_managed | 4712 | 5896

@@ -155,6 +155,19 @@ uv run scripts/raindrop/wiki_count_by_collection.py everything.json
 uv run scripts/raindrop/wiki_count_by_collection.py everything.json --all-matches
 ```
 
+## superstock
+
+| Script | What it does |
+|---|---|
+| [`superstock/superstock_curated_csv.py`](superstock/superstock_curated_csv.py) | Turn a curated SuperStock SKU list into a CSV with checked preview images. |
+
+`superstock/superstock_curated_csv.py`
+
+```bash
+uv run scripts/superstock/superstock_curated_csv.py --input scripts/superstock/curated-seeds.txt --output data/superstock-curated.csv
+uv run scripts/superstock/superstock_curated_csv.py --input seeds.txt --force
+```
+
 ## tiktok
 
 | Script | What it does |
