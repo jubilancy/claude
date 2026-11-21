@@ -198,6 +198,20 @@ uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt
 uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
 ```
 
+## unsplash
+
+| Script | What it does |
+|---|---|
+| [`unsplash/unsplash_metadata.py`](unsplash/unsplash_metadata.py) | Unsplash photo URLs or IDs -&gt; CSV of metadata (title, description, photographer, tags, image URLs ...). |
+
+`unsplash/unsplash_metadata.py`
+
+```bash
+UNSPLASH_ACCESS_KEY is read from the environment (add it in the cloud environment settings).
+uv run scripts/unsplash/unsplash_metadata.py --input scripts/unsplash/urls.txt --output data/unsplash-metadata.csv
+uv run scripts/unsplash/unsplash_metadata.py --input urls.txt --force
+```
+
 ## web
 
 | Script | What it does |
