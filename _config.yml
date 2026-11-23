@@ -1,0 +1,37 @@
+title: Unsplash masonry demo
+
+plugins:
+  - jekyll-unsplash-masonry
+
+# Everything else in this repo is not part of the site.
+exclude:
+  - .claude
+  - CLAUDE.md
+  - HANDOFF.md
+  - IDEAS.md
+  - README.md
+  - arena
+  - awesome
+  - bluesky-bulk
+  - data
+  - generative-art-template
+  - isbn
+  - jekyll-unsplash-masonry
+  - scripts
+  - sept-01
+  - social-archive
+  - social-scrapers
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+unsplash_masonry:
+  # Your registered Unsplash app name. It goes into the utm_source of the credit links.
+  app_name: "your-unsplash-app-name"
+  columns: 3
+  gap: 1rem
+  size: regular
+  lightbox: true
+  cache_ttl_days: 30
+  # Display-only gallery: do not trigger download events. See the gem README.
+  download_tracking: false

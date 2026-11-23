@@ -1,2 +1,8 @@
 *.csv.uploaded
 __pycache__/
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
