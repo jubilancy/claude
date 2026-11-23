@@ -189,6 +189,7 @@ uv run --with gallery-dl gallery-dl -i batches/Pets.txt -d downloads/Pets   # do
 | Script | What it does |
 |---|---|
 | [`tumblr/fetch_tagged_posts.py`](tumblr/fetch_tagged_posts.py) | Tumblr post fetcher |
+| [`tumblr/tumblr_to_jekyll.py`](tumblr/tumblr_to_jekyll.py) | import a whole Tumblr blog (posts, reblogs, asks) into Jekyll posts, uploading every image to Cloudinary. |
 
 `tumblr/fetch_tagged_posts.py`
 
@@ -196,6 +197,15 @@ uv run --with gallery-dl gallery-dl -i batches/Pets.txt -d downloads/Pets   # do
 uv run scripts/tumblr/fetch_tagged_posts.py
 uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt
 uv run scripts/tumblr/fetch_tagged_posts.py --urls urls.txt --split posts
+```
+
+`tumblr/tumblr_to_jekyll.py`
+
+```bash
+uv run scripts/tumblr/tumblr_to_jekyll.py --dry-run --max-posts 50
+uv run scripts/tumblr/tumblr_to_jekyll.py
+uv run scripts/tumblr/tumblr_to_jekyll.py --blog fromdaysoff.tumblr.com --out site-import
+uv run scripts/tumblr/tumblr_to_jekyll.py --force     # redo posts already finished
 ```
 
 ## unsplash
