@@ -1,0 +1,9 @@
+---
+layout: null
+permalink: /search.json
+---
+[
+{%- for p in site.posts %}
+{"title":{{ p.title | default: p.summary | default: "" | strip_html | jsonify }},"url":{{ p.url | relative_url | jsonify }},"date":"{{ p.date | date: '%Y-%m-%d' }}","tags":{{ p.tags | jsonify }},"type":{{ p.type | jsonify }},"thumb":{{ p.images[0].url | jsonify }},"text":{{ p.content | markdownify | strip_html | normalize_whitespace | truncate: 600 | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- endfor %}
+]

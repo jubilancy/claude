@@ -1,0 +1,29 @@
+title: From Days Off
+description: Archive of fromdaysoff.tumblr.com
+url: https://glosse.me
+baseurl: ""
+timezone: UTC
+theme: null   # no remote/default theme; layouts live in this folder
+
+# Only the Jekyll site itself; the importer's working files stay out of the build.
+exclude: [raw, state.json, Gemfile, Gemfile.lock, vendor, README.md]
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+paginate: 20
+paginate_path: "/page/:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+feed:
+  posts_limit: 50
+
+defaults:
+  - scope: {path: "", type: posts}
+    values: {layout: post}

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post type-{{ page.type }}{% if page.images.size > 1 %} multi-image{% endif %}">
+  {%- if page.title and page.title != '' %}<h1>{{ page.title }}</h1>{% endif %}
+  {% include post-meta.html post=page %}
+  <div class="post-body">{{ content }}</div>
+  {% include tags.html post=page %}
+  {%- if page.reblog_trail.size > 0 %}
+  <p class="source">Reblogged via
+    {%- for r in page.reblog_trail %} <a href="{{ r.url }}" rel="noopener">{{ r.blog }}</a>{% unless forloop.last %},{% endunless %}{% endfor -%}
+  · <a href="{{ page.source_url }}" rel="noopener">original on Tumblr</a></p>
+  {%- else %}
+  <p class="source"><a href="{{ page.source_url }}" rel="noopener">Original on Tumblr</a></p>
+  {%- endif %}
+  <nav class="pager">
+    {%- if page.previous %}<a href="{{ page.previous.url | relative_url }}">← Newer</a>{% endif -%}
+    {%- if page.next %}<a href="{{ page.next.url | relative_url }}">Older →</a>{% endif -%}
+  </nav>
+</article>

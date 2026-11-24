@@ -1,0 +1,5 @@
+<div class="meta">
+  <a href="{{ include.post.url | relative_url }}"><time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: "%b %-d, %Y" }}</time></a>
+  {%- if include.post.type %} · <span class="type">{{ include.post.type }}</span>{% endif %}
+  {%- if include.post.images.size > 1 %} · {{ include.post.images.size }} images{% endif %}
+</div>
