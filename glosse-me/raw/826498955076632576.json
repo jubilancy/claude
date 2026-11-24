@@ -1,0 +1,184 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826498955076632576,
+  "id_string": "826498955076632576",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826498955076632576/universalis-cosmographia-the-map-that-gave-the",
+  "slug": "universalis-cosmographia-the-map-that-gave-the",
+  "date": "2026-08-31 21:13:45 GMT",
+  "timestamp": 1788210825,
+  "state": "published",
+  "reblog_key": "gMtMHVD9",
+  "tags": [
+    "universalis-cosmographia",
+    "martin-waldseemüller",
+    "world-map",
+    "americas-naming",
+    "early-modern-cartography",
+    "geographical-nomenclature",
+    "renaissance-mapmaking",
+    "1507-map",
+    "early-16th-century",
+    "age-of-exploration",
+    "cartographic-history",
+    "world-mapping",
+    "new-world-discovery",
+    "geographical-representation",
+    "vespucci-amerigo",
+    "mapmaker-design"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjuK6kmam00",
+  "summary": "Universalis Cosmographia (The map that gave the Americas its name) — Martin Waldseemüller (1507) Public Domain.",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "source_url": "https://cosmographia.substack.com/p/what-actually-is-cosmography",
+  "source_title": "cosmographia.substack.com",
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 1280,
+          "height": 709,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s1280x1920/cb0c34d3a35ee209ad822914ff01e2b3b9a97833.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 355,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s640x960/2abd516063143261e155292c714f212e6631ae5d.jpg"
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 299,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s540x810/87ddf707d18ccf6d6c55edbe5471921f3253abc8.jpg"
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 277,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s500x750/c9b9527e90e5b44c32e013ea2b394b868354e90d.jpg"
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 222,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s400x600/e7833ff287cd55e56ef8264ab230dadc6f8737d8.jpg"
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 138,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s250x400/2b675bbbff7cf020ae9fd489eacc9460273dfd4a.jpg"
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 55,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s100x200/7b6a6906982bc0ebd750ababc0ad7e0482d05111.jpg"
+        },
+        {
+          "media_key": "f63dde23749d0378b3dc72b6accd3611:cfa40f615163c04d-21",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/f63dde23749d0378b3dc72b6accd3611/cfa40f615163c04d-21/s75x75_c1/7ab4175165821c6d307d70ff0d23aa013cdd0546.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://substack-post-media.s3.amazonaws.com/public/images/d69bc1c0-322f-40ae-abb9-268fca195826_1280x709.jpeg"
+      },
+      "colors": {
+        "c0": "554634",
+        "c1": "6b5940",
+        "c2": "3b3123",
+        "c3": "938057",
+        "c4": "262018"
+      },
+      "exif": {
+        "Time": "1788210776"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Universalis Cosmographia (The map that gave the Americas its name) — Martin Waldseemüller (1507) Public Domain.",
+      "formatting": [
+        {
+          "type": "italic",
+          "start": 0,
+          "end": 24
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

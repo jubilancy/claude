@@ -1,0 +1,581 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 825687568153706496,
+  "id_string": "825687568153706496",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/825687568153706496/this-rss-feeds-were-a-great-way-to-keep-track-of",
+  "parent_post_url": "https://dduane.tumblr.com/post/732138585403342848/this-rss-feeds-were-a-great-way-to-keep-track-of",
+  "slug": "this-rss-feeds-were-a-great-way-to-keep-track-of",
+  "date": "2026-08-22 22:17:07 GMT",
+  "timestamp": 1787437027,
+  "state": "published",
+  "reblog_key": "DOp69eOY",
+  "tags": [],
+  "short_url": "https://tmblr.co/ZQo8CNjrRdVpGW00",
+  "summary": "how to keep following people when a major social platform implodes",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 37322,
+  "content": [],
+  "layout": [],
+  "trail": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "how to keep following people when a major social platform implodes",
+          "subtype": "heading1"
+        },
+        {
+          "type": "text",
+          "text": "(...and you don't want to join 20 new websites)",
+          "subtype": "heading2"
+        },
+        {
+          "type": "text",
+          "text": "First, get an RSS reader*:"
+        },
+        {
+          "type": "text",
+          "text": "Desktop: Feedbro (browser extension), QuiteRSS, Raven Reader",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "type": "link",
+              "start": 9,
+              "end": 16,
+              "url": "https://href.li/?https://nodetics.com/feedbro/"
+            },
+            {
+              "type": "link",
+              "start": 38,
+              "end": 46,
+              "url": "https://href.li/?https://quiterss.org/"
+            },
+            {
+              "type": "link",
+              "start": 48,
+              "end": 60,
+              "url": "https://href.li/?https://ravenreader.app/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Android: Feeder",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "type": "link",
+              "start": 9,
+              "end": 15,
+              "url": "https://href.li/?https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "iOS/Mac: NetNewsWire",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "type": "link",
+              "start": 9,
+              "end": 20,
+              "url": "https://href.li/?https://netnewswire.com/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "You'll be able to make a custom feed to follow blogs, webcomics, social media feeds, podcasts, news, and other stuff on the web all in one place. To follow something, find its \"feed URL\"-- often marked by an icon that looks like this ↓-- and paste it into your reader of choice as a new feed."
+        },
+        {
+          "type": "image",
+          "media": [
+            {
+              "media_key": "da44c74e7c31b2eb371abb4b59c32921:5e7e5929ff94461d-a0",
+              "type": "image/png",
+              "width": 500,
+              "height": 128,
+              "url": "https://64.media.tumblr.com/da44c74e7c31b2eb371abb4b59c32921/5e7e5929ff94461d-a0/s500x750/379249325018d0a2606f5020fd1b3ff2e71b79b1.png",
+              "has_original_dimensions": true
+            },
+            {
+              "media_key": "da44c74e7c31b2eb371abb4b59c32921:5e7e5929ff94461d-a0",
+              "type": "image/png",
+              "width": 400,
+              "height": 102,
+              "url": "https://64.media.tumblr.com/da44c74e7c31b2eb371abb4b59c32921/5e7e5929ff94461d-a0/s400x600/342b714e8089b017d7f7afdc58ff703eaa23cba2.png"
+            },
+            {
+              "media_key": "da44c74e7c31b2eb371abb4b59c32921:5e7e5929ff94461d-a0",
+              "type": "image/png",
+              "width": 250,
+              "height": 64,
+              "url": "https://64.media.tumblr.com/da44c74e7c31b2eb371abb4b59c32921/5e7e5929ff94461d-a0/s250x400/0830bd717212f62b0639905ec41684660022da55.png"
+            },
+            {
+              "media_key": "da44c74e7c31b2eb371abb4b59c32921:5e7e5929ff94461d-a0",
+              "type": "image/png",
+              "width": 100,
+              "height": 26,
+              "url": "https://64.media.tumblr.com/da44c74e7c31b2eb371abb4b59c32921/5e7e5929ff94461d-a0/s100x200/45d61ce0726db32900720a63bd967f6c4d9e60b0.png"
+            },
+            {
+              "media_key": "da44c74e7c31b2eb371abb4b59c32921:5e7e5929ff94461d-a0",
+              "type": "image/png",
+              "width": 75,
+              "height": 75,
+              "url": "https://64.media.tumblr.com/da44c74e7c31b2eb371abb4b59c32921/5e7e5929ff94461d-a0/s75x75_c1/7b3ddce901aa48f41ad157f05e7535a55ff31281.png",
+              "cropped": true
+            }
+          ],
+          "colors": {
+            "c0": "000000",
+            "c1": "d23002",
+            "c2": "ffffff",
+            "c3": "dd5518",
+            "c4": "ec9159"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Some feed URLs for social media:",
+          "subtype": "heading2"
+        },
+        {
+          "type": "text",
+          "text": "Twitter: Feedbro can use Twitter profile URLs as feed URLs. Otherwise, use nitter.net/username/rss (or other Nitter instance) (You can get a CSV file of all the accounts you follow using \"Download a user's friends list\" on Tweetbeaver)",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "type": "bold",
+              "start": 75,
+              "end": 98
+            },
+            {
+              "type": "italic",
+              "start": 86,
+              "end": 94
+            },
+            {
+              "type": "link",
+              "start": 103,
+              "end": 124,
+              "url": "https://github.com/xnaas/nitter-instances"
+            },
+            {
+              "type": "link",
+              "start": 223,
+              "end": 234,
+              "url": "https://href.li/?https://tweetbeaver.com/index.php"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Tumblr: Use username.tumblr.com/rss or username.tumblr.com/tagged/my%20art/rss to follow a blog's \"my art\" tag (as an example)",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "type": "bold",
+              "start": 12,
+              "end": 35
+            },
+            {
+              "type": "italic",
+              "start": 12,
+              "end": 20
+            },
+            {
+              "type": "bold",
+              "start": 39,
+              "end": 78
+            },
+            {
+              "type": "italic",
+              "start": 39,
+              "end": 47
+            },
+            {
+              "type": "italic",
+              "start": 66,
+              "end": 74
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Cohost: Use username.cohost.org/rss/public (WIP feature)",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "type": "bold",
+              "start": 12,
+              "end": 42
+            },
+            {
+              "type": "italic",
+              "start": 12,
+              "end": 20
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Mastodon: Use instance.url/@­username.rss",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 8
+            },
+            {
+              "type": "bold",
+              "start": 14,
+              "end": 29
+            },
+            {
+              "type": "italic",
+              "start": 14,
+              "end": 26
+            },
+            {
+              "type": "italic",
+              "start": 29,
+              "end": 37
+            },
+            {
+              "type": "bold",
+              "start": 29,
+              "end": 37
+            },
+            {
+              "type": "bold",
+              "start": 37,
+              "end": 41
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Deviantart: Info here",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 10
+            },
+            {
+              "type": "link",
+              "start": 17,
+              "end": 21,
+              "url": "https://href.li/?https://www.deviantart.com/developers/rss"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Spacehey: Info here",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 8
+            },
+            {
+              "type": "link",
+              "start": 15,
+              "end": 19,
+              "url": "https://href.li/?https://rss.spacehey.com/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Youtube: Go to a channel in a web browser, view page source, and use Ctrl-F/Command-F to find a link that starts with \"https://www.youtube.com/feeds/videos.xml?channel_id=\"",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "type": "bold",
+              "start": 119,
+              "end": 171
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Instagram: Feedbro can use Instagram profile and hashtag URLs as feed URLs. Otherwise, Instagram doesn't have RSS feeds, and due to aggressive rate limiting on their part, it's not so simple to generate a feed URL.",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 9
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Facebook: Feedbro can use public Facebook group/page URLs as feed URLs.",
+          "subtype": "unordered-list-item",
+          "formatting": [
+            {
+              "type": "bold",
+              "start": 0,
+              "end": 8
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "(If you know an artist who exclusively posts to Instagram, you may want to gently suggest that they crosspost elsewhere...)",
+          "formatting": [
+            {
+              "type": "small",
+              "start": 0,
+              "end": 123
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Also see how to find the RSS feed URL for almost any site. Try using public RSS-Bridge instances or Happyou Final Scraper to generate feeds for sites that don't have them (Pillowfort, Patreon, etc).",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 9,
+              "end": 57,
+              "url": "https://href.li/?https://zapier.com/blog/how-to-find-rss-feed-url/"
+            },
+            {
+              "type": "link",
+              "start": 69,
+              "end": 96,
+              "url": "https://href.li/?https://rss-bridge.github.io/rss-bridge/General/Public_Hosts.html"
+            },
+            {
+              "type": "link",
+              "start": 100,
+              "end": 121,
+              "url": "https://href.li/?https://www.happyou.info/fs/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "*You can set up your subscriptions in one reader and import them into another by exporting an OPML file.",
+          "formatting": [
+            {
+              "type": "small",
+              "start": 0,
+              "end": 104
+            }
+          ]
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "700851357933060096"
+      },
+      "blog": {
+        "name": "smellslikebot",
+        "title": "it's just a healthy sheen",
+        "description": "hello, I am Fudge, a 28-year-old artist and robot! (reblogs may contain NSFW text) - 🇹🇭 🇺🇸",
+        "url": "https://smellslikebot.tumblr.com/",
+        "uuid": "t:KjhlJQyzehesRgjyx3FNYg",
+        "updated": 1795467972,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/f08b5baef9a31a3a019856851069f66b/7a94478b7bb3c774-17/s512x512u_c1/8706e832442ff44cad1647a4ed766b67020676a8.png",
+            "accessories": []
+          },
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://64.media.tumblr.com/f08b5baef9a31a3a019856851069f66b/7a94478b7bb3c774-17/s200x200u_c1/9cfb733bf13f942febcaa806cddcafce88afbd55.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/f08b5baef9a31a3a019856851069f66b/7a94478b7bb3c774-17/s128x128u_c1/ebfe60bc4b6b9e697715e29edec9e3206bca31d5.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/f08b5baef9a31a3a019856851069f66b/7a94478b7bb3c774-17/s96x96u_c1/73ebecdea8ef2d5f752127cd9629d958b80f97ab.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/f08b5baef9a31a3a019856851069f66b/7a94478b7bb3c774-17/s64x64u_c1/3ed38948d83f0133cd2eb28e7ebff0d3e50de738.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": true
+      }
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "This!"
+        },
+        {
+          "type": "text",
+          "text": "RSS feeds were a great way to keep track of things before the rise of the platforms, and (if we’re smart) they’ll be great again. "
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "732138585403342848"
+      },
+      "blog": {
+        "name": "dduane",
+        "title": "Diane Duane",
+        "description": "<b>The writer:</b> 40 years in print, 50+ novels, assorted TV and movie work, the NYT Bestseller List a few times, blah blah blah. Best known for: the <a href=\"https://youngwizards.com\">Young Wizards</a> series (1983-2020 and beyond), the <a href=\"https://middlekingdoms.com\">Middle Kingdoms</a> LGBTQ epic fantasy series (1979-2023), and a whole lot of work for Star Trek. Ireland-based for many years.<br /><br />  Long postings mostly turn up on the main blog at <a href=\"https://dianeduane.com/outofambit/\">my home site</a>. Shorter stuff goes here: links, images, video, random thoughts... things that tickle my fancy, move me, or seem to need sharing. Also appearing: scraps of what I'm working on, recipes, fangirling, and other mental/emotional incunabula. Almost everything interests me, so beware.<br /><br /> Now also at <a href=\"https://bsky.app/profile/diane.dianeduane.com\" target=\"_blank\">Bluesky</a> and <a href=\"https://mastodon.social/@dianeduane\" target=\"_blank\">Mastodon</a><br /> ...And newest of all: <b><a href=\"https://ko-fi.com/dianeduane\" target=\"_blank\">I've got a Ko-Fi.</a> </b><br /><br />...I miss @petermorwood. <br /><br /><form action=\"/search\" method=\"get\"><br />    <input type=\"text\" name=\"q\" value=\"{SearchQuery}\"/><br />    <input type=\"submit\" value=\"Search\"/><br /></form><br /><p></p><br />  <p><a href=\"#\"></a></p>",
+        "url": "https://dduane.tumblr.com/",
+        "uuid": "t:jyoPG0gUzO6kz01Jpy_yNQ",
+        "updated": 1795465978,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/df35bbf2af364d3d5550431d16b620f1/5e411257c043299a-34/s512x512u_c1/c8bf93feda281b49e4379f3fd20e61e700fc2dcb.jpg",
+            "accessories": []
+          },
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://64.media.tumblr.com/df35bbf2af364d3d5550431d16b620f1/5e411257c043299a-34/s200x200u_c1/9691566dbf8b1447f8c4e1ab63c8e9ef911ac506.jpg",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/df35bbf2af364d3d5550431d16b620f1/5e411257c043299a-34/s128x128u_c1/0ede9d43bfe58588a87e968e7cc33916ee7ec59d.jpg",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/df35bbf2af364d3d5550431d16b620f1/5e411257c043299a-34/s96x96u_c1/1f50dae26cb5de18d0ba3f4aab510dc10f1c54a9.jpg",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/df35bbf2af364d3d5550431d16b620f1/5e411257c043299a-34/s64x64u_c1/2da4da7b37f2083347a09fdc10c71b1b6b5574a3.jpg",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": false
+      }
+    }
+  ],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "noone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

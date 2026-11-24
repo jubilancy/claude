@@ -1,0 +1,253 @@
+{
+  "type": "blocks",
+  "original_type": "photo",
+  "is_blocks_post_format": false,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826669075800506368,
+  "id_string": "826669075800506368",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826669075800506368/jellobiafrasays-marcel-proust-and-deliverance",
+  "parent_post_url": "https://midcenturymoderndesign.tumblr.com/post/181620723942/jellobiafrasays-marcel-proust-and-deliverance",
+  "slug": "jellobiafrasays-marcel-proust-and-deliverance",
+  "date": "2026-09-02 18:17:45 GMT",
+  "timestamp": 1788373065,
+  "state": "published",
+  "reblog_key": "7iNFsTmi",
+  "tags": [
+    "marcel-proust",
+    "roy-kuhlman",
+    "roy-kuhlman-design",
+    "1955-book-cover",
+    "book-cover-design",
+    "proust-criticism",
+    "literary-criticism-covers",
+    "mid-century-book-design",
+    "meridian-books",
+    "meridian-books-covers",
+    "abstract-book-covers",
+    "modernist-book-design",
+    "1950s-graphic-design",
+    "in-search-of-lost-time",
+    "remembrance-of-things-past",
+    "proustian-time",
+    "literary-modernism",
+    "french-literature-criticism",
+    "philosophy-of-time",
+    "memory-and-literature",
+    "existentialist-criticism",
+    "paperback-cover-design",
+    "quality-paperback-design",
+    "abstract-expressionist-influence",
+    "geometric-abstraction",
+    "typography-as-design",
+    "minimalist-cover-art"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjuwoK1uy00",
+  "summary": "marcel proust and deliverance from time (1955 ed., cover design by roy kuhlman)",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 257,
+  "content": [],
+  "layout": [],
+  "trail": [
+    {
+      "content": [
+        {
+          "type": "image",
+          "media": [
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_1280.jpg",
+              "type": "image/jpeg",
+              "width": 1280,
+              "height": 1883,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_640.jpg",
+              "type": "image/jpeg",
+              "width": 640,
+              "height": 941,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_540.jpg",
+              "type": "image/jpeg",
+              "width": 540,
+              "height": 794,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_500.jpg",
+              "type": "image/jpeg",
+              "width": 500,
+              "height": 735,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_400.jpg",
+              "type": "image/jpeg",
+              "width": 400,
+              "height": 588,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_250.jpg",
+              "type": "image/jpeg",
+              "width": 250,
+              "height": 368,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_100.jpg",
+              "type": "image/jpeg",
+              "width": 100,
+              "height": 147,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/370fc01866256efab55ce4a63cddca38/tumblr_phycgwZjCU1s9jvclo1_75sq.jpg",
+              "type": "image/jpeg",
+              "width": 75,
+              "height": 75,
+              "colors": {
+                "c0": "f52394",
+                "c1": "a24615"
+              },
+              "cropped": true
+            }
+          ],
+          "colors": {
+            "c0": "f52394",
+            "c1": "a24615"
+          }
+        },
+        {
+          "type": "text",
+          "text": "marcel proust and deliverance from time (1955 ed., cover design by roy kuhlman)",
+          "formatting": [
+            {
+              "type": "italic",
+              "start": 0,
+              "end": 40
+            }
+          ]
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "180075805497"
+      },
+      "blog": {
+        "name": "jellobiafrasays",
+        "title": "jell-o biafra says",
+        "description": "old books mostly",
+        "url": "https://jellobiafrasays.tumblr.com/",
+        "uuid": "t:eMB0g4dA1OSkR1uOhYXKFQ",
+        "updated": 1684602059,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/avatar_9f53e9c5fa70_512.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/avatar_9f53e9c5fa70_128.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/avatar_9f53e9c5fa70_96.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/avatar_9f53e9c5fa70_64.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": true
+      }
+    }
+  ],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "noone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

@@ -1,0 +1,352 @@
+{
+  "type": "blocks",
+  "original_type": "photo",
+  "is_blocks_post_format": false,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826419006503354368,
+  "id_string": "826419006503354368",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826419006503354368/thegetty-humanoidhistory-color-ball-detail",
+  "parent_post_url": "https://thegetty.tumblr.com/post/101529826071/humanoidhistory-color-ball-detail-from-a-book",
+  "slug": "thegetty-humanoidhistory-color-ball-detail",
+  "date": "2026-08-31 00:03:01 GMT",
+  "timestamp": 1788134581,
+  "state": "published",
+  "reblog_key": "NsCR3ubU",
+  "tags": [
+    "color",
+    "color theory",
+    "watercolors",
+    "German art",
+    "Getty Research Institute",
+    "science",
+    "18th century",
+    "history",
+    "scientific illustration"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNju1xKsGu00",
+  "summary": "Color Ball, detail from a book by Philipp Otto Runge (1777-1810).\n (The Getty)",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 1653,
+  "source_url": "http://humanoidhistory.tumblr.com/",
+  "source_title": "humanoidhistory",
+  "content": [
+    {
+      "type": "text",
+      "text": "Color Ball, detail from a book by Philipp Otto Runge (1777-1810).",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 34,
+          "end": 52,
+          "url": "http://en.wikipedia.org/wiki/Philipp_Otto_Runge"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "(The Getty)",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 1,
+          "end": 10,
+          "url": "http://search.getty.edu/gri/records/griobject?objectid=2701713642"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Source: humanoidhistory",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 8,
+          "end": 23,
+          "url": "http://humanoidhistory.tumblr.com/"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "thegetty:",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 8,
+          "url": "http://thegetty.tumblr.com/post/101529826071/humanoidhistory-color-ball-detail-from-a-book"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "humanoidhistory:\nRunge’s treatise (in German) is on the Internet Archive",
+      "subtype": "indented",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 15,
+          "url": "http://humanoidhistory.tumblr.com/post/100845539663"
+        },
+        {
+          "type": "link",
+          "start": 49,
+          "end": 72,
+          "url": "https://archive.org/details/gri_c00033125008744316"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "(via thegetty)",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 5,
+          "end": 13,
+          "url": "https://thegetty.tumblr.com/post/101529826071/humanoidhistory-color-ball-detail-from-a-book"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [
+    {
+      "content": [
+        {
+          "type": "image",
+          "media": [
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_1280.jpg",
+              "type": "image/jpeg",
+              "width": 1280,
+              "height": 1242
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_640.jpg",
+              "type": "image/jpeg",
+              "width": 640,
+              "height": 621
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_540.jpg",
+              "type": "image/jpeg",
+              "width": 540,
+              "height": 524
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_500.jpg",
+              "type": "image/jpeg",
+              "width": 500,
+              "height": 485
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_400.jpg",
+              "type": "image/jpeg",
+              "width": 400,
+              "height": 388
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_250.jpg",
+              "type": "image/jpeg",
+              "width": 250,
+              "height": 243
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_100.jpg",
+              "type": "image/jpeg",
+              "width": 100,
+              "height": 97
+            },
+            {
+              "url": "https://64.media.tumblr.com/91c32c1bf36f731c4c87306fd3997e82/tumblr_ndyp94uF0P1qigaa4o1_75sq.jpg",
+              "type": "image/jpeg",
+              "width": 75,
+              "height": 75,
+              "cropped": true
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Color Ball, detail from a book by Philipp Otto Runge (1777-1810).",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 34,
+              "end": 52,
+              "url": "http://en.wikipedia.org/wiki/Philipp_Otto_Runge"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "(The Getty)",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 1,
+              "end": 10,
+              "url": "http://search.getty.edu/gri/records/griobject?objectid=2701713642"
+            }
+          ]
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "100845539663"
+      },
+      "blog": {
+        "name": "humanoidhistory",
+        "title": "HUMANOID HISTORY",
+        "description": "The human craft behind impossible worlds. Come for the future, stay for the rabbit hole. Always open for something interesting. linktr.ee/humanoidhistory",
+        "url": "https://humanoidhistory.tumblr.com/",
+        "uuid": "t:Ho_thd9choJYux7Kuh3ZVA",
+        "updated": 1795458627,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/avatar_1a26b0725328_512.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/avatar_1a26b0725328_128.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/avatar_1a26b0725328_96.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/avatar_1a26b0725328_64.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": true
+      }
+    },
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "Runge’s treatise (in German) is on the Internet Archive",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 32,
+              "end": 55,
+              "url": "https://archive.org/details/gri_c00033125008744316"
+            }
+          ]
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "101529826071"
+      },
+      "blog": {
+        "name": "thegetty",
+        "title": "The Getty",
+        "description": "Beautiful things: paintings, books, sculptures, photographs, artistic finds. <br /><br />\n\n<a href=\"http://thegetty.tumblr.com\"><img src=\"http://www.getty.edu/global/images/wordmark_white_80.png\" alt=\"The Getty\" /></a><br /><br />\n\nWeb: <a href=\"http://www.getty.edu/\">getty.edu</a><br />\nBlog: <a href=\"http://blogs.getty.edu/iris/\">blogs.getty.edu</a>",
+        "url": "https://thegetty.tumblr.com/",
+        "uuid": "t:EHpqmEKpku0yExwH7aJpGg",
+        "updated": 1522767620,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/avatar_24bddcc52644_512.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/avatar_24bddcc52644_128.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/avatar_24bddcc52644_96.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/avatar_24bddcc52644_64.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": false
+      }
+    }
+  ],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "noone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

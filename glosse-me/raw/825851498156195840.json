@@ -1,0 +1,194 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 825851498156195840,
+  "id_string": "825851498156195840",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/825851498156195840/locus-solus-no-2-edited-by-john-ashbery",
+  "slug": "locus-solus-no-2-edited-by-john-ashbery",
+  "date": "2026-08-24 17:42:42 GMT",
+  "timestamp": 1787593362,
+  "state": "published",
+  "reblog_key": "kFrRusFu",
+  "tags": [
+    "graphic design",
+    "poetry",
+    "magazine",
+    "cover",
+    "magazine cover",
+    "locus solus",
+    "john ashbery",
+    "kenneth koch",
+    "harry mathews",
+    "james schuyler",
+    "1960s"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjs0u-Wqm00",
+  "summary": "«Locus Solus» No. 2, Edited by John Ashbery, Kenneth Koch, Harry Mathews, and James Schuyler, Lans-en-Vercor, 1961, Limited...",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 1201,
+          "height": 1800,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s1280x1920/e4edc952e7166250070dd01cd14e401380a463e9.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 959,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s640x960/833160159c8a0a19e4dfcbb56ea9dfa388150a33.jpg"
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 809,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s540x810/063c7ec3b923047cb5fff527e2a2cbbf72327534.jpg"
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 749,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s500x750/456654840aa166115132ab25c1170a6318a91685.jpg"
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 600,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s400x600/867e60c5609a0010ac5d5ead91b049e764bdc315.jpg"
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 375,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s250x400/b06df0a5c384d9f069a3229233bcbe3655561849.jpg"
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 150,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s100x200/1ffc76adb39eaf83db94761ecf1f1005042697ee.jpg"
+        },
+        {
+          "media_key": "fcdcdf5450d7fcf705ea7f6b56257865:c4a85c71b67b3ad7-be",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/fcdcdf5450d7fcf705ea7f6b56257865/c4a85c71b67b3ad7-be/s75x75_c1/4b0b20387f99cee0d1f8862db3cd6975497ceb0f.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://64.media.tumblr.com/75bf8bbdadf774c6659a4391b05fcad0/49dcc21df8acb167-b3/s1280x1920/72db75160ef383cc8f09b89d136974a5f85c894c.jpg"
+      },
+      "colors": {
+        "c0": "ae3d17",
+        "c1": "b5401a",
+        "c2": "9b3614",
+        "c3": "8d3011",
+        "c4": "cf8e6b"
+      },
+      "exif": {
+        "Time": "1787593345"
+      }
+    },
+    {
+      "type": "text",
+      "text": "«Locus Solus» No. 2, Edited by John Ashbery, Kenneth Koch, Harry Mathews, and James Schuyler, Lans-en-Vercor, 1961, Limited edition of 50 copies [Granary Books, New York, NY]",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 19,
+          "url": "https://www.granarybooks.com/pages/books/4180/john-ashbery-harry-mathews-kenneth-koch-james-schuyler/locus-solus-no-2-summer-1961"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Contributors include: Aeschylus, Pedro de Aragon, John Ashbery, Basho, Michael Benedikt, Bill Berkson, Paul Blackburn, André Breton, William Burroughs, Joseph Ceravolo, Thomas Chatterton, S. T. [Samuel Taylor] Coleridge, Gregory Corso, Abraham Cowley, Richard Crashaw, John Donne, Dwight Eisenhower, Kenward Elmslie, Paul Éluard, Jane Freilicher, Uri Gagarin, Milton Gilman, Ichiei, Donald Keene, Kenneth Koch, Daniel Krakauer, Ruth Krauss, Ern Malley, Marinetti, Frank O'Hara, Benjamin Péret, John Perreault, Po Chu-I, [Arthur] Rimbaud, The Empress Sadako, Peire Salvatge, William Shakespeare, James Schuyler, Robert Southey, Sir John Suckling, Yves Tanguy, Peire Vidal, and Edmund Waller, among others"
+    },
+    {
+      "type": "text",
+      "text": "Source: granarybooks.com",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 8,
+          "end": 24,
+          "url": "https://www.granarybooks.com/pages/books/4180/john-ashbery-harry-mathews-kenneth-koch-james-schuyler/locus-solus-no-2-summer-1961"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

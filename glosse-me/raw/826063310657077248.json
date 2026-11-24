@@ -1,0 +1,993 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826063310657077248,
+  "id_string": "826063310657077248",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826063310657077248/illustration-for-dantes-divine-comedy",
+  "slug": "illustration-for-dantes-divine-comedy",
+  "date": "2026-08-27 01:49:23 GMT",
+  "timestamp": 1787795363,
+  "state": "published",
+  "reblog_key": "BFR7wlDP",
+  "tags": [
+    "Chart of Dante's cosmography",
+    "maps",
+    "diagrams",
+    "hell",
+    "divine comedy",
+    "dante",
+    "purgatory",
+    "heaven",
+    "cosmography",
+    "Book Illustration",
+    "Lithography",
+    "Styles",
+    "Themes",
+    "Religion",
+    "Myth & Legend",
+    "Manuscript",
+    "betrayal",
+    "inferno",
+    "demons",
+    "judas"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjsn3HHii00",
+  "summary": "Illustration for Dante's Divine Comedy",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 465,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s1280x1920/76eb9f17b194cb2bfd9795dc27cb979063bb1774.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 413,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s640x960/51fab83851053148e910e16d65989cca5a978f95.jpg"
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 349,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s540x810/fdcfa42c23ad5954a19be732d8aab8f817f7f3d9.jpg"
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 323,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s500x750/66a01add596422ac165e08eabe68b7e5e7a73d06.jpg"
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 258,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s400x600/6bd85cfb8e289f06faa8a7f2b034e03b76c0092d.jpg"
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 161,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s250x400/7833268da673673a667ff735caf13c4ce6ecd03e.jpg"
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 65,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s100x200/82c66f9f3dceb28e88e182bb7f2cd66f58b9df20.jpg"
+        },
+        {
+          "media_key": "61ac67f5adddad93c2abca85d9a5e48f:040f8d0840ce2cfa-65",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/61ac67f5adddad93c2abca85d9a5e48f/040f8d0840ce2cfa-65/s75x75_c1/e046c6c7f8aa735c8e940ae91a0acc919d1e8743.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-5.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "131710",
+        "c1": "2c140b",
+        "c2": "090605",
+        "c3": "766e54",
+        "c4": "776948"
+      },
+      "exif": {
+        "Time": 1631646439
+      }
+    },
+    {
+      "type": "text",
+      "text": "Inferno, Canto XXXII: Dante grasps Bocca by the crown of his head. | Anonymous, ca. 1300–50",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 91,
+          "url": "https://pdimagearchive.org/images/549d5ae2-258e-44f1-8d3a-640b7f7f9d70"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 513,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s1280x1920/b71bfff4f8c797527553e2c9e8946d0f27ba5298.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 456,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s640x960/00b5e0e2b23caf7f1a8f5df2b9d1660368259e4f.jpg"
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 385,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s540x810/66f2ddcaa2ad15b646098fe9f4bd4a073814e9bf.jpg"
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 356,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s500x750/1be7e6c77bbe6b9873900009cf9ce654270764a3.jpg"
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 285,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s400x600/8ef9bafff558d17c83c18d551f8d8d7f37eeb174.jpg"
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 178,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s250x400/e01831c453695bb3ed8b18b55a1735dab6e1af40.jpg"
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 71,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s100x200/556962d494f7a18707693c784811c54159e000c6.jpg"
+        },
+        {
+          "media_key": "2b86bfab3995eac095be7d841d0760bd:040f8d0840ce2cfa-90",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/2b86bfab3995eac095be7d841d0760bd/040f8d0840ce2cfa-90/s75x75_c1/5e5017e78e6945246ef31f10b46bbf64d591ebee.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-3.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "130d09",
+        "c1": "3f2312",
+        "c2": "57472a",
+        "c3": "786846",
+        "c4": "9d9170"
+      },
+      "exif": {
+        "Time": 1631646508
+      }
+    },
+    {
+      "type": "text",
+      "text": "Inferno, Canto XXXIV: Dante and Virgil watch Lucifer who is devouring Cassius, Brutus, and Judas with three mouths. | Anonymous, ca. 1300–50",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 140,
+          "url": "https://pdimagearchive.org/images/8a04a082-b315-401c-afe9-bd14e1264ed8"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 456,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s1280x1920/5fe094ca86da48b3eebf984cbd1ea46fb8ec9100.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 405,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s640x960/27ea1b245fa6481a70746895a76ab864980ccb1f.jpg"
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 342,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s540x810/0a5967693f0bdebcf2e7228417d17583c3e970b0.jpg"
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 317,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s500x750/214601d1a27d80a25dcdf8544e49561e831b3c9d.jpg"
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 253,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s400x600/7212dd912d0e6a74c68f95030cc822b8b141920c.jpg"
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 158,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s250x400/f4e01527dc35639e7109ca4d3ae0cddb964ba181.jpg"
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 63,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s100x200/d0785e09b344c7c465d2aebc35fc2d28e260df06.jpg"
+        },
+        {
+          "media_key": "a845bc9bc8dfd163e3a47076a163cd50:040f8d0840ce2cfa-fa",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/a845bc9bc8dfd163e3a47076a163cd50/040f8d0840ce2cfa-fa/s75x75_c1/f45dce68913de654e68819935e573db5d3aae03f.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-8.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "9a9078",
+        "c1": "6b6654",
+        "c2": "714c28",
+        "c3": "35424a",
+        "c4": "533116"
+      },
+      "exif": {
+        "Time": 1631646476
+      }
+    },
+    {
+      "type": "text",
+      "text": "Inferno, Canto XXV: The false counsellors; Dante and Virgil clamber out of the pit to the next summit. | Anonymous, ca. 1370Prints available from $32 / Size petite",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 163,
+          "url": "https://pdimagearchive.org/images/7c9e425a-8f8c-40ec-af41-de11e4ea69c2"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 719,
+          "height": 454,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s1280x1920/83204e300a3bfc250ef3a515caed45c77b57b121.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 404,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s640x960/33407dc2aed488a3b38237c62059a82bff3acda1.jpg"
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 341,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s540x810/9e73ca7728f7ae6654611d60448409047b206125.jpg"
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 316,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s500x750/84addc15046bf2c76f130e0827e8b2061e5d4512.jpg"
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 253,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s400x600/670583c6db0e39a5e6950be6781f314d13595e93.jpg"
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 158,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s250x400/538c675564f3e3f7357d7606ee90faa6efd5aeee.jpg"
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 63,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s100x200/627f222039a5a5574acbaa71c99e89d722aa4247.jpg"
+        },
+        {
+          "media_key": "41c93434601ebb60cd22f508ba1cf3ee:040f8d0840ce2cfa-a9",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/41c93434601ebb60cd22f508ba1cf3ee/040f8d0840ce2cfa-a9/s75x75_c1/c001c392dfef9599498c1097bcbfe2449fb02ebd.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-4.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "08101f",
+        "c1": "11202c",
+        "c2": "694833",
+        "c3": "bbb291",
+        "c4": "9c9272"
+      },
+      "exif": {
+        "Time": 1631646459
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Canto XXXII: They see the Rose of Heaven, worshipped by five angels. | Anonymous, ca. 1300–50Prints available from $32 / Size petite",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 142,
+          "url": "https://pdimagearchive.org/images/fe9e6086-f5af-4363-a463-bbc9a267a218"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 739,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s1280x1920/1a683dc3acc7207b83132b175c5fd8a0526ad4af.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 657,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s640x960/4b2d60bc9b56cb13345ac71287432ae653ad7e73.jpg"
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 554,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s540x810/65be07604c0755013aa7764e1af2a87b3f723e19.jpg"
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 513,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s500x750/f043e4b75419b65002ef1c9a523e0b75ec17fb9b.jpg"
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 411,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s400x600/29fc81a3e3d59e471797a97be0444071f8f55693.jpg"
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 257,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s250x400/c3e9a973ec3c18c73473214ecb3ebb176c4c95e3.jpg"
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 103,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s100x200/c62310a7601b55179f539792460ab2ee42a5950e.jpg"
+        },
+        {
+          "media_key": "865a86e73388e2a203270d8b769a7782:040f8d0840ce2cfa-17",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/865a86e73388e2a203270d8b769a7782/040f8d0840ce2cfa-17/s75x75_c1/66bd82b52d7ab324fc19d2401b6db9ed7adc38bf.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-7.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "999677",
+        "c1": "968e75",
+        "c2": "8c8674",
+        "c3": "8b8067",
+        "c4": "6e5d3b"
+      },
+      "exif": {
+        "Time": 1631646583
+      }
+    },
+    {
+      "type": "text",
+      "text": "Inferno, Canto XXXIV: Dante and Virgil emerge from Hell and see the stars. | Anonymous, ca. 1370",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 96,
+          "url": "https://pdimagearchive.org/images/5f4b2ee5-cc45-4607-b1a7-7fc4e5ac1a75"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 873,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s1280x1920/3eda1ba010aeeeac6034c65a1a4801e9d43b6116.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 776,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s640x960/da7e53d5dc4741fab749e461aa92373995d6bbfd.jpg"
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 655,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s540x810/8f6d2733d2984775b8e6f638b57e2e50955a2133.jpg"
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 606,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s500x750/7b53a003541e5f45770429729dd482b6a0caa74c.jpg"
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 485,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s400x600/225c579ba2b26020eb1334c26af34a0fd78dea15.jpg"
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 303,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s250x400/e81b4fb63c3b8226c02c38d82aaff9c2e1911577.jpg"
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 121,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s100x200/4d04ca14d9d8f722ca1c4b91401956f3358854d1.jpg"
+        },
+        {
+          "media_key": "526e0c7378f3fa466680c1397c621eab:040f8d0840ce2cfa-c9",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/526e0c7378f3fa466680c1397c621eab/040f8d0840ce2cfa-c9/s75x75_c1/2a1b2d0be3dc948f7ac1238c281ea94d14bbcabb.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-40.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "b6a48d",
+        "c1": "e4cfbe",
+        "c2": "988978",
+        "c3": "7e6b54",
+        "c4": "675b47"
+      },
+      "exif": {
+        "Time": 1445985129
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Canto XXVII: The Sphere of Fixed Stars. | Anonymous, ca. 1564",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 71,
+          "url": "https://pdimagearchive.org/images/79e73cd3-ff73-4f34-ae7c-d6a68b185fcb"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 876,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s1280x1920/f4d0c702a51f6be1c610f03095394c3a2045af36.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 779,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s640x960/849518e5feef676f8d8f9e5ac0e4f0a5a7cbce5a.jpg"
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 657,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s540x810/20e8381afb0c69bb96e13ab8a2535b7503134a6e.jpg"
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 608,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s500x750/92032d83096c725f6cb434fe3b63fc6bd882cc9a.jpg"
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 487,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s400x600/e7d6023e2d4f2e29e35200cf632af831cefff891.jpg"
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 304,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s250x400/c9a6da47249858a559a61d4b5c104fe84bc048b6.jpg"
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 122,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s100x200/cad7e93bb9ed1f8f32afbb76a592ba19c10e551a.jpg"
+        },
+        {
+          "media_key": "3c50d768dd7b616455c10ddf0e4b268d:040f8d0840ce2cfa-b2",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/3c50d768dd7b616455c10ddf0e4b268d/040f8d0840ce2cfa-b2/s75x75_c1/3e181ab77b6b14ac6cc6333156c7a8ddb665fd32.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-41.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "a1928b",
+        "c1": "aa9997",
+        "c2": "d3c1cc",
+        "c3": "6f6557",
+        "c4": "cdb6ad"
+      },
+      "exif": {
+        "Time": 1445985128
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Canto XXI: Ascent to the Seventh Heaven, the Sphere of Saturn. | Anonymous, ca. 1564",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 94,
+          "url": "https://pdimagearchive.org/images/e601e9f6-b05e-4fb7-acbc-8198c33bf12d"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 598,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s1280x1920/ad6ef0b5f3e5873faf68a8e7d2e7c2ef0d420085.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 532,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s640x960/7fdd6ab433bb0628e54b0f71748f50c3613711dc.jpg"
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 449,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s540x810/f3d84b038249ae33544cda1ec0b0e2bf7f103d66.jpg"
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 415,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s500x750/0ba30c1008451c66cb1578205699a2cdbb8e4b4f.jpg"
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 332,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s400x600/85788c22dbc0cb3cbe6af39894fd759406a5b447.jpg"
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 208,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s250x400/fd7a52e8488d9553d48ff0e50888dab67cf57768.jpg"
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 83,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s100x200/9e355f8e818b9dd576888b1b3876fc62e8175d0a.jpg"
+        },
+        {
+          "media_key": "827727a1244a4739ad32f35af5931987:040f8d0840ce2cfa-30",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/827727a1244a4739ad32f35af5931987/040f8d0840ce2cfa-30/s75x75_c1/e41c2cedc1cced2fff0f3dc3840a38f1b8bb6c29.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-2.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "11171b",
+        "c1": "938564",
+        "c2": "3f382c",
+        "c3": "374950",
+        "c4": "45300a"
+      },
+      "exif": {
+        "Time": 1631646528
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Cantos XXV–XXVI: Dante turns toward the heavenly light. | Anonymous, ca. 1300–50",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 90,
+          "url": "https://pdimagearchive.org/images/d05a4370-5f45-49d0-be09-e29e0709f82c"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 606,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s1280x1920/ae4469be78094b822ebdeec8ca07af6ab2d4dc8d.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 539,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s640x960/f442ca63218005c809c731e19f0df298578edee6.jpg"
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 455,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s540x810/82efe46c0877fefdf6fd3abeb968aa7cbb957eb2.jpg"
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 421,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s500x750/e480df5e1e9380786266ee179be6d1553320c591.jpg"
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 337,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s400x600/750b5b8d012868909a5ebe5181e34c4facf5e905.jpg"
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 210,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s250x400/14e3d2fd4023bea55abbe0dca71f43f9ec05e2ee.jpg"
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 84,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s100x200/9c2fdd72930ccac813763074023dc7844e0e7d1f.jpg"
+        },
+        {
+          "media_key": "8032f1d135e9cd5fd8225d8fc5db19be:040f8d0840ce2cfa-1b",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/8032f1d135e9cd5fd8225d8fc5db19be/040f8d0840ce2cfa-1b/s75x75_c1/8b9dacd2279519ceb59b469fb6a6416e8b01d764.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-9.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "6d5329",
+        "c1": "9c926c",
+        "c2": "5f5337",
+        "c3": "661208",
+        "c4": "866d4a"
+      },
+      "exif": {
+        "Time": 1631646494
+      }
+    },
+    {
+      "type": "text",
+      "text": "Inferno, Canto XXXIV: Dante and Virgil watch Lucifer who is devouring Cassius, Brutus, and Judas with three mouths. | Anonymous, ca. 1370",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 137,
+          "url": "https://pdimagearchive.org/images/9f9a5210-8f51-4e1c-b878-aee666929333"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 336,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s1280x1920/c92784740345298793fc997d561bddbfbc13b8b0.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 299,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s640x960/5e2ed3bd240ae953bdafcd10090f8bf258bb90fd.jpg"
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 252,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s540x810/ae713419388dbdd2ffcfc73616d2fde06a21b4a2.jpg"
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 233,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s500x750/27a081c9b8d5dd753130960534f652be58a72c1e.jpg"
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 187,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s400x600/509f09ad25c88edb39d286dd6f4dedf97ac39248.jpg"
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 117,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s250x400/27686d57331cf6507934bcfa9bc4c9e609871e60.jpg"
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 47,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s100x200/0a5f296a196e47e5c2ccaaf0e6d77d9fe69e9141.jpg"
+        },
+        {
+          "media_key": "9a638ad8607babc9634485d558194c22:040f8d0840ce2cfa-73",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/9a638ad8607babc9634485d558194c22/040f8d0840ce2cfa-73/s75x75_c1/dff415bed8acebf99a79ba684fdcc3df33be61d6.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-10.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "898168",
+        "c1": "827c5c",
+        "c2": "938661",
+        "c3": "635e4b",
+        "c4": "2d2a1d"
+      },
+      "exif": {
+        "Time": 1631646404
+      }
+    },
+    {
+      "type": "text",
+      "text": "Inferno, Canto VII: Dante and Virgil are in a barren wood, with harpies representing the souls of suicides. | Anonymous, ca. 1370Prints available from $32 / Size petite",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 168,
+          "url": "https://pdimagearchive.org/images/9c663003-6bd1-4b26-b16b-733a9e5bcbb8"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Illustration for Dante's Divine Comedy",
+      "subtype": "heading1"
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

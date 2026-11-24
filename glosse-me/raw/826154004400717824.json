@@ -1,0 +1,982 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826154004400717824,
+  "id_string": "826154004400717824",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826154004400717824/resurrection-of-the-dead-anonymous",
+  "slug": "resurrection-of-the-dead-anonymous",
+  "date": "2026-08-28 01:50:55 GMT",
+  "timestamp": 1787881855,
+  "state": "published",
+  "reblog_key": "tKnca0mI",
+  "tags": [
+    "Book Illustration",
+    "celestial",
+    "dante",
+    "floating",
+    "inferno",
+    "landscapes",
+    "Manuscript",
+    "medieval",
+    "nature",
+    "paradise",
+    "purgatory",
+    "Religion",
+    "Myth & Legend",
+    "sun"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjt5h2Q4a00",
+  "summary": "Resurrection of the dead | Anonymous, 1444–1450\nDante and Virgil encountering groups of coiners, counterfeiters, alchemists, and...",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 2,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 357,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s1280x1920/3612ac28f64806eb00cfa7b5df9423780c0229ea.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 317,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s640x960/91c68fea3c4cbedfa39f1d31a95d7a31ae412acc.jpg"
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 268,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s540x810/59d7d7767f42b55b80eb4996fb2895064bb309c7.jpg"
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 248,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s500x750/31dbb261a80e41ac68909bc8de6ce064d7c0ef18.jpg"
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 198,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s400x600/f03ab1cce90b8614d9d0332cdeaf776f991b1d34.jpg"
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 124,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s250x400/21bf340b5e9846c087f52726f643b73f80048ac9.jpg"
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 50,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s100x200/11b55dfd35e5c7c5d9b66484e778cccaebff369e.jpg"
+        },
+        {
+          "media_key": "4bf86b2a3fa14e9c4077b44b341cc3f7:db7961a036f2a13b-dd",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/4bf86b2a3fa14e9c4077b44b341cc3f7/db7961a036f2a13b-dd/s75x75_c1/6c99b80ec0a857a588e7b5eaed187788096548fd.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/18098551726_de13415e9f_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "030854",
+        "c1": "542612",
+        "c2": "744235",
+        "c3": "5c6283",
+        "c4": "9e9b9b"
+      },
+      "exif": {
+        "Time": 1330617898
+      }
+    },
+    {
+      "type": "text",
+      "text": "Resurrection of the dead | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 47,
+          "url": "https://pdimagearchive.org/images/8fe95996-165d-4a72-9bbf-37a1c2774db8"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 389,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s1280x1920/e881731057c0ad6b461895963c672f4830fa92aa.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 346,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s640x960/4e8d61ffb748cf9eb9f4e8c1e763b76fd73c20c7.jpg"
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 292,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s540x810/7b81d2813a3481f6acde452fd575af1cc2a767eb.jpg"
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 270,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s500x750/0eebcbb5f59b20f6c919e8770e49f31f56fcf745.jpg"
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 216,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s400x600/370dc782933171131b38f3d8b9cf2309d43e1f19.jpg"
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 135,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s250x400/10fadbbdf6ebdce5b7257be16707f167c62682e6.jpg"
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 54,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s100x200/838fee7f73c52c377e476c6e451f1efd0ab0ccbd.jpg"
+        },
+        {
+          "media_key": "447224c8fc0ed3e802ec699f657c1d2e:db7961a036f2a13b-f2",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/447224c8fc0ed3e802ec699f657c1d2e/db7961a036f2a13b-f2/s75x75_c1/f969dda41583398197939f689cc39ec3962a2a64.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/17937127258_52641969bb_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "13181e",
+        "c1": "15080d",
+        "c2": "680201",
+        "c3": "727684",
+        "c4": "43548a"
+      },
+      "exif": {
+        "Time": 1322773487
+      }
+    },
+    {
+      "type": "text",
+      "text": "Dante and Virgil encountering groups of coiners, counterfeiters, alchemists, and forgers | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 111,
+          "url": "https://pdimagearchive.org/images/c131bcbc-cb9e-49b5-8cfd-ac17b2c33da9"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 356,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s1280x1920/c9f591bfccd6f6437c28abe120c52047e80a80d0.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 316,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s640x960/321e3fa3cde4192460be0789ab89b761c7f71965.jpg"
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 267,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s540x810/72918efc4b9ee4d6d3a439f14fba7de2a630edfc.jpg"
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 247,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s500x750/b7f957bfccea7871896dbc95b995ef928fdb8c21.jpg"
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 198,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s400x600/a6597554bd4833bef1378b106e1eb74440b44ec3.jpg"
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 124,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s250x400/92124abecee6cbf594f349f24766533bf44d02fd.jpg"
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 49,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s100x200/f2d6784bf13619d8e1b1fa9a4171cfddc2ef74fa.jpg"
+        },
+        {
+          "media_key": "efbfde739b3ad8d5a2ea0aa74b0d2943:db7961a036f2a13b-9e",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/efbfde739b3ad8d5a2ea0aa74b0d2943/db7961a036f2a13b-9e/s75x75_c1/a93ac55e9a4a9e04de71e7cd8b11bcadc62b9767.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/17938817799_05135be7a3_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "242b46",
+        "c1": "342f1f",
+        "c2": "8b8b88",
+        "c3": "ba9d87",
+        "c4": "e4d8ce"
+      },
+      "exif": {
+        "Time": 1330615798
+      }
+    },
+    {
+      "type": "text",
+      "text": "The legends of Theseus and Ariadne | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 57,
+          "url": "https://pdimagearchive.org/images/7d624244-95c8-42b2-a25f-89c15725a855"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 345,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s1280x1920/590eaac9316c7579386be9c62b8e9ff710cbdaf6.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 307,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s640x960/3354dab4cdb7b9c8933aeb9c6933051221e88058.jpg"
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 259,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s540x810/52909409da6e83f46aa1f1c34b80da1ca3013b3a.jpg"
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 240,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s500x750/f36b9efa52c3624d93ec76f14fd6ea2b6e8575f1.jpg"
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 192,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s400x600/5b7f9c0e8505e97fc77c514156ed447553fe9fe3.jpg"
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 120,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s250x400/4b540bfaea52860356673607e7c609fd151c0e76.jpg"
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 48,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s100x200/fcd25b84276928d11080c4cc03c8a5e67e06c530.jpg"
+        },
+        {
+          "media_key": "c2c6715fed4f1ca4ef6e8da624fa86ca:db7961a036f2a13b-47",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/c2c6715fed4f1ca4ef6e8da624fa86ca/db7961a036f2a13b-47/s75x75_c1/b704c188313b6b2dd334192a27b55b85e2d188a4.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/17938817119_4662308ec8_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "4d2720",
+        "c1": "977b64",
+        "c2": "251b0f",
+        "c3": "7f454c",
+        "c4": "cfc5bb"
+      },
+      "exif": {
+        "Time": 1330615554
+      }
+    },
+    {
+      "type": "text",
+      "text": "Beatrice explaining some scientific theories to Dante, including the appearance of the moon | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 114,
+          "url": "https://pdimagearchive.org/images/b0389fd5-9933-4145-aa4c-850bd567be35"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 371,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s1280x1920/d282053b632f3b67f351ac11a30b2a1897e5bc0f.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 330,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s640x960/e903c5ee693ab73fb6878043bf95d88bc2bf6cdb.jpg"
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 278,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s540x810/c1578ba383379ef1f1bfa564f0aa3c5894604180.jpg"
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 258,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s500x750/10abab0160a42e9cce093d88c0877b2c249ff386.jpg"
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 206,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s400x600/bec650e4a3b353fab33409bddaa170af8b0f9401.jpg"
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 129,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s250x400/37159c464ae3f34b42a6a5c34b986862175ac441.jpg"
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 52,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s100x200/d2fcf7f84aaab4383b108727cd8a299b0cd4eb5d.jpg"
+        },
+        {
+          "media_key": "a765b85904587aa9481055ce9c16c8d0:db7961a036f2a13b-23",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/a765b85904587aa9481055ce9c16c8d0/db7961a036f2a13b-23/s75x75_c1/c2846087c7f25cd7b833eac0ff648952ff8eb3bf.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/17502437134_796b32cffc_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "502e1e",
+        "c1": "2f180d",
+        "c2": "814613",
+        "c3": "c4b4a6",
+        "c4": "111d44"
+      },
+      "exif": {
+        "Time": 1322773327
+      }
+    },
+    {
+      "type": "text",
+      "text": "Dante and Virgil witnessing the gigantic figure of Dis | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 77,
+          "url": "https://pdimagearchive.org/images/1340c77d-84ca-4415-91b1-27d595a92391"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 364,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s1280x1920/0f63cceb9e08300bcee8a5b1aaedb449d5ae6a97.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 324,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s640x960/ddb276d94119af6728945dbb3a403de706b4475d.jpg"
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 273,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s540x810/e43b7df97563900c75c5340b2b6b066a18e645e5.jpg"
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 253,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s500x750/2bf0f35c2318bed6c294ff538dd6d2ea3bf2f49a.jpg"
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 202,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s400x600/c2e4242931d97613947414b2a719d16e604805c5.jpg"
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 126,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s250x400/c4ea4b62575ba17f688b10a7b686aaf89e9309c2.jpg"
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 51,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s100x200/4c8b21fc0fff8b7c13a254de3cd0a8d88e8d9a63.jpg"
+        },
+        {
+          "media_key": "43318f0b71a4253834496e83cc6e071f:db7961a036f2a13b-cc",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/43318f0b71a4253834496e83cc6e071f/db7961a036f2a13b-cc/s75x75_c1/bfa954c571ee6a6e710171b7e7cd87bde265cb30.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/17504476553_65188bb184_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "3a201a",
+        "c1": "546793",
+        "c2": "819495",
+        "c3": "2c499f",
+        "c4": "c9cec3"
+      },
+      "exif": {
+        "Time": 1330615658
+      }
+    },
+    {
+      "type": "text",
+      "text": "Beatrice explaining to Dante that the universe is a hierarchy of being | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 93,
+          "url": "https://pdimagearchive.org/images/1ee31d66-be1e-43d0-80f3-67c803ea06c2"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 719,
+          "height": 361,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s1280x1920/344944d8607bb3fb3bd1a2715ce2848832db4ac6.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 321,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s640x960/c7159fa46c8e46c125c29e5432aa1eac3135c03c.jpg"
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 271,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s540x810/8ce824d7bd071cf3c6a9fea4ac81995bfff325c9.jpg"
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 251,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s500x750/80dde291fa086a3dba9993b1c4215b61b5c53e87.jpg"
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 201,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s400x600/fc86b946df25715002f698db53f7f16560b68624.jpg"
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 126,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s250x400/3b058ea9e748cbf61cfaf9801c28a1a5034d8cff.jpg"
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 50,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s100x200/d650cf51f0d528d3ad2e00a0b0157f5a865c32c4.jpg"
+        },
+        {
+          "media_key": "bdf723d9cf3b36636a83cef8b6762784:db7961a036f2a13b-8d",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/bdf723d9cf3b36636a83cef8b6762784/db7961a036f2a13b-8d/s75x75_c1/2c6b11aad3224f2159614e53fc6f45545fbdf36b.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/18121536232_597df797e8_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "040b14",
+        "c1": "73131c",
+        "c2": "3c2a13",
+        "c3": "763e25",
+        "c4": "e1d3ae"
+      },
+      "exif": {
+        "Time": 1322769416
+      }
+    },
+    {
+      "type": "text",
+      "text": "Dante and Virgil looking into the tomb of Pope Anastasius | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 80,
+          "url": "https://pdimagearchive.org/images/a6817ca5-1d78-407b-912f-f459f80c531c"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 346,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s1280x1920/296243608a06042a1eba1d85cf31fa1088015f99.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 308,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s640x960/6af5b46bfb0f40bb0acf350dcb09db0ccb16f44d.jpg"
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 260,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s540x810/dab6c1833a14d1a835138c8e07bf7b3e3e7a1066.jpg"
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 240,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s500x750/611bbc205d9b2867c705a2fea2eab0944a282f0b.jpg"
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 192,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s400x600/2e5554165fcb608c00c44bceec869acbab1fcdab.jpg"
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 120,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s250x400/c8fb569a6f63910fc624dc3fd5ee17fa354deafd.jpg"
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 48,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s100x200/88ee1b7b3f5d1bf9bbe4a6596aceeb6b2776dc45.jpg"
+        },
+        {
+          "media_key": "3e2b43fe1d3effb6c56798d6eb7f0fe0:db7961a036f2a13b-e8",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/3e2b43fe1d3effb6c56798d6eb7f0fe0/db7961a036f2a13b-e8/s75x75_c1/e18d8e583a6d987822b7397a6f19880aba8d9b8d.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/17937144058_7f946759de_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "0c1759",
+        "c1": "676553",
+        "c2": "c5c7cb",
+        "c3": "74755c",
+        "c4": "7a839a"
+      },
+      "exif": {
+        "Time": 1330616646
+      }
+    },
+    {
+      "type": "text",
+      "text": "Beatrice watching as Dante kneels before Adam | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 68,
+          "url": "https://pdimagearchive.org/images/efeafc64-adc1-4256-9509-89e7e82bfb0a"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 719,
+          "height": 382,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s1280x1920/bbe722e773401052645d22f6e02b6618eb38b269.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 340,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s640x960/724381fa2906772858c28ec002504682a3a7da40.jpg"
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 287,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s540x810/ae6be09be9d1c84115f9d7dbb5e462f3e1db48cc.jpg"
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 266,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s500x750/d2a59bfd5216272b756514ce2583440be1757249.jpg"
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 213,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s400x600/966dd735d2d133b838f256cd5351d8775ec21c05.jpg"
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 133,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s250x400/7262031da2fcafb7c118cfed1699f7009619f75d.jpg"
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 53,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s100x200/16a6f9fa93d5a214bb428940a46df618fac2cdbf.jpg"
+        },
+        {
+          "media_key": "9cc94dec95499de683b928414df23e77:db7961a036f2a13b-59",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/9cc94dec95499de683b928414df23e77/db7961a036f2a13b-59/s75x75_c1/9a74bc4432f614c17a30a491a69ef71682de2def.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/18126098721_4c0ef72409_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "533413",
+        "c1": "442216",
+        "c2": "091348",
+        "c3": "524947",
+        "c4": "8e603e"
+      },
+      "exif": {
+        "Time": 1322773781
+      }
+    },
+    {
+      "type": "text",
+      "text": "Dante and Virgil with Pope Adrian V, Hugh Capet, and Statius, in Purgatory | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 97,
+          "url": "https://pdimagearchive.org/images/9ca33d94-01ef-428f-ab9f-cef00ade434e"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 397,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s1280x1920/71b02c193c82e497e242f0b7bb80e95117c4e55c.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 353,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s640x960/fae0dc7a143a5a55a6c736a9dfd676102fbadff6.jpg"
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 298,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s540x810/8c62f3c96b47b2c0e40d373d8e44df2534cf51a9.jpg"
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 276,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s500x750/3ff7993dba440aa10598345c6ca9e930ebdb63bb.jpg"
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 221,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s400x600/716bd01bb1fa23530ca9da010a2c3a11a76b2d33.jpg"
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 138,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s250x400/21e4af710caf447fd8221b8e516c94cc8cdba42a.jpg"
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 55,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s100x200/00173a05d267c6057c556b4aca79dedc6abe87f5.jpg"
+        },
+        {
+          "media_key": "1e8149a3f8bca121b3e3a1a81c60e19c:db7961a036f2a13b-b5",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/1e8149a3f8bca121b3e3a1a81c60e19c/db7961a036f2a13b-b5/s75x75_c1/6c20b54e5d194cb049ff7b793dadcd8b7695409e.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/14th-century-illuminations-for-dante-s-divine-comedy/18126091521_477442b3a8_b.jpg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "45151b",
+        "c1": "8a4d1a",
+        "c2": "948369",
+        "c3": "dd9935",
+        "c4": "0f1c5c"
+      },
+      "exif": {
+        "Time": 1322770269
+      }
+    },
+    {
+      "type": "text",
+      "text": "Dante and Virgil entering the area devoted to simoniacs and magicians | Anonymous, 1444–1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 92,
+          "url": "https://pdimagearchive.org/images/2e1da06d-865d-4ec1-9e94-7c791b2f95e7"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

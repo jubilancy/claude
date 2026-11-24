@@ -1,0 +1,234 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 825852251493089280,
+  "id_string": "825852251493089280",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/825852251493089280/the-ritual-sphinx-nyx-digital-album-amd125",
+  "slug": "the-ritual-sphinx-nyx-digital-album-amd125",
+  "date": "2026-08-24 17:54:41 GMT",
+  "timestamp": 1787594081,
+  "state": "published",
+  "reblog_key": "CQVXsG3n",
+  "tags": [
+    "graphic design",
+    "art",
+    "music",
+    "music album",
+    "drawing",
+    "illustration",
+    "cover",
+    "the ritual sphinx",
+    "alessandro bartolena",
+    "james plotkin",
+    "massimo dagnino",
+    "adventurous music",
+    "2020s"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjs13z7Cy00",
+  "summary": "The Ritual Sphinx, Nyx, (Digital album), AMD125, Adventurous Music, 2025\nThe Ritual Sphinx: Alessandro Bartolena: FM...",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 1200,
+          "height": 1200,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s1280x1920/495f8eda5070388bcbdedebfdfc556e03c7c1e59.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 640,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s640x960/501bc59bf5af5253133a9a7c1985373b0e0f4e07.jpg"
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 540,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s540x810/12196d0de441e61dca2ed88866bb73844c537251.jpg"
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 500,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s500x750/451175a6eba0f15e4a98404ff21673dc55ad0d76.jpg"
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 400,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s400x600/bda7ad270c49fc245e40af0c8cda845b1bbbb663.jpg"
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 250,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s250x400/9d1773cb0af25cfcbdcc3eef5b2eae5ea49d45d7.jpg"
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 100,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s100x200/fb00b034d51758560af6bfaa86a62c39f9578f49.jpg"
+        },
+        {
+          "media_key": "e39b9d92aa78980f8ec73681eb856c37:2d6ba089a4f15639-85",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/e39b9d92aa78980f8ec73681eb856c37/2d6ba089a4f15639-85/s75x75_c1/095b037404ea8110baad80f3843433f607b0afa6.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://64.media.tumblr.com/8d1ed27fd6147a5893152990cd63b14f/51f77f5a10cb0585-c6/s1280x1920/31c495486d939154f138ea4bfb866f04b15696ca.jpg"
+      },
+      "colors": {
+        "c0": "f2f2f2",
+        "c1": "cac5a9",
+        "c2": "ada889",
+        "c3": "6c6c60",
+        "c4": "494741"
+      },
+      "exif": {
+        "Time": "1787594052"
+      }
+    },
+    {
+      "type": "text",
+      "text": "The Ritual Sphinx, Nyx, (Digital album), AMD125, Adventurous Music, 2025",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 17,
+          "url": "https://www.instagram.com/theritualsphinx"
+        },
+        {
+          "type": "italic",
+          "start": 19,
+          "end": 22
+        },
+        {
+          "type": "link",
+          "start": 19,
+          "end": 22,
+          "url": "https://adventurousmusic.bandcamp.com/album/nyx"
+        },
+        {
+          "type": "link",
+          "start": 49,
+          "end": 66,
+          "url": "https://www.adventurousmusic.com/the-ritual-sphinx-nyx/"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "The Ritual Sphinx: Alessandro Bartolena: FM synthesizer, vocals, samplings"
+    },
+    {
+      "type": "text",
+      "text": "Written, recorded, and produced by Alessandro Bartolena (Genova, 2024) Mastering by James Plotkin"
+    },
+    {
+      "type": "text",
+      "text": "Art/Graphic Design: Massimo Dagnino ('Gorgo', pencil on paper, 03.03.2025)",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 20,
+          "end": 35,
+          "url": "https://www.facebook.com/massimo.dagnino.50"
+        },
+        {
+          "type": "italic",
+          "start": 37,
+          "end": 44
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Source: adventurousmusic.bandcamp.com",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 8,
+          "end": 37,
+          "url": "https://adventurousmusic.bandcamp.com/album/nyx"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

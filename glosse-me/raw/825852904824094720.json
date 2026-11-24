@@ -1,0 +1,280 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 825852904824094720,
+  "id_string": "825852904824094720",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/825852904824094720/publishers-for-palestine",
+  "parent_post_url": "https://garadinervi-repertori.blog/post/735363661353418752/publishers-for-palestine",
+  "slug": "publishers-for-palestine",
+  "date": "2026-08-24 18:05:04 GMT",
+  "timestamp": 1787594704,
+  "state": "published",
+  "reblog_key": "ES8E1gEt",
+  "tags": [],
+  "short_url": "https://tmblr.co/ZQo8CNjs1DTamy00",
+  "summary": "Publishers for Palestine",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 589,
+  "source_url": "https://publishersforpalestine.org/",
+  "source_title": "publishersforpalestine.org",
+  "content": [],
+  "layout": [],
+  "trail": [
+    {
+      "content": [
+        {
+          "type": "text",
+          "text": "Publishers for Palestine",
+          "subtype": "heading2"
+        },
+        {
+          "type": "text",
+          "text": "Free Palestine Reading List, Nov. 29 – Dec. 5, 2025 / 2024 / 2023 + 16 Free Zines and More Free Reads for a Free Palestine + Poems for Palestine (chapbook) + 'Read for Refaat': Join a Day of Action, a Week of Events + Report Censorship of Solidarity with Palestine",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 29,
+              "end": 51,
+              "url": "https://publishersforpalestine.org/2025/11/29/free-palestine-reading-list-for-november-29-december-5-2025/"
+            },
+            {
+              "type": "link",
+              "start": 54,
+              "end": 58,
+              "url": "https://publishersforpalestine.org/2024/11/29/free-palestine-reading-list-for-november-29-december-5-2024/"
+            },
+            {
+              "type": "link",
+              "start": 61,
+              "end": 65,
+              "url": "https://publishersforpalestine.org/2023/11/29/free-ebooks-for-readpalestine-week-november-29-december-5/"
+            },
+            {
+              "type": "link",
+              "start": 68,
+              "end": 122,
+              "url": "https://publishersforpalestine.org/2024/01/10/16-free-zines-and-more-free-reads-for-a-free-palestine/"
+            },
+            {
+              "type": "link",
+              "start": 125,
+              "end": 144,
+              "url": "https://publishersforpalestine.org/2024/02/13/poems-for-palestine-chapbook-launch/"
+            },
+            {
+              "type": "italic",
+              "start": 125,
+              "end": 144
+            },
+            {
+              "type": "italic",
+              "start": 158,
+              "end": 175
+            },
+            {
+              "type": "link",
+              "start": 158,
+              "end": 175,
+              "url": "https://publishersforpalestine.org/2024/01/11/read-for-refaat-join-a-day-of-action-a-week-of-events/"
+            },
+            {
+              "type": "link",
+              "start": 175,
+              "end": 215,
+              "url": "https://publishersforpalestine.org/2024/01/11/read-for-refaat-join-a-day-of-action-a-week-of-events/"
+            },
+            {
+              "type": "link",
+              "start": 218,
+              "end": 264,
+              "url": "https://publishersforpalestine.org/2024/02/09/report-censorship-of-solidarity-with-palestine/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "«Publishers for Palestine is a global collective of publishers, and others who work in publishing around the world, who stand for justice, freedom of expression, and the power of the written word. You can read our statement of solidarity in English, en Français, en Català, dalam bahasa Indonesia, اردو میں, بالعربية, 中文, 日本語で, 한국어로, po Polsku, Suomen kielellä, and Στα ελληνικα. More languages are forthcoming.»",
+          "subtype": "indented",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 241,
+              "end": 248,
+              "url": "https://publishersforpalestine.wordpress.com/2023/11/15/statement-of-solidarity/"
+            },
+            {
+              "type": "link",
+              "start": 250,
+              "end": 261,
+              "url": "https://publishersforpalestine.org/declaration-de-solidarite-avec-la-palestine/"
+            },
+            {
+              "type": "link",
+              "start": 263,
+              "end": 273,
+              "url": "https://publishersforpalestine.org/editorials-per-palestina-declaracio-de-solidaritat/"
+            },
+            {
+              "type": "link",
+              "start": 273,
+              "end": 296,
+              "url": "https://publishersforpalestine.org/penerbit-untuk-palestina-pernyataan-solidaritas/"
+            },
+            {
+              "type": "link",
+              "start": 298,
+              "end": 306,
+              "url": "https://publishersforpalestine.org/%D9%81%D9%84%D8%B3%D8%B7%DB%8C%D9%86-%D8%AF%D9%88%D8%B3%D8%AA-%D9%86%D8%A7%D8%B4%D8%B1%D8%A7%D9%86-%DA%A9%D8%A7-%D8%A7%D8%B8%DB%81%D8%A7%D8%B1%D9%90-%DB%8C%DA%A9%D8%AC%DB%81%D8%AA%DB%8C/"
+            },
+            {
+              "type": "link",
+              "start": 308,
+              "end": 316,
+              "url": "https://publishersforpalestine.org/%d9%86%d8%a7%d8%b4%d8%b1%d9%88%d9%86-%d9%85%d9%86-%d8%a3%d8%ac%d9%84-%d9%81%d9%84%d8%b3%d8%b7%d9%8a%d9%86-%d8%a8%d9%8a%d8%a7%d9%86-%d8%aa%d8%b6%d8%a7%d9%85%d9%86%d9%8a/"
+            },
+            {
+              "type": "link",
+              "start": 318,
+              "end": 320,
+              "url": "https://publishersforpalestine.org/%e3%80%8c%e5%87%ba%e7%89%88%e7%95%8c%e7%82%ba%e5%b7%b4%e5%8b%92%e6%96%af%e5%9d%a6%e7%99%bc%e8%81%b2%e3%80%8d%e5%85%ac%e9%96%8b%e4%bf%a1/"
+            },
+            {
+              "type": "link",
+              "start": 322,
+              "end": 326,
+              "url": "https://publishersforpalestine.org/%e3%83%91%e3%83%ac%e3%82%b9%e3%83%81%e3%83%8a%e3%81%ab%e9%80%a3%e5%b8%af%e3%81%99%e3%82%8b%e5%87%ba%e7%89%88%e7%a4%be-%e9%80%a3%e5%b8%af%e5%a3%b0%e6%98%8e/"
+            },
+            {
+              "type": "link",
+              "start": 328,
+              "end": 332,
+              "url": "https://publishersforpalestine.org/%ed%8c%94%eb%a0%88%ec%8a%a4%ed%83%80%ec%9d%b8%ec%9d%84-%ec%a7%80%ec%a7%80%ed%95%98%eb%8a%94-%ec%b6%9c%ed%8c%90%ec%9d%b8-%ec%97%b0%eb%8c%80-%ec%84%b1%eb%aa%85%ec%84%9c/"
+            },
+            {
+              "type": "link",
+              "start": 334,
+              "end": 343,
+              "url": "https://publishersforpalestine.org/wydawcy-dla-palestyny/"
+            },
+            {
+              "type": "link",
+              "start": 345,
+              "end": 360,
+              "url": "https://publishersforpalestine.org/kustantajat-palestiinan-puolesta/"
+            },
+            {
+              "type": "link",
+              "start": 366,
+              "end": 378,
+              "url": "https://publishersforpalestine.org/%ce%b4%ce%ae%ce%bb%cf%89%cf%83%ce%b7-e%ce%ba%ce%b4%ce%bf%cf%84%cf%8e%ce%bd-%ce%b3%ce%b9%ce%b1-%cf%84%ce%b7%ce%bd-%cf%80%ce%b1%ce%bb%ce%b1%ce%b9%cf%83%cf%84%ce%af%ce%bd%ce%b7/"
+            }
+          ]
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "735363661353418752"
+      },
+      "blog": {
+        "name": "garadinervi",
+        "title": "garadinervi : repertori",
+        "description": "ragione e storia",
+        "url": "https://garadinervi-repertori.blog/",
+        "uuid": "t:vlbn46eInCyHagsln8m2Gg",
+        "updated": 1795480155,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/3806eda9d99a42567bc4ca606dab8ad2/2fdd588f96a8fad8-d9/s512x512u_c1/1523390a31aee324df750282d8f0df8151c758d6.png",
+            "accessories": []
+          },
+          {
+            "width": 200,
+            "height": 200,
+            "url": "https://64.media.tumblr.com/3806eda9d99a42567bc4ca606dab8ad2/2fdd588f96a8fad8-d9/s200x200u_c1/d297d356bdc2b498c4e2dbc9411e08b421834757.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/3806eda9d99a42567bc4ca606dab8ad2/2fdd588f96a8fad8-d9/s128x128u_c1/635ce087e14abada2ceacd9652e0bc5add751df7.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/3806eda9d99a42567bc4ca606dab8ad2/2fdd588f96a8fad8-d9/s96x96u_c1/19817a30aff0b1fbbae7d7f675a597424668ea85.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/3806eda9d99a42567bc4ca606dab8ad2/2fdd588f96a8fad8-d9/s64x64u_c1/f141d1a40ece83749ef14418867a2c937dd87ac9.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": false,
+        "active": true,
+        "show_follow_action": true
+      }
+    }
+  ],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "noone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

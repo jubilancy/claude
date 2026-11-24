@@ -1,0 +1,196 @@
+{
+  "type": "blocks",
+  "original_type": "photo",
+  "is_blocks_post_format": false,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826837088367509504,
+  "id_string": "826837088367509504",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826837088367509504/shaykarniel-the-glare-killer-are-man-killers",
+  "parent_post_url": "https://shaykarniel.tumblr.com/post/171992338404/the-glare-killer-are-man-killers-now-polaroid-ad",
+  "slug": "shaykarniel-the-glare-killer-are-man-killers",
+  "date": "2026-09-04 14:48:15 GMT",
+  "timestamp": 1788533295,
+  "state": "published",
+  "reblog_key": "aU5nv0dM",
+  "tags": [
+    "vintage ad",
+    "vintage advertising",
+    "advertising",
+    "ad",
+    "vintage magazine",
+    "vintage fashion"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjvW-DxGu00",
+  "summary": "The glare-killer are man-killers now - Polaroid ad from Vogue, 1970",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 58,
+  "content": [],
+  "layout": [],
+  "trail": [
+    {
+      "content": [
+        {
+          "type": "image",
+          "media": [
+            {
+              "url": "https://64.media.tumblr.com/b5bf1218d579cf1bcbbf0d26162c1eef/tumblr_p5s64vgaXY1ts7ohgo1_500.jpg",
+              "type": "image/jpeg",
+              "width": 429,
+              "height": 591,
+              "colors": {
+                "c0": "000000",
+                "c1": "ff9f9c"
+              },
+              "has_original_dimensions": true
+            },
+            {
+              "url": "https://64.media.tumblr.com/b5bf1218d579cf1bcbbf0d26162c1eef/tumblr_p5s64vgaXY1ts7ohgo1_400.jpg",
+              "type": "image/jpeg",
+              "width": 400,
+              "height": 551,
+              "colors": {
+                "c0": "000000",
+                "c1": "ff9f9c"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/b5bf1218d579cf1bcbbf0d26162c1eef/tumblr_p5s64vgaXY1ts7ohgo1_250.jpg",
+              "type": "image/jpeg",
+              "width": 250,
+              "height": 344,
+              "colors": {
+                "c0": "000000",
+                "c1": "ff9f9c"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/b5bf1218d579cf1bcbbf0d26162c1eef/tumblr_p5s64vgaXY1ts7ohgo1_100.jpg",
+              "type": "image/jpeg",
+              "width": 100,
+              "height": 138,
+              "colors": {
+                "c0": "000000",
+                "c1": "ff9f9c"
+              }
+            },
+            {
+              "url": "https://64.media.tumblr.com/b5bf1218d579cf1bcbbf0d26162c1eef/tumblr_p5s64vgaXY1ts7ohgo1_75sq.jpg",
+              "type": "image/jpeg",
+              "width": 75,
+              "height": 75,
+              "colors": {
+                "c0": "000000",
+                "c1": "ff9f9c"
+              },
+              "cropped": true
+            }
+          ],
+          "colors": {
+            "c0": "000000",
+            "c1": "ff9f9c"
+          }
+        },
+        {
+          "type": "text",
+          "text": "The glare-killer are man-killers now - Polaroid ad from Vogue, 1970"
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "171992338404"
+      },
+      "blog": {
+        "name": "shaykarniel",
+        "title": "Vintage print and other stuff",
+        "description": "A blog with scans of my collection of vintage print from all over. Stuff that didn't lose (or gain) power with the years and maybe got some extra subtext with time.\nAlso on: http://shay-karniel.tumblr.com\nAnd www.pinterest.com/shaykarniel",
+        "url": "https://shaykarniel.tumblr.com/",
+        "uuid": "t:Ur4vMAKI9pwvAAVdXA_fXQ",
+        "updated": 1794827761,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/avatar_a391af310611_512.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/avatar_a391af310611_128.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/avatar_a391af310611_96.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/avatar_a391af310611_64.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": true
+      }
+    }
+  ],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "noone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

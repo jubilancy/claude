@@ -1,0 +1,448 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826153536219987968,
+  "id_string": "826153536219987968",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826153536219987968/paradiso-canto-i-dante-and-apollo-before",
+  "slug": "paradiso-canto-i-dante-and-apollo-before",
+  "date": "2026-08-28 01:43:28 GMT",
+  "timestamp": 1787881408,
+  "state": "published",
+  "reblog_key": "kBeHhrQy",
+  "tags": [
+    "Book Illustration",
+    "celestial",
+    "dante",
+    "floating",
+    "inferno",
+    "landscapes",
+    "Manuscript",
+    "medieval",
+    "nature",
+    "paradise",
+    "purgatory",
+    "Religion",
+    "Myth & Legend",
+    "sun"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjt5aEOKq00",
+  "summary": "Paradiso, Canto I: Dante and Apollo before Parnassus. Giovanni di Paolo di Grazia, ca. 1450\nParadiso, Cantos XVIII–XX: Dante and...",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 1,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 719,
+          "height": 379,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s1280x1920/08b31760cd10ab495c98713d5bd35bc2c720d134.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 337,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s640x960/fd33693d0be42b74ebd1d56869bf0df4a21aab22.jpg"
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 285,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s540x810/2af5ff7702a6c43cb460b5d2242f2d7d1d6e6ef5.jpg"
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 264,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s500x750/88a7206c37a9ced22eb2cb2f05779e4d1eb12d6c.jpg"
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 211,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s400x600/4a651b87747aeb0e43a073847b08aa508a73d359.jpg"
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 132,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s250x400/6015c4f53d9d98521cd380483b96068b235fa2c5.jpg"
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 53,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s100x200/03daa113b9a0d796b5165aa51b8283e25bb219db.jpg"
+        },
+        {
+          "media_key": "1f44181fb47caef73ebda509dcfb0637:3791911a6a9bee48-8c",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/1f44181fb47caef73ebda509dcfb0637/3791911a6a9bee48-8c/s75x75_c1/1ad4324148fdc753afea181385c3b920fd4811c4.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-20.jpeg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "1e1e0f",
+        "c1": "6a7a90",
+        "c2": "94441f",
+        "c3": "a39183",
+        "c4": "33291a"
+      },
+      "exif": {
+        "Time": "1787881278"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Canto I: Dante and Apollo before Parnassus. Giovanni di Paolo di Grazia, ca. 1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 91,
+          "url": "https://pdimagearchive.org/images/a815c78e-90ff-4815-8cd8-33c3c26c5659"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 408,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s1280x1920/9649492dec921aed2fa06bfe9aad224f6b4cbe79.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 363,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s640x960/3ed97895514ff4d56b4a03a86382b231131700c1.jpg"
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 306,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s540x810/c647f23df6f559790d3b0408a4fc3accc2aded05.jpg"
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 283,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s500x750/d9fdea6bfee69fe00300ff01ffd0cdf6f86c1a2e.jpg"
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 227,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s400x600/73711f40c7b1260de7938b421f6b15b8d5045792.jpg"
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 142,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s250x400/a7c68cade53891655c0d7f8dadca8ec1d1c19efc.jpg"
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 57,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s100x200/1330f9037a5e0ed4412b443844d6ea6e8db9b420.jpg"
+        },
+        {
+          "media_key": "d224ff72ea01252a130771d740ee155e:3791911a6a9bee48-7a",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/d224ff72ea01252a130771d740ee155e/3791911a6a9bee48-7a/s75x75_c1/27774fa4d4dc32202b5800b4e482746c884b0b22.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-17.jpeg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "01033d",
+        "c1": "010234",
+        "c2": "c6afa2",
+        "c3": "2a1938",
+        "c4": "6f2e0f"
+      },
+      "exif": {
+        "Time": "1787881278"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Cantos XVIII–XX: Dante and Beatrice before the Eagle of Justice Giovanni di Paolo di Grazia, ca. 1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 111,
+          "url": "https://pdimagearchive.org/images/2303dbe6-bc79-4f05-b776-d0de5bc493fc"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 719,
+          "height": 412,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s1280x1920/6490a9945ca1a50af9a34189f21c940d8ae55cd5.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 367,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s640x960/597bfda54dd0b6787f678d61d96e8ee0fd9e431e.jpg"
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 309,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s540x810/bb22d0d46e0fdf88fb1bac3c00d73f8065ab81c5.jpg"
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 287,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s500x750/94df51b2db7a73dd5fcc7ad4dd9f8faa7b63e6d7.jpg"
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 229,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s400x600/3853df94d7b2aaa51932d79f459f7689b0f39da1.jpg"
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 143,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s250x400/5796e7fdee58a046e4f9d9b0cdfd0e0f0926fa7e.jpg"
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 57,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s100x200/fe5138931dbfb0e9a30fa406fc95d9e1dbd8655a.jpg"
+        },
+        {
+          "media_key": "e335b4b1c48287495feddd88c4ee51e7:3791911a6a9bee48-e5",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/e335b4b1c48287495feddd88c4ee51e7/3791911a6a9bee48-e5/s75x75_c1/4365036febe5038e69e626330dfeb1ee78794977.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-19.jpeg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "141725",
+        "c1": "c0752f",
+        "c2": "86432f",
+        "c3": "c8c2b4",
+        "c4": "7b839b"
+      },
+      "exif": {
+        "Time": "1787881278"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso: Dante and Beatrice before the Light. Giovanni di Paolo di Grazia, ca. 1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 84,
+          "url": "https://pdimagearchive.org/images/fb98bd32-d07a-464a-8dac-0ce82f30780e"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 720,
+          "height": 345,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s1280x1920/6df8509c6fd07ec6159b64d9c57cea150becc88c.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 307,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s640x960/a8de7d4083d16b478a90941e7acb1c14ad87ec38.jpg"
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 259,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s540x810/2f9d1257a528d0705a57d7ab36b06b0e74afea9b.jpg"
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 240,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s500x750/dc786d6763a458793b188db31f7d7d6cf0831d1b.jpg"
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 192,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s400x600/59dcda59fb139b4bef6f029a89973e967e354977.jpg"
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 120,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s250x400/78faa2a155cd0ef14d9e490da342b50f03aa09bf.jpg"
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 48,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s100x200/4391b97b7c9ba24315c55845e8c5f566843a81db.jpg"
+        },
+        {
+          "media_key": "51d5df48550769a3b345b9487532c115:3791911a6a9bee48-9f",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/51d5df48550769a3b345b9487532c115/3791911a6a9bee48-9f/s75x75_c1/3c8a5bad43178479f5efd3c7e4a05ec8cd167f44.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://images.pdimagearchive.org/collections/dante-divine-comedy-in-art/dante-commedia-16.jpeg?width=720&height=1200"
+      },
+      "colors": {
+        "c0": "7b0b01",
+        "c1": "383673",
+        "c2": "00074b",
+        "c3": "0e2183",
+        "c4": "606267"
+      },
+      "exif": {
+        "Time": "1787881278"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Paradiso, Canto I: Beatrice explaining scientific theories to Dante. Giovanni di Paolo di Grazia, ca. 1450",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 106,
+          "url": "https://pdimagearchive.org/images/0f48a4a8-6e7b-459d-8be1-cea95a4f0c8f"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

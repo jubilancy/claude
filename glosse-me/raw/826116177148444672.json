@@ -1,0 +1,233 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826116177148444672,
+  "id_string": "826116177148444672",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826116177148444672",
+  "parent_post_url": "https://ebookporn.tumblr.com/post/825867162716618752/this-interactive-atlas-captures-more-than-a",
+  "slug": "",
+  "date": "2026-08-27 15:49:40 GMT",
+  "timestamp": 1787845780,
+  "state": "published",
+  "reblog_key": "AqDVkQ4I",
+  "tags": [
+    "booksellers",
+    "cartography",
+    "literary journeys",
+    "librarians"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjsz4b28m00",
+  "summary": "This interactive atlas captures more than a thousand literary journeys.",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 29,
+  "source_url": "https://lithub.com/this-interactive-atlas-captures-more-than-a-thousand-literary-journeys/",
+  "source_title": "lithub.com",
+  "content": [],
+  "layout": [],
+  "trail": [
+    {
+      "content": [
+        {
+          "type": "link",
+          "url": "https://lithub.com/this-interactive-atlas-captures-more-than-a-thousand-literary-journeys/",
+          "display_url": "https://lithub.com/this-interactive-atlas-captures-more-than-a-thousand-literary-journeys/",
+          "title": "This interactive atlas captures more than a thousand literary journeys.",
+          "description": "Have you ever wondered how long those nice people were actually stranded on the Orient Express? Or speculated about the carriage distance fr",
+          "site_name": "Literary  Hub",
+          "poster": [
+            {
+              "media_key": "bc5700cb0f8cb530bf2ee3a2a0d66dd9:fe6a291cf0d1e675-1b",
+              "type": "image/png",
+              "width": 800,
+              "height": 400,
+              "url": "https://64.media.tumblr.com/bc5700cb0f8cb530bf2ee3a2a0d66dd9/fe6a291cf0d1e675-1b/s1280x1920/2e0528c8ceb561e9fcc1dd14c82120774f7949ab.png"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Have you ever wondered how long those nice people were actually stranded on the Orient Express? Or speculated about the carriage distance from London to Longbourn? Well, dear reader, have I got a tip for you."
+        },
+        {
+          "type": "text",
+          "text": "Reading Maps is home to an interactive database where curious readers can explore—if not recreate—famous journeys from literature.",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 0,
+              "end": 12,
+              "url": "https://readingmaps.com/"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "These trips are classified by mode (overland, sea) and type (survival, exile, coming of age). There are road trips represented, like that in Dave Eggers’ Heartbreaking Work of Staggering Genius. But also multi-country emigration tales, as in Yaa Gyasi’s Homegoing.",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 154,
+              "end": 193,
+              "url": "https://readingmaps.com/maps/a-heartbreaking-work-of-staggering-genius"
+            },
+            {
+              "type": "italic",
+              "start": 154,
+              "end": 193
+            },
+            {
+              "type": "link",
+              "start": 254,
+              "end": 263,
+              "url": "https://readingmaps.com/maps/homegoing"
+            },
+            {
+              "type": "italic",
+              "start": 254,
+              "end": 263
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "This project is the brainchild of Aires Loutsaris—UK-based SEO consultant by day, whimsical cartographer by night. Loutsaris has spent the past few years building his free interactive atlas, which includes both intercontinental epics (see: Moby Dick) and local meanders like Mrs. Dalloway. ",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 240,
+              "end": 249,
+              "url": "https://readingmaps.com/maps/moby-dick"
+            },
+            {
+              "type": "italic",
+              "start": 240,
+              "end": 249
+            },
+            {
+              "type": "italic",
+              "start": 275,
+              "end": 290
+            },
+            {
+              "type": "link",
+              "start": 275,
+              "end": 288,
+              "url": "https://readingmaps.com/maps/mrs-dalloway"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "READ MORE",
+          "subtype": "heading1",
+          "formatting": [
+            {
+              "type": "link",
+              "start": 0,
+              "end": 9,
+              "url": "https://lithub.com/this-interactive-atlas-captures-more-than-a-thousand-literary-journeys/"
+            }
+          ]
+        }
+      ],
+      "layout": [],
+      "post": {
+        "id": "825867162716618752"
+      },
+      "blog": {
+        "name": "ebookporn",
+        "title": "ebookPorn",
+        "description": "NEWS, HUMOR AND INSPIRATION FOR WRITERS, PUBLISHERS, <br />BOOKSELLERS,  AND LIBRARIANS.",
+        "url": "https://ebookporn.tumblr.com/",
+        "uuid": "t:n3oxU_JMc6UVN8l2WOgyyw",
+        "updated": 1794628443,
+        "avatar": [
+          {
+            "width": 512,
+            "height": 512,
+            "url": "https://64.media.tumblr.com/avatar_e599e6e86fe4_512.png",
+            "accessories": []
+          },
+          {
+            "width": 128,
+            "height": 128,
+            "url": "https://64.media.tumblr.com/avatar_e599e6e86fe4_128.png",
+            "accessories": []
+          },
+          {
+            "width": 96,
+            "height": 96,
+            "url": "https://64.media.tumblr.com/avatar_e599e6e86fe4_96.png",
+            "accessories": []
+          },
+          {
+            "width": 64,
+            "height": 64,
+            "url": "https://64.media.tumblr.com/avatar_e599e6e86fe4_64.png",
+            "accessories": []
+          }
+        ],
+        "tumblrmart_accessories": {},
+        "can_show_badges": true,
+        "active": true,
+        "show_follow_action": true
+      }
+    }
+  ],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "noone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

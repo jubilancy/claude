@@ -1,0 +1,247 @@
+{
+  "type": "blocks",
+  "original_type": "photo",
+  "is_blocks_post_format": false,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826495828952743936,
+  "id_string": "826495828952743936",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826495828952743936/mechanical-art-for-edward-goreys-first-doubleday-a",
+  "slug": "mechanical-art-for-edward-goreys-first-doubleday-a",
+  "date": "2026-08-31 20:24:04 GMT",
+  "timestamp": 1788207844,
+  "state": "published",
+  "reblog_key": "j9QpMCuK",
+  "tags": [
+    "20th-century-art",
+    "anchor-books",
+    "artwork",
+    "doubleday",
+    "edward-gorey",
+    "facebook-art",
+    "gorey-art",
+    "illustration",
+    "illustration-art",
+    "ink-illustration",
+    "pen-and-ink"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjuJPFL4W00",
+  "summary": "Mechanical Art for Edward Gorey's First Doubleday Anchor Cover (1953)\n Mechanical art for Edward Gorey's first Doubleday Anchor...",
+  "should_open_in_legacy": true,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 600,
+          "height": 802,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 600,
+            "height": 802,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s640x960_f1/cf6f3ec557141933013e1e1dcfeb7cf9df311a05.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s640x960/e95848f5406f11442eb5820ee25e61a779192bb4.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          },
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 540,
+          "height": 722,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 540,
+            "height": 722,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s540x810_f1/df26348e699efe5fc2b4d7c5275f5ce82149fa79.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s540x810/a8d86d53aa167e6a17132be95c8057e4685a3df6.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          }
+        },
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 500,
+          "height": 668,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 500,
+            "height": 668,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s500x750_f1/d36880a2c9d8ae3485f184d4a33a1f6175843c5e.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s500x750/8758ddf114bd2b2e48c55f28fa4b3e551bab2e0b.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          }
+        },
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 400,
+          "height": 535,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 400,
+            "height": 535,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s400x600_f1/d2a36f42ff9e27ae780c9ceea15ff7f9a87f44eb.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s400x600/ce527353086fac3af51485ebbc286eeadc1cbc8e.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          }
+        },
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 250,
+          "height": 334,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 250,
+            "height": 334,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s250x400_f1/daa2462a0cf5ee757df95f9159d7921ca84bff43.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s250x400/cfe37fe5d741d65aa4bea04eae2de5e2e9498fc2.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          }
+        },
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 100,
+          "height": 134,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 100,
+            "height": 134,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s100x200_f1/fede4c2af720b72a50f8aa1e38ac548ffc210294.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s100x200/5b70dae23f5832bb22febf5ed31cc33e273c6c8e.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          }
+        },
+        {
+          "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+          "type": "image/webp",
+          "width": 75,
+          "height": 75,
+          "poster": {
+            "media_key": "4084524374ba5b6446c9c26abf2d535b:a58f36dfd4c71175-a1",
+            "type": "image/webp",
+            "width": 75,
+            "height": 75,
+            "url": "https://44.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s75x75_c1_f1/4f566a87e84ac7cb919fef11649ebfc0891fa9d0.webp"
+          },
+          "url": "https://64.media.tumblr.com/4084524374ba5b6446c9c26abf2d535b/a58f36dfd4c71175-a1/s75x75_c1/98e0fd0fd948d029e19ccf63047c0196cee5e181.webp",
+          "colors": {
+            "c0": "808080",
+            "c1": "616161"
+          },
+          "cropped": true
+        }
+      ],
+      "colors": {
+        "c0": "808080",
+        "c1": "616161"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Mechanical Art for Edward Gorey's First Doubleday Anchor Cover (1953)",
+      "subtype": "heading1"
+    },
+    {
+      "type": "text",
+      "text": "Mechanical art for Edward Gorey's first Doubleday Anchor cover, created in 1953. Jason Epstein, Doubleday Anchor's co-founder, and his then-wife Barbara commissioned Gorey for the imprint's early cover designs."
+    },
+    {
+      "type": "text",
+      "text": "Source ",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 6,
+          "url": "https://www.facebook.com/EdwardGoreyHouse/posts/mechanical-art-for-goreys-first-doubleday-anchor-cover-1953-posted-as-a-salute-t/4916393145095216"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

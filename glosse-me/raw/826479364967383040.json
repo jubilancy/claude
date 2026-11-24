@@ -1,0 +1,915 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826479364967383040,
+  "id_string": "826479364967383040",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826479364967383040/landscapes-natural-beauty-15",
+  "slug": "landscapes-natural-beauty-15",
+  "date": "2026-08-31 16:02:23 GMT",
+  "timestamp": 1788192143,
+  "state": "published",
+  "reblog_key": "UpA3l2hT",
+  "tags": [
+    "landscape-painting",
+    "american-wilderness",
+    "mountain-landscape",
+    "water-features",
+    "dramatic-geology",
+    "natural-landmarks",
+    "light-effects"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjuFfg34a00",
+  "summary": "Mono Lake, California",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 368,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s640x960/192c7b2afd15897520118b782e4be115051b5b44.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 361,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s540x810/0cdddd4d5a51b8e9483c4ffe7c7d33536441bde1.jpg"
+        },
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 335,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s500x750/4c6e6405b923cc8a7841a94483a2617675983b2b.jpg"
+        },
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 268,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s400x600/83be9fe53fdaec0e422c45a8d05539b8b2f56f4f.jpg"
+        },
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 167,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s250x400/01da1be0192c5ad9b2cf6b963d536e06a631cdc4.jpg"
+        },
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 67,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s100x200/5bd1bc34b7a52b4815cf947398385775b4191018.jpg"
+        },
+        {
+          "media_key": "afd121c24733c46658fc36f9f9a76a8a:9ea8821e25eeb62c-bf",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/afd121c24733c46658fc36f9f9a76a8a/9ea8821e25eeb62c-bf/s75x75_c1/d1c720b81c262fe8c2972af17855db2edb96dc75.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1966.36.128_1&max_w=550"
+      },
+      "colors": {
+        "c0": "090b09",
+        "c1": "3b4c88",
+        "c2": "193a73",
+        "c3": "5f659a",
+        "c4": "0b2761"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Mono Lake, California",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 21,
+          "url": "https://www.si.edu/object/mono-lake-california:saam_1966.36.128"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 390,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s640x960/b9f52dd7625fede509ebb070204c82aac2a4cb5c.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 383,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s540x810/4433779e3940417519cae15842bd67c9a5128792.jpg"
+        },
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 355,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s500x750/883c5403959dfbeceebc0752f2672a91b957e745.jpg"
+        },
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 284,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s400x600/2b0144074b6a8e273b06426a1add2a37183d397c.jpg"
+        },
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 177,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s250x400/ae67a9cb158dada00eed90e1205a2474e7b7e6be.jpg"
+        },
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 71,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s100x200/3165bb30da5a5969e2352f17ad4166ba19b35b0d.jpg"
+        },
+        {
+          "media_key": "a649987ab87e57ff64bc050053312551:9ea8821e25eeb62c-3d",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/a649987ab87e57ff64bc050053312551/9ea8821e25eeb62c-3d/s75x75_c1/1bcc0e1b5c468896bf35b266e5aaa42e38ea5972.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1952.13.86A-B_1&max_w=550"
+      },
+      "colors": {
+        "c0": "242820",
+        "c1": "1b1b1b",
+        "c2": "4f463b",
+        "c3": "a98f72",
+        "c4": "b4a183"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Hill and Lake",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 13,
+          "url": "https://www.si.edu/object/hill-and-lake:saam_1952.13.86A-B"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 328,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s640x960/d72577937b09ed7dda71e158a897660d1ebe0c60.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 322,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s540x810/3d886d0f6fbf25b7d0851f5aafec47d4424ecffb.jpg"
+        },
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 298,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s500x750/98cb3e50691d45bcdf5bedbe39afeb7372cadd3e.jpg"
+        },
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 239,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s400x600/8581f5a9822da6fc7021df49e318f79f1f5e5073.jpg"
+        },
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 149,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s250x400/9083e0885b271ac5cbdfd757911913e3bc7ddb1d.jpg"
+        },
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 60,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s100x200/c29d577ca11e39ac43ba5292d4117d8c711bef81.jpg"
+        },
+        {
+          "media_key": "beae1f5edec5adcf52ad029f7c9e89de:9ea8821e25eeb62c-71",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/beae1f5edec5adcf52ad029f7c9e89de/9ea8821e25eeb62c-71/s75x75_c1/d86d0d112a95df0b8288a375fdb3e995ad7c779d.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1909.7.44_1&max_w=550"
+      },
+      "colors": {
+        "c0": "080602",
+        "c1": "8e702c",
+        "c2": "5d4314",
+        "c3": "947a33",
+        "c4": "7d6428"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Upper Ausable Lake",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 18,
+          "url": "https://www.si.edu/object/upper-ausable-lake:saam_1909.7.44"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 958,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s640x960/b9903aeda6cc7917f34e066817b88b35bf02deaf.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 465,
+          "height": 810,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s540x810/12b3c43b0a06b2cc4be7cf737dc3bf3e52ee1ce5.jpg"
+        },
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 431,
+          "height": 750,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s500x750/acfd8c586a04aef62c04a10d2e799907e885fa3a.jpg"
+        },
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 344,
+          "height": 600,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s400x600/4e1ee99fc2dd4caa132d737db6d50d01c3bac665.jpg"
+        },
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 230,
+          "height": 400,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s250x400/a8561c51a7bcdebc3a714ec91c88232caa8a95b4.jpg"
+        },
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 174,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s100x200/d6edcb0c41de2edb45cd3e220ba75cfbf6a220c8.jpg"
+        },
+        {
+          "media_key": "88c92dfe525cbee265bbdf58f3e6d0f1:9ea8821e25eeb62c-3a",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/88c92dfe525cbee265bbdf58f3e6d0f1/9ea8821e25eeb62c-3a/s75x75_c1/f69e07e418f8477598535ea3d2fa245964e3e187.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1984.135.1_1&max_w=550"
+      },
+      "colors": {
+        "c0": "22242b",
+        "c1": "353121",
+        "c2": "1f2821",
+        "c3": "3e4231",
+        "c4": "4b4a35"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Untitled (Wood Scene with Birch Trees and Ducks)",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 48,
+          "url": "https://www.si.edu/object/untitled-wood-scene-birch-trees-and-ducks:saam_1984.135.1"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 413,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s640x960/728a11f6b0b4f7dae6ffcb5af22ad4b6196784e0.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 405,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s540x810/e7f43df636bf7671536a418709a90463507a69e5.jpg"
+        },
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 375,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s500x750/7049ba9ae666c882f91df0481a70f860a26aab59.jpg"
+        },
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 300,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s400x600/63c194f3ffd98fb8bda0fd30778ceed5e885cbf0.jpg"
+        },
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 188,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s250x400/dc1e0a3e42d4753021c12a22dc1ea317305bc20f.jpg"
+        },
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s100x200/78124d7771d75f9cbba29ed58115dffeadf703d0.jpg"
+        },
+        {
+          "media_key": "e96e69612ed3533e19cb2383cd19ef7e:9ea8821e25eeb62c-aa",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/e96e69612ed3533e19cb2383cd19ef7e/9ea8821e25eeb62c-aa/s75x75_c1/ceb8a8a12c602d3218e4780d9a6004b8a6a0ae4b.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-2010.59_1&max_w=550"
+      },
+      "colors": {
+        "c0": "383107",
+        "c1": "3f2c29",
+        "c2": "08130b",
+        "c3": "6a6210",
+        "c4": "333751"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "The Lily Pool",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 13,
+          "url": "https://www.si.edu/object/lily-pool:saam_2010.59"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 315,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s640x960/0981980aa49de222559bd4e612e575d992e7c765.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 309,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s540x810/df800eec2e76f5cc42950faffe435e8241867a35.jpg"
+        },
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 286,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s500x750/5abe27fb037104d1ab17caf6a69b4cd5bad96997.jpg"
+        },
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 229,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s400x600/ffa27ed43510acfdebec78539e6efb0658b3830d.jpg"
+        },
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 143,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s250x400/fd2b3b603030e39ca4c0672abca72cebb29ac1e8.jpg"
+        },
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 57,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s100x200/cef79d35ae44c664e75bdf758f474f04781b1692.jpg"
+        },
+        {
+          "media_key": "cc8c4feec81d088cf344ac0f926952e8:9ea8821e25eeb62c-81",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/cc8c4feec81d088cf344ac0f926952e8/9ea8821e25eeb62c-81/s75x75_c1/cb54deb0eeb7d2b2ea874e420a6603b9b2eb9c04.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1982.112_2&max_w=550"
+      },
+      "colors": {
+        "c0": "110a05",
+        "c1": "684a2d",
+        "c2": "775d37",
+        "c3": "3b311c",
+        "c4": "ab8657"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "A North Woods Lake",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 18,
+          "url": "https://www.si.edu/object/north-woods-lake:saam_1982.112"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 427,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s640x960/73f65fdbcce8385435fdb8667f5841c49078265b.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 419,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s540x810/7afc413f4b0bd30d0a48ff3c6bf54f6fc6355ef3.jpg"
+        },
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 388,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s500x750/e1c35a5adb620afd745c72e54abc7df87ef30846.jpg"
+        },
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 311,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s400x600/b8bdd055565d7929e7ed49136af28832c6d3318d.jpg"
+        },
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 194,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s250x400/d4e74b4f59103780a24895180fe690e3837e6df1.jpg"
+        },
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 78,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s100x200/0c75327c10d2853537a8c964431e0a679187bbb7.jpg"
+        },
+        {
+          "media_key": "a41a180fe3701dd0c35d5fd24b4bf977:9ea8821e25eeb62c-d5",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/a41a180fe3701dd0c35d5fd24b4bf977/9ea8821e25eeb62c-d5/s75x75_c1/e766dbe66209b93310e04f9bc8977210d78344e6.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=HMSG-86.4251-000001&max_w=550"
+      },
+      "colors": {
+        "c0": "4d655c",
+        "c1": "2a5947",
+        "c2": "324810",
+        "c3": "6b8d6d",
+        "c4": "1c401b"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "View of Lake",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 12,
+          "url": "https://www.si.edu/object/view-lake:hmsg_86.4251"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 431,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s640x960/b874ca0b6e5bed713aaade40c2088adba8cf8d92.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 423,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s540x810/53899bd494623cd98c421bf83a3e3c381469a483.jpg"
+        },
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 392,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s500x750/e7d89a06e5cb1c85048325ae3978be58bd383187.jpg"
+        },
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 313,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s400x600/46b4efcb6f528108e44ad245c4ef50abdcf1344f.jpg"
+        },
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 196,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s250x400/ecac0ccf0b40aa4d1453583deedb43fd8fbad620.jpg"
+        },
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 78,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s100x200/1fbeaf1171b03e6a37b77b2adcf5a6be410150cb.jpg"
+        },
+        {
+          "media_key": "2b09807e550f904068217ef6caebbbb9:9ea8821e25eeb62c-ea",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/2b09807e550f904068217ef6caebbbb9/9ea8821e25eeb62c-ea/s75x75_c1/8af7d64fe7caf3a7a1630b82a3f72e5a36f54f7b.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1909.7.56_2&max_w=550"
+      },
+      "colors": {
+        "c0": "1e1204",
+        "c1": "130e06",
+        "c2": "0c0703",
+        "c3": "211403",
+        "c4": "382705"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Bradbury's Mill Pond, no. 2",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 27,
+          "url": "https://www.si.edu/object/bradburys-mill-pond-no-2:saam_1909.7.56"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 549,
+          "height": 320,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s640x960/c534af0fd34907e75de80c5c01bece493a06237f.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 315,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s540x810/8670e50d885f573ac03a8b6b6e6fbf5ce62bca2a.jpg"
+        },
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 291,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s500x750/d7122d0a4635ebadb584c10ced7cb8a0c6daa30c.jpg"
+        },
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 233,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s400x600/7ad541d9522071f2fb0e27bdbfdf7b21f15ac531.jpg"
+        },
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 146,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s250x400/2595dcd790f124c181db4689a52fee762766432c.jpg"
+        },
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 58,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s100x200/77c5c4905b820f419303b1271b4907cacf7ad64f.jpg"
+        },
+        {
+          "media_key": "4cde6fd5d0554ffb2fbf5646494a31a2:9ea8821e25eeb62c-4a",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/4cde6fd5d0554ffb2fbf5646494a31a2/9ea8821e25eeb62c-4a/s75x75_c1/e51c6a6d37ba8574519f8c2bb046c738f6af8849.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1986.78_1&max_w=550"
+      },
+      "colors": {
+        "c0": "070303",
+        "c1": "754931",
+        "c2": "1e0b04",
+        "c3": "31130a",
+        "c4": "5e2e1d"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Whiteface Mountain from Lake Placid",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 35,
+          "url": "https://www.si.edu/object/whiteface-mountain-lake-placid:saam_1986.78"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 550,
+          "height": 367,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s640x960/2d1e4da988d3061c374c0228c4688dfcee0e0a81.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 360,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s540x810/0a0a4458e0c181c58626b0c8a2f444c18e124ce6.jpg"
+        },
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 334,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s500x750/8892e63c9122547ccc9b5f8e981ec0f88a5b65c0.jpg"
+        },
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 267,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s400x600/08b9ffc66c291a06c16b59243a90dc6afb31f7c5.jpg"
+        },
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 167,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s250x400/2eb1a83e8ef28eabab1cae60b6fedc6d862b9680.jpg"
+        },
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 67,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s100x200/d5f3342080b813c807ed5adfada4009674974bd6.jpg"
+        },
+        {
+          "media_key": "d3a8ea5dc49315b365f75b6abecdaadd:9ea8821e25eeb62c-09",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/d3a8ea5dc49315b365f75b6abecdaadd/9ea8821e25eeb62c-09/s75x75_c1/7bef4212abd3155ba85b29ad406502d709a90a3b.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://ids.si.edu/ids/deliveryService?id=SAAM-1985.66.350_1&max_w=550"
+      },
+      "colors": {
+        "c0": "b0c0bd",
+        "c1": "6d782f",
+        "c2": "252d0b",
+        "c3": "17210a",
+        "c4": "a5aead"
+      },
+      "exif": {
+        "Time": "1788192116"
+      }
+    },
+    {
+      "type": "text",
+      "text": "View on Lake St. Croix, Upper Mississippi",
+      "subtype": "heading2",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 0,
+          "end": 41,
+          "url": "https://www.si.edu/object/view-lake-st-croix-upper-mississippi:saam_1985.66.350"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

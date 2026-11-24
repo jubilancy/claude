@@ -1,0 +1,197 @@
+{
+  "type": "blocks",
+  "original_type": "regular",
+  "is_blocks_post_format": true,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 825852364072337408,
+  "id_string": "825852364072337408",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/825852364072337408/ted-berrigan-and-jim-dine-fragment-for-jim",
+  "slug": "ted-berrigan-and-jim-dine-fragment-for-jim",
+  "date": "2026-08-24 17:56:28 GMT",
+  "timestamp": 1787594188,
+  "state": "published",
+  "reblog_key": "ELSfhBp2",
+  "tags": [
+    "graphic design",
+    "typography",
+    "art",
+    "poetry",
+    "drawing",
+    "illustration",
+    "lithograph",
+    "broadside",
+    "ted berrigan",
+    "jim dine",
+    "cape goliard",
+    "granary books",
+    "1960s"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjs15bzSi00",
+  "summary": "Ted Berrigan and Jim Dine, Fragment for Jim Brodey, (offset three-color lithograph broadside), Cape Goliard, London, 1969,...",
+  "should_open_in_legacy": false,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 1217,
+          "height": 1600,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s1280x1920/31467edc7dc79285d001ea153ad169ed6202872a.jpg",
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 841,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s640x960/52e75f98dcb59b8b9b276799300c80cd28bf1693.jpg"
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 710,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s540x810/110dfed756146f38ae3fcf2d7d3b4f58fca988ea.jpg"
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 657,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s500x750/3cb32e38b9b65008ab9b92a08eb0372fe257ab46.jpg"
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 526,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s400x600/ea1bc24ba63607fdc4e9d6fa5e59e6898232bfb6.jpg"
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 329,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s250x400/9b91ed8a7571b9a4c92960088f32c08ac72b66dc.jpg"
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 131,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s100x200/dabcb9bb42a5c054881ff6133719a187c62a1cf5.jpg"
+        },
+        {
+          "media_key": "cb86e46b3142e584f3ab1a89404572a2:ce9338a468e134f1-ef",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/cb86e46b3142e584f3ab1a89404572a2/ce9338a468e134f1-ef/s75x75_c1/a3aa2f1420c58cd35fb1813da70bbe76bb55b862.jpg",
+          "cropped": true
+        }
+      ],
+      "attribution": {
+        "type": "link",
+        "url": "https://64.media.tumblr.com/c491888f9cb5f7ee3f110f0274a3cccb/ed8e67b28148afd9-55/s1280x1920/660c5b3ccd0207ad6874c92d9dd725f8030634ba.jpg"
+      },
+      "colors": {
+        "c0": "d6cfb7",
+        "c1": "ccc5a3",
+        "c2": "988e6a",
+        "c3": "852038",
+        "c4": "351018"
+      },
+      "exif": {
+        "Time": "1787594171"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Ted Berrigan and Jim Dine, Fragment for Jim Brodey, (offset three-color lithograph broadside), Cape Goliard, London, 1969, Edition of 327 [Granary Books, New York, NY. © Ted Berrigan, Jim Dine]",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 27,
+          "end": 50,
+          "url": "https://www.granarybooks.com/pages/books/3897/ted-berrigan-jim-dine/fragment-for-jim-brodey"
+        },
+        {
+          "type": "italic",
+          "start": 27,
+          "end": 50
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "text": "Source: granarybooks.com",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 8,
+          "end": 24,
+          "url": "https://www.granarybooks.com/pages/books/3897/ted-berrigan-jim-dine/fragment-for-jim-brodey"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}

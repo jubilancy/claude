@@ -1,0 +1,198 @@
+{
+  "type": "blocks",
+  "original_type": "photo",
+  "is_blocks_post_format": false,
+  "blog_name": "fromdaysoff",
+  "blog": {
+    "name": "fromdaysoff",
+    "title": "sincerely,\nfrom days off",
+    "description": "22 ENTJ SP/SX LEO HER",
+    "url": "https://fromdaysoff.tumblr.com/",
+    "uuid": "t:jr9nsmmUnlBZbWuVhG87tQ",
+    "updated": 1793377905,
+    "avatar": [
+      {
+        "width": 512,
+        "height": 512,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s512x512u_c1_f1/09b2d0bfd5eb92ec7e2351e6120b4c858717fd9d.gif",
+        "accessories": []
+      },
+      {
+        "width": 200,
+        "height": 200,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s200x200u_c1_f1/32c94d2e29354caf736242beaa15c6c57b8baa1a.gif",
+        "accessories": []
+      },
+      {
+        "width": 128,
+        "height": 128,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s128x128u_c1_f1/da195ee26dd06cc4d693f6af156ac8397ea3c441.gif",
+        "accessories": []
+      },
+      {
+        "width": 96,
+        "height": 96,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s96x96u_c1_f1/f4d224f7e96324818e8859e83f6213d67f95fdc0.gif",
+        "accessories": []
+      },
+      {
+        "width": 64,
+        "height": 64,
+        "url": "https://44.media.tumblr.com/17b3db6c2de64477f0209c2c4444b922/7af353b865e08fca-60/s64x64u_c1_f1/abc99cb7e94568ed95dac1cee0cee28d5d60ce94.gif",
+        "accessories": []
+      }
+    ],
+    "tumblrmart_accessories": {},
+    "can_show_badges": true
+  },
+  "id": 826754327147347969,
+  "id_string": "826754327147347969",
+  "is_blazed": false,
+  "is_blaze_pending": false,
+  "can_blaze": false,
+  "post_url": "https://fromdaysoff.tumblr.com/post/826754327147347969/hypnosis-imagination-and-human-potentialities-theo",
+  "slug": "hypnosis-imagination-and-human-potentialities-theo",
+  "date": "2026-09-03 16:52:47 GMT",
+  "timestamp": 1788454367,
+  "state": "published",
+  "reblog_key": "tgHRfcZ9",
+  "tags": [
+    "books",
+    "book cover",
+    "theodore x. barber",
+    "theodore",
+    "barber"
+  ],
+  "short_url": "https://tmblr.co/ZQo8CNjvEAuY8e01",
+  "summary": "Hypnosis, Imagination, and Human Potentialities by Theodore X. Barber\n\nHypnosis, Imagination, and Human Potentialities by...",
+  "should_open_in_legacy": true,
+  "recommended_source": null,
+  "recommended_color": null,
+  "note_count": 0,
+  "content": [
+    {
+      "type": "image",
+      "media": [
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 708,
+          "height": 1028,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s1280x1920/f2f68cbd61689352a22e4b21557d5a52750ece82.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          },
+          "has_original_dimensions": true
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 640,
+          "height": 929,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s640x960/c18b6bbe5e6a798ab641e8dc0ff5a19bb8f5a6d9.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          }
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 540,
+          "height": 784,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s540x810/6a5db9e9ee0cf2916348d543a2d497732471e6e5.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          }
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 500,
+          "height": 726,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s500x750/cc360a8cf090107bc7ac44f945430e3acfb26db0.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          }
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 400,
+          "height": 581,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s400x600/a427e6cf78ab8e996449b49fd6b89bec1c9faedf.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          }
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 250,
+          "height": 363,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s250x400/a8e373b6634b28b8f4e22eff6285c4c3fdd98136.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          }
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 100,
+          "height": 145,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s100x200/ee80c60078be6a6f8afa41c9383c2ff455c1a285.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          }
+        },
+        {
+          "media_key": "d5d2e7bb035898cb5b149f1cd3c9bfb7:bb1fd39852963205-4f",
+          "type": "image/jpeg",
+          "width": 75,
+          "height": 75,
+          "url": "https://64.media.tumblr.com/d5d2e7bb035898cb5b149f1cd3c9bfb7/bb1fd39852963205-4f/s75x75_c1/69973b977b058d8c2cbd3523e3cfc3d5622b9070.jpg",
+          "colors": {
+            "c0": "080605",
+            "c1": "f8c391"
+          },
+          "cropped": true
+        }
+      ],
+      "colors": {
+        "c0": "080605",
+        "c1": "f8c391"
+      }
+    },
+    {
+      "type": "text",
+      "text": "Hypnosis, Imagination, and Human Potentialities by Theodore X. Barber"
+    },
+    {
+      "type": "text",
+      "text": "Hypnosis, Imagination, and Human Potentialities by Theodore X. Barber Dr. Theodore X. Barber says: \"We found that hypnotic subjects are able to do surprising things only when convinced that the hypnotist's words are true statements. When the hypnotist has guided the subject to the point where he is convinced that the hypnotist's words are true statements, the subje Source",
+      "formatting": [
+        {
+          "type": "link",
+          "start": 368,
+          "end": 374,
+          "url": "https://www.pinterest.com/pin/637681628526553515"
+        }
+      ]
+    }
+  ],
+  "layout": [],
+  "trail": [],
+  "can_like": false,
+  "interactability_reblog": "everyone",
+  "can_reblog": false,
+  "interactability_blaze": "everyone",
+  "can_send_in_message": true,
+  "can_reply": false,
+  "display_avatar": true
+}
