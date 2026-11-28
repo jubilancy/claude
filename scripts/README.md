@@ -317,6 +317,21 @@ uv run scripts/wikimedia/wp_tags.py https://longreads.com
 uv run scripts/wikimedia/wp_tags.py https://longreads.com --max-pages 2   # quick test
 ```
 
+## wordpress
+
+| Script | What it does |
+|---|---|
+| [`wordpress/wp_tag_cloud.py`](wordpress/wp_tag_cloud.py) | fetch every tag of a WordPress.com site and write a paste-ready HTML tag cloud. |
+
+`wordpress/wp_tag_cloud.py`
+
+```bash
+WPCOM_TOKEN=xxxx uv run scripts/wordpress/wp_tag_cloud.py fromdaysoff.wordpress.com
+uv run scripts/wordpress/wp_tag_cloud.py example.wordpress.com --output cloud.html
+uv run scripts/wordpress/wp_tag_cloud.py SITE --min-count 2 --min-size 12 --max-size 36
+uv run scripts/wordpress/wp_tag_cloud.py SITE --from-json tags.json   # offline: JSON list of tag objects
+```
+
 ## (top level)
 
 | Script | What it does |
